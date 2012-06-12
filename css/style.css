@@ -1,0 +1,148 @@
+
+/*Accent color = 4AB585 */
+
+body{
+	background: #eee;
+	font-family: 'Bitter', sans-serif;
+}
+
+p {
+	font-size:16px;
+	line-height:1.4em;
+	font-family:sans-serif;
+}
+
+p a{
+	text-decoration:none;
+	color:inherit;
+	border-bottom:1px dotted #777;
+}
+
+p a:hover{
+	color:#CC4545;
+	border-bottom:0px solid #fff;
+}
+
+
+/* Change the selection color on the whole site */
+
+::selection {
+	background: #333;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #333;
+	color: #fff;
+}
+
+/* The main le. */
+
+.container{
+	min-width:700px;
+	max-width:960px;
+	margin:auto;
+}
+
+#maincontainer{
+	min-height:100%;
+	margin-top:70px;
+}
+
+#about{
+	width:33%;
+}
+
+#main{
+	width:66%;
+}
+
+#nav{
+	height:40px;
+	border-top:4px solid #333;
+	line-height:40px;
+	position:fixed;
+	left:0px;
+	top:0px;
+	right:0px;
+	background:#fff;
+	border-bottom:1px dotted #ccc;
+	opacity:0.95;
+	color:#aaa;
+	z-index:100;
+}
+
+.navlink{
+	display:inline-block;
+	height:100%;
+	padding-left:10px;
+	padding-right:10px;
+	text-decoration:none;
+	color:#111;
+	transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
+	-webkit-transition: all 0.2s ease-in; /* Safari and Chrome */
+	-o-transition: all 0.2s ease-in; /* Opera */
+}
+
+.navlink:hover{
+	color:#eee;
+	background:#CC4545;
+}
+
+.forall{
+	display:inline-block;
+	height:100%;
+	padding-left:10px;
+	padding-right:10px;
+	color:#eee;
+	background:#333;
+}
+
+.heading{
+	text-align:center;
+	border-bottom:1px dotted #bbb;
+}
+
+.heading h2{
+	display:inline-block;
+	font-family:sans-serif;
+	position:relative;
+	font-size:1em;
+	top:1.5em;
+	background:#eee;
+	padding: 0 10px;
+	font-style: italic;
+	font-weight:normal;
+}
+
+/* These are common shared classes that do simple, yet useful things */
+
+.flowleft{
+	float:left;
+}
+
+.flowright{
+	float:right;
+}
+
+.clearboth{
+	clear:both;
+}
+
+.main-content{
+	margin:20px;
+}
+
+.welcome{
+	font-size:3em;
+	color:#333;
+	text-shadow: 2px 2px 20px #ccc;
+}
+
+/* A poloroid of sorts */
+
+.outerShell{
+	background:#fff;
+	border:1px solid #aaa;
+}
