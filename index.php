@@ -55,7 +55,8 @@
 					<h2>about me</h2>
 				</div>
 				<p>
-									
+					Well this is embarrassing. Somehow you've found a site that I'm currently in the process of developing.
+					Feel free to click around but just know that this is still a work in progress.		
 				</p>
 				<div class='heading'>
 					<h2>portfolio</h2>
@@ -67,7 +68,10 @@
 					<h2>resume</h2>
 				</div>
 				<p>
-					This website is intended as a resume of sorts, but if you'd like a printable / traditional pdf, I've got something here just for you!
+				Proin a enim non ipsum porta elementum. Aliquam sollicitudin eros vitae nisi lacinia pharetra. Cras in erat at odio mollis imperdiet. Proin sodales ipsum sed lacus malesuada at lobortis ante malesuada. Aliquam vestibulum facilisis erat. Donec quis tristique augue. Quisque ut turpis nibh. Ut tincidunt rutrum ligula, ac consectetur felis pretium sed. Phasellus vitae est quis metus porttitor vestibulum eu in est. Integer pellentesque massa eget leo mattis dictum fringilla ante ullamcorper. Sed sem nulla, ultrices ut pharetra non, iaculis et leo.
+				</p>
+				<p>
+				Maecenas vel augue nec est blandit tempus id at diam. Morbi volutpat tincidunt dui. Vivamus et leo justo. Phasellus suscipit nunc aliquam arcu imperdiet sit amet interdum ligula lacinia. Maecenas in metus justo. Nunc volutpat placerat pulvinar. Pellentesque mauris massa, luctus vel faucibus a, condimentum in purus. Integer lobortis blandit ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				</p>
 				<p>
 				Proin a enim non ipsum porta elementum. Aliquam sollicitudin eros vitae nisi lacinia pharetra. Cras in erat at odio mollis imperdiet. Proin sodales ipsum sed lacus malesuada at lobortis ante malesuada. Aliquam vestibulum facilisis erat. Donec quis tristique augue. Quisque ut turpis nibh. Ut tincidunt rutrum ligula, ac consectetur felis pretium sed. Phasellus vitae est quis metus porttitor vestibulum eu in est. Integer pellentesque massa eget leo mattis dictum fringilla ante ullamcorper. Sed sem nulla, ultrices ut pharetra non, iaculis et leo.
