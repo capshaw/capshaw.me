@@ -55,7 +55,7 @@
 					<h2>about me</h2>
 				</div>
 				<p>
-					Well this is embarrassing. Somehow you've found a site that I'm currently in the process of developing.
+					Test. Well this is embarrassing. Somehow you've found a site that I'm currently in the process of developing.
 					Feel free to click around but just know that this is still a work in progress.		
 				</p>
 				<div class='heading'>
