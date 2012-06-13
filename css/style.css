@@ -2,8 +2,8 @@
 /*Accent color = 4AB585 */
 
 body{
-	background: #eee;
-	font-family: 'Bitter', sans-serif;
+	background: #eee url('../img/common/rough_diagonal.png') repeat fixed;
+	font-family: sans-serif;
 }
 
 p {
@@ -15,7 +15,9 @@ p {
 p a{
 	text-decoration:none;
 	color:inherit;
-	border-bottom:1px dotted #777;
+	color:#CC4545;
+	font-weight:bold;
+	/*border-bottom:1px dotted #777;*/
 }
 
 p a:hover{
@@ -23,16 +25,19 @@ p a:hover{
 	border-bottom:0px solid #fff;
 }
 
+h2 {
+	font-family:'Bitter', sans-serif;
+}
 
 /* Change the selection color on the whole site */
 
 ::selection {
-	background: #333;
+	background: #CC4545;
 	color: #fff;
 }
 
 ::-moz-selection {
-	background: #333;
+	background: #CC4545;
 	color: #fff;
 }
 
@@ -50,11 +55,12 @@ p a:hover{
 }
 
 #about{
-	width:33%;
+	width:320px;
+	position:fixed;
 }
 
 #main{
-	width:66%;
+	width:620px;
 }
 
 #nav{
@@ -70,6 +76,7 @@ p a:hover{
 	opacity:0.95;
 	color:#aaa;
 	z-index:100;
+	font-family:'Bitter', sans-serif;
 }
 
 .navlink{
@@ -86,8 +93,8 @@ p a:hover{
 }
 
 .navlink:hover{
-	color:#eee;
-	background:#CC4545;
+	color:#CC4545;
+	border-bottom:3px solid #aaa;
 }
 
 .forall{
@@ -99,21 +106,12 @@ p a:hover{
 	background:#333;
 }
 
-.heading{
-	text-align:center;
-	border-bottom:1px dotted #bbb;
-}
-
-.heading h2{
+.tag{
+	background:#111;
+	color:#fff;
+	margin:4px;
 	display:inline-block;
-	font-family:sans-serif;
-	position:relative;
-	font-size:1em;
-	top:1.5em;
-	background:#eee;
-	padding: 0 10px;
-	font-style: italic;
-	font-weight:normal;
+	padding:4px 10px;
 }
 
 /* These are common shared classes that do simple, yet useful things */
@@ -138,11 +136,32 @@ p a:hover{
 	font-size:3em;
 	color:#333;
 	text-shadow: 2px 2px 20px #ccc;
+	margin-top:10px;
+	font-family:'Bitter', sans-serif;
+	text-align:center;
 }
 
 /* A poloroid of sorts */
 
-.outerShell{
+.outer-shell{
 	background:#fff;
-	border:1px solid #aaa;
+	border:1px solid #eee;
+	-moz-box-shadow: 0px 0px 10px #aaa;
+ -webkit-box-shadow: 0px 0px 10px #aaa;
+         box-shadow: 0px 0px 10px #aaa;
+}
+
+.inner-shell{
+	margin:10px;
+	background:#aaa;
+}
+
+.portfolio{
+	height:300px;
+}
+
+.me{
+	height:300px;
+	background: #fff url('../img/portrait.jpg') no-repeat center center;
+	background-size:cover;
 }
