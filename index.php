@@ -10,16 +10,20 @@
 	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
+
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+
 </head>
 
 <body id='home'>
 
 	<div id='nav'>
-		<div class='container'>
-			<div class='forall'>
+		<div class='container text-right'>
+			<div class='forall flowleft'>
 				&forall;
 			</div>
-			<a href='#' class='navlink selected-link'>
+			<a href='#' id='aboutLink' class='navlink selected-link'>
 				about
 			</a>
 			&middot;
@@ -31,7 +35,7 @@
 				resume
 			</a>
 			&middot; 
-			<a href='#' class='navlink'>
+			<a href='#aboutme' id='contactLink' class='navlink'>
 				contact
 			</a> 
 		</div>
@@ -45,17 +49,19 @@
 					<!-- -->
 				</div>
 			</div>
-			<div class='main-content'>
+			<div class='main-content' id='aboutme'>
 				<p>Hello, I'm Andrew!</p>
 
 				<p>
-					I'm an undergraduate student studying computer science at <a href='#'>Rice University</a> in Houston, TX.
+					I'm an undergraduate studying computer science at <a href='#'>Rice University</a> in Houston, TX.
 				</p>
 				<p>
 					This is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
 				</p>
-				<p>
-					Email: <span>capshaw@</span>rice.edu
+				<p id='contact' class='quote'>
+					Email: <a href='mailto:capshaw@rice.edu'><span>capshaw@</span>rice.edu</a><br>
+					Twitter: <a href='http://twitter.com/#!/thecapshaw'>@thecapshaw</a>
+				</p>
 			</div>
 		</div>
 
@@ -103,4 +109,11 @@
 	</div>
 
 </body>
+<script type='text/javascript'>
+	$("#contactLink").click(function () {
+		$("#contact").switchClass('quote','highlighted',500,'easeOutBounce',function(){
+		  console.log('transition is done!');
+		});
+    });
+</script>
 </html>

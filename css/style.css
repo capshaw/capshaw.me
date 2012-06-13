@@ -10,6 +10,7 @@ p {
 	font-size:16px;
 	line-height:1.4em;
 	font-family:sans-serif;
+	text-shadow: 2px 1px 0px #fff;
 }
 
 p a{
@@ -27,6 +28,7 @@ p a:hover{
 
 h2 {
 	font-family:'Bitter', sans-serif;
+	margin-top:40px;
 }
 
 /* Change the selection color on the whole site */
@@ -34,11 +36,13 @@ h2 {
 ::selection {
 	background: #CC4545;
 	color: #fff;
+	text-shadow: none;
 }
 
 ::-moz-selection {
 	background: #CC4545;
 	color: #fff;
+	text-shadow: none;
 }
 
 /* The main le. */
@@ -56,7 +60,7 @@ h2 {
 
 #about{
 	width:320px;
-	position:fixed;
+	/*position:fixed;*/
 }
 
 #main{
@@ -85,6 +89,7 @@ h2 {
 	padding-left:10px;
 	padding-right:10px;
 	text-decoration:none;
+	text-align:left;
 	color:#111;
 	transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
@@ -104,6 +109,9 @@ h2 {
 	padding-right:10px;
 	color:#eee;
 	background:#333;
+   -moz-box-shadow: inset 0px 0px 3px #111;
+-webkit-box-shadow: inset 0px 0px 3px #111;
+        box-shadow: inset 0px 0px 3px #111;
 }
 
 .tag{
@@ -128,6 +136,10 @@ h2 {
 	clear:both;
 }
 
+.text-right{
+	text-align:right;
+}
+
 .main-content{
 	margin:20px;
 }
@@ -139,6 +151,11 @@ h2 {
 	margin-top:10px;
 	font-family:'Bitter', sans-serif;
 	text-align:center;
+}
+
+.quote {
+	border-left:4px solid #aaa;
+	padding-left:20px;
 }
 
 /* A poloroid of sorts */
@@ -164,4 +181,14 @@ h2 {
 	height:300px;
 	background: #fff url('../img/portrait.jpg') no-repeat center center;
 	background-size:cover;
+}
+
+.highlighted{
+	background:#FCF0AD;
+	border-radius:5px;
+	text-shadow: none;
+	padding:20px;
+	-moz-box-shadow: inset 0px 0px 3px #333;
+ -webkit-box-shadow: inset 0px 0px 3px #333;
+         box-shadow: inset 0px 0px 3px #333;
 }
