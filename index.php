@@ -71,7 +71,7 @@
 							Hello, I'm Andrew. I'm an undergraduate studying computer science at <a href='#'>Rice University</a> in Houston, TX.
 						</p>
 						<p>
-							Outside of coding, I enjoy live music, hiking outdoors, and live music. I also dabble in writing music and like to doodle on the guitar.
+							Outside of coding, I enjoy cycling, hiking outdoors, and live music. I also dabble in writing music and like to doodle on the guitar.
 						</p>
 						<p>
 							This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
