@@ -158,11 +158,11 @@
 	</div -->
 
 	<script type='text/javascript'>
-		$("#contactLink").click(function () {
-			$("#contact").switchClass('quote','highlighted',500,'easeOutBounce',function(){
-			  // console.log('transition is done!');
-			});
-	    });
+		// $("#contactLink").click(function () {
+		// 	$("#contact").switchClass('quote','highlighted',500,'easeOutBounce',function(){
+		// 	  // console.log('transition is done!');
+		// 	});
+	 //    });
 
 	    $("#for-all").hover(
 	    	function () {
