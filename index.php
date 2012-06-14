@@ -80,56 +80,57 @@
 		</div>
 
 
-	<div class='section' id='portfolio'>
-		<div class='clear-both p-top-20'>
-			<div id='side-bar' class='side-bar flowleft'>
-				<h2>Alice&amp;Love</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
-				</p>
-			</div>
-			<div class='main flowright'>
-				<div class='outer-shell'>
-					<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
-						<!-- -->
-					</div>
+		<div class='section' id='portfolio'>
+			<div class='clear-both p-top-20'>
+				<div id='side-bar' class='side-bar flowleft'>
+					<h2>Alice&amp;Love</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
+					</p>
 				</div>
-			</div>
-		</div>
-
-		<div class='clear-both p-top-20'>
-			<div id='side-bar' class='side-bar flowleft'>
-				<h2>Citrus Content Management System</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
-				</p>
-			</div>
-			<div class='main flowright'>
-				<div class='outer-shell'>
-					<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
-						<!-- -->
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class='clear-both p-top-20'>
-			<div id='side-bar' class='side-bar flowleft'>
-				<h2>The Greedy Painters</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
-				</p>
-			</div>
-			<div class='main flowright'>
-				<div class='outer-shell'>
-					<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
-						<!-- -->
+				<div class='main flowright'>
+					<div class='outer-shell'>
+						<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
+							<!-- -->
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class='clear-both'>
-				<!-- -->
+			<div class='clear-both p-top-20'>
+				<div id='side-bar' class='side-bar flowleft'>
+					<h2>Citrus Content Management System</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
+					</p>
+				</div>
+				<div class='main flowright'>
+					<div class='outer-shell'>
+						<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
+							<!-- -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class='clear-both p-top-20'>
+				<div id='side-bar' class='side-bar flowleft'>
+					<h2>The Greedy Painters</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
+					</p>
+				</div>
+				<div class='main flowright'>
+					<div class='outer-shell'>
+						<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
+							<!-- -->
+						</div>
+					</div>
+				</div>
+
+				<div class='clear-both'>
+					<!-- -->
+				</div>
 			</div>
 		</div>
 	</div>
