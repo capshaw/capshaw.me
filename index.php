@@ -41,11 +41,11 @@
 				portfolio
 			</a>
 			&middot;
-			<a href='#' class='nav-link scroller' onClick='mixpanel.track("Resume Link");'>
+			<a href='#resume' class='nav-link scroller' onClick='mixpanel.track("Resume Link");'>
 				resume
 			</a>
 			&middot; 
-			<a href='#' id='contactLink' class='nav-link scroller' onClick='mixpanel.track("Contact Link");'>
+			<a href='#contact' id='contactLink' class='nav-link scroller' onClick='mixpanel.track("Contact Link");'>
 				contact
 			</a> 
 		</div>
@@ -55,30 +55,35 @@
 	<div id='maincontainer' class='container'>
 
 		<div class='section' id='about'>
-			<div class='side-bar flowleft'>
-				<div class='outer-shell'>
-					<div class='inner-shell me'>
-						<!-- -->
+			<div class='clear-both p-top-20'>
+				<div class='side-bar flowleft'>
+					<div class='outer-shell'>
+						<div class='inner-shell me'>
+							<!-- -->
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class='main flowright'>
-				<div class='main-content'>
-					<h2>Who am I?</h2>
-					<p>Hello, I'm Andrew. I'm an undergraduate studying computer science at <a href='#'>Rice University</a> in Houston, TX.
-					</p>
-					<p>
-						This is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
-					</p>
+				<div class='main flowright'>
+					<div class='main-content'>
+						<h2>Who am I?</h2>
+						<p>
+							Hello, I'm Andrew. I'm an undergraduate studying computer science at <a href='#'>Rice University</a> in Houston, TX.
+						</p>
+						<p>
+							Outside of coding, I enjoy live music, hiking outdoors, and live music. I also dabble in writing music and like to doodle on the guitar.
+						</p>
+						<p>
+							This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
+						</p>
+					</div>
+				</div>
+
+				<div class='clear-both'>
+					<!-- -->
 				</div>
 			</div>
-
-			<div class='clear-both'>
-				<!-- -->
-			</div>
 		</div>
-
 
 		<div class='section' id='portfolio'>
 			<div class='clear-both p-top-20'>
@@ -133,8 +138,24 @@
 				</div>
 			</div>
 		</div>
+
+		<div class='section' id='resume'>
+			<!-- -->resume
+		</div>
+
+		<div class='section' id='contact'>
+			<!-- -->contact
+		</div>	
 	</div>
 
+	<div id='footer'>
+		<div class='container'>
+			This is da footer
+		</div>
+	</div>
+
+	<!--div class='topQuarter'>
+	</div -->
 
 	<script type='text/javascript'>
 		$("#contactLink").click(function () {
@@ -145,15 +166,15 @@
 
 	    $("#for-all").hover(
 	    	function () {
-		    	$("#to-the-top").switchClass('no-opacity', 'full-opacity', 1000, 'easeInSine', null);
+		    	$("#to-the-top").switchClass('no-opacity', 'full-opacity', 400, 'easeInSine', null);
 		    }, 
 		    function () {
-		    	$("#to-the-top").switchClass('full-opacity', 'no-opacity', 1000, 'easeInSine', null);
+		    	$("#to-the-top").switchClass('full-opacity', 'no-opacity', 400, 'easeInSine', null);
 	    	}
 	    );
 
 		/* Binds the nav-link class to the jquery scrolling functionality. */
-	    $('.scroller').bind('click', function(event){
+	    $('.scroller').click( function(event){
 
 	        var $anchor = $(this);
 	 
@@ -163,6 +184,39 @@
 
 	        event.preventDefault();
 	    });
+
+	    $(window).scroll(
+	    	function(){
+
+	    		var navLinks = $('.nav-link');
+
+	    		var scrollTop = $(window).scrollTop();
+	    		var height = $(window).height();
+
+	    		var top50PercentOfPage = scrollTop + height/4;
+
+	    		var i;
+	    		for(i=0; i<navLinks.length; i++) {
+
+	    			var sectionPosition = $($(navLinks[i]).attr('href')).offset().top;
+
+	    			if(sectionPosition < top50PercentOfPage){
+
+	    				/* Still cycling through, unless we're at the last element */
+	    				if(i == navLinks.length-1){
+		    				navLinks.removeClass('selected-link');
+		    				$(navLinks[i]).addClass('selected-link');
+	    				}
+	    			}else{
+	    				(i >= 1) ? i -= 1 : i;
+	    				navLinks.removeClass('selected-link');
+	    				$(navLinks[i]).addClass('selected-link');
+	    				break;
+	    			}
+	    		}
+
+	    	}
+	    );
 	</script>
 						<!-- 		<p id='contact'>
 						<span class='tag'>Email</span>
