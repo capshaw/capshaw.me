@@ -1,9 +1,11 @@
 
 /*Accent color = 4AB585 */
 
-body{
+body, html{
 	background: #eee url('../img/common/rough_diagonal.png') repeat fixed;
 	font-family: sans-serif;
+	margin:0px;
+	padding:0px;
 }
 
 p {
@@ -55,15 +57,15 @@ h2 {
 
 #maincontainer{
 	min-height:100%;
-	margin-top:70px;
+	margin-top:40px;
 }
 
-#about{
+.side-bar{
 	width:320px;
 	/*position:fixed;*/
 }
 
-#main{
+.main{
 	width:620px;
 }
 
@@ -76,14 +78,14 @@ h2 {
 	top:0px;
 	right:0px;
 	background:#fff;
-	border-bottom:1px dotted #ccc;
+	/*border-bottom:1px dotted #ccc;*/
 	opacity:0.95;
 	color:#aaa;
 	z-index:100;
 	font-family:'Bitter', sans-serif;
 }
 
-.navlink{
+.nav-link{
 	display:inline-block;
 	height:100%;
 	padding-left:10px;
@@ -97,12 +99,12 @@ h2 {
 	-o-transition: all 0.2s ease-in; /* Opera */
 }
 
-.navlink:hover{
+.nav-link:hover{
 	color:#CC4545;
-	border-bottom:3px solid #aaa;
+	/*border-bottom:3px solid #aaa;*/
 }
 
-.forall{
+#for-all{
 	display:inline-block;
 	height:100%;
 	padding-left:10px;
@@ -112,17 +114,36 @@ h2 {
    -moz-box-shadow: inset 0px 0px 3px #111;
 -webkit-box-shadow: inset 0px 0px 3px #111;
         box-shadow: inset 0px 0px 3px #111;
+    text-decoration:none;
+}
+
+#for-all:hover{
+	background:#eee;
+	color:#333;
+   -moz-box-shadow: inset 0px 0px 3px #999;
+-webkit-box-shadow: inset 0px 0px 3px #999;
+        box-shadow: inset 0px 0px 3px #999;
 }
 
 .tag{
-	background:#111;
-	color:#fff;
+	background:#333;
+	color:#eee;
 	margin:4px;
 	display:inline-block;
-	padding:4px 10px;
+	padding:3px 8px;
+	text-shadow:none;
+	border-radius:3px;
 }
 
 /* These are common shared classes that do simple, yet useful things */
+
+.no-opacity{
+	opacity:0;
+}
+
+.full-opacity{
+	opacity:1;
+}
 
 .flowleft{
 	float:left;
@@ -132,7 +153,7 @@ h2 {
 	float:right;
 }
 
-.clearboth{
+.clear-both{
 	clear:both;
 }
 
@@ -188,7 +209,27 @@ h2 {
 	border-radius:5px;
 	text-shadow: none;
 	padding:20px;
-	-moz-box-shadow: inset 0px 0px 3px #333;
- -webkit-box-shadow: inset 0px 0px 3px #333;
-         box-shadow: inset 0px 0px 3px #333;
+	-moz-box-shadow: inset 0px 0px 3px #999;
+ -webkit-box-shadow: inset 0px 0px 3px #999;
+         box-shadow: inset 0px 0px 3px #999;
+}
+
+.fete{
+	background: url('../img/frontpage/fete.png') no-repeat center center;
+	background-size: cover;
+}
+
+.five-px-margin-lr{
+	margin:0px 5px;
+}
+
+.section {
+	clear:both;
+	padding-top:50px;
+	padding-bottom:50px;
+	border-bottom:1px dotted #ccc;
+}
+
+.p-top-20 {
+	padding-top:20px;
 }
