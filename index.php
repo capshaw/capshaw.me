@@ -140,7 +140,30 @@
 		</div>
 
 		<div class='section' id='resume'>
-			<!-- -->resume
+			<div class='clear-both p-top-20'>
+				<a href='#'>
+					<div class='side-bar flowleft'>
+						<div class='outer-shell'>
+							<div class='inner-shell resume-img'>
+								<!-- -->
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<div class='main flowright'>
+					<div class='main-content'>
+						<h2>Resume</h2>
+						<p>
+							<a href='#'>Here</a> is a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume". Enjoy!
+						</p>
+					</div>
+				</div>
+
+				<div class='clear-both'>
+					<!-- -->
+				</div>
+			</div>
 		</div>
 
 		<div class='section' id='contact'>

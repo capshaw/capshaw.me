@@ -8,6 +8,10 @@ body, html{
 	padding:0px;
 }
 
+a {
+	color: #fff;
+}
+
 p {
 	font-size:16px;
 	line-height:1.4em;
@@ -50,8 +54,7 @@ h2 {
 /* The main le. */
 
 .container{
-	min-width:700px;
-	max-width:960px;
+	width:960px;
 	margin:auto;
 }
 
@@ -255,4 +258,10 @@ h2 {
     color:#eee;
     text-shadow: 1px 1px 3px #000;
     padding-top:20px;
+}
+
+.resume-img{
+	background: url('../img/frontpage/resume.png') no-repeat center center;
+	background-size:cover;
+	height:400px;
 }
