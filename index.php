@@ -167,13 +167,50 @@
 		</div>
 
 		<div class='section' id='contact'>
-			<!-- -->contact
+			<div class='clear-both p-top-20'>
+				<a href='#'>
+					<div class='side-bar flowleft'>
+						<div class='outer-shell'>
+							<div class='inner-shell contact-img'>
+								<!-- -->
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<div class='main flowright'>
+					<div class='main-content'>
+						<h2>Contact Me</h2>
+						<p>
+							Something
+						</p>
+					</div>
+				</div>
+
+				<div class='clear-both'>
+					<!-- -->
+				</div>
+			</div>
 		</div>	
 	</div>
 
 	<div id='footer'>
 		<div class='container'>
-			This is da footer
+			<div class='clear-both'>
+				<div class='main flowleft'>
+					<div class='quote'>
+						"The truth may be puzzling. It may take some work to grapple with. It may be counterintuitive. It may contradict deeply held prejudices. It may not be consonant with what we desperately want to be true. But our preferences do not determine what's true." <span> - Carl Sagan</span>
+					</div>
+				</div>
+
+				<div class='side-bar flowright'>
+					<a href='#home' class='scroller flowright'>Conveniently placed link to the top</a>
+				</div>
+
+				<div class='clear-both'>
+					<!-- -->
+				</div>
+			</div>
 		</div>
 	</div>
 
