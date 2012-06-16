@@ -318,3 +318,11 @@ h3 {
 #stats {
 	display:none;
 }
+
+.alert {
+	color:#333;
+	padding:15px;
+	border-radius:5px;
+	border:1px solid #E3E178;
+	background:#EDF5AB;
+}
