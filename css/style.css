@@ -16,7 +16,7 @@ p {
 	font-size:16px;
 	line-height:1.4em;
 	font-family:sans-serif;
-	text-shadow: 2px 1px 0px #fff;
+	/*text-shadow: 2px 1px 0px #fff;*/
 }
 
 p a{
@@ -47,13 +47,11 @@ h3 {
 ::selection {
 	background: #CC4545;
 	color: #fff;
-	text-shadow: none;
 }
 
 ::-moz-selection {
 	background: #CC4545;
 	color: #fff;
-	text-shadow: none;
 }
 
 /* The main le. */
@@ -202,7 +200,7 @@ h3 {
 }
 
 .me{
-	height:300px;
+	height:290px;
 	background: #fff url('../img/portrait.jpg') no-repeat center center;
 	background-size:cover;
 }
@@ -290,6 +288,7 @@ h3 {
 	height:98px;
 	margin-right:16px;
 	border:1px solid #333;
+	background:#fff;
 	background-size:contain;
 	display:inline-block;
 	border:1px solid #eee;

@@ -78,18 +78,18 @@
 					<div class='main-content'>
 						<h2>Hello!</h2>
 						<p>
-							I'm Andrew Capshaw. I'm an undergraduate studying computer science at <a href='#'>Rice University</a> in Houston, TX.
-						</p>
-						<p>
-							Outside of coding, I enjoy cycling, hiking outdoors, and live music. I also dabble in writing music and like to doodle on the guitar.
+							I'm Andrew Capshaw. I'm an undergraduate studying computer science at Rice University in Houston, TX.
 							This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
 						</p>
 						<p>
-							Want to know more about me? I have a <a href='#stats' class='scroller' id='stats-btn'>page of random stats about me</a> that might be of interest to you.
+							Outside of my studies I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years. I am currently in a experimental rock band, <a href='#'>The Fete</a>, with my friend Sarah Truesdale.
+						</p>
+						<p>
+							Want to know more about me? I have a <a href='#stats' class='scroller' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
 						</p>
 						<div id="stats" class='p-top-20'>
 							<h3>What am I listening to?</h3>
-							<p>These are the albums I have listened to most frequently within the past month; hover for detailed stats!</p>
+							<p>These are the albums I have listened to most frequently within the past month (hover for detailed stats). Other sections are coming soon!</p>
 							<div id='lastFmContainer' class='loading'>
 
 							</div>
