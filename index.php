@@ -205,7 +205,7 @@
 					<div class='main-content'>
 						<h2>Contact Me</h2>
 						<p>
-							Something
+							Feel free to get in contact me for any reason you'd like. My email is <strong><span>capshaw</span><span>&#64;</span><span>rice.edu</span></strong>
 						</p>
 					</div>
 				</div>
