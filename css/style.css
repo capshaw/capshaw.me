@@ -37,6 +37,11 @@ h2 {
 	margin-top:40px;
 }
 
+h3 {
+	font-family:'Bitter', sans-serif;
+	margin-top:20px;
+}
+
 /* Change the selection color on the whole site */
 
 ::selection {
@@ -213,10 +218,18 @@ h2 {
 
 .section {
 	clear:both;
-	padding-top:50px;
+	padding-top:10px;
 	/*padding-bottom:50px;*/
 	/*border-bottom:1px dotted #ccc;*/
 	/*min-height:400px;*/
+}
+
+.section:first-child{
+	padding-top:50px;
+}
+
+.section:last-child{
+	padding-bottom:20px;
 }
 
 .p-top-20 {

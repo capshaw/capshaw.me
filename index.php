@@ -88,7 +88,7 @@
 							Want to know more about me? I have a <a href='#stats' class='scroller' id='stats-btn'>page of random stats about me</a> that might be of interest to you.
 						</p>
 						<div id="stats" class='p-top-20'>
-							<h2>What am I listening to?</h2>
+							<h3>What am I listening to?</h3>
 							<p>These are the albums I have listened to most frequently within the past month; hover for detailed stats!</p>
 							<div id='lastFmContainer' class='loading'>
 
@@ -303,7 +303,7 @@
 	        var $anchor = $(this);
 	 
 	        $('html, body').stop().animate({
-	            scrollTop: $($anchor.attr('href')).offset().top
+	            scrollTop: $($anchor.attr('href')).offset().top - 40
 	        }, 1500,'easeInOutExpo');
 
 	        event.preventDefault();
