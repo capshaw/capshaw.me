@@ -1,4 +1,14 @@
-<!-- Hello you! Glad you're inspecting the code :) -->
+<!-- 
+	Hello you! Glad you're inspecting the code :) 
+
+	  /\___/\
+	 ( o   o )
+	 (  =^=  ) 
+	 (        )
+	 (         )
+	 (          )))))))))))
+
+-->
 
 <!DOCTYPE html>
 <html lang='en'>
@@ -168,15 +178,13 @@
 
 		<div class='section' id='contact'>
 			<div class='clear-both p-top-20'>
-				<a href='#'>
-					<div class='side-bar flowleft'>
-						<div class='outer-shell'>
-							<div class='inner-shell contact-img'>
-								<!-- -->
-							</div>
+				<div class='side-bar flowleft'>
+					<div class='outer-shell'>
+						<div class='inner-shell contact-img'>
+							<!-- -->
 						</div>
 					</div>
-				</a>
+				</div>
 
 				<div class='main flowright'>
 					<div class='main-content'>
@@ -204,7 +212,7 @@
 				</div>
 
 				<div class='side-bar flowright'>
-					<a href='#home' class='scroller flowright'>Conveniently placed link to the top</a>
+					<a href='#home' class='scroller flowright'>Convenient link to the top</a>
 				</div>
 
 				<div class='clear-both'>
