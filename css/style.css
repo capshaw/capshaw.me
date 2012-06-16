@@ -202,16 +202,6 @@ h2 {
 	background-size:cover;
 }
 
-.highlighted{
-	background:#FCF0AD;
-	border-radius:5px;
-	text-shadow: none;
-	padding:20px;
-	-moz-box-shadow: inset 0px 0px 3px #999;
- -webkit-box-shadow: inset 0px 0px 3px #999;
-         box-shadow: inset 0px 0px 3px #999;
-}
-
 .fete{
 	background: url('../img/frontpage/fete.png') no-repeat center center;
 	background-size: cover;
@@ -224,8 +214,8 @@ h2 {
 .section {
 	clear:both;
 	padding-top:50px;
-	padding-bottom:50px;
-	border-bottom:1px dotted #ccc;
+	/*padding-bottom:50px;*/
+	/*border-bottom:1px dotted #ccc;*/
 	/*min-height:400px;*/
 }
 
@@ -283,14 +273,36 @@ h2 {
 }
 
 .album {
-	width:79px;
-	height:79px;
+	width:98px;
+	height:98px;
 	margin-right:16px;
-	border:1px solid #aaa;
+	border:1px solid #333;
 	background-size:contain;
 	display:inline-block;
+	border:1px solid #eee;
+	-moz-box-shadow: 0px 0px 4px #aaa;
+ -webkit-box-shadow: 0px 0px 4px #aaa;
+         box-shadow: 0px 0px 4px #aaa;
+    opacity:0;
 }
 
-.album:last-child{
-	margin-right:none;
+.small-print{
+	opacity:0.4;
+}
+
+.small-print:hover{
+	opacity:1;
+	transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
+	-webkit-transition: all 0.2s ease-in; /* Safari and Chrome */
+	-o-transition: all 0.2s ease-in; /* Opera */
+}
+
+.loading{
+	min-height:50px;
+	background: url('../img/common/loading.gif') no-repeat center center;
+}
+
+#stats {
+	display:none;
 }

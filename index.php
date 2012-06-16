@@ -76,16 +76,25 @@
 
 				<div class='main flowright'>
 					<div class='main-content'>
-						<h2>Who am I?</h2>
+						<h2>Hello!</h2>
 						<p>
-							Hello, I'm Andrew. I'm an undergraduate studying computer science at <a href='#'>Rice University</a> in Houston, TX.
+							I'm Andrew Capshaw. I'm an undergraduate studying computer science at <a href='#'>Rice University</a> in Houston, TX.
 						</p>
 						<p>
 							Outside of coding, I enjoy cycling, hiking outdoors, and live music. I also dabble in writing music and like to doodle on the guitar.
 							This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
 						</p>
 						<p>
-							Want to know more about me? I have a <a href='#' id='last-fm-btn'>page of random stats about me</a> that might be of interest to you.
+							Want to know more about me? I have a <a href='#stats' class='scroller' id='stats-btn'>page of random stats about me</a> that might be of interest to you.
+						</p>
+						<div id="stats" class='p-top-20'>
+							<h2>What am I listening to?</h2>
+							<p>These are the albums I have listened to most frequently within the past month; hover for detailed stats!</p>
+							<div id='lastFmContainer' class='loading'>
+
+							</div>
+							<p class='small-print'>Data courtesy of <a href='http://last.fm'>last.fm</a></p>
+						</div>
 					</div>
 				</div>
 
@@ -95,13 +104,6 @@
 			</div>
 		</div>
 
-		<div class='section' id='stats'>
-			<div class='clear-both p-top-20'>
-				<div id="lastFmContainer">
-
-				</div>
-			</div>
-		</div>
 
 		<div class='section' id='portfolio'>
 			<div class='clear-both p-top-20'>
@@ -237,13 +239,14 @@
 		
 		var triggered = false;
 
-		$('#last-fm-btn').click( function(){
+		$('#stats-btn').click( function(){
 
 			if(!triggered){
 
 				triggered = true; 
 
-				$('#last-fm-btn').css('color', 'blue');
+				// $('#stats-btn').css('color', 'blue');
+				$('#stats').show('slow');
 
 				var request = $.ajax({
 					url: "modules/lastFmStats/getTopAlbums.php",
@@ -253,7 +256,9 @@
 				});
 
 				request.done(function(msg) {
-					// $("#log").html( msg );
+
+					$('#lastFmContainer').removeClass('loading');
+
 					var albumsArray = msg.topalbums.album;
 					for(albumId in albumsArray) {
 						var album = albumsArray[albumId];
@@ -268,12 +273,12 @@
 							id: 'album' + albumId,
 							href: url,
 							class: 'album',
-							title: name,
+							title: name+'\n'+playcount+' track plays',
 						});
 
 						newAlbum.css('background-image', 'url('+imgURL+')');
 
-						newAlbum.appendTo($('#lastFmContainer'));
+						newAlbum.appendTo($('#lastFmContainer')).fadeTo('slow', 1);
 					}
 				});
 
