@@ -82,15 +82,23 @@
 						</p>
 						<p>
 							Outside of coding, I enjoy cycling, hiking outdoors, and live music. I also dabble in writing music and like to doodle on the guitar.
-						</p>
-						<p>
 							This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
 						</p>
+						<p>
+							Want to know more about me? I have a <a href='#' id='last-fm-btn'>page of random stats about me</a> that might be of interest to you.
 					</div>
 				</div>
 
 				<div class='clear-both'>
 					<!-- -->
+				</div>
+			</div>
+		</div>
+
+		<div class='section' id='stats'>
+			<div class='clear-both p-top-20'>
+				<div id="lastFmContainer">
+
 				</div>
 			</div>
 		</div>
@@ -226,11 +234,54 @@
 	</div -->
 
 	<script type='text/javascript'>
-		// $("#contactLink").click(function () {
-		// 	$("#contact").switchClass('quote','highlighted',500,'easeOutBounce',function(){
-		// 	  // console.log('transition is done!');
-		// 	});
-	 //    });
+		
+		var triggered = false;
+
+		$('#last-fm-btn').click( function(){
+
+			if(!triggered){
+
+				triggered = true; 
+
+				$('#last-fm-btn').css('color', 'blue');
+
+				var request = $.ajax({
+					url: "modules/lastFmStats/getTopAlbums.php",
+					type: "POST",
+					data: {ajaxCall : true},
+					dataType: "json"
+				});
+
+				request.done(function(msg) {
+					// $("#log").html( msg );
+					var albumsArray = msg.topalbums.album;
+					for(albumId in albumsArray) {
+						var album = albumsArray[albumId];
+						var imgURL = album.image[2];
+						var playcount = album.playcount;
+						var url = album.url;
+						var name = album.name;
+
+						console.log(name + "/" + imgURL);
+
+						var newAlbum = jQuery('<a/>', {
+							id: 'album' + albumId,
+							href: url,
+							class: 'album',
+							title: name,
+						});
+
+						newAlbum.css('background-image', 'url('+imgURL+')');
+
+						newAlbum.appendTo($('#lastFmContainer'));
+					}
+				});
+
+				request.fail(function(jqXHR, textStatus) {
+					console.log( "Request failed; " + textStatus );
+				});
+			}
+		})
 
 	    $("#for-all").hover(
 	    	function () {

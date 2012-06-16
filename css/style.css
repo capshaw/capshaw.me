@@ -281,3 +281,16 @@ h2 {
 	text-shadow:none;
 	font-weight:bold;
 }
+
+.album {
+	width:79px;
+	height:79px;
+	margin-right:16px;
+	border:1px solid #aaa;
+	background-size:contain;
+	display:inline-block;
+}
+
+.album:last-child{
+	margin-right:none;
+}
