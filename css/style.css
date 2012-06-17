@@ -127,6 +127,7 @@ li:before {
 -webkit-box-shadow: inset 0px 0px 3px #111;
         box-shadow: inset 0px 0px 3px #111;
     text-decoration:none;
+    font-weight:normal;
 }
 
 #for-all:hover{
