@@ -90,11 +90,11 @@
 							Outside of my studies I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years. I am currently in a experimental rock band, <a href='#'>The Fete</a>, with my friend Sarah Truesdale.
 						</p>
 						<p>
-							Want to know more about me? I have a <a href='#stats' class='scroller' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
+							Want to know more about me? I have a <a href='#' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
 						</p>
 						<div id="stats" class='p-top-20'>
 							<h3>What am I listening to?</h3>
-							<p>These are the albums I have listened to most frequently within the past month (hover for detailed stats). Other sections are coming soon!</p>
+							<p>These are the albums I have listened to most frequently within the past month (hover for detailed stats). </p>
 							<div id='lastFmContainer' class='loading'>
 
 							</div>
@@ -237,121 +237,7 @@
 		</div>
 	</div>
 
-	<!--div class='topQuarter'>
-	</div -->
+	<script type='text/javascript' src='js/index.js'></script>
 
-	<script type='text/javascript'>
-		
-		var triggered = false;
-
-		$('#stats-btn').click( function(){
-
-			if(!triggered){
-
-				triggered = true; 
-
-				// $('#stats-btn').css('color', 'blue');
-				$('#stats').show('slow');
-
-				var request = $.ajax({
-					url: "modules/lastFmStats/getTopAlbums.php",
-					type: "POST",
-					data: {ajaxCall : true},
-					dataType: "json"
-				});
-
-				request.done(function(msg) {
-
-					$('#lastFmContainer').removeClass('loading');
-
-					var albumsArray = msg.topalbums.album;
-					for(albumId in albumsArray) {
-						var album = albumsArray[albumId];
-						var imgURL = album.image[2];
-						var playcount = album.playcount;
-						var url = album.url;
-						var name = album.name;
-
-						console.log(name + "/" + imgURL);
-
-						var newAlbum = jQuery('<a/>', {
-							id: 'album' + albumId,
-							href: url,
-							class: 'album',
-							title: name+'\n'+playcount+' track plays',
-						});
-
-						newAlbum.css('background-image', 'url('+imgURL+')');
-
-						newAlbum.appendTo($('#lastFmContainer')).fadeTo('slow', 1);
-					}
-				});
-
-				request.fail(function(jqXHR, textStatus) {
-					console.log( "Request failed; " + textStatus );
-				});
-			}
-		})
-
-	    $("#for-all").hover(
-	    	function () {
-		    	$("#to-the-top").switchClass('no-opacity', 'full-opacity', 400, 'easeInSine', null);
-		    }, 
-		    function () {
-		    	$("#to-the-top").switchClass('full-opacity', 'no-opacity', 400, 'easeInSine', null);
-	    	}
-	    );
-
-		/* Binds the nav-link class to the jquery scrolling functionality. */
-	    $('.scroller').click( function(event){
-
-	        var $anchor = $(this);
-	 
-	        $('html, body').stop().animate({
-	            scrollTop: $($anchor.attr('href')).offset().top - 40
-	        }, 1500,'easeInOutExpo');
-
-	        event.preventDefault();
-	    });
-
-	    $(window).scroll(
-	    	function(){
-
-	    		var navLinks = $('.nav-link');
-
-	    		var scrollTop = $(window).scrollTop();
-	    		var height = $(window).height();
-
-	    		var top50PercentOfPage = scrollTop + height/4;
-
-	    		var i;
-	    		for(i=0; i<navLinks.length; i++) {
-
-	    			var sectionPosition = $($(navLinks[i]).attr('href')).offset().top;
-
-	    			if(sectionPosition < top50PercentOfPage){
-
-	    				/* Still cycling through, unless we're at the last element */
-	    				if(i == navLinks.length-1){
-		    				navLinks.removeClass('selected-link');
-		    				$(navLinks[i]).addClass('selected-link');
-	    				}
-	    			}else{
-	    				(i >= 1) ? i -= 1 : i;
-	    				navLinks.removeClass('selected-link');
-	    				$(navLinks[i]).addClass('selected-link');
-	    				break;
-	    			}
-	    		}
-
-	    	}
-	    );
-	</script>
-						<!-- 		<p id='contact'>
-						<span class='tag'>Email</span>
-						<a href='mailto:capshaw@rice.edu'><span>capshaw@</span>rice.edu</a><br>
-						<span class='tag'>Twitter</span> 
-						<a href='http://twitter.com/#!/thecapshaw'>@thecapshaw</a>
-					</p> -->
 </body>
 </html>
