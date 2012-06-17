@@ -115,7 +115,11 @@
 				<div id='side-bar' class='side-bar flowleft'>
 					<h2>Alice&amp;Love</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
+						My current project as part of the <a href='http://theowlden.com'>Owl Den</a> team. The site is an online marketplace for women to trade their used clothing using a virtual currency called teacups. 
+
+						<div class='url'>
+							<a href='http://aliceandlove.com/'>aliceandlove.com</a>
+						</div>
 					</p>
 				</div>
 				<div class='main flowright'>
