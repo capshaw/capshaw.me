@@ -207,6 +207,15 @@
 						<p>
 							Feel free to get in contact me for any reason you'd like. My email is <strong><span>capshaw</span><span>&#64;</span><span>rice.edu</span></strong>
 						</p>
+						<p>
+							Feel free to join me on any of my profiles accross the web!
+							<ul>
+								<li>Github, <a href='https://github.com/capshaw'>capshaw</a></li>
+								<li>Last.fm, <a href='http://www.last.fm/user/premendax'>premendax</a></li>
+								<li>Linked In, <a href='http://www.linkedin.com/pub/andrew-capshaw/50/883/720'>Andrew Capshaw</a></li>
+								<li>Turntable, <A href='http://turntable.fm'>Ra</a></li>
+							</ul>
+						</p>
 					</div>
 				</div>
 

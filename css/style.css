@@ -8,10 +8,6 @@ body, html{
 	padding:0px;
 }
 
-a {
-	color: #fff;
-}
-
 p {
 	font-size:16px;
 	line-height:1.4em;
@@ -19,7 +15,7 @@ p {
 	/*text-shadow: 2px 1px 0px #fff;*/
 }
 
-p a{
+a{
 	text-decoration:none;
 	color:inherit;
 	color:#CC4545;
@@ -27,7 +23,7 @@ p a{
 	/*border-bottom:1px dotted #777;*/
 }
 
-p a:hover{
+a:hover{
 	color:#CC4545;
 	border-bottom:0px solid #fff;
 }
@@ -40,6 +36,16 @@ h2 {
 h3 {
 	font-family:'Bitter', sans-serif;
 	margin-top:20px;
+}
+
+ul{
+	list-style: none;
+}
+
+li:before {
+    content: "\00BB ";
+    padding-right:10px;
+    color:#333;
 }
 
 /* Change the selection color on the whole site */
@@ -103,6 +109,7 @@ h3 {
 	-moz-transition: all 0.2s ease-in; /* Firefox 4 */
 	-webkit-transition: all 0.2s ease-in; /* Safari and Chrome */
 	-o-transition: all 0.2s ease-in; /* Opera */
+	font-weight:normal;
 }
 
 .selected-link, .nav-link:hover{
