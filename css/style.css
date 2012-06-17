@@ -223,7 +223,7 @@ li:before {
 
 .section {
 	clear:both;
-	padding-top:10px;
+	margin-top:20px;
 	padding-bottom:20px;
 	/*border-bottom:1px dotted #ccc;*/
 	/*min-height:400px;*/
@@ -332,4 +332,19 @@ li:before {
 	border-radius:5px;
 	border:1px solid #E3E178;
 	background:#EDF5AB;
+}
+
+.the-greedy-painters-img {
+	background: url('../img/projects/the-greedy-painters.png') no-repeat center center;
+	background-size: cover;
+}
+
+.citrus-cms-img {
+	background: url('../img/projects/citrus-cms.png') no-repeat top center;
+	background-size:cover;
+}
+
+.alice-and-love-img{
+	background: #333 url('../img/projects/alice-and-love.png') no-repeat center center;
+	background-size:contain;
 }

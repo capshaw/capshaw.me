@@ -124,7 +124,7 @@
 				</div>
 				<div class='main flowright'>
 					<div class='outer-shell'>
-						<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
+						<div class='inner-shell portfolio alice-and-love-img'>
 							<!-- -->
 						</div>
 					</div>
@@ -135,12 +135,16 @@
 				<div id='side-bar' class='side-bar flowleft'>
 					<h2>Citrus Content Management System</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
+						This is my personal content management system that allows me to create, edit, and delete site content from a administration panel. It is in a constant state of upgrade, and I am constantly thinking about ways to make it better.
+
+						<div class='url'>
+							<em>Currently being revamped</em>
+						</div>
 					</p>
 				</div>
 				<div class='main flowright'>
 					<div class='outer-shell'>
-						<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
+						<div class='inner-shell portfolio citrus-cms-img'>
 							<!-- -->
 						</div>
 					</div>
@@ -151,12 +155,16 @@
 				<div id='side-bar' class='side-bar flowleft'>
 					<h2>The Greedy Painters</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet euismod sem, gravida <a href='#'>pharetra mauris</a> sollicitudin at. Vivamus ac viverra lacus. Curabitur a leo est.
+						This is a project based partially on the system I built for the previous <em>dot duel</em>. Painters wander the map looking for untouched spaces to paint. However, they are not very smart; they only look at adjacent cells when deciding where to move next. Painters on the map can be added and removed at the user's discretion.
+
+						<div class='url'>
+							<em>Not yet on my new site</em>
+						</div>
 					</p>
 				</div>
 				<div class='main flowright'>
 					<div class='outer-shell'>
-						<div class='inner-shell portfolio' style='background:#eee url("http://placehold.it/660x300&text=Portfolio+Image") center center;'>
+						<div class='inner-shell portfolio the-greedy-painters-img'>
 							<!-- -->
 						</div>
 					</div>
