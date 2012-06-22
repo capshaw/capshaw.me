@@ -114,3 +114,33 @@ function openStatsSection(){
 		});
 	}
 }
+
+var frameTime = 10;
+var angle = Math.PI*2;
+var maxAngle = Math.PI*2;
+var numSteps = 720;
+var angleStep = maxAngle/numSteps;
+var radius = 80;
+
+function updateEarthPosition(){
+	var earth = $('#earth');
+	var space = $('#contactCanvas');
+
+	x = space.width()/2  + radius * Math.cos(angle);
+	y = space.height()/2 + radius * Math.sin(angle);
+
+	// xoffset = -space.width()/10;
+	// yoffset = -math.sqrt(math.abs(space.height()/2 + y));
+
+	earth.animate({
+		'left' : x,
+		'top'  : y
+	}, frameTime);
+	// console.log(earth.position().left + "," + earth.position().top);
+
+	// console.log(angle);
+	angle -= angleStep;
+	angle = angle % maxAngle;
+}
+
+setInterval(updateEarthPosition, frameTime);

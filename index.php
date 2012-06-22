@@ -214,9 +214,15 @@
 		<div class='section' id='contact'>
 			<div class='clear-both p-top-20'>
 				<div class='side-bar flowleft'>
-					<div class='outer-shell'>
-						<div class='inner-shell contact-img'>
-							<!-- -->
+						<div class='outer-shell'>
+							<div id='contactCanvas' class='inner-shell resume-img'>
+								<div id='sun' mass='500'>
+									<!-- -->
+								</div>
+								<div id='earth' mass='1'>
+									<!-- -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

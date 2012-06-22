@@ -2,7 +2,7 @@
 /*Accent color = 4AB585 */
 
 body, html{
-	background: #eee url('../img/common/rough_diagonal.png') repeat fixed;
+	background: #eee url('../img/common/rough_diagonal.png') repeat;
 	font-family: sans-serif;
 	margin:0px;
 	padding:0px;
@@ -78,6 +78,42 @@ li:before {
 
 .main{
 	width:620px;
+}
+
+#contactCanvas{
+	background:#eee;
+	height:300px;
+	overflow: hidden;
+	position: relative;
+	box-shadow:inset 0 0 6px #999;
+}
+
+#sun{
+	width:40px;
+	height:40px;
+	background:#FDB813;
+	border-radius:40px;
+
+	position:absolute;
+	left:50%;
+	top:50%;
+
+	margin-top:-20px;
+	margin-left:-20px;
+}
+
+#earth {
+	width:5px;
+	height:5px;
+	background:#6699CC;
+	border-radius:5px;
+
+	position:absolute;
+	right:-30px;
+	top:-30px;
+
+	margin-top:-2.5px;
+	margin-left:-2.5px;
 }
 
 #nav{
@@ -303,6 +339,7 @@ li:before {
  -webkit-box-shadow: 0px 0px 4px #aaa;
          box-shadow: 0px 0px 4px #aaa;
     opacity:0;
+    position:relative;
 }
 
 .small-print{
