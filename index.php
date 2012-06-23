@@ -216,10 +216,13 @@
 				<div class='side-bar flowleft'>
 						<div class='outer-shell'>
 							<div id='contactCanvas' class='inner-shell resume-img'>
-								<div id='sun' mass='500'>
+								<div class='spaceObject' id='sun' mass='1400' xcomp='0' ycomp='0'>
 									<!-- -->
 								</div>
-								<div id='earth' mass='1'>
+								<div class='spaceObject' id='earth' mass='2' xcomp='-5' ycomp='1'>
+									<!-- -->
+								</div>
+								<div class='spaceObject' id='planetx' mass='1' xcomp='6' ycomp='-1'>
 									<!-- -->
 								</div>
 							</div>
