@@ -45,25 +45,25 @@
 
 	<div id='nav'>
 		<div class='container text-right'>
-			<a id='for-all' class='flowleft scroller' href='#home' onClick='mixpanel.track("ForAll Link");'>
+			<a id='for-all' class='flowleft scroller' href='#home'>
 				&forall;
 			</a>
 			<div class='flowleft five-px-margin-lr no-opacity' id='to-the-top'>
 				to the top
 			</div>
-			<a href='#about' id='aboutLink' class='nav-link scroller selected-link' onClick='mixpanel.track("About Link");'>
+			<a href='#about' id='aboutLink' class='nav-link scroller selected-link'>
 				about
 			</a>
 			&middot;
-			<a href='#portfolio' class='nav-link scroller' onClick='mixpanel.track("Portfolio Link");'>
+			<a href='#portfolio' class='nav-link scroller'>
 				portfolio
 			</a>
 			&middot;
-			<a href='#resume' class='nav-link scroller' onClick='mixpanel.track("Resume Link");'>
+			<a href='#resume' class='nav-link scroller'>
 				resume
 			</a>
 			&middot; 
-			<a href='#contact' id='contactLink' class='nav-link scroller' onClick='mixpanel.track("Contact Link");'>
+			<a href='#contact' id='contactLink' class='nav-link scroller'>
 				contact
 			</a> 
 		</div>
@@ -98,7 +98,7 @@
 							Outside of my studies I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years. I am currently in a experimental rock band, <a href='#'>The Fete</a>, with my friend Sarah Truesdale.
 						</p>
 						<p>
-							Want to know more about me? I have a <a href='#' id='stats-btn' onClick='mixpanel.track("Random Stats Link");'>section of random stats about me</a> that might be of interest to you.
+							Want to know more about me? I have a <a href='#' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
 						</p>
 						<div id="stats" class='p-top-20'>
 							<h3>What am I listening to?</h3>
@@ -216,13 +216,13 @@
 				<div class='side-bar flowleft'>
 						<div class='outer-shell'>
 							<div id='contactCanvas' class='inner-shell resume-img'>
-								<div class='spaceObject' id='sun' mass='1500' xcomp='0' ycomp='0'>
+								<div class='spaceObject' id='sun' mass='1700' xcomp='0' ycomp='0'>
 									<!-- -->
 								</div>
-								<div class='spaceObject' id='earth' mass='2' xcomp='-5' ycomp='1'>
+								<div class='spaceObject' id='earth' mass='2' xcomp='-5' ycomp='0'>
 									<!-- -->
 								</div>
-								<div class='spaceObject' id='planetx' mass='1' xcomp='6' ycomp='-1'>
+								<div class='spaceObject' id='planetx' mass='0.00000001' xcomp='-5' ycomp='0'>
 									<!-- -->
 								</div>
 							</div>

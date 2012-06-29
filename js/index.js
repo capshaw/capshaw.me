@@ -218,7 +218,7 @@ function distance (x1, y1, x2, y2){
 }
 
 function forceBetweenObjects_keplers3rd(mass1, mass2, radius){
-	return G * mass1 * mass2 / Math.pow(radius, 2);
+	return G * mass1 * mass2 / Math.pow(radius + 0.00001, 2);
 }
 
 function accelOnForce(force, mass){
@@ -234,7 +234,7 @@ function findXComponent(magnitude, degree){
 }
 
 function findAngle (x1, y1, x2, y2){
-	return Math.atan((x1-x2)/(y1-y2));
+	return Math.atan((x1-x2)/(y1-y2 +0.00001));
 }
 
 setInterval(updateCosmos, frameTime);
