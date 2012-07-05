@@ -3,10 +3,19 @@
 
 body, html{
 	background: #eee url('../img/common/rough_diagonal.png') repeat;
-	font-family: sans-serif;
 	margin:0px;
 	padding:0px;
+	font-family:sans-serif;
 }
+
+#container{
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(61,61,61,0.26) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(61,61,61,0.26))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%,rgba(61,61,61,0.26) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%,rgba(61,61,61,0.26) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%,rgba(61,61,61,0.26) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(61,61,61,0.26) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#423d3d3d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 
 p {
 	font-size:16px;
@@ -156,7 +165,7 @@ li:before {
 	top:0px;
 	right:0px;
 	background:#fff;
-	/*border-bottom:1px dotted #ccc;*/
+	border-bottom:1px solid #ccc;
 	opacity:0.95;
 	color:#aaa;
 	z-index:100;
