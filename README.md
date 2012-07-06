@@ -15,9 +15,12 @@ License - Basically FFA
 --------------------------------
 This git is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
 
-'''
-	/* RAWR Collective */
-	function toDo(){
-		alert('Just messing around with readme syntax');
-	}
-'''
+``` javascript
+  /\___/\
+ ( o   o )
+ (  =^=  ) 
+ (        )
+ (         )
+ (          )))))))))))
+
+```
