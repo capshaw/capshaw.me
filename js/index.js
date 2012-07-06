@@ -1,3 +1,8 @@
+/* 
+ * TODO: This file needs to be split into two separate files.
+ * 1. Space module
+ * 2. The index.js file
+ */
 
 /* Has the stats bin been opened yet? */
 var triggered = false;

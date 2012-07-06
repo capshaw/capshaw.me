@@ -89,13 +89,13 @@
 
 					<div class='main flowright'>
 						<div class='main-content'>
-							<h2>Hello!</h2>
+							<h2>Hey there,</h2>
 							<p>
-								I'm Andrew Capshaw. I'm an undergraduate studying computer science at Rice University in Houston, TX.
+								I'm Andrew Capshaw. I'm an undergraduate studying computer science at <a href='http://www.rice.edu/'>Rice&nbsp;University</a> in Houston, TX.
 								This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
 							</p>
 							<p>
-								Outside of my studies I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years. I am currently in a experimental rock band, <a href='#'>The Fete</a>, with my friend Sarah Truesdale.
+								Outside of my studies I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years. I am currently in a experimental rock band, The Fete, with my friend Sarah Truesdale.
 							</p>
 							<p>
 								Want to know more about me? I have a <a href='#' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
@@ -200,7 +200,12 @@
 						<div class='main-content'>
 							<h2>Resume</h2>
 							<p>
-								<a href='#'>Here</a> is a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume". Enjoy!
+								Here will be a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume". 
+
+								<!-- Quick hack since my site went live earlier than expected -->
+								<!-- TODO: update resume and put proper text here -->
+								<br><br>
+								<em>Currently being redone; I'll have it up by the end of July!</em><!--Enjoy!-->
 							</p>
 						</div>
 					</div>
@@ -277,6 +282,5 @@
 	</div>
 
 	<script type='text/javascript' src='js/index.js'></script>
-
 </body>
 </html>
