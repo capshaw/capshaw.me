@@ -17,10 +17,5 @@ This git is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unporte
 
 '''javascript
 	/* RAWR Collective */
-	  /\___/\
-	 ( o   o )
-	 (  =^=  ) 
-	 (        )
-	 (         )
-	 (          )))))))))))
+	function toDo(){}
 '''
