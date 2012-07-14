@@ -41,7 +41,7 @@
 	</script>
 </head>
 
-<body id='home'>
+<body id='home' <?php echo (isset($_GET['salgorithm'])) ? 'class="sal-approved"': ''; ?>>
 	<div id='container'>
 		<div id='nav'>
 			<div class='container text-right'>
@@ -78,6 +78,11 @@
 						Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the sight function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that &lt;3 
 					</div>
 				</noscript>
+				<?php if(isset($_GET['salgorithm'])){ ?>
+					<div class='alert'>
+						Currently viewing the Salgorithm design. <a href='?'>Leave this madness</a>.
+					</div>
+				<?php } ?>
 				<div class='clear-both p-top-20'>
 					<div class='side-bar flowleft'>
 						<div class='outer-shell'>

@@ -426,3 +426,17 @@ li:before {
 	background: #333 url('../img/projects/alice-and-love.png') no-repeat center center;
 	background-size:contain;
 }
+
+.sal-approved{
+	background: url('../img/frontpage/sal.jpg') repeat;
+	color:#fff;
+}
+
+.sal-approved p{
+	background:purple;
+}
+
+.sal-approved h2{
+	color:blue;
+	background:pink;
+}
