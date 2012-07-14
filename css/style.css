@@ -440,3 +440,8 @@ li:before {
 	color:blue;
 	background:pink;
 }
+
+.sal-approved #sun{
+	background: url('../img/frontpage/sal.jpg') no-repeat center center;
+	background-size:cover;
+}
