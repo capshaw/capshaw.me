@@ -69,7 +69,7 @@
 			<div class='section' id='about'>
 				<noscript>
 					<div class='alert'>
-						Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the sight function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that &lt;3
+						Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the site function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that.
 					</div>
 				</noscript>
 				<?php if(isset($_GET['salgorithm'])){ ?>
@@ -88,7 +88,7 @@
 
 					<div class='main flowright'>
 						<div class='main-content'>
-							<h2>Hey there,</h2>
+							<h2>Hey there!</h2>
 							<p>
 								I'm Andrew Capshaw. I'm an undergraduate studying computer science at <a href='http://www.rice.edu/' target='_blank'>Rice&nbsp;University</a> in Houston, TX.
 								This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
