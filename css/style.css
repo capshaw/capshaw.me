@@ -49,12 +49,12 @@ li:before {
 /* Change the selection color on the whole site */
 
 ::selection {
-	background: #CC4545;
+	background: #088253;
 	color: #fff;
 }
 
 ::-moz-selection {
-	background: #CC4545;
+	background: #088253;
 	color: #fff;
 }
 

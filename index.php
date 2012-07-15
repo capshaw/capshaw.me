@@ -194,7 +194,7 @@
 							<p>
 								<a href='files/CapshawAndrew_resume.pdf'>Here</a> is a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume".
 								<br><br>
-								Enjoy!
+								Enjoy! (To the extent that a resume can be <em>enjoyed</em>.)
 							</p>
 						</div>
 					</div>
@@ -206,17 +206,16 @@
 			<div class='section' id='contact'>
 				<div class='clear-both p-top-20'>
 					<div class='side-bar flowleft'>
-							<div class='outer-shell'>
-								<div id='contactCanvas' class='inner-shell resume-img'>
-									<div class='spaceObject' id='sun' mass='1700' xcomp='0' ycomp='0'>
-										<!-- -->
-									</div>
-									<div class='spaceObject' id='earth' mass='2' xcomp='-5' ycomp='0'>
-										<!-- -->
-									</div>
-									<div class='spaceObject' id='planetx' mass='0.00000001' xcomp='-5' ycomp='0'>
-										<!-- -->
-									</div>
+						<div class='outer-shell'>
+							<div id='contactCanvas' class='inner-shell resume-img'>
+								<div class='spaceObject' id='sun' mass='1700' xcomp='0' ycomp='0'>
+									<!-- -->
+								</div>
+								<div class='spaceObject' id='earth' mass='2' xcomp='-5' ycomp='0'>
+									<!-- -->
+								</div>
+								<div class='spaceObject' id='planetx' mass='0.00000001' xcomp='-5' ycomp='0'>
+									<!-- -->
 								</div>
 							</div>
 						</div>
@@ -238,7 +237,6 @@
 							</p>
 						</div>
 					</div>
-
 					<div class='clear-both'>
 						<!-- -->
 					</div>
