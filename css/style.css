@@ -41,9 +41,9 @@ ul{
 }
 
 li:before {
-    content: "\00BB ";
+    content: "\00BB";
     padding-right:10px;
-    color:#333;
+    color:#999;
 }
 
 /* Change the selection color on the whole site */
