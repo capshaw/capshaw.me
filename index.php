@@ -13,6 +13,8 @@
 <html lang='en'>
 <head>
 	<meta charset='utf-8' />
+	<meta name="description" content="Portfolio and personal website of Andrew Capshaw.">
+
 	<title>Andrew Capshaw | Portfolio</title>
 
 	<!-- Google Web Fonts -->
@@ -20,9 +22,10 @@
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
 
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script type='text/javascript' src="js/jquery-1.7.2.min.js"></script>
+	<script type='text/javascript' src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
+	<script type='text/javascript' src='js/index.js'></script>
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">
@@ -85,7 +88,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class='main flowright'>
 						<div class='main-content'>
 							<h2>Hey there!</h2>
@@ -115,8 +117,6 @@
 					</div>
 				</div>
 			</div>
-
-
 			<div class='section' id='portfolio'>
 				<div class='clear-both p-top-20'>
 					<div id='side-bar' class='side-bar flowleft'>
@@ -137,7 +137,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class='clear-both p-top-20'>
 					<div id='side-bar' class='side-bar flowleft'>
 						<h2>Citrus Content Management System</h2>
@@ -157,7 +156,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class='clear-both p-top-20'>
 					<div id='side-bar' class='side-bar flowleft'>
 						<h2>The Greedy Painters</h2>
@@ -176,16 +174,14 @@
 							</div>
 						</div>
 					</div>
-
 					<div class='clear-both'>
 						<!-- -->
 					</div>
 				</div>
 			</div>
-
 			<div class='section' id='resume'>
 				<div class='clear-both p-top-20'>
-					<a href='#'>
+					<a href='files/CapshawAndrew_resume.pdf'>
 						<div class='side-bar flowleft'>
 							<div class='outer-shell'>
 								<div class='inner-shell resume-img'>
@@ -194,27 +190,21 @@
 							</div>
 						</div>
 					</a>
-
 					<div class='main flowright'>
 						<div class='main-content'>
 							<h2>Resume</h2>
 							<p>
-								Here will be a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume".
-
-								<!-- Quick hack since my site went live earlier than expected -->
-								<!-- TODO: update resume and put proper text here -->
+								<a href='files/CapshawAndrew_resume.pdf'>Here</a> is a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume".
 								<br><br>
-								<em>Currently being redone; I'll have it up by the end of July!</em><!--Enjoy!-->
+								Enjoy!
 							</p>
 						</div>
 					</div>
-
 					<div class='clear-both'>
 						<!-- -->
 					</div>
 				</div>
 			</div>
-
 			<div class='section' id='contact'>
 				<div class='clear-both p-top-20'>
 					<div class='side-bar flowleft'>
@@ -233,7 +223,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class='main flowright'>
 						<div class='main-content'>
 							<h2>Contact Me</h2>
@@ -258,7 +247,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div id='footer'>
 			<div class='container'>
 				<div class='clear-both'>
@@ -269,7 +257,7 @@
 					</div>
 
 					<div class='side-bar flowright'>
-						<a href='#home' class='scroller flowright'>&#8593; Take me to the top</a>
+						<a href='#home' class='scroller flowright'>Scroll to the top</a>
 					</div>
 
 					<div class='clear-both'>
@@ -279,7 +267,5 @@
 			</div>
 		</div>
 	</div>
-
-	<script type='text/javascript' src='js/index.js'></script>
 </body>
 </html>
