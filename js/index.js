@@ -1,4 +1,4 @@
-/* 
+/*
  * TODO: This file needs to be split into two separate files.
  * 1. Space module
  * 2. The index.js file
@@ -7,76 +7,84 @@
 /* Has the stats bin been opened yet? */
 var triggered = false;
 
-/* Bind the stats bin button to the function that opens the stats section */
-$('#stats-btn').click(function(event){
-	event.preventDefault();
-	openStatsSection();
-});
+/*
+ * Click & other handlers are bound when the page loads
+ */
+$(document).ready(function() {
 
-/* Bind the forall icon to the tunction that shows the 'to the top' text */
-$("#for-all").hover(
-	function () {
-    	$("#to-the-top").switchClass('no-opacity', 'full-opacity', 400, 'easeInSine', null);
-    }, 
-    function () {
-    	$("#to-the-top").switchClass('full-opacity', 'no-opacity', 400, 'easeInSine', null);
-	}
-);
+	/* Bind the stats bin button to the function that opens the stats section */
+	$('#stats-btn').click(function(event){
+		event.preventDefault();
+		openStatsSection();
+	});
 
-/* Binds the nav-link class to the jquery scrolling functionality s.t. when
- * links are clicked the links scroll the user to the proper. */
-$('.scroller').click(function(event){
+	/* Bind the forall icon to the tunction that shows the 'to the top' text */
+	$("#for-all").hover(
+		function () {
+	    	$("#to-the-top").switchClass('no-opacity', 'full-opacity', 400, 'easeInSine', null);
+	    },
+	    function () {
+	    	$("#to-the-top").switchClass('full-opacity', 'no-opacity', 400, 'easeInSine', null);
+		}
+	);
 
-    var $anchor = $(this);
+	/* Binds the nav-link class to the jquery scrolling functionality s.t. when
+	 * links are clicked the links scroll the user to the proper. */
+	$('.scroller').click(function(event){
 
-    $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 40
-    }, 1500,'easeInOutExpo');
+	    var $anchor = $(this);
 
-    event.preventDefault();
-});
+	    $('html, body').stop().animate({
+	        scrollTop: $($anchor.attr('href')).offset().top - 40
+	    }, 1500,'easeInOutExpo');
 
-/* Binds the scrolling of the user to the check of where the user is on the page.
- * The function then highlights the proper link in the nav bar based upon where 
- * the top 25% of the user's viewable area is. */
-$(window).scroll(
-	function(){
+	    event.preventDefault();
+	});
 
-		var navLinks = $('.nav-link');
+	/* Binds the scrolling of the user to the check of where the user is on the page.
+	 * The function then highlights the proper link in the nav bar based upon where
+	 * the top 25% of the user's viewable area is. */
+	$(window).scroll(
+		function(){
 
-		var scrollTop = $(window).scrollTop();
-		var height = $(window).height();
+			var navLinks = $('.nav-link');
 
-		var top50PercentOfPage = scrollTop + height/4;
+			var scrollTop = $(window).scrollTop();
+			var height = $(window).height();
 
-		var i;
-		for(i=0; i<navLinks.length; i++) {
+			var top50PercentOfPage = scrollTop + height/4;
 
-			var sectionPosition = $($(navLinks[i]).attr('href')).offset().top;
+			var i;
+			for(i=0; i<navLinks.length; i++) {
 
-			if(sectionPosition < top50PercentOfPage){
+				var sectionPosition = $($(navLinks[i]).attr('href')).offset().top;
 
-				/* Still cycling through, unless we're at the last element */
-				if(i == navLinks.length-1){
-    				navLinks.removeClass('selected-link');
-    				$(navLinks[i]).addClass('selected-link');
+				if(sectionPosition < top50PercentOfPage){
+
+					/* Still cycling through, unless we're at the last element */
+					if(i == navLinks.length-1){
+	    				navLinks.removeClass('selected-link');
+	    				$(navLinks[i]).addClass('selected-link');
+					}
+				}else{
+					(i >= 1) ? i -= 1 : i;
+					navLinks.removeClass('selected-link');
+					$(navLinks[i]).addClass('selected-link');
+					break;
 				}
-			}else{
-				(i >= 1) ? i -= 1 : i;
-				navLinks.removeClass('selected-link');
-				$(navLinks[i]).addClass('selected-link');
-				break;
 			}
 		}
+	);
 
-	}
-);
+	/* Get the universe moving in the little box */
+	setInterval(updateCosmos, frameTime);
+});
 
 /* Function that opens the stats bin and loads the lastfm data */
 function openStatsSection(){
 	if(!triggered){
 
-		triggered = true; 
+		triggered = true;
 
 		$('#stats').show('slow');
 
@@ -87,25 +95,26 @@ function openStatsSection(){
 			dataType: "json"
 		});
 
-		request.done(function(msg) {
+		request.done(function(data) {
 
 			$('#lastFmContainer').removeClass('loading');
 
-			var albumsArray = msg.topalbums.album;
+			console.log(data);
+
+			var albumsArray = data.topalbums.album;
 			for(albumId in albumsArray) {
 				var album = albumsArray[albumId];
 				var imgURL = album.image[2];
 				var playcount = album.playcount;
 				var url = album.url;
 				var name = album.name;
-
-				console.log(name + "/" + imgURL);
+				var artist = album.artist.name;
 
 				var newAlbum = jQuery('<a/>', {
 					id: 'album' + albumId,
 					href: url,
 					class: 'album',
-					title: name+'\n'+playcount+' track plays',
+					title: artist+'\n'+name+'\n'+playcount+' track plays',
 				});
 
 				newAlbum.css('background-image', 'url('+imgURL+')');
@@ -138,7 +147,7 @@ function updateCosmos(){
 
 	var initialCount = celestialBodies.length;
 
-	/* For each unique pair of items, compute the force, acceleration and 
+	/* For each unique pair of items, compute the force, acceleration and
 	 * update the item's velocity */
 	var i;
 	for(i=0; i<initialCount; i++){
@@ -205,7 +214,7 @@ function updateCosmos(){
 
 		// var dot = $('<div class="dot"><!-- --></div>');
 		// dot.css('left', body.css('left'));
-		// dot.css('top', body.css('top'));		
+		// dot.css('top', body.css('top'));
 		// $("#contactCanvas").append(dot);
 
 		body.css('left', parseInt(body.css('left')) + parseInt(body.attr('xcomp')));
@@ -241,5 +250,3 @@ function findXComponent(magnitude, degree){
 function findAngle (x1, y1, x2, y2){
 	return Math.atan((x1-x2)/(y1-y2 +0.00001));
 }
-
-setInterval(updateCosmos, frameTime);
