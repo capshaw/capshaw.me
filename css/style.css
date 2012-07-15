@@ -412,8 +412,8 @@ li:before {
 }
 
 .alice-and-love-img{
-	background: #333 url('../img/projects/alice-and-love.png') no-repeat center center;
-	background-size:contain;
+	background: #eee url('../img/projects/alice-and-love.png') no-repeat center center;
+	background-size:cover;
 }
 
 /* Easter Egg - Salgorithm */
