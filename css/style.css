@@ -427,6 +427,7 @@ li:before {
 	background-size:contain;
 }
 
+/* Easter Egg - Salgorithm */
 .sal-approved{
 	background: url('../img/frontpage/sal.jpg') repeat;
 	color:#fff;

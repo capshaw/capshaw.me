@@ -1,13 +1,12 @@
-<!-- 
-	Hello you! Glad you're inspecting the code :) 
+<!--
+	Hello you ~ Have a good day!
 
 	  /\___/\
-	 ( o   o )
-	 (  =^=  ) 
+	 ( o   o )   GATO
+	 (  =^=  )
 	 (        )
 	 (         )
 	 (          )))))))))))
-
 -->
 
 <!DOCTYPE html>
@@ -27,7 +26,6 @@
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">
-
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-32825047-1']);
 	  _gaq.push(['_trackPageview']);
@@ -37,7 +35,6 @@
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-
 	</script>
 </head>
 
@@ -62,20 +59,17 @@
 				<a href='#resume' class='nav-link scroller'>
 					resume
 				</a>
-				&middot; 
+				&middot;
 				<a href='#contact' id='contactLink' class='nav-link scroller'>
 					contact
-				</a> 
+				</a>
 			</div>
 		</div>
-
-
 		<div id='maincontainer' class='container'>
-
 			<div class='section' id='about'>
 				<noscript>
 					<div class='alert'>
-						Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the sight function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that &lt;3 
+						Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the sight function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that &lt;3
 					</div>
 				</noscript>
 				<?php if(isset($_GET['salgorithm'])){ ?>
@@ -96,7 +90,7 @@
 						<div class='main-content'>
 							<h2>Hey there,</h2>
 							<p>
-								I'm Andrew Capshaw. I'm an undergraduate studying computer science at <a href='http://www.rice.edu/'>Rice&nbsp;University</a> in Houston, TX.
+								I'm Andrew Capshaw. I'm an undergraduate studying computer science at <a href='http://www.rice.edu/' target='_blank'>Rice&nbsp;University</a> in Houston, TX.
 								This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
 							</p>
 							<p>
@@ -128,7 +122,7 @@
 					<div id='side-bar' class='side-bar flowleft'>
 						<h2>Alice&amp;Love</h2>
 						<p>
-							My current project as part of the <a href='http://theowlden.com'>Owl Den</a> team. The site is an online marketplace for women to trade their used clothing using a virtual currency called teacups. 
+							My current project as part of the <a href='http://theowlden.com'>Owl Den</a> team. The site is an online marketplace for women to trade their used clothing using a virtual currency called teacups.
 
 							<div class='url'>
 								<a href='http://aliceandlove.com/'>aliceandlove.com</a>
@@ -205,7 +199,7 @@
 						<div class='main-content'>
 							<h2>Resume</h2>
 							<p>
-								Here will be a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume". 
+								Here will be a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume".
 
 								<!-- Quick hack since my site went live earlier than expected -->
 								<!-- TODO: update resume and put proper text here -->
@@ -262,7 +256,7 @@
 						<!-- -->
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 
 		<div id='footer'>
