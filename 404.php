@@ -15,7 +15,7 @@
 
 	<title>Andrew Capshaw | Whoa 404 Error</title>
 
-	<link rel='stylesheet' type='text/css' href='/css/404.css'><!-- have to remove foward slash to test -->
+	<link rel='stylesheet' type='text/css' href='css/404.css'><!-- have to remove foward slash to test -->
 	<link rel='shortcut icon' type='image/x-icon' href='/img/common/foreach.ico'><!-- same-->
 
 	<!-- Google Analytics -->
@@ -34,7 +34,7 @@
 
 <body>
 	<div id='line'>
-		<span class='the404'>404</span> No page exists at this URL. <a href='http://capshaw.me'>Go home</a>?
+		<span class='the404'>404</span> there doesn't seem to be any content here :( <a href='http://capshaw.me'>go home</a>?
 	</div>
 </body>
 </html>

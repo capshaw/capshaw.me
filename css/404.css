@@ -1,16 +1,27 @@
 body, html{
-	background: #eee url('../img/common/rough_diagonal.png') repeat;
+	background: #eee url('../img/common/txture.png') repeat;
 	margin:0px;
 	padding:0px;
 	font-family:"Helvetica", sans-serif;
 }
 
 #line{
-	font-size:2em;
+	font-size:20px;
 	text-align:center;
 	color:#666;
-	height:100%;
-	line-height:800px;
+	height:21px;
+	width:960px;
+	padding:20px;
+	margin:auto;
+	border-radius:20px;
+	background:#333;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-480px;
+	margin-top:-35px;
+	background:rgba(150,150,150,0.1);
+	color:#eee;
 }
 
 a{
