@@ -1,0 +1,27 @@
+body, html{
+	background: #eee url('../img/common/rough_diagonal.png') repeat;
+	margin:0px;
+	padding:0px;
+	font-family:"Helvetica", sans-serif;
+}
+
+#line{
+	font-size:2em;
+	text-align:center;
+	color:#666;
+	height:100%;
+	line-height:800px;
+}
+
+a{
+	color:#69C;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#9CF;
+}
+
+.the404{
+	color:#999;
+}
