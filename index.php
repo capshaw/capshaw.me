@@ -94,7 +94,7 @@
 								This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
 							</p>
 							<p>
-								Outside of my studies I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years. I am currently in a experimental rock band, The Fete, with my friend Sarah Truesdale.
+								Outside of my studies I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years.
 							</p>
 							<p>
 								Want to know more about me? I have a <a href='#' id='stats-btn'>section of random stats about me</a> that might be of interest to you.

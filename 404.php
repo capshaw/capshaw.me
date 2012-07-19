@@ -15,7 +15,7 @@
 
 	<title>Andrew Capshaw | Whoa 404 Error</title>
 
-	<link rel='stylesheet' type='text/css' href='css/404.css'><!-- have to remove foward slash to test -->
+	<link rel='stylesheet' type='text/css' href='/css/404.css'><!-- have to remove foward slash to test -->
 	<link rel='shortcut icon' type='image/x-icon' href='/img/common/foreach.ico'><!-- same-->
 
 	<!-- Google Analytics -->
