@@ -229,10 +229,9 @@
 							<p>
 								Feel free to join me on any of my profiles accross the web!
 								<ul>
-									<li>Github, <a href='https://github.com/capshaw'>capshaw</a></li>
-									<li>Last.fm, <a href='http://www.last.fm/user/premendax'>premendax</a></li>
+									<li>Github, <a href='https://github.com/capshaw'>Capshaw</a></li>
 									<li>Linked In, <a href='http://www.linkedin.com/pub/andrew-capshaw/50/883/720'>Andrew Capshaw</a></li>
-									<li>Turntable, <A href='http://turntable.fm'>Ra</a></li>
+									<li>Last.fm, <a href='http://www.last.fm/user/premendax'>premendax</a></li>
 								</ul>
 							</p>
 						</div>
