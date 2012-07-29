@@ -39,7 +39,7 @@
 	</script>
 </head>
 
-<body id='home' <?php echo (isset($_GET['salgorithm'])) ? 'class="sal-approved"': ''; ?>>
+<body id='home'>
 	<div id='container'>
 		<div id='nav'>
 			<div class='container text-right'>
