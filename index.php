@@ -54,7 +54,7 @@
 				</a>
 				&middot;
 				<a href='#portfolio' class='nav-link scroller'>
-					portfolio
+					projects
 				</a>
 				&middot;
 				<a href='#resume' class='nav-link scroller'>
