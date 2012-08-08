@@ -1,6 +1,15 @@
 
-$accent-color: #088253;
-$accent-color-hover: #2AA475;
+/* Blue */
+$accent-color: #277CC2;
+$accent-color-hover: #3F91D4;
+
+/* Green */
+/*$accent-color: #088253;*/
+/*$accent-color-hover: #2AA475;*/
+
+/* Red */
+/*$accent-color: #CF3E3E;*/
+/*$accent-color-hover: #F76A6A;*/
 
 body, html{
 	background: #eee url('../img/common/rough_diagonal.png') repeat;
@@ -401,6 +410,12 @@ li:before {
 	background-size: cover;
 }
 
+.dot-duel-img {
+	background: url('../img/projects/dot-duel.png') no-repeat center center;
+	background-size: cover;
+}
+
+
 .citrus-cms-img {
 	background: url('../img/projects/citrus-cms.png') no-repeat top center;
 	background-size:cover;
@@ -480,7 +495,8 @@ li:before {
 }
 
 #coming-soon{
-	border:1px solid #aaa;
-	padding:10px;
-	background:#eee;
+	border:4px dashed #333;
+	text-align:center;
+	height:240px;
+	line-height:240px;
 }

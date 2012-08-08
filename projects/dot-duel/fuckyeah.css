@@ -1,0 +1,66 @@
+body{
+	background:#ddd;
+	font-family:sans-serif;
+}
+
+h1{
+	text-align:center;
+	letter-spacing:.1em;
+}
+
+.info-bar{
+	border:0px solid #369;
+	margin:auto;
+	margin-bottom:10px;
+	width:90%;
+	padding:20px;
+	text-align:center;
+	background:#eee;
+}
+
+canvas{
+	margin:auto;
+	border:1px solid #aaa;
+	background:#fff;
+}
+
+.imp{
+	border:1px solid #369;
+}
+
+.floater{
+	display:inline-block;
+	width:140px;
+	background:#fff;
+	padding:20px;
+	border-radius:10px;
+	margin-left:15px;
+}
+
+.title{
+	font-weight:bold;
+}
+
+a{
+	color:red;
+}
+
+a:hover{
+	color:blue;
+}
+
+.points{
+	font-size:2em;
+	font-weight:bold;
+	display:inline-block;
+	margin-left:10px;
+}
+
+.small span{
+	font-size:.8em;
+}
+
+.small{
+	width:300px;
+	text-align:left;
+}

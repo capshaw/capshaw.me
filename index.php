@@ -135,24 +135,6 @@
 						</div>
 					</div>
 				</div>
-				<!--div class='clear-both p-top-20'>
-					<div id='side-bar' class='side-bar flowleft'>
-						<h2>Citrus Content Management System</h2>
-						<p>
-							This is my personal content management system that allows me to create, edit, and delete site content from a administration panel. It is in a constant state of upgrade, and I am constantly thinking about ways to make it better.
-
-							<div class='url'>
-								<em>Currently being revamped</em>
-							</div>
-						</p>
-					</div>
-					<div class='main flowright'>
-						<div class='outer-shell'>
-							<div class='inner-shell portfolio citrus-cms-img'>
-							</div>
-						</div>
-					</div>
-				</div-->
 				<div class='clear-both p-top-20'>
 					<div id='side-bar' class='side-bar flowleft'>
 						<h2>The Greedy Painters</h2>
@@ -160,7 +142,7 @@
 							This is a project based partially on the system I built for the previous <em>dot duel</em>. Painters wander the map looking for untouched spaces to paint. However, they are not very smart; they only look at adjacent cells when deciding where to move next. Painters on the map can be added and removed at the user's discretion.
 
 							<div class='url'>
-								<em>Not yet on my new site</em>
+								<a href='projects/the-greedy-painters/'>Start painting!</a>
 							</div>
 						</p>
 					</div>
@@ -175,9 +157,28 @@
 						<!-- -->
 					</div>
 				</div>
-			</div>
-			<div class='section' id='coming-soon'>
-				More projects from my old site will be migrated here soon!
+				<div class='clear-both p-top-20'>
+					<div id='side-bar' class='side-bar flowleft'>
+						<h2>Dot Duel</h2>
+						<p>
+							An early side-project centered around the HTML5 canvas. Two <em>dots</em> duel to build walls on a blank canvas, given rules of movement that the user can specify. Once a block has no space left to move, the other block wins.
+
+							<div class='url'>
+								<a href='projects/dot-duel/'>Check it out!</a>
+							</div>
+						</p>
+					</div>
+					<div class='main flowright'>
+						<div class='outer-shell'>
+							<div class='inner-shell portfolio dot-duel-img'>
+								<!-- -->
+							</div>
+						</div>
+					</div>
+					<div class='clear-both'>
+						<!-- -->
+					</div>
+				</div>
 			</div>
 			<div class='section' id='resume'>
 				<div class='clear-both p-top-20'>
@@ -213,23 +214,29 @@
 								Feel free to get in contact me for any reason. I'd love to hear from you! My email is <span class='email'><span>capshaw</span><span>&#64;</span><span>rice.edu</span></span>
 							</p>
 							<p class='six'>
-								Find me on social media websites
+								<!-- Find me on social media websites -->
 							</p>
-						<a class='footer-image-link facebook-footer-link' href='http://facebook.com/capshaw'>
+						<a class='footer-image-link facebook-footer-link' href='http://facebook.com/capshaw' title='Join me on Facebook!'>
 							<span>Facebook</span>
 						</a>
 						<div class='midbox'>
 							<!-- square -->
 						</div>
-						<a class='footer-image-link github-footer-link' href='https://github.com/capshaw'>
+						<a class='footer-image-link github-footer-link' href='https://github.com/capshaw' title='See my projects on Github, including the source code for this site!'>
 							<span>Github</span>
 						</a>
 						<div class='midbox'>
 							<!-- square -->
 						</div>
-						<a class='footer-image-link lastfm-footer-link' href='http://last.fm/user/premendax'>
+						<a class='footer-image-link lastfm-footer-link' href='http://last.fm/user/premendax' title='Stalk what I listen to on Last.fm!'>
 							<span>Last.fm</span>
 						</a>
+					</div>
+
+					<div class='main flowright'>
+						<div id='coming-soon'>
+							Have a good day!
+						</div>
 					</div>
 
 					<div class='clear-both'>
