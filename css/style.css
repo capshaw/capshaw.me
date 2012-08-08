@@ -398,14 +398,15 @@ li:before {
 
 .six {
   color: #666;
-  border-top: 1px solid #333;
+  /*border-top:1px solid #333;*/
   padding-top: 10px; }
 
 .email {
   font-style: italic; }
 
 #coming-soon {
-  border: 4px dashed #333;
+  border: 2px dashed #333;
   text-align: center;
+  color: #333;
   height: 240px;
   line-height: 240px; }
