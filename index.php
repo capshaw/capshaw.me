@@ -99,7 +99,7 @@
 							<p>
 								Want to know more about me? I have a <a href='#' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
 							</p>
-							<div id="stats" class='p-top-20'>
+							<div id='stats' class='p-top-20'>
 								<h3>What am I listening to?</h3>
 								<p>These are the albums I have listened to most frequently within the past month (hover for detailed stats). </p>
 								<div id='lastFmContainer' class='loading'>
@@ -193,46 +193,6 @@
 							<h2>Resume</h2>
 							<p>
 								<a href='files/CapshawAndrew_resume.pdf'>Here</a> is a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume".
-								<br><br>
-								Enjoy! (To the extent that a resume can be <em>enjoyed</em>.)
-							</p>
-						</div>
-					</div>
-					<div class='clear-both'>
-						<!-- -->
-					</div>
-				</div>
-			</div>
-			<div class='section' id='contact'>
-				<div class='clear-both p-top-20'>
-					<div class='side-bar flowleft'>
-						<div class='outer-shell'>
-							<div id='contactCanvas' class='inner-shell resume-img'>
-								<div class='' id='sun' mass='1700' xcomp='0' ycomp='0'>
-									<!-- -->
-								</div>
-								<div class='' id='earth' mass='2' xcomp='-5' ycomp='0'>
-									<!-- -->
-								</div>
-								<div class='' id='planetx' mass='0.00000001' xcomp='-5' ycomp='0'>
-									<!-- -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class='main flowright'>
-						<div class='main-content'>
-							<h2>Contact Me</h2>
-							<p>
-								Feel free to get in contact me for any reason you'd like. My email is <strong><span>capshaw</span><span>&#64;</span><span>rice.edu</span></strong>
-							</p>
-							<p>
-								Feel free to join me on any of my profiles accross the web!
-								<ul>
-									<li>Github, <a href='https://github.com/capshaw'>Capshaw</a></li>
-									<li>Linked In, <a href='http://www.linkedin.com/pub/andrew-capshaw/50/883/720'>Andrew Capshaw</a></li>
-									<li>Last.fm, <a href='http://www.last.fm/user/premendax'>premendax</a></li>
-								</ul>
 							</p>
 						</div>
 					</div>
@@ -243,17 +203,31 @@
 			</div>
 		</div>
 		<div id='footer'>
-			<div class='container'>
+			<div class='container' id='contact'>
 				<div class='clear-both'>
-					<div class='main flowleft'>
-						Github &middot;
-						LinkedIn &middot;
-						Facebook &middot;
-						Last.fm
-					</div>
-
-					<div class='side-bar flowright'>
-						<a href='#home' class='scroller flowright'>Scroll to the top</a>
+					<div class='side-bar flowleft'>
+							<h2>Contact Me</h2>
+							<p>
+								Feel free to get in contact me for any reason. I'd love to hear from you! My email is <span class='email'><span>capshaw</span><span>&#64;</span><span>rice.edu</span></span>
+							</p>
+							<p class='six'>
+								Find me on social media websites
+							</p>
+						<a class='footer-image-link facebook-footer-link' href='http://facebook.com/capshaw'>
+							<span>Facebook</span>
+						</a>
+						<div class='midbox'>
+							<!-- square -->
+						</div>
+						<a class='footer-image-link github-footer-link' href='https://github.com/capshaw'>
+							<span>Github</span>
+						</a>
+						<div class='midbox'>
+							<!-- square -->
+						</div>
+						<a class='footer-image-link lastfm-footer-link' href='http://last.fm/user/premendax'>
+							<span>Last.fm</span>
+						</a>
 					</div>
 
 					<div class='clear-both'>

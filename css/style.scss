@@ -316,10 +316,27 @@ li:before {
 	-moz-box-shadow: inset 0 5px 8px #000;
  -webkit-box-shadow: inset 0 5px 8px #000;
          box-shadow: inset 0 5px 8px #000;
-    color:#666;
+    color:#999;
     text-shadow: 1px 1px 3px #000;
     padding-top:30px;
     padding-bottom:30px;
+
+    h2{
+    	font-weight: bold;
+    	margin-top:40px;
+    	color:#fff;
+    }
+
+    a{
+		color:#777;
+		text-decoration:none;
+		text-shadow:none;
+		font-weight:bold;
+	}
+
+	.container{
+		margin-bottom:40px;
+	}
 }
 
 .resume-img{
@@ -332,21 +349,6 @@ li:before {
 	background: url('http://placehold.it/300x300&text=Contact+Image') no-repeat center center;
 	background-size:cover;
 	height:300px;
-}
-
-#footer .quote{
-	font-style:italic;
-}
-
-#footer .quote span{
-	font-style:normal;
-}
-
-#footer a{
-	color:#777;
-	text-decoration:none;
-	text-shadow:none;
-	font-weight:bold;
 }
 
 .album {
@@ -407,4 +409,72 @@ li:before {
 .alice-and-love-img{
 	background: #eee url('../img/projects/alice-and-love.png') no-repeat center center;
 	background-size:cover;
+}
+
+.footer-image-link {
+	background: url('../img/common/contact-sprite.png');
+	display:inline-block;
+
+	span{
+		visibility: hidden;
+	}
+}
+
+.midbox{
+	width:4px;
+	background:#444;
+	height:4px;
+	display:inline-block;
+	margin:4px;
+	margin-top:10px;
+	vertical-align: middle;
+}
+
+.facebook-footer-link{
+	height:30px;
+	width:100px;
+}
+
+.facebook-footer-link:hover{
+	background-position:0 -30px;
+}
+
+.github-footer-link{
+	height:30px;
+	width:70px;
+	background-position:-110px 0px;
+}
+
+.github-footer-link:hover{
+	background-position:-110px -30px;
+}
+
+.lastfm-footer-link{
+	height:30px;
+	width:90px;
+	background-position:-190px 0px;
+}
+
+.lastfm-footer-link:hover{
+	background-position:-190px -30px;
+}
+
+.linkedin-footer-link{
+	height:30px;
+	width:100px;
+	background-position:-290px 0px;
+}
+
+.linkedin-footer-link:hover{
+	background-position:-290px -30px;
+}
+
+.six{
+	color:#666;
+	border-top:1px solid #666;
+	padding-top:10px;
+}
+
+.email{
+	font-style: italic;
 }
