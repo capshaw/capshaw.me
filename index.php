@@ -208,13 +208,13 @@
 					<div class='side-bar flowleft'>
 						<div class='outer-shell'>
 							<div id='contactCanvas' class='inner-shell resume-img'>
-								<div class='spaceObject' id='sun' mass='1700' xcomp='0' ycomp='0'>
+								<div class='' id='sun' mass='1700' xcomp='0' ycomp='0'>
 									<!-- -->
 								</div>
-								<div class='spaceObject' id='earth' mass='2' xcomp='-5' ycomp='0'>
+								<div class='' id='earth' mass='2' xcomp='-5' ycomp='0'>
 									<!-- -->
 								</div>
-								<div class='spaceObject' id='planetx' mass='0.00000001' xcomp='-5' ycomp='0'>
+								<div class='' id='planetx' mass='0.00000001' xcomp='-5' ycomp='0'>
 									<!-- -->
 								</div>
 							</div>
@@ -246,9 +246,10 @@
 			<div class='container'>
 				<div class='clear-both'>
 					<div class='main flowleft'>
-						<div class='quote'>
-							"The truth may be puzzling. It may take some work to grapple with. It may be counterintuitive. It may contradict deeply held prejudices. It may not be consonant with what we desperately want to be true. But our preferences do not determine what's true." <span> - Carl Sagan</span>
-						</div>
+						Github &middot;
+						LinkedIn &middot;
+						Facebook &middot;
+						Last.fm
 					</div>
 
 					<div class='side-bar flowright'>
