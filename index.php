@@ -135,7 +135,7 @@
 						</div>
 					</div>
 				</div>
-				<div class='clear-both p-top-20'>
+				<!--div class='clear-both p-top-20'>
 					<div id='side-bar' class='side-bar flowleft'>
 						<h2>Citrus Content Management System</h2>
 						<p>
@@ -149,11 +149,10 @@
 					<div class='main flowright'>
 						<div class='outer-shell'>
 							<div class='inner-shell portfolio citrus-cms-img'>
-								<!-- -->
 							</div>
 						</div>
 					</div>
-				</div>
+				</div-->
 				<div class='clear-both p-top-20'>
 					<div id='side-bar' class='side-bar flowleft'>
 						<h2>The Greedy Painters</h2>
@@ -176,6 +175,9 @@
 						<!-- -->
 					</div>
 				</div>
+			</div>
+			<div class='section' id='coming-soon'>
+				More projects from my old site will be migrated here soon!
 			</div>
 			<div class='section' id='resume'>
 				<div class='clear-both p-top-20'>
