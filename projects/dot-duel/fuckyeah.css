@@ -4,12 +4,14 @@ body{
 }
 
 h1{
-	text-align:center;
-	letter-spacing:.1em;
+	width:90%;
+	margin:auto;
+	margin-bottom:10px;
+	margin-top:20px;
 }
 
 .info-bar{
-	border:0px solid #369;
+	/*border:0px solid #369;*/
 	margin:auto;
 	margin-bottom:10px;
 	width:90%;
@@ -25,7 +27,7 @@ canvas{
 }
 
 .imp{
-	border:1px solid #369;
+	/*border:1px solid #369;*/
 }
 
 .floater{

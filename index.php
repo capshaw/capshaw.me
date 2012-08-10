@@ -233,12 +233,6 @@
 						</a>
 					</div>
 
-					<div class='main flowright'>
-						<div id='coming-soon'>
-							Have a good day!
-						</div>
-					</div>
-
 					<div class='clear-both'>
 						<!-- -->
 					</div>
