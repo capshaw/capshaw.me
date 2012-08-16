@@ -18,16 +18,6 @@ $(document).ready(function() {
 		openStatsSection();
 	});
 
-	/* Bind the forall icon to the tunction that shows the 'to the top' text */
-	$("#for-all").hover(
-		function () {
-	    	$("#to-the-top").switchClass('no-opacity', 'full-opacity', 400, 'easeInSine', null);
-	    },
-	    function () {
-	    	$("#to-the-top").switchClass('full-opacity', 'no-opacity', 400, 'easeInSine', null);
-		}
-	);
-
 	/* Binds the nav-link class to the jquery scrolling functionality s.t. when
 	 * links are clicked the links scroll the user to the proper. */
 	$('.scroller').click(function(event){
@@ -35,7 +25,7 @@ $(document).ready(function() {
 	    var $anchor = $(this);
 
 	    $('html, body').stop().animate({
-	        scrollTop: $($anchor.attr('href')).offset().top - 40
+	        scrollTop: $($anchor.attr('href')).offset().top
 	    }, 1500,'easeInOutExpo');
 
 	    event.preventDefault();
@@ -102,6 +92,9 @@ function openStatsSection(){
 			console.log(data);
 
 			var albumsArray = data.topalbums.album;
+			if(albumsArray == null){
+				$('#lastFmError').show();
+			}
 			for(albumId in albumsArray) {
 				var album = albumsArray[albumId];
 				var imgURL = album.image[2];

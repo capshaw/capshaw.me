@@ -44,11 +44,8 @@
 		<div id='nav'>
 			<div class='container text-right'>
 				<a id='for-all' class='flowleft scroller' href='#home'>
-					&forall;
+					Andrew Capshaw
 				</a>
-				<div class='flowleft five-px-margin-lr no-opacity' id='to-the-top'>
-					to the top
-				</div>
 				<a href='#about' id='aboutLink' class='nav-link scroller selected-link'>
 					about
 				</a>
@@ -73,11 +70,6 @@
 						Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the site function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that.
 					</div>
 				</noscript>
-				<?php if(isset($_GET['salgorithm'])){ ?>
-					<div class='alert'>
-						Currently viewing the Salgorithm design. <a href='?'>Leave this madness</a>.
-					</div>
-				<?php } ?>
 				<div class='clear-both p-top-20'>
 					<div class='side-bar flowleft'>
 						<div class='outer-shell'>
@@ -90,18 +82,21 @@
 						<div class='main-content'>
 							<h2>Hey there!</h2>
 							<p>
-								I'm Andrew Capshaw. I'm an undergraduate studying computer science at <a href='http://www.rice.edu/' target='_blank'>Rice&nbsp;University</a> in Houston, TX.
-								This page is my personal site &amp; portfolio. Have a look around and feel free to contact me for any reason!
+								I'm an undergraduate studying computer science at <a href='http://www.rice.edu/' target='_blank'>Rice&nbsp;University</a> in Houston, TX.
+								This page is my personal site &amp; portfolio. Have a look around and feel free to contact me if you want!
 							</p>
 							<p>
-								Outside of my studies I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years.
+								In my free time, I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years.
 							</p>
 							<p>
-								Want to know more about me? I have a <a href='#' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
+								Like data? Want to know more about me? I have a <a href='#' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
 							</p>
 							<div id='stats' class='p-top-20'>
 								<h3>What am I listening to?</h3>
 								<p>These are the albums I have listened to most frequently within the past month (hover for detailed stats). </p>
+								<p id='lastFmError' class='alert'>
+									The Last.fm API doesn't seem to be working at the moment. Sorry about that. Try back later?
+								</p>
 								<div id='lastFmContainer' class='loading'>
 
 								</div>
