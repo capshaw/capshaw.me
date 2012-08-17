@@ -7,9 +7,10 @@
 /*$accent-color-hover: #F76A6A;*/
 body, html {
   background: #eeeeee url("../img/common/rough_diagonal.png") repeat;
+  background: red;
   margin: 0px;
   padding: 0px;
-  font-family: "Helvetica", sans-serif; }
+  font-family: serif, sans-serif; }
 
 p {
   font-size: 16px;
@@ -367,9 +368,6 @@ li:before {
   .footer-image-link span {
     visibility: hidden; }
 
-.mobile {
-  display: none; }
-
 .midbox {
   width: 4px;
   background: #444;
@@ -417,47 +415,3 @@ li:before {
 
 .email {
   font-style: italic; }
-
-@media screen and (max-device-width: 320px) {
-  #nav {
-    height: auto;
-    width: 100%; }
-
-  .container {
-    width: 100%; }
-
-  .nav-link {
-    line-height: 40px;
-    height: 40px;
-    display: block;
-    clear: both;
-    border-top: 1px solid #333; }
-
-  .nav-dots {
-    display: none; }
-
-  .side-bar {
-    width: 95%;
-    float: none;
-    margin: auto; }
-
-  .main {
-    width: 95%;
-    float: none;
-    margin: auto; }
-
-  .section {
-    margin-top: 0px; }
-
-  .mobile {
-    display: inline-block;
-    color: #666; }
-
-  .p-top-20 {
-    padding-top: 5px; }
-
-  h2 {
-    margin-top: 20px; }
-
-  .main-content {
-    margin: 0px; } }

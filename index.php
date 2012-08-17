@@ -12,13 +12,16 @@
 <html lang='en'>
 <head>
 	<meta charset='utf-8' />
-	<meta name="description" content="Portfolio and personal website of Andrew Capshaw.">
+	<meta name="description" content="I'm an undergraduate studying computer science at Rice University in Houston, TX. This page is my personal site & portfolio.">
+	<meta name="viewport" content="width=320">
 
 	<title>Andrew Capshaw | Portfolio</title>
 
 	<!-- Google Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<!-- <link rel='stylesheet' media='only screen and (max-device-width: 480px)' href='css/mobile.css' type='text/css'> -->
+	<link rel='stylesheet' media='max-device-width: 480px' href='css/mobile.css' type='text/css'>
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
 
 	<script type='text/javascript' src="js/jquery-1.7.2.min.js"></script>
@@ -45,19 +48,26 @@
 			<div class='container text-right'>
 				<a id='for-all' class='flowleft scroller' href='#home'>
 					Andrew Capshaw
+					<div class='mobile'>(Mobile)</div>
 				</a>
 				<a href='#about' id='aboutLink' class='nav-link scroller selected-link'>
 					about
 				</a>
-				&middot;
+				<span class='nav-dots'>
+					&middot;
+				</span>
 				<a href='#portfolio' class='nav-link scroller'>
 					projects
 				</a>
-				&middot;
+				<span class='nav-dots'>
+					&middot;
+				</span>
 				<a href='#resume' class='nav-link scroller'>
 					resume
 				</a>
-				&middot;
+				<span class='nav-dots'>
+					&middot;
+				</span>
 				<a href='#contact' id='contactLink' class='nav-link scroller'>
 					contact
 				</a>
