@@ -460,4 +460,7 @@ li:before {
     margin-top: 20px; }
 
   .main-content {
-    margin: 0px; } }
+    margin: 0px; }
+
+  #resume-image-container {
+    display: none; } }
