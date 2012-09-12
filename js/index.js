@@ -82,7 +82,12 @@ function openStatsSection(){
 			url: "modules/lastFmStats/getTopAlbums.php",
 			type: "POST",
 			data: {limit : 10},
-			dataType: "json"
+			dataType: "json",
+			timeout: 5000,
+			error: function(xhr, textStatus, errorThrown) {
+				$('#lastFmError').show();
+				$('#lastFmContainer').removeClass('loading');
+			}
 		});
 
 		request.done(function(data) {

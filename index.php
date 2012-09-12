@@ -21,7 +21,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
 	<!-- <link rel='stylesheet' media='only screen and (max-device-width: 480px)' href='css/mobile.css' type='text/css'> -->
-	<link rel='stylesheet' media='max-device-width: 480px' href='css/mobile.css' type='text/css'>
+	<!-- <link rel='stylesheet' media='max-device-width: 480px' href='css/mobile.css' type='text/css'> -->
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
 
 	<script type='text/javascript' src="js/jquery-1.7.2.min.js"></script>
@@ -71,6 +71,12 @@
 				<a href='#contact' id='contactLink' class='nav-link scroller'>
 					contact
 				</a>
+				<span class='nav-dots'>
+					&middot;
+				</span>
+				<a href='http://blog.capshaw.me' id='aboutLink' class='nav-link'>
+					blog
+				</a>
 			</div>
 		</div>
 		<div id='maincontainer' class='container'>
@@ -105,7 +111,7 @@
 								<h3>What am I listening to?</h3>
 								<p>These are the albums I have listened to most frequently within the past month (hover for detailed stats). </p>
 								<p id='lastFmError' class='alert'>
-									The Last.fm API doesn't seem to be working at the moment. Sorry about that. Try back later?
+									The Last.fm API doesn't seem to be working at the moment. Sorry about that :/
 								</p>
 								<div id='lastFmContainer' class='loading'>
 

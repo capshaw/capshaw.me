@@ -1,0 +1,10 @@
+.technology-tester {
+  background: pink;
+  padding: 20px; }
+
+.iphone {
+  display: inline-block;
+  width: 50px;
+  height: 99px;
+  border-radius: 5px;
+  background: #fff; }
