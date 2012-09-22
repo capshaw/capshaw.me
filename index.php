@@ -129,9 +129,28 @@
 			<div class='section' id='portfolio'>
 				<div class='clear-both p-top-20'>
 					<div id='side-bar' class='side-bar flowleft'>
+						<h2>Maze Factory</h2>
+						<p>
+							My current free-time project. The maze factory generates a maze using a defined method (depth-first search for now, with the choice of Prim's algorithm and others in the future). Another feature I plan on implementing in the future is the ability for maze solving.
+
+							<div class='url'>
+								<a href='projects/maze-factory/'>Generate a Maze!</a>
+							</div>
+						</p>
+					</div>
+					<div class='main flowright'>
+						<div class='outer-shell'>
+							<div class='inner-shell portfolio maze-factory-img'>
+								<!-- -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='clear-both p-top-20'>
+					<div id='side-bar' class='side-bar flowleft'>
 						<h2>Alice&amp;Love</h2>
 						<p>
-							My current project as part of the <a href='http://theowlden.com'>Owl Den</a> team. The site is an online marketplace for women to trade their used clothing using a virtual currency called teacups.
+							My summer project as part of the <a href='http://theowlden.com'>Owl Den</a> team. The site is an online marketplace for women to trade their used clothing using a virtual currency called teacups.
 
 							<div class='url'>
 								<a href='http://aliceandlove.com/'>aliceandlove.com</a>
