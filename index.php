@@ -12,7 +12,7 @@
 <html lang='en'>
 <head>
 	<meta charset='utf-8' />
-	<meta name="description" content="I'm an undergraduate studying computer science at Rice University in Houston, TX. This page is my personal site & portfolio.">
+	<meta name="description" content="I'm an Junior studying CS at Rice University in Houston, TX. This page is my personal site and portfolio, where I host some of my projects.">
 	<meta name="viewport" content="width=320">
 
 	<title>Andrew Capshaw</title>
@@ -20,8 +20,6 @@
 	<!-- Google Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
-	<!-- <link rel='stylesheet' media='only screen and (max-device-width: 480px)' href='css/mobile.css' type='text/css'> -->
-	<!-- <link rel='stylesheet' media='max-device-width: 480px' href='css/mobile.css' type='text/css'> -->
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
 
 	<script type='text/javascript' src="js/jquery-1.7.2.min.js"></script>
@@ -86,10 +84,10 @@
 									</a>
 								</li>
 								<li>
-									<span>Tools:</span>
+									<span>Tech:</span>
 									<ul>
 										<li>
-											Python, Java, PHP, Javascript, C
+											Python, Java, PHP, MySQL, Javascript, C
 										</li>
 										<li>
 											Git, SVN
@@ -102,16 +100,16 @@
 								</li>
 								<li>
 									<span>Listening to:</span>
-									<a href='#' id='stats-btn'>(click to load)</a>
+									<a href='#' id='stats-btn'>(expand)</a>
 							<div id='stats'>
-								<p>Most-frequently listened-to albums in the last month.</p>
+								<p>Most-frequently listened-to albums in the last month via <a href='http://last.fm/user/premendax'>last.fm</a></p>
 								<p id='lastFmError' class='alert'>
 									The Last.fm API doesn't seem to be working at the moment. Sorry about that :/
 								</p>
 								<div id='lastFmContainer' class='loading'>
 
 								</div>
-								<p class='small-print'>Data courtesy of <a href='http://last.fm/user/premendax'>last.fm</a></p>
+								<!-- <p class='small-print'>Data courtesy of <a href='http://last.fm/user/premendax'>last.fm</a></p> -->
 							</div>
 								</li>
 							</ul>

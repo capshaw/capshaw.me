@@ -32,7 +32,8 @@ function openStatsSection(){
 
 		triggered = true;
 
-		$('#stats').show('slow');
+		// $('#stats').show('slow');
+		$('#stats').slideToggle(1000)
 		$('#stats-btn').hide();
 
 		var request = $.ajax({

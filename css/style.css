@@ -73,6 +73,9 @@ li:before {
 .main {
   width: 620px; }
 
+#about {
+  margin-top: 70px; }
+
 #about-list {
   list-style-type: none;
   line-height: 1em;
@@ -254,7 +257,8 @@ li:before {
   -webkit-box-shadow: 0px 0px 4px #aaa;
   box-shadow: 0px 0px 4px #aaa;
   opacity: 0;
-  position: relative; }
+  position: relative;
+  margin-bottom: 12px; }
 
 .small-print {
   opacity: 0.4; }
