@@ -15,7 +15,7 @@
 	<meta name="description" content="I'm an undergraduate studying computer science at Rice University in Houston, TX. This page is my personal site & portfolio.">
 	<meta name="viewport" content="width=320">
 
-	<title>Andrew Capshaw | Portfolio</title>
+	<title>Andrew Capshaw</title>
 
 	<!-- Google Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
@@ -44,41 +44,6 @@
 
 <body id='home'>
 	<div id='container'>
-		<div id='nav'>
-			<div class='container text-right'>
-				<a id='for-all' class='flowleft scroller' href='#home'>
-					Andrew Capshaw
-					<div class='mobile'>(Mobile)</div>
-				</a>
-				<a href='#about' id='aboutLink' class='nav-link scroller selected-link'>
-					about
-				</a>
-				<span class='nav-dots'>
-					&middot;
-				</span>
-				<a href='#portfolio' class='nav-link scroller'>
-					projects
-				</a>
-				<span class='nav-dots'>
-					&middot;
-				</span>
-				<a href='#resume' class='nav-link scroller'>
-					resume
-				</a>
-				<span class='nav-dots'>
-					&middot;
-				</span>
-				<a href='#contact' id='contactLink' class='nav-link scroller'>
-					contact
-				</a>
-				<span class='nav-dots'>
-					&middot;
-				</span>
-				<a href='http://blog.capshaw.me' id='aboutLink' class='nav-link'>
-					blog
-				</a>
-			</div>
-		</div>
 		<div id='maincontainer' class='container'>
 			<div class='section' id='about'>
 				<noscript>
@@ -96,28 +61,60 @@
 					</div>
 					<div class='main flowright'>
 						<div class='main-content'>
-							<h2>Hey there!</h2>
-							<p>
-								I'm an undergraduate studying computer science at <a href='http://www.rice.edu/' target='_blank'>Rice&nbsp;University</a> in Houston, TX.
-								This page is my personal site &amp; portfolio. Have a look around and feel free to contact me if you want!
-							</p>
-							<p>
-								In my free time, I enjoy cycling, hiking outdoors, and live music. I have also been learning guitar and writing music in my spare time for the last few years.
-							</p>
-							<p>
-								Like data? Want to know more about me? I have a <a href='#' id='stats-btn'>section of random stats about me</a> that might be of interest to you.
-							</p>
-							<div id='stats' class='p-top-20'>
-								<h3>What am I listening to?</h3>
-								<p>These are the albums I have listened to most frequently within the past month (hover for detailed stats). </p>
+							<h2>Andrew Capshaw</h2>
+							<ul id='about-list'>
+								<li>
+									<span>Studying:</span>
+									Junior CS major at Rice
+								</li>
+								<li>
+									<span>Email:</span>
+									<a href='mailto:capshaw@rice.edu'>
+										capshaw@rice.edu
+									</a>
+								</li>
+								<li>
+									<span>Github:</span>
+									<a href='http://github.com/capshaw'>
+										github.com/capshaw
+									</a>
+								</li>
+								<li>
+									<span>LinkedIn:</span>
+									<a href='http://linkedin.com/in/andrewcapshaw'>
+										linkedin.com/in/andrewcapshaw
+									</a>
+								</li>
+								<li>
+									<span>Tools:</span>
+									<ul>
+										<li>
+											Python, Java, PHP, Javascript, C
+										</li>
+										<li>
+											Git, SVN
+										</li>
+										<li>
+											2010 Macbook Pro,
+											2012 Ubuntu Desktop ("The Internet")
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span>Listening to:</span>
+									<a href='#' id='stats-btn'>(click to load)</a>
+							<div id='stats'>
+								<p>Most-frequently listened-to albums in the last month.</p>
 								<p id='lastFmError' class='alert'>
 									The Last.fm API doesn't seem to be working at the moment. Sorry about that :/
 								</p>
 								<div id='lastFmContainer' class='loading'>
 
 								</div>
-								<p class='small-print'>Data courtesy of <a href='http://last.fm'>last.fm</a></p>
+								<p class='small-print'>Data courtesy of <a href='http://last.fm/user/premendax'>last.fm</a></p>
 							</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 
@@ -237,36 +234,7 @@
 		</div>
 		<div id='footer'>
 			<div class='container' id='contact'>
-				<div class='clear-both'>
-					<div class='side-bar flowleft'>
-							<h2>Contact Me</h2>
-							<p>
-								Feel free to get in contact me for any reason. I'd love to hear from you! My email is <span class='email'><span>capshaw</span><span>&#64;</span><span>rice.edu</span></span>
-							</p>
-							<p class='six'>
-								<!-- Find me on social media websites -->
-							</p>
-						<a class='footer-image-link facebook-footer-link' href='http://facebook.com/capshaw' title='Join me on Facebook!'>
-							<span>Facebook</span>
-						</a>
-						<div class='midbox'>
-							<!-- square -->
-						</div>
-						<a class='footer-image-link github-footer-link' href='https://github.com/capshaw' title='See my projects on Github, including the source code for this site!'>
-							<span>Github</span>
-						</a>
-						<div class='midbox'>
-							<!-- square -->
-						</div>
-						<a class='footer-image-link lastfm-footer-link' href='http://last.fm/user/premendax' title='Stalk what I listen to on Last.fm!'>
-							<span>Last.fm</span>
-						</a>
-					</div>
-
-					<div class='clear-both'>
-						<!-- -->
-					</div>
-				</div>
+				<!-- -->
 			</div>
 		</div>
 	</div>
