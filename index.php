@@ -63,7 +63,7 @@
 							<ul id='about-list'>
 								<li>
 									<span>Studying:</span>
-									Junior CS major at Rice
+									Junior CS undergraduate at Rice
 								</li>
 								<li>
 									<span>Email:</span>
