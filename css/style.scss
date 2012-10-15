@@ -1,18 +1,5 @@
-
-/* Blue */
-/*$accent-color: #277CC2;
-$accent-color-hover: #3F91D4;*/
-
-$accent-color: #333333;
-$accent-color-hover: #ec008c;
-
-/* Green */
-/*$accent-color: #088253;*/
-/*$accent-color-hover: #2AA475;*/
-
-/* Red */
-/*$accent-color: #CF3E3E;*/
-/*$accent-color-hover: #F76A6A;*/
+$link-color: #333333;			/* The main link color. */
+$link-color-hover: #ec008c;		/* The hovered link color. */
 
 body, html{
 	background: #eee url('../img/common/rough_diagonal.png') repeat;
@@ -33,13 +20,13 @@ p {
 a{
 	text-decoration:none;
 	color:inherit;
-	color: $accent-color;
+	color: $link-color;
 	font-weight:bold;
 	border-bottom: 1px dotted #ccc;
 }
 
 a:hover{
-	color: $accent-color-hover;
+	color: $link-color-hover;
 }
 
 h2 {
@@ -70,12 +57,12 @@ li:before {
 /* Change the selection color on the whole site */
 
 ::selection {
-	background: $accent-color;
+	background: $link-color;
 	color: #fff;
 }
 
 ::-moz-selection {
-	background: $accent-color;
+	background: $link-color;
 	color: #fff;
 }
 

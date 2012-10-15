@@ -1,12 +1,5 @@
-/* Blue */
-/*$accent-color: #277CC2;
-$accent-color-hover: #3F91D4;*/
-/* Green */
-/*$accent-color: #088253;*/
-/*$accent-color-hover: #2AA475;*/
-/* Red */
-/*$accent-color: #CF3E3E;*/
-/*$accent-color-hover: #F76A6A;*/
+/* The main link color. */
+/* The hovered link color. */
 body, html {
   background: #eeeeee url("../img/common/rough_diagonal.png") repeat;
   margin: 0px;
