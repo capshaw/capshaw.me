@@ -192,30 +192,6 @@
 					</div>
 				</div>
 			</div>
-			<div class='section' id='resume'>
-				<div class='clear-both p-top-20'>
-					<a href='files/CapshawAndrew_resume.pdf'>
-						<div class='side-bar flowleft'>
-							<div class='outer-shell'>
-								<div class='inner-shell resume-img'>
-									<!-- -->
-								</div>
-							</div>
-						</div>
-					</a>
-					<div class='main flowright'>
-						<div class='main-content'>
-							<h2>Resume</h2>
-							<p>
-								<a href='files/CapshawAndrew_resume.pdf'>Here</a> is a printable / archievable pdf resume you can download for those situations where you find yourself thinking, "I really wish I had a pdf of Andrew's resume".
-							</p>
-						</div>
-					</div>
-					<div class='clear-both'>
-						<!-- -->
-					</div>
-				</div>
-			</div>
 		</div>
 		<div id='footer'>
 			<div class='container' id='contact'>
@@ -224,22 +200,18 @@
 		</div>
 	</div>
 	<script type='text/javascript' src='js/index.js'></script>
+
+	<!-- Google Analytics -->
 	<script type="text/javascript">
-	  var GoSquared = {};
-	  GoSquared.acct = "GSN-647056-R";
-	  (function(w){
-	    function gs(){
-	      w._gstc_lt = +new Date;
-	      var d = document, g = d.createElement("script");
-	      g.type = "text/javascript";
-	      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-	      var s = d.getElementsByTagName("script")[0];
-	      s.parentNode.insertBefore(g, s);
-	    }
-	    w.addEventListener ?
-	      w.addEventListener("load", gs, false) :
-	      w.attachEvent("onload", gs);
-	  })(window);
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-32825047-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 	</script>
 </body>
 </html>
