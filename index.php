@@ -22,9 +22,6 @@
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
 
-	<script type='text/javascript' src="js/jquery-1.7.2.min.js"></script>
-	<script type='text/javascript' src="js/jquery-ui-1.8.21.custom.min.js"></script>
-	<script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
 </head>
 
 <body id='home'>
@@ -199,6 +196,10 @@
 			</div>
 		</div>
 	</div>
+
+	<script type='text/javascript' src="js/jquery-1.7.2.min.js"></script>
+	<script type='text/javascript' src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
 	<script type='text/javascript' src='js/index.js'></script>
 
 	<!-- Google Analytics -->
