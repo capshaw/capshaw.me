@@ -30,6 +30,7 @@
 			<div class='section' id='about'>
 				<noscript>
 					<div class='alert'>
+						<h3>On Javascript</h3>
 						Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the site function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that.
 					</div>
 				</noscript>
