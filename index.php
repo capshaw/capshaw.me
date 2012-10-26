@@ -24,81 +24,83 @@
 
 </head>
 
-<body id='home'>
-	<div id='container'>
-		<div id='maincontainer' class='container'>
-			<div class='section' id='about'>
-				<noscript>
-					<div class='alert'>
-						<h3>On Javascript</h3>
-						Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the site function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that.
-					</div>
-				</noscript>
-				<div class='clear-both p-top-20'>
-					<div class='main flowright'>
-						<div class='main-content'>
-							<h2>Andrew Capshaw</h2>
-							<ul id='about-list'>
-								<li>
-									<span>Studying:</span>
-									Junior CS undergraduate at Rice
-								</li>
-								<li>
-									<span>Email:</span>
-									<a href='mailto:capshaw@rice.edu'>
-										capshaw@rice.edu
-									</a>
-								</li>
-								<li>
-									<span>Github:</span>
-									<a href='http://github.com/capshaw'>
-										github.com/capshaw
-									</a>
-								</li>
-								<li>
-									<span>LinkedIn:</span>
-									<a href='http://linkedin.com/in/andrewcapshaw'>
-										linkedin.com/in/andrewcapshaw
-									</a>
-								</li>
-								<li>
-									<span>Tech:</span>
-									<ul>
-										<li>
-											Python, Java, PHP, MySQL, Javascript, C
-										</li>
-										<li>
-											Git, SVN
-										</li>
-										<li>
-											2010 Macbook Pro,
-											2012 Ubuntu Desktop ("The Internet")
-										</li>
-									</ul>
-								</li>
-								<li>
-									<span>Listening to:</span>
-									<a href='#' id='stats-btn'>(expand)</a>
-							<div id='stats'>
-								<p>Most-frequently listened-to albums in the last month via <a href='http://last.fm/user/premendax'>last.fm</a></p>
-								<p id='lastFmError' class='alert'>
-									The Last.fm API doesn't seem to be working at the moment. Sorry about that :/
-								</p>
-								<div id='lastFmContainer' class='loading'>
+<body>
+	<div class='section' id='about'>
+		<div class='container'>
+			<noscript>
+				<div class='alert'>
+					<h3>On Javascript</h3>
+					Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the site function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that.
+				</div>
+			</noscript>
+			<div class='clear-both'>
+				<div class='main flowright'>
+					<div class='main-content'>
+						<h2>Andrew Capshaw</h2>
+						<ul id='about-list'>
+							<li>
+								<span>Studying:</span>
+								Junior CS undergraduate at Rice
+							</li>
+							<li>
+								<span>Email:</span>
+								<a href='mailto:capshaw@rice.edu'>
+									capshaw@rice.edu
+								</a>
+							</li>
+							<li>
+								<span>Github:</span>
+								<a href='http://github.com/capshaw'>
+									github.com/capshaw
+								</a>
+							</li>
+							<li>
+								<span>LinkedIn:</span>
+								<a href='http://linkedin.com/in/andrewcapshaw'>
+									linkedin.com/in/andrewcapshaw
+								</a>
+							</li>
+							<li>
+								<span>Tech:</span>
+								<ul>
+									<li>
+										Python, Java, PHP, MySQL, Javascript, C
+									</li>
+									<li>
+										Git, SVN
+									</li>
+									<li>
+										2010 Macbook Pro,
+										2012 Ubuntu Desktop ("The Internet")
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span>Listening to:</span>
+								<a href='#' id='stats-btn'>(expand)</a>
+						<div id='stats'>
+							<p>Most-frequently listened-to albums in the last month via <a href='http://last.fm/user/premendax'>last.fm</a></p>
+							<p id='lastFmError' class='alert'>
+								The Last.fm API doesn't seem to be working at the moment. Sorry about that :/
+							</p>
+							<div id='lastFmContainer' class='loading'>
 
-								</div>
-								<!-- <p class='small-print'>Data courtesy of <a href='http://last.fm/user/premendax'>last.fm</a></p> -->
 							</div>
-								</li>
-							</ul>
+							<!-- <p class='small-print'>Data courtesy of <a href='http://last.fm/user/premendax'>last.fm</a></p> -->
 						</div>
-					</div>
-
-					<div class='clear-both'>
-						<!-- -->
+							</li>
+						</ul>
 					</div>
 				</div>
+
+				<div class='clear-both'>
+					<!-- -->
+				</div>
 			</div>
+		</div>
+	</div>
+	<div id='container'>
+		<div id='maincontainer' class='container'>
 			<div class='section' id='portfolio'>
 				<div class='clear-both p-top-20'>
 					<div id='side-bar' class='side-bar flowleft'>

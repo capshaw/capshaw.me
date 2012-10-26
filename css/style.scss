@@ -83,9 +83,9 @@ li:before {
 }
 
 #about {
-	margin-top: 70px;
+	margin-top:0px;
 	background: lighten($background-color, 10%);
-	border: 5px solid darken($background-color, 10%);
+	border-bottom: 5px solid darken($background-color, 10%);
 }
 
 #about-list{
@@ -250,7 +250,6 @@ li:before {
 }
 
 #footer{
-	width:100%;
 	background:#222 url('../img/common/txture.png') repeat;
 	-moz-box-shadow: inset 0 5px 8px #000;
  -webkit-box-shadow: inset 0 5px 8px #000;
@@ -263,18 +262,6 @@ li:before {
     h2{
     	color: #eee;
     }
-}
-
-.resume-img{
-	background: url('../img/frontpage/resume.png') no-repeat center center;
-	background-size:cover;
-	height:400px;
-}
-
-.contact-img{
-	background: url('http://placehold.it/300x300&text=Contact+Image') no-repeat center center;
-	background-size:cover;
-	height:300px;
 }
 
 .album {
