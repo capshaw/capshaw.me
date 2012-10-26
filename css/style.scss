@@ -1,15 +1,14 @@
-$link-color: #333333;			/* The main link color. */
-$link-color-hover: #ec008c;		/* The hovered link color. */
+$background-color: #eee;
+
+$link-color: invert($background-color);
+$link-color-hover: lighten($link-color, 20%);
 
 body, html{
-	background: #eee url('../img/common/rough_diagonal.png') repeat;
+	background: $background-color;
 	margin:0px;
 	padding:0px;
+	color: invert($background-color);
 	font-family:"Helvetica", sans-serif;
-}
-
-#home {
-	border-top:4px solid #222;
 }
 
 p {
@@ -22,7 +21,7 @@ a{
 	color:inherit;
 	color: $link-color;
 	font-weight:bold;
-	border-bottom: 1px dotted #ccc;
+	border-bottom: 1px dotted darken($background-color, 10%);
 }
 
 a:hover{
@@ -32,11 +31,9 @@ a:hover{
 h2 {
 	font-family:'Bitter', sans-serif;
 	margin-top:40px;
-	span {
-		opacity: 0.1;
-		display:inline-block;
-		padding:2px;
-	}
+	font-size: 1.9em;
+	color: $link-color;
+	text-shadow: darken($background-color, 10%) 0.1em 0.1em 0.2em
 }
 
 h3 {
@@ -87,6 +84,8 @@ li:before {
 
 #about {
 	margin-top: 70px;
+	background: lighten($background-color, 10%);
+	border: 5px solid darken($background-color, 10%);
 }
 
 #about-list{
@@ -94,12 +93,8 @@ li:before {
 	line-height: 1em;
 	padding-left:0px;
 	li {
-		border-bottom:1px solid #d5d5d5;
 		padding:10px;
 		padding-left:10px;
-	}
-	li:first-child {
-		border-top: 1px solid #d5d5d5;
 	}
 	li:before {
 		content: none;
@@ -208,20 +203,8 @@ li:before {
 	text-align:center;
 }
 
-/* A poloroid of sorts */
-
-.outer-shell{
-	background:#fff;
-	border:1px solid #eee;
-/*	-moz-box-shadow: 0px 0px 10px #aaa;
- -webkit-box-shadow: 0px 0px 10px #aaa;
-         box-shadow: 0px 0px 10px #aaa;*/
-    border:1px solid #ccc;
-}
-
 .inner-shell{
-	margin:10px;
-	background:#aaa;
+	border: 1px solid darken($background-color, 10%);;
 }
 
 .portfolio{
@@ -274,7 +257,12 @@ li:before {
          box-shadow: inset 0 5px 8px #000;
     color:#999;
     text-shadow: 1px 1px 3px #000;
-    height:20px;
+    min-height:20px;
+    padding: 20px;
+
+    h2{
+    	color: #eee;
+    }
 }
 
 .resume-img{
@@ -356,8 +344,8 @@ li:before {
 }
 
 .alice-and-love-img{
-	background: #eee url('../img/projects/alice-and-love.png') no-repeat center center;
-	background-size:cover;
+	background: #333 url('../img/projects/alice-and-love-logo.png') no-repeat center center;
+	background-size: 80%;
 }
 
 .maze-factory-img{
