@@ -47,13 +47,9 @@ li:before {
   background: #111111;
   color: #fff; }
 
-/* The main le. */
 .container {
   width: 960px;
   margin: auto; }
-
-#maincontainer {
-  min-height: 100%; }
 
 .side-bar {
   width: 320px; }

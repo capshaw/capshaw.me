@@ -52,26 +52,18 @@ li:before {
 }
 
 /* Change the selection color on the whole site */
-
 ::selection {
 	background: $link-color;
 	color: #fff;
 }
-
 ::-moz-selection {
 	background: $link-color;
 	color: #fff;
 }
 
-/* The main le. */
-
 .container{
 	width:960px;
 	margin:auto;
-}
-
-#maincontainer{
-	min-height:100%;
 }
 
 .side-bar{
