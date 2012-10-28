@@ -2,6 +2,7 @@ $background-color: #eee;
 
 $link-color: invert($background-color);
 $link-color-hover: lighten($link-color, 20%);
+$square-color: #333;
 
 body, html{
 	background: $background-color;
@@ -231,6 +232,10 @@ li:before {
 	padding-top:20px;
 }
 
+.p-top-40{
+	padding-top:40px;
+}
+
 .topQuarter{
 	position:fixed;
 	background:pink;
@@ -354,6 +359,22 @@ li:before {
 
 .email{
 	font-style: italic;
+}
+
+.square-mosaic {
+	width: 10px;
+	height: 10px;
+	background: $square-color;
+	margin: 1px;
+	display: inline-block;
+}
+
+.sqr-1 {
+	background: lighten($square-color, 10%);
+}
+
+.sqr-2 {
+	background: lighten($square-color, 20%);
 }
 
 @media screen and (max-device-width: 320px) {

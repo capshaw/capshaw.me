@@ -188,6 +188,9 @@ li:before {
 .p-top-20 {
   padding-top: 20px; }
 
+.p-top-40 {
+  padding-top: 40px; }
+
 .topQuarter {
   position: fixed;
   background: pink;
@@ -294,6 +297,19 @@ li:before {
 
 .email {
   font-style: italic; }
+
+.square-mosaic {
+  width: 10px;
+  height: 10px;
+  background: #333333;
+  margin: 1px;
+  display: inline-block; }
+
+.sqr-1 {
+  background: #4d4d4d; }
+
+.sqr-2 {
+  background: #666666; }
 
 @media screen and (max-device-width: 320px) {
   #nav {
