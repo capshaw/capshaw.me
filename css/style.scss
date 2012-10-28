@@ -33,7 +33,11 @@ h2 {
 	margin-top:40px;
 	font-size: 1.9em;
 	color: $link-color;
-	text-shadow: darken($background-color, 10%) 0.1em 0.1em 0.2em
+	text-shadow: darken($background-color, 10%) 0.1em 0.1em 0.2em;
+}
+
+#main-header{
+	text-shadow: none;
 }
 
 h3 {
@@ -217,10 +221,6 @@ li:before {
 	clear:both;
 	margin-top:20px;
 	padding-bottom:20px;
-}
-
-.section:first-child{
-	/*padding-top:30px;*/
 }
 
 .section:last-child{

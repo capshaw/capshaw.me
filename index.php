@@ -1,13 +1,3 @@
-<!--
-	Hello you ~ Have a good day!
-
-	  /\___/\
-	 ( o   o )   GATO
-	 (  =^=  )
-	 (        )
-	 (         )
-	 (          )))))))))))
--->
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -36,7 +26,7 @@
 			<div class='clear-both'>
 				<div class='main flowright'>
 					<div class='main-content'>
-						<h2>Andrew Capshaw</h2>
+						<h2 id='main-header'>Andrew Capshaw</h2>
 						<ul id='about-list'>
 							<li>
 								<span>Studying:</span>
@@ -103,7 +93,7 @@
 		<div id='maincontainer' class='container'>
 			<div class='section' id='portfolio'>
 				<div class='clear-both p-top-20'>
-					<div id='side-bar' class='side-bar flowleft'>
+					<div class='side-bar flowleft'>
 						<h2>Maze Factory</h2>
 						<p>
 							My current free-time project. The maze factory generates a maze using a defined method (depth-first search for now, with the choice of Prim's algorithm and others in the future). Another feature I plan on implementing in the future is the ability for maze solving.
@@ -122,7 +112,7 @@
 					</div>
 				</div>
 				<div class='clear-both p-top-20'>
-					<div id='side-bar' class='side-bar flowleft'>
+					<div class='side-bar flowleft'>
 						<h2>Alice&amp;Love</h2>
 						<p>
 							My summer project as part of the <a href='http://theowlden.com'>Owl Den</a> team. The site is an online marketplace for women to trade their used clothing using a virtual currency called teacups.
@@ -141,7 +131,7 @@
 					</div>
 				</div>
 				<div class='clear-both p-top-20'>
-					<div id='side-bar' class='side-bar flowleft'>
+					<div class='side-bar flowleft'>
 						<h2>The Greedy Painters</h2>
 						<p>
 							This is a project based partially on the system I built for the previous <em>dot duel</em>. Painters wander the map looking for untouched spaces to paint. However, they are not very smart; they only look at adjacent cells when deciding where to move next. Painters on the map can be added and removed at the user's discretion.
@@ -163,7 +153,7 @@
 					</div>
 				</div>
 				<div class='clear-both p-top-20'>
-					<div id='side-bar' class='side-bar flowleft'>
+					<div class='side-bar flowleft'>
 						<h2>Dot Duel</h2>
 						<p>
 							An early side-project centered around the HTML5 canvas. Two <em>dots</em> duel to build walls on a blank canvas, given rules of movement that the user can specify. Once a block has no space left to move, the other block wins.

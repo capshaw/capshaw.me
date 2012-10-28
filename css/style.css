@@ -26,6 +26,9 @@ h2 {
   color: #111111;
   text-shadow: #d4d4d4 0.1em 0.1em 0.2em; }
 
+#main-header {
+  text-shadow: none; }
+
 h3 {
   font-family: 'Bitter', sans-serif;
   margin-top: 20px; }
@@ -178,9 +181,6 @@ li:before {
   clear: both;
   margin-top: 20px;
   padding-bottom: 20px; }
-
-.section:first-child {
-  /*padding-top:30px;*/ }
 
 .section:last-child {
   padding-bottom: 30px; }
