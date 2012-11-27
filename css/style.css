@@ -43,12 +43,12 @@ li:before {
 
 /* Change the selection color on the whole site */
 ::selection {
-  background: #111111;
-  color: #fff; }
+  background: #fffa63;
+  color: #333; }
 
 ::-moz-selection {
-  background: #111111;
-  color: #fff; }
+  background: #fffa63;
+  color: #333; }
 
 .container {
   width: 960px;
@@ -77,7 +77,7 @@ li:before {
   #about-list li span {
     display: inline-block;
     width: 95px;
-    opacity: 0.7; }
+    color: #777777; }
   #about-list ul li, #about-list ul li:first-child {
     border: 0px solid red;
     padding: 0px;
@@ -301,15 +301,17 @@ li:before {
 .square-mosaic {
   width: 10px;
   height: 10px;
-  background: #333333;
-  margin: 1px;
-  display: inline-block; }
+  background: #eeeeee url("../img/portrait.jpg");
+  float: left; }
+
+.square-mosaic-on {
+  opacity: 0.3; }
 
 .sqr-1 {
-  background: #4d4d4d; }
+  background: white; }
 
 .sqr-2 {
-  background: #666666; }
+  background: white; }
 
 @media screen and (max-device-width: 320px) {
   #nav {

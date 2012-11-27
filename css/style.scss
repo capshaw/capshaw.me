@@ -2,7 +2,9 @@ $background-color: #eee;
 
 $link-color: invert($background-color);
 $link-color-hover: lighten($link-color, 20%);
-$square-color: #333;
+$square-color: #eee;
+
+$highlight-color: #FFFA63;
 
 body, html{
 	background: $background-color;
@@ -58,12 +60,13 @@ li:before {
 
 /* Change the selection color on the whole site */
 ::selection {
-	background: $link-color;
-	color: #fff;
+	background: $highlight-color;
+	color: #333;
 }
+
 ::-moz-selection {
-	background: $link-color;
-	color: #fff;
+	background: $highlight-color;
+	color: #333;
 }
 
 .container{
@@ -99,7 +102,7 @@ li:before {
 	li span{
 		display:inline-block;
 		width: 95px;
-		opacity:0.7;
+		color:lighten(invert($background-color), 40%);
 	}
 	ul li, ul li:first-child{
 		border: 0px solid red;
@@ -364,9 +367,12 @@ li:before {
 .square-mosaic {
 	width: 10px;
 	height: 10px;
-	background: $square-color;
-	margin: 1px;
-	display: inline-block;
+	background: $square-color url('../img/portrait.jpg');
+	float:left;
+}
+
+.square-mosaic-on {
+	opacity: 0.3;
 }
 
 .sqr-1 {

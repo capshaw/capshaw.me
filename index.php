@@ -24,20 +24,7 @@
 				</div>
 			</noscript>
 			<div class='clear-both'>
-				<div class='side-bar flowleft p-top-40'>
-					<?php
-						for($i=0; $i<100; $i++){
-							echo "<div class='square-mosaic'><!-- --></div>";
-						}
-						for($i=0; $i<100; $i++){
-							echo "<div class='square-mosaic sqr-1'><!-- --></div>";
-						}
-						for($i=0; $i<100; $i++){
-							echo "<div class='square-mosaic sqr-2'><!-- --></div>";
-						}
-					?>
-				</div>
-				<div class='main flowright'>
+				<div class='main flowleft'>
 					<div class='main-content'>
 						<h2 id='main-header'>Andrew Capshaw</h2>
 						<ul id='about-list'>
@@ -80,7 +67,7 @@
 							</li>
 							<li>
 								<span>Listening to:</span>
-								<a href='#' id='stats-btn'>(expand)</a>
+								<a href='#' id='stats-btn'>(show)</a>
 						<div id='stats'>
 							<p>Most-frequently listened-to albums in the last month via <a href='http://last.fm/user/premendax'>last.fm</a></p>
 							<p id='lastFmError' class='alert'>
