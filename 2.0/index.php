@@ -8,181 +8,30 @@
 	<title>Andrew Capshaw</title>
 
 	<!-- Google Web Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
 
 </head>
 
 <body>
-	<div class='section' id='about'>
+
+	<div id='top'></div>
+	<div id='left'></div>
+	<div id='right'></div>
+	<div id='bottom'></div>
+
+	<div class='container'>
+		<h1>Andrew Capshaw</h1>
+	</div>
+
+	<div class='stripe'>
 		<div class='container'>
-			<noscript>
-				<div class='alert'>
-					<h3>On Javascript</h3>
-					Hi there. It looks like you're browsing without javascript. My site will function well without it, but its missing a lot of small flourishes that make the site function a little more smoothly. Also, a heads up, the one section of my site that requires javascript to function, the "stats about me section", will simply not work for you. Sorry about that.
-				</div>
-			</noscript>
-			<div class='clear-both'>
-				<div class='main flowleft'>
-					<div class='main-content'>
-						<h2 id='main-header'>Andrew Capshaw</h2>
-						<ul id='about-list'>
-							<li>
-								<span>Studying:</span>
-								Junior CS undergraduate at Rice
-							</li>
-							<li>
-								<span>Email:</span>
-								<a href='mailto:capshaw@rice.edu'>
-									capshaw@rice.edu
-								</a>
-							</li>
-							<li>
-								<span>Github:</span>
-								<a href='http://github.com/capshaw'>
-									github.com/capshaw
-								</a>
-							</li>
-							<li>
-								<span>LinkedIn:</span>
-								<a href='http://linkedin.com/in/andrewcapshaw'>
-									linkedin.com/in/andrewcapshaw
-								</a>
-							</li>
-							<li>
-								<span>Tech:</span>
-								<ul>
-									<li>
-										Python, Java, PHP, MySQL, Javascript, C
-									</li>
-									<li>
-										Git, SVN
-									</li>
-									<li>
-										2010 Macbook Pro,
-										2012 Ubuntu Desktop ("The Internet")
-									</li>
-								</ul>
-							</li>
-							<li>
-								<span>Listening to:</span>
-								<a href='#' id='stats-btn'>(show)</a>
-						<div id='stats'>
-							<p>Most-frequently listened-to albums in the last month via <a href='http://last.fm/user/premendax'>last.fm</a></p>
-							<p id='lastFmError' class='alert'>
-								The Last.fm API doesn't seem to be working at the moment. Sorry about that :/
-							</p>
-							<div id='lastFmContainer' class='loading'>
-
-							</div>
-							<!-- <p class='small-print'>Data courtesy of <a href='http://last.fm/user/premendax'>last.fm</a></p> -->
-						</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class='clear-both'>
-					<!-- -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id='container'>
-		<div id='maincontainer' class='container'>
-			<div class='section' id='portfolio'>
-				<div class='clear-both p-top-20'>
-					<div class='side-bar flowleft'>
-						<h2>Maze Factory</h2>
-						<p>
-							My current free-time project. The maze factory generates a maze using a defined method (depth-first search for now, with the choice of Prim's algorithm and others in the future). Another feature I plan on implementing in the future is the ability for maze solving.
-
-							<div class='url'>
-								<a href='projects/maze-factory/'>Generate a Maze!</a>
-							</div>
-						</p>
-					</div>
-					<div class='main flowright'>
-						<div class='outer-shell'>
-							<div class='inner-shell portfolio maze-factory-img'>
-								<!-- -->
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class='clear-both p-top-20'>
-					<div class='side-bar flowleft'>
-						<h2>Alice&amp;Love</h2>
-						<p>
-							My summer project as part of the <a href='http://theowlden.com'>Owl Den</a> team. The site is an online marketplace for women to trade their used clothing using a virtual currency called teacups.
-
-							<div class='url'>
-								<a href='http://aliceandlove.com/'>aliceandlove.com</a>
-							</div>
-						</p>
-					</div>
-					<div class='main flowright'>
-						<div class='outer-shell'>
-							<div class='inner-shell portfolio alice-and-love-img'>
-								<!-- -->
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class='clear-both p-top-20'>
-					<div class='side-bar flowleft'>
-						<h2>The Greedy Painters</h2>
-						<p>
-							This is a project based partially on the system I built for the previous <em>dot duel</em>. Painters wander the map looking for untouched spaces to paint. However, they are not very smart; they only look at adjacent cells when deciding where to move next. Painters on the map can be added and removed at the user's discretion.
-
-							<div class='url'>
-								<a href='projects/the-greedy-painters/'>Start painting!</a>
-							</div>
-						</p>
-					</div>
-					<div class='main flowright'>
-						<div class='outer-shell'>
-							<div class='inner-shell portfolio the-greedy-painters-img'>
-								<!-- -->
-							</div>
-						</div>
-					</div>
-					<div class='clear-both'>
-						<!-- -->
-					</div>
-				</div>
-				<div class='clear-both p-top-20'>
-					<div class='side-bar flowleft'>
-						<h2>Dot Duel</h2>
-						<p>
-							An early side-project centered around the HTML5 canvas. Two <em>dots</em> duel to build walls on a blank canvas, given rules of movement that the user can specify. Once a block has no space left to move, the other block wins.
-
-							<div class='url'>
-								<a href='projects/dot-duel/'>Check it out!</a>
-							</div>
-						</p>
-					</div>
-					<div class='main flowright'>
-						<div class='outer-shell'>
-							<div class='inner-shell portfolio dot-duel-img'>
-								<!-- -->
-							</div>
-						</div>
-					</div>
-					<div class='clear-both'>
-						<!-- -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id='footer'>
-			<div class='container'>
-				<!-- -->
-			</div>
+			<p><span>Email</span>capshaw@rice.edu</p>
 		</div>
 	</div>
 
+	<!-- JQuery & my javascript -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
 	<script type='text/javascript' src='js/index.js'></script>
 
