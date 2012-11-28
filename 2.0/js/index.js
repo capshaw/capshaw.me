@@ -3,17 +3,17 @@
  */
 $(document).ready(function() {
 
-    var divs = ['h1', '.stripe']
+	$('.switcher').click(function(){
 
-    for(div in divs) {
-        $(div).css('transition', 'border 2s');
-        $(div).css('-moz-transition', 'border 2s');
-        $(div).css('-webkit-transition', 'border 2s');
-        $(div).css('-o-transition', 'border 2s');
-    }
+        var color = $(this).attr('data-color');
 
-	$(document).click(function(){
-		$('h1').css('color', 'rgba(100,200,100, 0.8)');
-		$('.stripe').css('border-bottom-color', 'rgba(100,200,100, 0.8)');
+		$('h1').css('color', color);
+		$('.bottom-stripe').css('border-bottom-color', color);
+
+        $('.open').hide();
+        $($(this).attr('href')).slideToggle(500);
+        $($(this).attr('href')).addClass('open');
+
+        return false;
 	});
 });
