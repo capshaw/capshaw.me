@@ -14,19 +14,13 @@ body {
 }
 
 h1{
-  color: rgba(10,60,150, 0.8);
-  color: rgba(100,100,100, 0.8);
   color: rgba(140, 179, 230, 0.8);
   text-shadow: 1px 4px 6px #eee, 0 0 0 #000, 1px 4px 6px #eee;
-  font-size: 4em;
-  margin-top: 1em;
+  font-size: 2em;
+  margin-top: 3em;
   text-align: center;
   font-family: "Droid Serif";
   letter-spacing: -1px;
-  transition: color 2s;
-  -moz-transition: color 2s; /* Firefox 4 */
-  -webkit-transition: color 2s; /* Safari and Chrome */
-  -o-transition: color 2s; /* Opera */
 }
 
 .container{
@@ -40,10 +34,20 @@ h1{
   padding: 70px 0;
   font-size: 1.4em;
   border-bottom: 10px solid rgba(140, 179, 230, 0.8);
+}
+
+.transition-border{
   transition: border 2s;
   -moz-transition: border 2s; /* Firefox 4 */
   -webkit-transition: border 2s; /* Safari and Chrome */
   -o-transition: border 2s; /* Opera */
+}
+
+.transition-color {
+  transition: color 2s;
+  -moz-transition: color 2s; /* Firefox 4 */
+  -webkit-transition: color 2s; /* Safari and Chrome */
+  -o-transition: color 2s; /* Opera */
 }
 
 #top, #bottom, #left, #right {

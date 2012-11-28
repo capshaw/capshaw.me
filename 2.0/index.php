@@ -22,10 +22,10 @@
 	<div id='bottom'></div>
 
 	<div class='container'>
-		<h1>Andrew Capshaw</h1>
+		<h1 class='transition-color'>Andrew Capshaw</h1>
 	</div>
 
-	<div class='stripe'>
+	<div class='stripe transition-border'>
 		<div class='container'>
 			<p>I'm an Junior studying computer science at Rice University in Houston, TX.
 				Here are a few of my <a href='#'>projects</a>, some <a href='#'>code</a> and a few ways to <a href='#'>contact me</a>.</p>
