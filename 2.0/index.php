@@ -8,7 +8,7 @@
 	<title>Andrew Capshaw</title>
 
 	<!-- Google Web Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
 
@@ -27,7 +27,7 @@
 
 	<div class='stripe'>
 		<div class='container'>
-			<p><span>Email</span>capshaw@rice.edu</p>
+			<p>I'm an Junior studying computer science at Rice University in Houston, TX. Here are a few of my projects, some code and a few ways to contact me.</p>
 		</div>
 	</div>
 

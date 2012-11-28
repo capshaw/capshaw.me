@@ -16,22 +16,24 @@ body {
 h1{
   color: rgba(10,60,150, 0.8);
   color: rgba(100,100,100, 0.8);
+  color: rgba(140, 179, 230, 0.8);
   text-shadow: 1px 4px 6px #eee, 0 0 0 #000, 1px 4px 6px #eee;
   font-size: 4em;
   margin-top: 1em;
   text-align: center;
+  font-family: "Droid Serif";
 }
 
 .container{
-  width: 700px;
+  width: 1000px;
   margin: auto;
 }
 
 .stripe {
   background: rgba(255,255,255, 0.5);
   color: rgba(70,70,70, 0.7);
-  padding: 50px 0;
-  font-size: 1.3em;
+  padding: 70px 0;
+  font-size: 1.4em;
 }
 
 #top, #bottom, #left, #right {
@@ -70,12 +72,6 @@ h1{
 
 p {
   line-height: 1.5em;
-}
-
-p span {
-  font-weight: bold;
-  width: 150px;
-  display: inline-block;
 }
 
 /* Don't show shadows when selecting text */
