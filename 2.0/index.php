@@ -27,7 +27,8 @@
 
 	<div class='stripe'>
 		<div class='container'>
-			<p>I'm an Junior studying computer science at Rice University in Houston, TX. Here are a few of my projects, some code and a few ways to contact me.</p>
+			<p>I'm an Junior studying computer science at Rice University in Houston, TX.
+				Here are a few of my <a href='#'>projects</a>, some <a href='#'>code</a> and a few ways to <a href='#'>contact me</a>.</p>
 		</div>
 	</div>
 
