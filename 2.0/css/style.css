@@ -18,7 +18,7 @@ h1{
   text-shadow: 1px 4px 6px #eee, 0 0 0 #000, 1px 4px 6px #eee;
   font-size: 3em;
   margin-top: 3em;
-  text-align: center;
+  text-align: left;
   font-family: "Droid Serif";
   letter-spacing: -1px;
 }
@@ -36,21 +36,21 @@ h1{
 }
 
 .bottom-stripe {
-  border-bottom: 15px solid rgba(100, 100, 100, 0.8);
+  border-bottom: 0px solid rgba(100, 100, 100, 0.8);
 }
 
 .transition-border{
-  transition: border 2s;
-  -moz-transition: border 2s; /* Firefox 4 */
-  -webkit-transition: border 2s; /* Safari and Chrome */
-  -o-transition: border 2s; /* Opera */
+  transition: border 4s;
+  -moz-transition: border 4s; /* Firefox 4 */
+  -webkit-transition: border 4s; /* Safari and Chrome */
+  -o-transition: border 4s; /* Opera */
 }
 
 .transition-color {
-  transition: color 2s;
-  -moz-transition: color 2s; /* Firefox 4 */
-  -webkit-transition: color 2s; /* Safari and Chrome */
-  -o-transition: color 2s; /* Opera */
+  transition: color 4s;
+  -moz-transition: color 4s; /* Firefox 4 */
+  -webkit-transition: color 4s; /* Safari and Chrome */
+  -o-transition: color 4s; /* Opera */
 }
 
 #top, #bottom, #left, #right {
@@ -103,12 +103,9 @@ p a:hover{
 }
 
 .drawer {
-  background: #ddd;
   color: #333;
-  height: 200px;
+  height: 150px;
 }
-
-.hidden{display:none;}
 
 /* Don't show shadows when selecting text */
 ::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
