@@ -14,9 +14,9 @@ body {
 }
 
 h1{
-  color: rgba(140, 179, 230, 0.8);
+  color: rgba(100, 100, 100, 0.8);
   text-shadow: 1px 4px 6px #eee, 0 0 0 #000, 1px 4px 6px #eee;
-  font-size: 2em;
+  font-size: 3em;
   margin-top: 3em;
   text-align: center;
   font-family: "Droid Serif";
@@ -33,7 +33,10 @@ h1{
   color: rgba(70,70,70, 0.7);
   padding: 70px 0;
   font-size: 1.4em;
-  border-bottom: 10px solid rgba(140, 179, 230, 0.8);
+}
+
+.bottom-stripe {
+  border-bottom: 15px solid rgba(100, 100, 100, 0.8);
 }
 
 .transition-border{
@@ -98,6 +101,14 @@ p a{
 p a:hover{
   color: #555;
 }
+
+.drawer {
+  background: #ddd;
+  color: #333;
+  height: 200px;
+}
+
+.hidden{display:none;}
 
 /* Don't show shadows when selecting text */
 ::-moz-selection { background: #5af; color: #fff; text-shadow: none; }

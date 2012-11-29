@@ -25,11 +25,21 @@
 		<h1 class='transition-color'>Andrew Capshaw</h1>
 	</div>
 
-	<div class='stripe transition-border'>
+	<div class='stripe bottom-stripe transition-border'>
 		<div class='container'>
 			<p>I'm an Junior studying computer science at Rice University in Houston, TX.
-				Here are a few of my <a href='#'>projects</a>, some <a href='#'>code</a> and a few ways to <a href='#'>contact me</a>.</p>
+				Here are a few of my <a href='#projects' class='switcher' data-color='rgba(255,82,82, 0.8)'>projects</a>, some <a href='#code' class='switcher' data-color='rgba(136,219,125, 0.8)'>code</a> and a few ways to <a href='#contact' class='switcher' data-color='rgba(140, 179, 230, 0.8)'>contact me</a>.</p>
 		</div>
+	</div>
+
+	<div class='drawer hidden' id='contact'>
+		<div class='container'></div>
+	</div>
+	<div class='drawer hidden' id='projects'>
+		<div class='container'></div>
+	</div>
+	<div class='drawer hidden' id='code'>
+		<div class='container'></div>
 	</div>
 
 	<!-- JQuery & my javascript -->
