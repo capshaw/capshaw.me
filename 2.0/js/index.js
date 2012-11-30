@@ -22,7 +22,7 @@ $(document).ready(function() {
 
         /* Switch accent colors. */
         var color = $(this).attr('data-color');
-		$('h1').css('color', color);
+		// $('h1').css('color', color);
 		// $('.transition-background').css('background', color);
         // $('.drawer a').css('color', color);
 
