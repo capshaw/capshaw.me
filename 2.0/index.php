@@ -16,10 +16,10 @@
 
 <body>
 
-	<div id='top'></div>
-	<div id='left'></div>
-	<div id='right'></div>
-	<div id='bottom'></div>
+	<div class='transition-background' id='top'></div>
+	<div class='transition-background' id='left'></div>
+	<div class='transition-background' id='right'></div>
+	<div class='transition-background' id='bottom'></div>
 
 	<div class='container'>
 		<h1 class='transition-color'>Andrew Capshaw</h1>
@@ -29,19 +29,25 @@
 		<div class='container'>
 			<p>I'm an Junior studying computer science at Rice University in Houston, TX.
 				Here are a few of my <a href='#projects' class='switcher' data-color='rgba(255,82,82, 0.8)'>projects</a>,
-				some <a href='#code' class='switcher' data-color='rgba(219,112,191, 0.8)'>code</a> and a few ways to
-				<a href='#contact' class='switcher' data-color='rgba(140, 179, 230, 0.8)'>contact me</a>.
+				some <a href='#code' class='switcher' data-color='rgba(255,196,0, 0.8)'>code</a> and a few ways to
+				<a href='#contact' class='switcher' data-color='rgba(51, 150, 255, 0.8)'>contact me</a>.
 			</p>
 		</div>
 
-		<div class='drawer hidden' id='contact'>
-			<div class='container'>by email at <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a></div>
+		<div class='drawer hidden container' id='contact'>
+			<p>
+				by email at <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a>
+			</p>
 		</div>
-		<div class='drawer hidden' id='projects'>
-			<div class='container'>b</div>
+		<div class='drawer hidden container' id='projects'>
+			<p>
+				b
+			</p>
 		</div>
-		<div class='drawer hidden' id='code'>
-			<div class='container'>c</div>
+		<div class='drawer hidden container' id='code'>
+			<p>
+				c
+			</p>
 		</div>
 	</div>
 

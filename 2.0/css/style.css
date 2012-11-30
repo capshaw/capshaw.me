@@ -39,18 +39,18 @@ h1{
   border-bottom: 0px solid rgba(100, 100, 100, 0.8);
 }
 
-.transition-border{
-  transition: border 4s;
-  -moz-transition: border 4s; /* Firefox 4 */
-  -webkit-transition: border 4s; /* Safari and Chrome */
-  -o-transition: border 4s; /* Opera */
+.transition-background{
+  transition: background 2s;
+  -moz-transition: background 2s; /* Firefox 4 */
+  -webkit-transition: background 2s; /* Safari and Chrome */
+  -o-transition: background 2s; /* Opera */
 }
 
 .transition-color {
-  transition: color 4s;
-  -moz-transition: color 4s; /* Firefox 4 */
-  -webkit-transition: color 4s; /* Safari and Chrome */
-  -o-transition: color 4s; /* Opera */
+  transition: color 2s;
+  -moz-transition: color 2s; /* Firefox 4 */
+  -webkit-transition: color 2s; /* Safari and Chrome */
+  -o-transition: color 2s; /* Opera */
 }
 
 #top, #bottom, #left, #right {
@@ -91,20 +91,25 @@ p {
   line-height: 1.5em;
 }
 
-p a{
+a{
   color: inherit;
   text-decoration: none;
   color: #333;
   border-bottom: 1px dotted #aaa;
 }
 
-p a:hover{
+a:hover{
   color: #555;
 }
 
 .drawer {
   color: #333;
+  border-left: 1px solid #ddd;
   height: 150px;
+}
+
+.drawer p {
+  margin-left: 40px;
 }
 
 /* Don't show shadows when selecting text */
