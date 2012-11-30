@@ -10,22 +10,25 @@ body {
   padding: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: #eee;
+  background: #333;
 }
 
 h1{
-  color: rgba(100, 100, 100, 0.8);
+  color: rgba(80, 80, 90, 0.8);
   text-shadow: 1px 4px 6px #eee, 0 0 0 #000, 1px 4px 6px #eee;
   font-size: 3em;
   margin-top: 3em;
-  text-align: left;
-  font-family: "Droid Serif";
-  letter-spacing: -1px;
+  text-align: center;
+  font-family: "Helvetica", "Droid Serif";
+  letter-spacing: -2px;
 }
 
 .container{
-  width: 1000px;
-  margin: auto;
+  width: 400px;
+  padding: 0 20px;
+  background: #eeefef;
+  border-right: 1px dotted #ccc;
+  float: left;
 }
 
 .stripe {
@@ -71,6 +74,11 @@ h1{
   height: 15px;
 }
 
+#contact {
+  font-size: 1.5em;
+  text-align: center;
+}
+
 #top {
   top: 0px;
 }
@@ -104,8 +112,6 @@ a:hover{
 
 .drawer {
   color: #333;
-  border-left: 1px solid #ddd;
-  height: 150px;
 }
 
 .drawer p {

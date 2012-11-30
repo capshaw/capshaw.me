@@ -8,6 +8,11 @@ $(document).ready(function() {
     /* Make all hidden drawers hidden for the people with JS. */
     $('.hidden').css('display', 'none');
 
+    $('.container').css('height', $(window).height());
+    $(window).resize(function() {
+        $('.container').css('height', $(window).height());
+    });
+
 	$('.switcher').click(function(){
 
         /* Don't open the same drawer twice in a row. */
@@ -23,8 +28,16 @@ $(document).ready(function() {
 
         /* Open the drawer. */
         $toOpen = $(new_name);
-        $('.open').hide();
-        ($toOpen).slideToggle(500);
+        // $('.open').hide();
+        // ($toOpen).slideToggle(500);
+        if ($('.open').length == 0) {
+            ($toOpen).show("slide", { direction: "left" }, 500);
+        }else{
+            $('.open').hide("slide", { direction: "left" }, 500, function(){
+                ($toOpen).show("slide", { direction: "left" }, 500);
+            });
+            $('.open').removeClass('open');
+        }
         ($toOpen).addClass('open');
 
         return false;
