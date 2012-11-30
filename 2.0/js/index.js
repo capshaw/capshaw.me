@@ -28,6 +28,7 @@ $(document).ready(function() {
         if($to_open.hasClass('open')) {
             $to_open.hide('slide', { direction: 'left' }, 500)
             $to_open.removeClass('open')
+            window.location.hash = ''
             return false
         }
 
