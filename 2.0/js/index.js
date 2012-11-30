@@ -1,45 +1,71 @@
-var old_name = null;
-
 /*
  * Click handlers
  */
 $(document).ready(function() {
 
-    /* Make all hidden drawers hidden for the people with JS. */
-    $('.hidden').css('display', 'none');
+    /* Make all hidden drawers (minus hash) hidden for the people with JS. */
+    $('.hidden').css('display', 'none')
+    if(window.location.hash) {
+        hash = '#' + window.location.hash.substring(1)
+        $(hash).show()
+        $(hash).addClass('open')
+    }
 
+    /* Resize all elements to the size of the screen. */
     $('.container').css('height', $(window).height());
     $(window).resize(function() {
         $('.container').css('height', $(window).height());
     });
 
+    /* On nav click, show the correct frames. */
 	$('.switcher').click(function(){
 
         /* Don't open the same drawer twice in a row. */
         new_name = $(this).attr('href');
-        if (new_name == old_name) return false;
-        old_name = new_name;
+        $to_open = $(new_name);
+
+        /* Close an already open container. */
+        if($to_open.hasClass('open')) {
+            $to_open.hide('slide', { direction: 'left' }, 500)
+            $to_open.removeClass('open')
+            return false
+        }
+
+        /* There is nothing open. */
+        $open_drawers = $('.open');
+        if($open_drawers.length == 0) openClose()
+
+        /* Close and old container and open a new one. */
+        $open_drawers.hide('slide', { direction: 'left' }, 500, function() { openClose() });
+
+        function openClose() {
+            $to_open.show('slide', { direction: 'left' }, 500)
+            $open_drawers.removeClass('open')
+            $to_open.addClass('open')
+            return false
+        }
 
         /* Switch accent colors. */
-        var color = $(this).attr('data-color');
-		// $('h1').css('color', color);
-		// $('.transition-background').css('background', color);
-        // $('.drawer a').css('color', color);
+        // var color = $(this).attr('data-color');
 
-        /* Open the drawer. */
-        $toOpen = $(new_name);
-        // $('.open').hide();
-        // ($toOpen).slideToggle(500);
-        if ($('.open').length == 0) {
-            ($toOpen).show("slide", { direction: "left" }, 500);
-        }else{
-            $('.open').hide("slide", { direction: "left" }, 500, function(){
-                ($toOpen).show("slide", { direction: "left" }, 500);
-            });
-            $('.open').removeClass('open');
-        }
-        ($toOpen).addClass('open');
+        // /* Open the drawer. If there is no open container, don't try to close anything. */
+        // if ($('.open').length == 0) {
+        //     ($toOpen).show("slide", { direction: "left" }, 500);
+        // }else{
+        //     $('.open').hide("slide", { direction: "left" }, 500, function(){
 
-        return false;
+        //         if (new_name == old_name){
+        //             new_name = null;
+        //         }else{
+        //             ($toOpen).show("slide", { direction: "left" }, 500);
+        //         }
+
+        //         $('.open').removeClass('open');
+        //         $(toOpen).addClass('open');
+        //     });
+        // }
+
+        // old_name = new_name;
+        // return false;
 	});
 });

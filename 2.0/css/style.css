@@ -8,9 +8,7 @@ body {
   font-family: "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background: #333;
+  background: #333 url('../img/common/debut_dark.png');
 }
 
 h1{
@@ -18,7 +16,6 @@ h1{
   text-shadow: 1px 4px 6px #eee, 0 0 0 #000, 1px 4px 6px #eee;
   font-size: 3em;
   margin-top: 3em;
-  text-align: center;
   font-family: "Helvetica", "Droid Serif";
   letter-spacing: -2px;
 }
@@ -78,11 +75,6 @@ h1{
   height: 15px;
 }
 
-#contact {
-  font-size: 1.5em;
-  text-align: center;
-}
-
 #top {
   top: 0px;
 }
@@ -101,6 +93,7 @@ h1{
 
 p {
   line-height: 1.5em;
+  font-size: 16px;
 }
 
 a{
@@ -116,10 +109,7 @@ a:hover{
 
 .drawer {
   color: #333;
-}
-
-.drawer p {
-  margin-left: 40px;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /* Don't show shadows when selecting text */
