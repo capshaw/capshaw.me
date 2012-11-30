@@ -21,7 +21,7 @@ h1{
 }
 
 .float-wrap {
-  width: 1500px;
+  width: 1000px;
 }
 
 .container{
@@ -30,6 +30,10 @@ h1{
   background: #eeefef;
   border-right: 1px dotted #ccc;
   float: left;
+}
+
+.hidden{
+  display: none;
 }
 
 .stripe {

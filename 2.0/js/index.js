@@ -4,7 +4,6 @@
 $(document).ready(function() {
 
     /* Make all hidden drawers (minus hash) hidden for the people with JS. */
-    $('.hidden').css('display', 'none')
     if(window.location.hash) {
         hash = '#' + window.location.hash.substring(1)
         $(hash).show()
