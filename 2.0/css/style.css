@@ -60,7 +60,7 @@ h2{
   position: absolute;
   top:0px;
   right:0px;
-  width: 200px;
+  width: 240px;
   height: 100px;
   background: rgba(100, 100, 100, 0.3);
   border-radius: 10px;
@@ -69,9 +69,9 @@ h2{
 
 #album_info_inner {
   margin: 10px;
-  width: 180px;
+  width: 220px;
   height: 80px;
-  background: #666;
+  background: rgba(40, 40, 40, 0.5);
   color: #aaa;
   border-radius: 5px;
   text-align: center;
@@ -83,9 +83,8 @@ h2{
   line-height: 20px;
 }
 
-#album {
-  color: #333;
-  font-weight: bold;
+#artist, #album {
+  color: #fff;
 }
 
 .album {
