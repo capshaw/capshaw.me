@@ -1,4 +1,4 @@
-triggered_last_fm = false
+triggered_last_fm = true // !
 
 /*
  * Click handlers
