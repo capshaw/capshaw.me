@@ -71,7 +71,7 @@ $(document).ready(function() {
     /* Move the album info box always (lulz). */
     $(document).mousemove(function(e){
       $('#album_info').css('left', $('#music').position().left+$('#music').outerWidth()+arrow_offset);
-      $('#album_info').css('top', e.pageY);
+      $('#album_info').css('top', e.pageY - $('#album_info').height()/2);
    });
 });
 
