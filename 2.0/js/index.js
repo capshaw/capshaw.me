@@ -62,10 +62,10 @@ $(document).ready(function() {
         $album.html($(this).attr('album'));
         $artist.html($(this).attr('artist'));
         $plays.html($(this).attr('plays'));
-        $album_info.show(125);
+        $album_info.show();
     });
     $(document).on('mouseout', '.album', function(){
-        $album_info.hide(125);
+        $album_info.hide();
     });
 
     /* Move the album info box always (lulz). */
