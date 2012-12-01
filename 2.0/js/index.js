@@ -83,6 +83,8 @@ function loadLastFmData() {
 
     triggered_last_fm = true
 
+    // TODO: request json instead of requesting xml and parsing..
+
     $.ajax({
         url: 'http://ws.audioscrobbler.com/2.0/',
         data: {
