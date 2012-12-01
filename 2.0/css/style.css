@@ -33,6 +33,17 @@ h2{
   width: 1000px;
 }
 
+.container{
+  width: 400px;
+  padding: 0 20px;
+  border-right: 1px dotted #ccc;
+  float: left;
+}
+
+#intro{
+  background: #eeefef;
+}
+
 .drawer {
   color: #333;
   background: rgba(255, 255, 255, 0.9);
@@ -40,20 +51,12 @@ h2{
   overflow-y: auto;
 }
 
-.container{
-  width: 400px;
-  padding: 0 20px;
-  background: #eeefef;
-  border-right: 1px dotted #ccc;
-  float: left;
-}
-
 .hidden{
   display: none;
 }
 
 #music {
-  width: 300px;
+  width: 320px;
 }
 
 #album_info{
