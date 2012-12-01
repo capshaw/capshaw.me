@@ -3,14 +3,13 @@
 <head>
 	<meta charset='utf-8'>
 	<meta name="description" content="I'm an Junior studying CS at Rice University in Houston, TX. This page is my personal site and portfolio, where I host some of my projects.">
-
 	<title>Andrew Capshaw</title>
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
 	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
 </head>
-
 <body>
 
+	<!-- Content -->
 	<div class='float-wrap'>
 		<div class='container' id='intro'>
 			<h1 class='transition-color'>Andrew Capshaw</h1>
@@ -19,9 +18,8 @@
 				On this site I host a few of my <a href='#projects' class='switcher' data-color='rgba(255,82,82, 0.8)'>projects</a>, and
 				some hobby <a href='#code' class='switcher' data-color='rgba(255,196,0, 0.8)'>code</a>.
 			</p>
-			<p><a href='#'>I like to listen to music.</a></p>
+			<p><a href='#music' class='switcher' data-color='rgba(255,196,0, 0.8)' id='music_link'>I also like to listen to music.</a></p>
 		</div>
-
 		<div class='drawer hidden container' id='projects'>
 			<p>
 				projects
@@ -32,11 +30,16 @@
 				View some cool projects (including this site) at my github account.
 			</p>
 		</div>
+		<div class='drawer hidden container' id='music'>
+			<div id='last_fm_loading' class='loading'>waiting on last.fm</div>
+			<div id='start_album_list'></div>
+		</div>
 	</div>
 
-	<!-- JQuery & my javascript -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<!-- Scripts -->
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'></script>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>
+	<script type='text/javascript' src='js/jquery.xml2json.js'></script>
 	<script type='text/javascript' src='js/index.js'></script>
 
 	<!-- Google Analytics -->

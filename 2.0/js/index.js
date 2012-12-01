@@ -1,3 +1,5 @@
+triggered_last_fm = false
+
 /*
  * Click handlers
  */
@@ -15,6 +17,9 @@ $(document).ready(function() {
     $(window).resize(function() {
         $('.container').css('height', $(window).height());
     });
+
+    /* Load the last.fm data when the music link is clicked. */
+    $('#music_link').click(function(){loadLastFmData()})
 
     /* On nav click, show the correct frames. */
 	$('.switcher').click(function(){
@@ -44,28 +49,61 @@ $(document).ready(function() {
             $to_open.addClass('open')
             return false
         }
-
-        /* Switch accent colors. */
-        // var color = $(this).attr('data-color');
-
-        // /* Open the drawer. If there is no open container, don't try to close anything. */
-        // if ($('.open').length == 0) {
-        //     ($toOpen).show("slide", { direction: "left" }, 500);
-        // }else{
-        //     $('.open').hide("slide", { direction: "left" }, 500, function(){
-
-        //         if (new_name == old_name){
-        //             new_name = null;
-        //         }else{
-        //             ($toOpen).show("slide", { direction: "left" }, 500);
-        //         }
-
-        //         $('.open').removeClass('open');
-        //         $(toOpen).addClass('open');
-        //     });
-        // }
-
-        // old_name = new_name;
-        // return false;
 	});
 });
+
+/**
+ * Load data via the last.fm api
+ */
+function loadLastFmData() {
+    if(triggered_last_fm) return;
+
+    triggered_last_fm = true
+
+    $.ajax({
+        url: 'http://ws.audioscrobbler.com/2.0/',
+        data: {
+            method : 'user.gettopalbums',
+            limit  : 10,
+            period : '1month',
+            user   : 'premendax',
+            api_key: 'fdae06d5f55e33f313eec0d691b201b8'
+        },
+        success: function(data){lastFmSuccessHandler(data);},
+        dataType: 'xml'
+    });
+}
+
+/**
+ * Load the last.fm data into the music drawer.
+ */
+function lastFmSuccessHandler(data) {
+    $('#last_fm_loading').hide();
+    data = $.xml2json(data);
+    console.log(data);
+
+    var albumsArray = data.topalbums.album;
+    if(albumsArray == null){
+        // $('#lastFmError').show();
+        alert("implement this error")
+    }
+    for(albumId in albumsArray) {
+        var album = albumsArray[albumId];
+        var imgURL = album.image[3];
+        var playcount = album.playcount;
+        var url = album.url;
+        var name = album.name;
+        var artist = album.artist.name;
+
+        var newAlbum = jQuery('<a/>', {
+            id: 'album' + albumId,
+            href: url,
+            class: 'album',
+            title: artist+'\n'+name+'\n'+playcount+' track plays',
+        });
+
+        newAlbum.css('background-image', 'url('+imgURL+')');
+
+        newAlbum.appendTo($('#start_album_list')).fadeTo('slow', 1);
+    }
+}

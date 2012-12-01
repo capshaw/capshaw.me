@@ -16,12 +16,19 @@ h1{
   text-shadow: 1px 4px 6px #eee, 0 0 0 #000, 1px 4px 6px #eee;
   font-size: 3em;
   margin-top: 3em;
-  font-family: "Helvetica", "Droid Serif";
+  font-family: "Helvetica", sans-serif;
   letter-spacing: -2px;
 }
 
 .float-wrap {
   width: 1000px;
+}
+
+.drawer {
+  color: #333;
+  background: rgba(255, 255, 255, 0.9);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .container{
@@ -36,15 +43,23 @@ h1{
   display: none;
 }
 
-.stripe {
-  background: rgba(255,255,255, 0.5);
-  color: rgba(70,70,70, 0.7);
-  padding: 70px 0;
-  font-size: 1.4em;
+#music {
+  width: 300px;
+}
+.album {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
 }
 
-.bottom-stripe {
-  border-bottom: 0px solid rgba(100, 100, 100, 0.8);
+.loading{
+  background: url('../img/common/ajax-loader.gif') no-repeat;
+  width: 170px;
+  padding-left: 16px;
+  color: #aaa;
+  height: 16px;
+  margin: 40px auto;
 }
 
 .transition-background{
@@ -61,40 +76,6 @@ h1{
   -o-transition: color 2s; /* Opera */
 }
 
-#top, #bottom, #left, #right {
-  background: #333;
-  position: fixed;
-  z-index: 1000;
-}
-
-#left, #right {
-  top: 0;
-  bottom: 0;
-  width: 15px;
-}
-
-#top, #bottom {
-  left: 0px;
-  right: 0px;
-  height: 15px;
-}
-
-#top {
-  top: 0px;
-}
-
-#bottom {
-  bottom: 0px;
-}
-
-#left {
-  left: 0px;
-}
-
-#right {
-  right: 0px;
-}
-
 p {
   line-height: 1.5em;
   font-size: 16px;
@@ -109,11 +90,6 @@ a{
 
 a:hover{
   color: #555;
-}
-
-.drawer {
-  color: #333;
-  background: rgba(255, 255, 255, 0.9);
 }
 
 /* Don't show shadows when selecting text */
