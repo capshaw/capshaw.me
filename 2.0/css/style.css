@@ -20,6 +20,15 @@ h1{
   letter-spacing: -2px;
 }
 
+h2{
+  font-size: 0.8em;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .float-wrap {
   width: 1000px;
 }
