@@ -1,4 +1,5 @@
-triggered_last_fm = true // !
+triggered_last_fm = false
+arrow_offset = 10
 
 /*
  * Click handlers
@@ -50,6 +51,28 @@ $(document).ready(function() {
             return false
         }
 	});
+
+    /* Track the user's interaction with the albums. */
+    $album_info = $('#album_info');
+    $album_info_inner = $('#album_info_inner');
+    $album = $('#album');
+    $artist = $('#artist');
+    $plays  = $('#plays');
+    $(document).on('mouseover', '.album', function(){
+        $album.html($(this).attr('album'));
+        $artist.html($(this).attr('artist'));
+        $plays.html($(this).attr('plays'));
+        $album_info.show(125);
+    });
+    $(document).on('mouseout', '.album', function(){
+        $album_info.hide(125);
+    });
+
+    /* Move the album info box always (lulz). */
+    $(document).mousemove(function(e){
+      $('#album_info').css('left', $('#music').position().left+$('#music').outerWidth()+arrow_offset);
+      $('#album_info').css('top', e.pageY);
+   });
 });
 
 /**
@@ -99,7 +122,9 @@ function lastFmSuccessHandler(data) {
             id: 'album' + albumId,
             href: url,
             class: 'album',
-            title: artist+'\n'+name+'\n'+playcount+' track plays',
+            artist : artist,
+            album  : name,
+            plays  : playcount
         });
 
         newAlbum.css('background-image', 'url('+imgURL+')');

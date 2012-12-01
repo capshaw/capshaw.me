@@ -55,6 +55,39 @@ h2{
 #music {
   width: 300px;
 }
+
+#album_info{
+  position: absolute;
+  top:0px;
+  right:0px;
+  width: 200px;
+  height: 100px;
+  background: rgba(100, 100, 100, 0.3);
+  border-radius: 10px;
+  display: none;
+}
+
+#album_info_inner {
+  margin: 10px;
+  width: 180px;
+  height: 80px;
+  background: #666;
+  color: #aaa;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#artist, #album, #plays{
+  font-size: 0.9em;
+  padding-top: 5px;
+  line-height: 20px;
+}
+
+#album {
+  color: #333;
+  font-weight: bold;
+}
+
 .album {
   display: block;
   width: 300px;
