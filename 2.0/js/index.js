@@ -95,7 +95,7 @@ function loadLastFmData() {
             user   : 'premendax',
             api_key: 'fdae06d5f55e33f313eec0d691b201b8'
         },
-        timeout: 500,
+        timeout: 3000,
         success: function(data){lastFmSuccessHandler(data);},
         error: function(xhr, textStatus, errorThrown){lastFmErrorHandler(xhr, textStatus, errorThrown);},
         dataType: 'xml'
