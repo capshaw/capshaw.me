@@ -2,7 +2,7 @@ triggered_last_fm = false
 arrow_offset = 10
 
 /*
- * Click handlers
+ * Click handlers and other stuff to handle when the page loads.
  */
 $(document).ready(function() {
 
@@ -79,12 +79,13 @@ $(document).ready(function() {
  * Load data via the last.fm api
  */
 function loadLastFmData() {
-    if(triggered_last_fm) return;
 
+    /* Keep track if we've called the api already on this site load. */
+    if(triggered_last_fm) return;
     triggered_last_fm = true
 
     // TODO: request json instead of requesting xml and parsing..
-
+    // TODO: load the last.fm if the page is loaded with #music hashtag
     $.ajax({
         url: 'http://ws.audioscrobbler.com/2.0/',
         data: {
@@ -94,7 +95,9 @@ function loadLastFmData() {
             user   : 'premendax',
             api_key: 'fdae06d5f55e33f313eec0d691b201b8'
         },
+        timeout: 500,
         success: function(data){lastFmSuccessHandler(data);},
+        error: function(xhr, textStatus, errorThrown){lastFmErrorHandler(xhr, textStatus, errorThrown);},
         dataType: 'xml'
     });
 }
@@ -103,15 +106,14 @@ function loadLastFmData() {
  * Load the last.fm data into the music drawer.
  */
 function lastFmSuccessHandler(data) {
+
+    /* Hide the loading div and convert the data to JSON. */
     $('#last_fm_loading').hide();
     data = $.xml2json(data);
-    console.log(data);
 
+    /* Iterate through the albums to append them to the music div. */
     var albumsArray = data.topalbums.album;
-    if(albumsArray == null){
-        // $('#lastFmError').show();
-        alert("implement this error")
-    }
+    if(albumsArray == null) $('#lastFmError').show();
     for(albumId in albumsArray) {
         var album = albumsArray[albumId];
         var imgURL = album.image[3];
@@ -119,7 +121,6 @@ function lastFmSuccessHandler(data) {
         var url = album.url;
         var name = album.name;
         var artist = album.artist.name;
-
         var newAlbum = jQuery('<a/>', {
             id: 'album' + albumId,
             href: url,
@@ -130,7 +131,14 @@ function lastFmSuccessHandler(data) {
         });
 
         newAlbum.css('background-image', 'url('+imgURL+')');
-
         newAlbum.appendTo($('#start_album_list')).fadeTo('slow', 1);
     }
+}
+
+/**
+ * Let the user know that the last.fm api isn't working.
+ */
+function lastFmErrorHandler(xhr, textStatus, errorThrown){
+    $('#last_fm_error').show();
+    $('#last_fm_loading').hide();
 }
