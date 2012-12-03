@@ -148,10 +148,16 @@ a:hover{
   color: #555;
 }
 
-.alice {
-  background: url('../img/projects/alice-and-love-logo.png') no-repeat;
-  background-size: contain;
-  height: 50px;
+.team {
+  margin-bottom: 25px;
+}
+
+#noscript {
+  line-height: 1.5em;
+  font-size: 16px;
+  color: #666;
+  margin-top: 40px;
+  border-top: 1px solid #aaa;
 }
 
 /* Don't show shadows when selecting text */
