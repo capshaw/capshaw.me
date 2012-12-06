@@ -1,5 +1,5 @@
 body, html{
-	background: #eee url('../img/common/txture.png') repeat;
+	background: #eee;
 	margin:0px;
 	padding:0px;
 	font-family:"Helvetica", sans-serif;
@@ -21,7 +21,6 @@ body, html{
 	margin-left:-480px;
 	margin-top:-35px;
 	background:rgba(150,150,150,0.1);
-	color:#eee;
 }
 
 a{
