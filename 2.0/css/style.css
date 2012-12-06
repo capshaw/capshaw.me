@@ -146,11 +146,11 @@ a {
   /*color: rgba(255,82,82, 0.8);*/
   /*color: rgba(100, 150, 200, 1);*/
   color: #000;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ccc;
 }
 
 a:hover{
-  color: #555;
+  color: #666;
 }
 
 .team {
