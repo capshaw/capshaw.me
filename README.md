@@ -1,8 +1,11 @@
 capshaw.me
 ==================
 
-The basis of my personal website - code and content! I'm constantly redoing my site, so things may change quickly and dramatically.
+This is the code for my personal website. My site used to be quite heavy and dynamic, but since that time I have stripped it down and found simplicity to be superior. Plus it's not like I was ever going to actually blog ;)
 
-License
---------------------------------
-This git is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+Repo Name Change
+----------------
+
+Was once named `andrew-capshaw-com` but was changed so that github pages could be utilized.
+
+:beer:
