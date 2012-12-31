@@ -37,7 +37,7 @@ body {
   background: #fff;
 }
 
-h1, h2{
+h1, h2, h3{
   font-family: "Computer Modern", "Helvetica", sans-serif;
 }
 
@@ -50,6 +50,14 @@ h1 {
 h2 {
   color: rgba(30, 30, 30, 0.9);
   font-size: 1.5em;
+  margin-top: 25px;
+  margin-bottom: -5px;
+}
+
+h3 {
+  color: rgba(90, 90, 90, 0.9);
+  font-size: 1em;
+  margin-top: -5px;
 }
 
 p {
