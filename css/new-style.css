@@ -74,10 +74,9 @@ code {
   position: absolute;
   left:   400px;
   top:    0;
-  bottom: 0;
   width: 450px;
-  padding: 0 50px;
-  background: rgba(200, 200, 230, 0.8);
+  padding: 20px 50px;
+  /*background: rgba(200, 200, 230, 0.8);*/
 }
 
 /* Don't show shadows when selecting text */
