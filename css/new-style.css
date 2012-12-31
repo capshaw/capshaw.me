@@ -1,0 +1,41 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+h1{
+  color: rgba(70, 70, 80, 0.8);
+  font-size: 2em;
+  font-family: "Helvetica", sans-serif;
+  letter-spacing: -1px;
+}
+
+#header {
+  position: fixed;
+  left:   0;
+  top:    0;
+  bottom: 0;
+  width: 400px;
+  border-right: 1px solid #aaa;
+}
+
+#content {
+  position: absolute;
+  left:   400px;
+  top:    0;
+  bottom: 0;
+  width: 400px;
+  border-right: 1px solid #aaa;
+}
+
+/* Don't show shadows when selecting text */
+::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
+::selection { background: #5af; color: #fff; text-shadow: none; }​
