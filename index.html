@@ -1,13 +1,115 @@
----
-layout: default
-title: Andrew Capshaw
----
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Andrew Capshaw</title>
+	<meta charset='utf-8'>
+	<meta name="description" content="I'm an Junior studying computer science at Rice University in Houston, TX. On this site I host a few of my projects and some hobby code.">
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<link rel='shortcut icon' type='image/x-icon' href='img/common/foreach.ico' />
+</head>
+<body>
+	<div class='float-wrap'>
 
-<div id="home">
-  <h1>Writing</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+		<!-- Name and bio container. -->
+		<div class='container' id='intro'>
+			<h1 class='transition-color'>Andrew Capshaw</h1>
+			<p>
+				My email is <a href='mailto:capshaw@rice.edu' data-color='rgba(51, 150, 255, 0.8)'>capshaw@rice.edu</a>
+			</p>
+			<p>
+				I'm an Junior studying computer science at Rice University in Houston, TX. I've worked with some pretty great <a href='#teams' class='switcher' data-color='rgba(255,82,82, 0.8)'>teams</a> and made a few cool <a href='#projects' class='switcher' data-color='rgba(255,196,0, 0.8)'>projects</a> in my free time.
+			</p>
+			<p>
+				I also like to listen to <a href='#music' class='switcher' data-color='rgba(255,196,0, 0.8)' id='music_link'>music</a>.
+			</p>
+			<p>
+				Now hosted on <a href='http://github.com/capshaw/capshaw.github.com'>github pages</a>!
+			</p>
+			<noscript>
+				<div id='noscript'>
+					<h3>So, this is awkward.</h3>
+					Hello web citizen without javascript! Just so you know, my site requires javascript to work correctly. I suppose you probably fall under one of the two following categories:
+					<ul>
+						<li>
+							<strong>"What is javascript?"</strong><br> If this is you, try downloading a different browser or resetting your settings. Sorry you had to see this!
+						</li>
+						<li>
+							<strong>"I don't trust you."</strong><br> Read my javascript! I swear, it's safe :)
+						</li>
+					</ul>
+				</div>
+			</noscript>
+		</div>
+
+		<!-- Teams drawer. -->
+		<div class='drawer hidden container' id='teams'>
+			<h1 class='part-two'>Teams</h1>
+			<div class='team'>
+				<h3>Alice &amp; Love</h3>
+				<p>
+					Over the summer of 2012 I worked with four other Rice undergraduates to plan, build and maintain Alice &amp; Love, a fashion website for women. View the site at <a href='http://aliceandlove.com'>aliceandlove.com</a>
+				</p>
+			</div>
+			<div class='team'>
+				<h3>Rice Institutional Research + Rice Faculty Senate</h3>
+				<p>
+					As a work-study student, I worked with the administration at Rice University to assemble, verify, and analyse data about students and professors.
+				</p>
+			</div>
+		</div>
+
+		<!-- Code drawer. -->
+		<div class='drawer hidden container' id='projects'>
+			<h1 class='part-two'>Projects</h1>
+			<div class='team'>
+				<h3><a href='etc/maze-factory'>Maze Factory </a> (October 2012)</h3>
+				<p>
+					A animation of a depth-first-search on a 2D plane. The result is a maze with only one legitimate solution. Concieved in-class while I concentrating on technical interviews, the app was built (for the most part) over a long weekend.
+				</p>
+			</div>
+			<div class='team'>
+				<h3>And more!</h3>
+				<p>
+					Not everything I build is a web app. You can view the complete source code for these projects and more at <a href='https://github.com/capshaw/'>my github page</a>.
+				</p>
+			</div>
+		</div>
+
+		<!-- Music drawer. -->
+		<div class='drawer hidden container' id='music'>
+			<h2>Top albums this month</h2>
+			<div id='last_fm_loading' class='loading'>waiting on last.fm</div>
+			<div id='last_fm_error' class='hidden'><p>The last.fm api doesn't seem to be working.. sorry :(</p></div>
+			<div id='start_album_list'></div>
+		</div>
+	</div>
+
+	<!-- Floating album info pointer -->
+	<div id='album_info'>
+		<div id='album_info_inner'>
+			<div id='album'>Album Name</div>
+			<div id='artist'>Artist Name</div>
+			<span id='plays'>Num plays</span> plays
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'></script>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>
+	<script type='text/javascript' src='js/jquery.xml2json.js'></script>
+	<script type='text/javascript' src='js/index.js'></script>
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-32825047-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</body>
+</html>
