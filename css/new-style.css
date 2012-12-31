@@ -42,13 +42,13 @@ h1, h2, h3{
 }
 
 h1 {
-  color: rgba(20, 20, 20, 0.9);
+  color: rgba(10, 10, 10, 0.9);
   font-size: 2.3em;
   letter-spacing: -1px;
 }
 
 h2 {
-  color: rgba(30, 30, 30, 0.9);
+  color: rgba(20, 20, 20, 0.9);
   font-size: 1.5em;
   margin-top: 25px;
   margin-bottom: -5px;
@@ -65,6 +65,11 @@ h3 {
 p {
   line-height: 1.5em;
   font-size: 16px;
+}
+
+a {
+  color: #E01B6A;
+  text-decoration: none;
 }
 
 code {
@@ -84,7 +89,7 @@ code {
   position: absolute;
   left:   400px;
   top:    0;
-  width: 450px;
+  width: 400px;
   padding: 20px 50px;
   /*background: rgba(200, 200, 230, 0.8);*/
 }
