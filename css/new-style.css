@@ -81,7 +81,8 @@ code {
   left:   0;
   top:    0;
   bottom: 0;
-  width: 400px;
+  width: 300px;
+  padding: 0 50px;
   border-right: 1px solid #aaa;
 }
 
