@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Computer Modern";
+  src: url('fonts/cmunrm.otf');
+}
+/* TODO: add bold / italic like http://stackoverflow.com/questions/6476351/how-to-use-the-computer-modern-font-in-webpages */
+
 html {
   margin: 0;
   padding: 0;
@@ -5,14 +11,14 @@ html {
 
 body {
   height: 100%;
-  font-family: "Droid Serif", "Helvetica", sans-serif;
+  font-family: "Computer Modern", "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
   background: #fff;
 }
 
 h1, h2{
-  font-family: "Helvetica", sans-serif;
+  font-family: "Computer Modern", sans-serif;
   letter-spacing: -1px;
 }
 
