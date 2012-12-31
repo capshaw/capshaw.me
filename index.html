@@ -4,10 +4,16 @@ title: Andrew Capshaw
 ---
 
 <div id="home">
-  <h1>Writing &amp; Stuff</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+	<h1>Projects</h1>
+	<ul>
+		<li><span>October 2012</span> <a href='https://www.github.com/capshaw/GeneralCluster'>General Cluster</a> A iterative clustering program that allows a user to import 2D data, display it, and cluster it into k groups. (Java)</li>
+		<li><span>October 2012</span> <a href='https://www.github.com/capshaw/maze-factory'>Maze Factory</a> A HTML5 web application that paints a maze to a canvas. (Javascript)</li>
+	</ul>
+
+	<h1>Writing &amp; Stuff</h1>
+	<ul class="posts">
+		{% for post in site.posts %}
+		  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
 </div>
