@@ -52,12 +52,15 @@ h2 {
   font-size: 1.5em;
   margin-top: 25px;
   margin-bottom: -5px;
+  font-weight: normal;
 }
 
 h3 {
   color: rgba(90, 90, 90, 0.9);
   font-size: 1em;
   margin-top: -5px;
+  font-weight: normal;
+  font-style: italic;
 }
 
 p {
