@@ -109,12 +109,8 @@ code {
 
 .posts {
   list-style-type: none;
-  margin-left: 0px;
-}
-
-.posts li {
-  margin: none;
-  padding: 5px 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /* Don't show shadows when selecting text */
