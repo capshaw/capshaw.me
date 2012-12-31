@@ -42,13 +42,13 @@ h1, h2{
 }
 
 h1 {
-  color: rgba(50, 50, 50, 0.8);
+  color: rgba(20, 20, 20, 0.9);
   font-size: 2.3em;
   letter-spacing: -1px;
 }
 
 h2 {
-  color: rgba(40, 40, 40, 0.8);
+  color: rgba(30, 30, 30, 0.9);
   font-size: 1.5em;
 }
 
@@ -58,7 +58,7 @@ p {
 }
 
 code {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #header {
@@ -77,7 +77,7 @@ code {
   bottom: 0;
   width: 450px;
   padding: 0 50px;
-  background: rgba(200, 200, 200, 0.8);
+  background: rgba(200, 200, 230, 0.8);
 }
 
 /* Don't show shadows when selecting text */
