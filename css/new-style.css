@@ -92,6 +92,7 @@ code {
   width: 300px;
   padding: 0 50px;
   border-right: 1px solid #aaa;
+  background: #eee;
 }
 
 #header-spacer {
