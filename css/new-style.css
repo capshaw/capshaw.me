@@ -2,6 +2,26 @@
   font-family: "Computer Modern";
   src: url('fonts/cmunrm.otf');
 }
+
+@font-face {
+  font-family: "Computer Modern";
+  font-family: monospace;
+  src: url('fonts/cmunorm.otf');
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url('fonts/cmunti.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url('fonts/cmunrb.otf');
+  font-weight: bold;
+}
+
+
 /* TODO: add bold / italic like http://stackoverflow.com/questions/6476351/how-to-use-the-computer-modern-font-in-webpages */
 
 html {
@@ -18,7 +38,7 @@ body {
 }
 
 h1, h2{
-  font-family: "Computer Modern", sans-serif;
+  font-family: "Computer Modern", "Helvetica", sans-serif;
   letter-spacing: -1px;
 }
 
@@ -29,6 +49,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
+  font-style: italic;
 }
 
 p {
