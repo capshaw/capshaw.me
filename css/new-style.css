@@ -57,6 +57,10 @@ p {
   font-size: 16px;
 }
 
+code {
+  font-size: 12px;
+}
+
 #header {
   position: fixed;
   left:   0;
