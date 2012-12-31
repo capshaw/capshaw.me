@@ -39,12 +39,12 @@ body {
 
 h1, h2{
   font-family: "Computer Modern", "Helvetica", sans-serif;
-  letter-spacing: -1px;
 }
 
 h1 {
   color: rgba(70, 70, 80, 0.8);
   font-size: 2em;
+  letter-spacing: -1px;
 }
 
 h2 {
