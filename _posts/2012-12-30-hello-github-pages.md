@@ -22,7 +22,7 @@ Embedding Code
 
 Maybe I'll want to embed code someday. If so, perhaps the Ace editor will be a good choice:
 
-<div id="editor">function foo(items) {
+<div id="editor" style='width:100%; height:200px;'>function foo(items) {
     var x = "All this is syntax highlighted";
     return x;
 }</div>
