@@ -90,6 +90,7 @@ code {
   top:    0;
   bottom: 0;
   width: 300px;
+  border-right: 1px solid #eee;
   padding: 0 50px;
 }
 
