@@ -16,3 +16,20 @@ Using Computer Modern
 ---------------------
 
 I like computer modern as a font so much that I thought I'd use it here. It has regular, `monospace`, <em>italic</em>, and <strong>bold</strong> varieties that I can use.
+
+Embedding Code
+--------------
+
+Maybe I'll want to embed code someday. If so, perhaps the Ace editor will be a good choice:
+
+<div id="editor1">function foo(items) {
+    var x = "All this is syntax highlighted";
+    return x;
+}</div>
+
+<script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor1");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+</script>
