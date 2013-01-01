@@ -95,6 +95,17 @@ code {
   background: #eee;
 }
 
+.nav-link {
+  padding: 3px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background: #E01B6A;
+  color: #fff;
+}
+
 .header-spacer {
   margin-top: 80px;
 }
