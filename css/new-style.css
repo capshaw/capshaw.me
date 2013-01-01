@@ -91,8 +91,6 @@ code {
   bottom: 0;
   width: 300px;
   padding: 0 50px;
-  border-right: 1px solid #aaa;
-  background: rgba(200,200,200, 0.1);
 }
 
 .nav-link {
@@ -111,9 +109,7 @@ code {
 }
 
 #content {
-  position: absolute;
-  left:   400px;
-  top:    0;
+  margin-left: 400px;
   width: 400px;
   padding: 0 50px;
   /*background: rgba(200, 200, 230, 0.8);*/
