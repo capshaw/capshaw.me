@@ -92,12 +92,12 @@ code {
   width: 300px;
   padding: 0 50px;
   border-right: 1px solid #aaa;
-  background: #eee;
+  background: rgba(200,200,200, 0.1);
 }
 
 .nav-link {
   padding: 5px;
-  background: #fff;
+  background: rgba(0,0,0,0);
   border-radius: 5px;
 }
 
