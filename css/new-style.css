@@ -92,7 +92,7 @@ code {
   width: 300px;
   padding: 0 50px;
   border-right: 1px solid #aaa;
-  background: #eee;
+  background: rgba(250,230,250,0.4);
 }
 
 .header-spacer {
