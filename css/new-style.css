@@ -96,7 +96,7 @@ code {
 }
 
 .header-spacer {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 #content {
@@ -104,7 +104,7 @@ code {
   left:   400px;
   top:    0;
   width: 400px;
-  padding: 20px 50px;
+  padding: 0 50px;
   /*background: rgba(200, 200, 230, 0.8);*/
 }
 
