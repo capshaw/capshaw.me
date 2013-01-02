@@ -5,12 +5,6 @@
 
 @font-face {
   font-family: "Computer Modern";
-  font-family: monospace;
-  src: url('fonts/cmuntt.otf');
-}
-
-@font-face {
-  font-family: "Computer Modern";
   src: url('fonts/cmunti.otf');
   font-style: italic;
 }
@@ -80,6 +74,10 @@ p, li {
 a {
   color: #E01B6A;
   text-decoration: none;
+}
+
+code {
+  font-family: "Droid Sans Mono", monospace;
 }
 
 pre {
