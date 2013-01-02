@@ -31,23 +31,3 @@ def test(a, b):
 
     return True
 {% endgihlight %}
-
-And here is a test with python.
-
-{% highlight java linenum %}
-class Person {
-
-    private String name;
-
-    public Person(String name) {
-        this.name = name;
-    }
-
-    /**
-     * A stupid function that assigns this person's name to be "Bob".
-     */
-    public void assignNameBob() {
-        this.name = "Bob";
-    }
-}
-{% endgihlight %}
