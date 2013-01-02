@@ -16,3 +16,38 @@ Using Computer Modern
 ---------------------
 
 I like computer modern as a font so much that I thought I'd use it here. It has regular, `monospace`, <em>italic</em>, and <strong>bold</strong> varieties that I can use.
+
+Testing Syntax Highlighting
+---------------------------
+
+Apparently Github pages has the <a href='http://pygments.org'>pygments</a> plugin built in! So hopefully this following code is highlighted:
+
+{% highlight python linenum %}
+def test(a, b):
+    ''' This swaps a and b and returns True, because why not. '''
+    c = a
+    a = b
+    b = c
+
+    return True
+{% endgihlight %}
+
+And here is a test with python.
+
+{% highlight java linenum %}
+class Person {
+
+    private String name;
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    /**
+     * A stupid function that assigns this person's name to be "Bob".
+     */
+    public void assignNameBob() {
+        this.name = "Bob";
+    }
+}
+{% endgihlight %}
