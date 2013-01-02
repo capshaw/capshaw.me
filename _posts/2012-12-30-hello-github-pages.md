@@ -22,7 +22,7 @@ Testing Syntax Highlighting
 
 Apparently Github pages has the <a href='http://pygments.org'>pygments</a> plugin built in! So hopefully this following code is highlighted:
 
-{% highlight python linenum %}
+{% highlight python linenos %}
 def test(a, b):
     ''' This swaps a and b and returns True, because why not. '''
     c = a
@@ -30,4 +30,23 @@ def test(a, b):
     b = c
 
     return True
+{% endhighlight %}
+
+And now a test with Java:
+
+{% highlight java linenos %}
+class Person {
+
+    private String _name;
+    private int _favoriteNumber;
+
+    public Person(String name, int favoriteNumber) {
+        this._name = name;
+        this._favoriteNumber = favoriteNumber;
+    }
+
+    public String getName() {
+        return _name;
+    }
+}
 {% endhighlight %}

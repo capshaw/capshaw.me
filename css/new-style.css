@@ -6,7 +6,7 @@
 @font-face {
   font-family: "Computer Modern";
   font-family: monospace;
-  src: url('fonts/cmunorm.otf');
+  src: url('fonts/cmuntt.otf');
 }
 
 @font-face {
@@ -84,6 +84,12 @@ a {
 
 code {
   font-size: 14px;
+}
+
+pre {
+  background: #333;
+  padding: 10px;
+  white-space: pre-wrap;
 }
 
 #header {
