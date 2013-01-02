@@ -21,3 +21,13 @@ Testing Syntax Highlighting
 ---------------------------
 
 Apparently Github pages has the <a href='http://pygments.org'>pygments</a> plugin built in! So hopefully this following code is highlighted:
+
+{% highlight python linenum %}
+def test(a, b):
+    ''' This swaps a and b and returns True, because why not. '''
+    c = a
+    a = b
+    b = c
+
+    return True
+{% endhighlight %}
