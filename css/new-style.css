@@ -85,15 +85,19 @@ code {
 }
 
 #header {
+  position: fixed;
+  left:   0;
+  top:    0;
+  bottom: 0;
   width: 300px;
-  display: inline-block;
+  border-right: 1px solid #eee;
   padding: 0 50px;
 }
 
 .nav-link {
   padding: 5px;
   background: rgba(0,0,0,0);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .nav-link:hover {
@@ -106,7 +110,7 @@ code {
 }
 
 #content {
-  display: inline-block;
+  margin-left: 400px;
   width: 400px;
   padding: 0 50px;
   /*background: rgba(200, 200, 230, 0.8);*/
