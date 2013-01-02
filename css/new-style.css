@@ -92,6 +92,10 @@ pre {
   white-space: pre-wrap;
 }
 
+.lineno {
+  color: #aaa;
+}
+
 #header {
   position: fixed;
   left:   0;
@@ -119,7 +123,7 @@ pre {
 
 #content {
   margin-left: 400px;
-  width: 400px;
+  width: 500px;
   padding: 0 50px;
   /*background: rgba(200, 200, 230, 0.8);*/
 }

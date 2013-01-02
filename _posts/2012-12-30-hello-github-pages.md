@@ -24,7 +24,9 @@ Apparently Github pages has the <a href='http://pygments.org'>pygments</a> plugi
 
 {% highlight python linenos %}
 def test(a, b):
-    ''' This swaps a and b and returns True, because why not. '''
+    '''
+    This swaps a and b and returns True, because why not.
+    '''
     c = a
     a = b
     b = c
