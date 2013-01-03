@@ -17,7 +17,7 @@ Ingredients
 
 <ul>
     <li>
-        Half a cup of Soy Sauce
+        1/4 cup of Soy Sauce
     </li>
     <li>
         A spoonful of chili garlic sauce
@@ -26,7 +26,7 @@ Ingredients
         Three carrots
     </li>
     <li>
-        A head of Broccoli (are they called heads?)
+        A head of Broccoli
     </li>
     <li>
         A cup of Sugar Snap Peas
