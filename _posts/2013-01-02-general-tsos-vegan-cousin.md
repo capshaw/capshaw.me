@@ -6,7 +6,7 @@ category: recipe
 tags: [tofu, vegan, general tso]
 ---
 
-<img src='/img/posts/general-pso.jpg' width='500px' height='375px'>
+<img src='/img/posts/general-tso.jpg' width='500px' height='375px'>
 
 I really like cooking. So much so that I would rather live off-campus and cook for myself than to either live on-campus or buy a meal plan. (I sometimes forget that people at other universities <em>actually like</em> to move off-campus. At Rice, the popular thing to do is stay on.)
 
@@ -15,14 +15,32 @@ Well anyways, one of my favorite dishes of all time was Fire Bowl Cafe's General
 Ingredients
 -----------
 
-+ Half a cup of Soy Sauce
-+ A spoonful of chili garlic sauce
-+ Three carrots
-+ A head of Broccoli (are they called heads?)
-+ A cup of Sugar Snap Peas
-+ One package of tofu, cut into large pieces (you'll later cut this down smaller)
-+ <a href='http://allrecipes.com/recipe/mamas-asian-chicken-and-rice/'>Mama's Asian Chicken Sauce</a> minus the chicken and the orange flavoring.
-+ A cup of rice
+<ul>
+    <li>
+        Half a cup of Soy Sauce
+    </li>
+    <li>
+        A spoonful of chili garlic sauce
+    </li>
+    <li>
+        Three carrots
+    </li>
+    <li>
+        A head of Broccoli (are they called heads?)
+    </li>
+    <li>
+        A cup of Sugar Snap Peas
+    </li>
+    <li>
+        One package of tofu, cut into large pieces (you'll later cut this down smaller)
+    </li>
+    <li>
+        <a href='http://allrecipes.com/recipe/mamas-asian-chicken-and-rice/'>Mama's Asian Chicken Sauce</a> minus the chicken and the orange flavoring.
+    </li>
+    <li>
+        A cup of rice
+    </li>
+</ul
 
 Steps
 -----
