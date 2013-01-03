@@ -129,6 +129,12 @@ pre {
   padding-left: 0;
 }
 
+#content-resume {
+  width: 800px;
+  margin: auto;
+  margin-top: 100px;
+}
+
 /* Don't show shadows when selecting text */
 ::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
 ::selection { background: #5af; color: #fff; text-shadow: none; }​
