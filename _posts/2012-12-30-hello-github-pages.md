@@ -15,7 +15,7 @@ Thanks to <a href='http://www.saltesta.com'>Sal Testa</a> for the suggestion.
 Using Computer Modern
 ---------------------
 
-I like computer modern as a font so much that I thought I'd use it here. It has regular, `monospace`, <em>italic</em>, and <strong>bold</strong> varieties that I can use.
+I like computer modern as a font so much that I thought I'd use it here. It has regular, `monospace`, <em>italic</em>, and <strong>bold</strong> varieties that I can use. (Note: I gave up and used Droid Mono as the monospace font instead.)
 
 Testing Syntax Highlighting
 ---------------------------
