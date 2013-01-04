@@ -5,34 +5,47 @@ title: Resume - Andrew Capshaw
 
 Andrew Capshaw
 ==============
+<a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a>
 
+Knowledge
+---------
 
-Skills
-------
-
-+ Just a test
-+ of a resume
-+ yeah
++ PHP, Javascript (+ JQuery), MySQL (four years)
++ Java, Python (three years)
++ Source Control with Git, SVN (two years)
 
 Work Experience
 ---------------
 
 
-Projects
---------
+Independent Projects
+--------------------
 
-Was really easy! I already had a repo called `andrew-capshaw-com` that held my personal website. There were only three steps required in order to change from my previous hosting to the github pages hosting: (1) Rename the repo `capshaw.github.com` (2) Add a CNAME entry to the repo and (3) Changing the DNS settings to point to github's servers.
+<strong>Coffee Chat</strong><br>
+A web chat application that allows for user authentication and communication. Written in PHP and Javascript (with a tiny amount JQuery).
 
-Was really easy! I already had a repo called `andrew-capshaw-com` that held my personal website. There were only three steps required in order to change from my previous hosting to the github pages hosting: (1) Rename the repo `capshaw.github.com` (2) Add a CNAME entry to the repo and (3) Changing the DNS settings to point to github's servers.
+<strong>Degree Planner</strong><br>
+A proof-of-concept application made at the inaugural Spring 2012 Rice Hackathon. The driving motivation of the application was to create a simple drag and drop interface that would allow users to map out their time at Rice.
 
-Was really easy! I already had a repo called `andrew-capshaw-com` that held my personal website. There were only three steps required in order to change from my previous hosting to the github pages hosting: (1) Rename the repo `capshaw.github.com` (2) Add a CNAME entry to the repo and (3) Changing the DNS settings to point to github's servers.
+<strong>Citrus Content-Management System</strong><br>
+An admin-controllable content management system based in PHP and MySQL. The system allows administrators to log in and create/alter/delete content without altering/uploading code.
+
+<strong>The Greedy Painters</strong><br>
+Utilized HTML5s canvas and Javascript to create a visual simulation. Users select the number of painters and walls to be placed and let the simulation run (painters can be added and removed in real-time). The greedy painters wander the map looking for untouched blocks to paint. The user can watch real-time statistics such as number of blocks painted and efficiency to monitor the simulation.
+
+<em>View a lot of these projects and more on my <a href='http://github.com/capshaw'>github</a></em>
 
 Education
 ---------
 
-Was really easy! I already had a repo called `andrew-capshaw-com` that held my personal website. There were only three steps required in order to change from my previous hosting to the github pages hosting: (1) Rename the repo `capshaw.github.com` (2) Add a CNAME entry to the repo and (3) Changing the DNS settings to point to github's servers.
+Rice University
+BS in Computer Science (Expected 2014)
+GPA 3.33
 
-Thanks to <a href='http://www.saltesta.com'>Sal Testa</a> for the suggestion.
+<em>Relevant Coursework</em> Compiler Construction &middot; Advanced Object-Oriented Programming &middot; Introduction to Parallel Programming &middot; Introduction to Computer Systems &middot; Evolutionary Bioinformatics &middot; Introduction to Game Theory
 
 Personal
 --------
+
++ Maintain this personal website using Github and Jekyll
++ Graduated high school first in my class
