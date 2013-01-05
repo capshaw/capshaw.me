@@ -1,2 +1,3 @@
 pygments:    true
-post_dirs:   false
+permalink: /:categories/:title
+post_dirs: false
