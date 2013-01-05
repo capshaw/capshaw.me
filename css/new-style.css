@@ -59,7 +59,7 @@ h2 {
 h3 {
   color: rgba(90, 90, 90, 0.9);
   font-size: 1em;
-  margin-top: -5px;
+  margin-bottom: 0;
   font-weight: normal;
   font-family: "Computer Modern", "Helvetica", sans-serif;
   font-style: italic;
@@ -110,6 +110,11 @@ pre {
 .nav-link:hover {
   background: #E01B6A;
   color: #fff;
+}
+
+.date {
+  margin-top: -5px;
+  margin-bottom: 1em;
 }
 
 .header-spacer {
