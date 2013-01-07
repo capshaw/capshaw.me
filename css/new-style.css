@@ -101,9 +101,9 @@ pre {
 }
 
 #header {
-  width: 300px;
+  width: 299px;
   float: left;
-  padding: 20px 50px;
+  padding: 0 50px 20px;
   border-right: 1px solid #eee;
 }
 
