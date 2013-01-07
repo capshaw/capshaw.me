@@ -95,14 +95,16 @@ pre {
   color: #aaa;
 }
 
+#container {
+  width: 1000px;
+  margin: auto;
+}
+
 #header {
-  position: fixed;
-  left:   0;
-  top:    0;
-  bottom: 0;
   width: 300px;
+  float: left;
+  padding: 20px 50px;
   border-right: 1px solid #eee;
-  padding: 0 50px;
 }
 
 .nav-link {
@@ -129,6 +131,7 @@ pre {
   margin-left: 400px;
   width: 500px;
   padding: 0 50px;
+  float: left;
   /*background: rgba(200, 200, 230, 0.8);*/
 }
 
