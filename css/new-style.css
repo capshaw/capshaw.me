@@ -104,7 +104,8 @@ pre {
   width: 299px;
   float: left;
   position: fixed;
-  padding: 0 50px 20px;
+  padding: 0 50px;
+  height: 100%;
   border-right: 1px solid #eee;
 }
 
