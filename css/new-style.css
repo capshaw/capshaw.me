@@ -103,6 +103,7 @@ pre {
 #header {
   width: 299px;
   float: left;
+  position: fixed;
   padding: 0 50px 20px;
   border-right: 1px solid #eee;
 }
@@ -130,7 +131,7 @@ pre {
 #content {
   width: 500px;
   padding: 0 50px;
-  float: left;
+  float: right;
   /*background: rgba(200, 200, 230, 0.8);*/
 }
 
