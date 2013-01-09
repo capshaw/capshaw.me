@@ -151,3 +151,28 @@ pre {
 /* Don't show shadows when selecting text */
 ::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
 ::selection { background: #5af; color: #fff; text-shadow: none; }​
+
+@media screen and (max-width: 1000px) {
+
+  #header {
+    width: auto;
+    float: left;
+    position: relative;
+    padding: 20px 20px;
+    height: auto;
+    border-bottom: 1px solid #eee;
+  }
+
+#container {
+    width: 100%;
+    margin: auto;
+  }
+
+
+#content {
+  width: auto;
+  padding: 20px 20px;
+  float: left;
+  /*background: rgba(200, 200, 230, 0.8);*/
+  }
+}
