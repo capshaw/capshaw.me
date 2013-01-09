@@ -1,3 +1,62 @@
+/* Screen of less than 1000px. */
+@media screen and (max-width: 1000px) {
+
+  #header {
+    width: auto;
+    margin: auto;
+    padding: 20px 50px;
+    height: inherit;
+    border-bottom: 1px solid #eee;
+  }
+
+  #container {
+    width: 100%;
+    margin: auto;
+  }
+
+
+  #content {
+    width: auto;
+    padding: 20px 50px;
+    float: left;
+    /*background: rgba(200, 200, 230, 0.8);*/
+  }
+
+  .header-spacer {
+    margin-top: 0;
+  }
+}
+
+/* Screen of less than 1000px. */
+@media screen and (min-width: 1000px) {
+
+  #container {
+    width: 1000px;
+    margin: auto;
+  }
+
+  #header {
+    width: 299px;
+    float: left;
+    position: fixed;
+    padding: 0 50px;
+    height: 100%;
+    border-right: 1px solid #eee;
+  }
+
+
+  #content {
+    width: 500px;
+    padding: 0 50px;
+    float: right;
+    /*background: rgba(200, 200, 230, 0.8);*/
+  }
+
+  .header-spacer {
+    margin-top: 80px;
+  }
+}
+
 @font-face {
   font-family: "Computer Modern";
   src: url('fonts/cmunrm.otf');
@@ -95,20 +154,6 @@ pre {
   color: #aaa;
 }
 
-#container {
-  width: 1000px;
-  margin: auto;
-}
-
-#header {
-  width: 299px;
-  float: left;
-  position: fixed;
-  padding: 0 50px;
-  height: 100%;
-  border-right: 1px solid #eee;
-}
-
 .nav-link {
   padding: 5px;
   background: rgba(0,0,0,0);
@@ -123,17 +168,6 @@ pre {
 .date {
   margin-top: -5px;
   margin-bottom: 1em;
-}
-
-.header-spacer {
-  margin-top: 80px;
-}
-
-#content {
-  width: 500px;
-  padding: 0 50px;
-  float: right;
-  /*background: rgba(200, 200, 230, 0.8);*/
 }
 
 .posts {
@@ -151,29 +185,3 @@ pre {
 /* Don't show shadows when selecting text */
 ::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
 ::selection { background: #5af; color: #fff; text-shadow: none; }​
-
-@media screen and (max-width: 1000px) {
-
-  #header {
-    width: auto;
-    float: left;
-    position: relative;
-    padding: 20px 20px;
-    height: auto;
-    border-bottom: 1px solid #eee;
-    background: pink;
-  }
-
-#container {
-    width: 100%;
-    margin: auto;
-  }
-
-
-#content {
-  width: auto;
-  padding: 20px 20px;
-  float: left;
-  /*background: rgba(200, 200, 230, 0.8);*/
-  }
-}
