@@ -76,7 +76,7 @@ h3 + p {
 }
 
 a {
-  color: #E01B6A;
+  color: #E01B4C;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ pre {
 }
 
 .nav-link:hover {
-  background: #E01B6A;
+  background: #E01B4C;
   color: #fff;
 }
 
