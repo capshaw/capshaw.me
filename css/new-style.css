@@ -161,6 +161,7 @@ pre {
     padding: 20px 20px;
     height: auto;
     border-bottom: 1px solid #eee;
+    background: pink;
   }
 
 #container {
