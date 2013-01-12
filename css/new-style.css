@@ -135,7 +135,7 @@ h3 + p {
 }
 
 a {
-  color: #FA0A2A;
+  color: #DE3F1C;
   text-decoration: none;
 }
 
@@ -161,7 +161,7 @@ pre {
 }
 
 .nav-link:hover {
-  background: #FA0A2A;
+  background: #DE3F1C;
   color: #fff;
 }
 
