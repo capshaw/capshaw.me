@@ -183,5 +183,7 @@ pre {
 }
 
 /* Don't show shadows when selecting text */
-::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
-::selection { background: #5af; color: #fff; text-shadow: none; }​
+::-moz-selection { background: #DE3F1C; color: #fff; text-shadow: none; }
+::selection { background: #DE3F1C; color: #fff; text-shadow: none; }​
+
+/* Nice blue: #5af */
