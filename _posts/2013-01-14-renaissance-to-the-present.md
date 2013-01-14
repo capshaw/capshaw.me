@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HART 102&#58; The Renaissance to the Present
+title: The Renaissance to the Present
 published: true
 category: notes
 tags: [notes, art history, art, history, renaissance, present]
@@ -62,7 +62,7 @@ These are the notes for Art History II: The Renaissance to the Present. Just kee
 + Tax collector: weak, not sturdy, aloof, short robe
 
 ### Ten Naked Men (?, ?, ?)
-+ Engraving, allowed multiples, spread of ideas across Europe
++ `Engraving`, allowed multiples, spread of ideas across Europe
 + Subject: Low state of society some time in antiquity (perhaps barbarians from Roman times)
 + Alberti: never show twisted body, never show arms above head (both considered unnatural)
 + Very angular people
