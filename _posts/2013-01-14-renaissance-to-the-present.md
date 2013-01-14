@@ -31,11 +31,11 @@ These are the notes for Art History II: The Renaissance to the Present. Just kee
 + City states with agricultural income (Feudal - think pyramid)
 + Conspicuous consumption is popular
 + Feudal transforms to capitalistic, merchant society with a merchant class
-	+ Medici family
-	+ Interest in maps and travel
-	+ Move from bible/gothic to interest in psychology and ethics and morals
-	+ Return to the roman ideas
-	+ "rebirth" of antiquity (returning to works like Cicero and regaining an interest in history)
++ Medici family
++ Interest in maps and travel
++ Move from bible/gothic to interest in psychology and ethics and morals
++ Return to the roman ideas
++ "rebirth" of antiquity (returning to works like Cicero and regaining an interest in history)
 	
 ### Humanism
 + Interest in antiquities
@@ -85,14 +85,7 @@ These are the notes for Art History II: The Renaissance to the Present. Just kee
 + Girl on right is Pomona (goddess of fruit), Hora, or Nymph
 + Venus's mother was the sea
 + The heavenly "pure" venus versus the sexual venus
-+ Embondies some ideas of international gothic:
-		
-		Elongated figures and hair
-		Gold powder used
-		Detached / calm face
-		Crafted water
-		Antigravitational
-		Roman garments heavy versus the gothic sway
++ Embondies some ideas of international gothic: Elongated figures and hair, Gold powder used, Detached / calm face, Crafted water, Antigravitational, Roman garments heavy versus the gothic sway
 
 #### Primavera
 + More gothic revival
