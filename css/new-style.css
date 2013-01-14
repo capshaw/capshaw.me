@@ -57,6 +57,29 @@
   }
 }
 
+@font-face {
+  font-family: "Computer Modern";
+  src: url('fonts/cmunrm.otf');
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url('fonts/cmunti.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url('fonts/cmunrb.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url('fonts/cmunbmr.otf');
+}
+
+
 /* TODO: add bold / italic like http://stackoverflow.com/questions/6476351/how-to-use-the-computer-modern-font-in-webpages */
 
 html {
