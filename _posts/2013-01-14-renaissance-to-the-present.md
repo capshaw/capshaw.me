@@ -6,7 +6,7 @@ category: notes
 tags: [notes, art history, art, history, renaissance, present]
 ---
 
-These are the notes for Art History II: The Renaissance to the Present. Just keeping them on the web so I can easily access them. 
+These are the notes for Art History II&#58; The Renaissance to the Present. Just keeping them on the web so I can easily access them.
 
 ## Week One
 
