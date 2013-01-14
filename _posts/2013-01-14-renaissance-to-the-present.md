@@ -42,7 +42,7 @@ These are the notes for Art History II: The Renaissance to the Present. Just kee
 + Includes interest in government and moral life
 + How to organize family
 + How to be moderately political (and philosophical)
-	
+
 ### The Tribute Money and The Expulsion of Adam and Eve (Masaccio, 1427, Florence)
 
 #### The Expulsion of Adam and Eve
