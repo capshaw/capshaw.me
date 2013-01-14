@@ -85,13 +85,14 @@ These are the notes for Art History II: The Renaissance to the Present. Just kee
 + Girl on right is Pomona (goddess of fruit), Hora, or Nymph
 + Venus's mother was the sea
 + The heavenly "pure" venus versus the sexual venus
-+ Embondies some ideas of international gothic
-	- Elongated figures and hair
-	- Gold powder used 
-	- Detached / calm face
-	- Crafted water
-	- Antigravitational
-	- Roman garments heavy versus the gothic sway
++ Embondies some ideas of international gothic:
+		
+		Elongated figures and hair
+		Gold powder used
+		Detached / calm face
+		Crafted water
+		Antigravitational
+		Roman garments heavy versus the gothic sway
 
 #### Primavera
 + More gothic revival
