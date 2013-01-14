@@ -98,16 +98,14 @@ h3 {
   margin-bottom: 0.25em;
   font-weight: normal;
   font-family: "Droid Sans", "Helvetica", sans-serif;
-  font-style: italic;
 }
 
 h4 {
-  color: rgba(90, 90, 90, 0.8);
+  color: rgba(120, 120, 120, 0.9);
   font-size: 1em;
   margin-bottom: 0;
   font-weight: normal;
   font-family: "Droid Sans", "Helvetica", sans-serif;
-  font-style: italic;
 }
 
 p, li {
