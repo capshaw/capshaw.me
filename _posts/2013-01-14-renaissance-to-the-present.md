@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HART 102: The Renaissance to the Present
+title: HART 102&#58; The Renaissance to the Present
 published: true
 category: notes
 tags: [notes, art history, art, history, renaissance, present]
