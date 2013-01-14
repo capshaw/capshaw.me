@@ -36,7 +36,7 @@ These are the notes for Art History II: The Renaissance to the Present. Just kee
 + Move from bible/gothic to interest in psychology and ethics and morals
 + Return to the roman ideas
 + "rebirth" of antiquity (returning to works like Cicero and regaining an interest in history)
-	
+
 ### Humanism
 + Interest in antiquities
 + Includes interest in government and moral life
