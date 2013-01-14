@@ -95,7 +95,7 @@ h2 {
 h3 {
   color: rgba(90, 90, 90, 0.9);
   font-size: 1em;
-  margin-bottom: 0;
+  margin-bottom: 0.25em;
   font-weight: normal;
   font-family: "Droid Sans", "Helvetica", sans-serif;
   font-style: italic;
@@ -113,7 +113,7 @@ h4 {
 p, li {
   line-height: 1.5em;
   color: #444;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h3 + p {
