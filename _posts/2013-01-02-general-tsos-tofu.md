@@ -6,7 +6,7 @@ category: recipe
 tags: [tofu, vegan, general tso]
 ---
 
-<img src='/img/posts/general-tso.jpg' width='500px' height='375px' alt='General Tsos Tofu'>
+<!-- <img src='/img/posts/general-tso.jpg' width='500px' height='375px' alt='General Tsos Tofu'> -->
 
 I really like cooking. So much so that I would rather live off-campus and cook for myself than to either live on-campus or buy a meal plan. (I sometimes forget that people at other universities <em>actually like</em> to move off-campus. At Rice, the popular thing to do is stay on.)
 
