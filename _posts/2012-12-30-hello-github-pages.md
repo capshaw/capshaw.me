@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello Github Pages
+tags: [blog]
 ---
 
 This is my first test post using <a href='https://github.com/mojombo/jekyll/'>jekyll</a> and <a href='http://pages.github.com'>Github pages</a>. Considering this is a free service provided by github, and the fact this promotes open-source, this is a pretty awesome development.
