@@ -168,7 +168,7 @@ pre {
 }
 
 /* Don't show shadows when selecting text */
-::-moz-selection { background: #DE3F1C; color: #FFA3A3; text-shadow: none; }
-::selection { background: #DE3F1C; color: #FFA3A3; text-shadow: none; }​
+::-moz-selection { background: #DE3F1C; color: #FFD4D4; text-shadow: none; }
+::selection { background: #DE3F1C; color: #FFD4D4; text-shadow: none; }​
 
 /* Nice blue: #5af */
