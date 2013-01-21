@@ -1,5 +1,5 @@
 /* Screen of less than 1000px. */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 
   #header {
     width: auto;
@@ -28,10 +28,10 @@
 }
 
 /* Screen of less than 1000px. */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
 
   #container {
-    width: 1000px;
+    width: 900px;
     margin: auto;
   }
 
@@ -46,7 +46,7 @@
 
 
   #content {
-    width: 500px;
+    width: 400px;
     padding: 0 50px;
     float: right;
     /*background: rgba(200, 200, 230, 0.8);*/
