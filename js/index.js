@@ -44,7 +44,7 @@ function lastFmSuccessHandler(data) {
     var tracks = data.recenttracks.track;
     console.log(tracks);
     for(track_id in tracks) {
-        var album = tracks[track_id];
+        var track = tracks[track_id];
         var url = track.url;
         var name = track.name;
         var album_name = track.album;
