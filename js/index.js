@@ -22,7 +22,7 @@ function loadLastFmData() {
         url: 'http://ws.audioscrobbler.com/2.0/',
         data: {
             method : 'user.getrecenttracks',
-            limit  : 1,
+            limit  : 2,
             format : 'json',
             user   : 'premendax',
             api_key: 'fdae06d5f55e33f313eec0d691b201b8'
@@ -45,8 +45,8 @@ function lastFmSuccessHandler(data) {
     console.log(data);
     var tracks = data.recenttracks.track;
     console.log(tracks);
-    for(track_id in tracks) {
-        var track = tracks[track_id];
+    // for(track_id in tracks) {
+        var track = tracks[1]; //track_id
         var url = track.url;
         var name = track.name;
         var artist = track.artist['#text'];
@@ -62,7 +62,7 @@ function lastFmSuccessHandler(data) {
         }));
 
         newSong.appendTo($('#song_list')).fadeTo('slow', 1);
-    }
+    // }
 }
 
 /**
