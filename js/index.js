@@ -23,7 +23,7 @@ function loadLastFmData() {
         data: {
             method : 'user.getrecenttracks',
             limit  : 10,
-            format : 'json'
+            format : 'json',
             user   : 'premendax',
             api_key: 'fdae06d5f55e33f313eec0d691b201b8'
         },
