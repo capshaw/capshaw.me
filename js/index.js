@@ -48,7 +48,7 @@ function lastFmSuccessHandler(data) {
         var url = track.url;
         var name = track.name;
         var album_name = track.album['#text'];
-        var artist = track.artist.name;
+        var artist = track.artist['#text'];
         var newSong = jQuery('<li/>', {
             id: 'song-' + track_id,
             data_artist : artist,
