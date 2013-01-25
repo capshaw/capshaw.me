@@ -1,3 +1,64 @@
+/* Screen of less than 1000px. */
+@media screen and (max-width: 900px) {
+
+  #header {
+    width: auto;
+    margin: auto;
+    padding: 20px 50px;
+    height: inherit;
+    border-bottom: 1px solid #eee;
+  }
+
+  #container {
+    width: 100%;
+    margin: auto;
+  }
+
+
+  #content {
+    width: auto;
+    padding: 20px 50px;
+    float: left;
+    /*background: rgba(200, 200, 230, 0.8);*/
+  }
+
+  .header-spacer {
+    margin-top: 0;
+  }
+}
+
+/* Screen of less than 1000px. */
+@media screen and (min-width: 900px) {
+
+  #container {
+    width: 900px;
+    margin: auto;
+  }
+
+  #header {
+    width: 299px;
+    float: left;
+    position: fixed;
+    padding: 0 50px;
+    height: 100%;
+    border-right: 1px solid #eee;
+  }
+
+
+  #content {
+    width: 400px;
+    padding: 0 50px;
+    float: right;
+    /*background: rgba(200, 200, 230, 0.8);*/
+  }
+
+  .header-spacer {
+    margin-top: 80px;
+  }
+}
+
+/* TODO: add bold / italic like http://stackoverflow.com/questions/6476351/how-to-use-the-computer-modern-font-in-webpages */
+
 html {
   margin: 0;
   padding: 0;
@@ -5,167 +66,109 @@ html {
 
 body {
   height: 100%;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Ubuntu", "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
-  background: #eee url('../img/common/debut_dark.png');
+  background: #fff;
 }
 
-h1{
-  color: rgba(70, 70, 80, 0.8);
-  text-shadow: 1px 4px 6px #eee, 0 0 0 #000, 1px 4px 6px #eee;
-  font-size: 3em;
-  margin-top: 3em;
-  font-family: "Helvetica", sans-serif;
+h1, h2, h3, h4{
+  font-family: "Source Sans Pro", "Ubuntu", "Helvetica", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  color: rgba(10, 10, 10, 0.9);
+  font-size: 2.5em;
   letter-spacing: -1px;
-}
-
-h2{
-  font-size: 0.8em;
-  color: #aaa;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  text-align: center;
-}
-
-h3{
-  font-weight: bold;
-  font-size: 1em;
-}
-
-li {
-  margin-left: -20px;
-  color: #aaa;
-}
-
-.float-wrap {
-  width: 1000px;
-}
-
-.container{
-  width: 400px;
-  padding: 0 30px;
-  border-right: 1px dotted #ccc;
-  float: left;
-}
-
-#intro{
-  background: #eeefef;
-  margin-left: 50px;
-  padding: 0 40px;
-}
-
-.part-two {
-  color: rgba(150,150,150, 0.8);
-}
-
-.drawer {
-  color: #333;
-  background: rgba(255, 255, 255, 0.9);
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.hidden{
-  display: none;
-}
-
-#music {
-  width: 320px;
-  padding: 0 10px;
-}
-
-#album_info{
-  position: absolute;
-  top:0px;
-  right:0px;
-  width: 240px;
-  height: 100px;
-  background: rgba(100, 100, 100, 0.3);
-  display: none;
-}
-
-#album_info_inner {
-  margin: 10px;
-  width: 220px;
-  height: 80px;
-  background: rgba(40, 40, 40, 0.5);
-  color: #aaa;
-  text-align: center;
-}
-
-#artist, #album, #plays{
-  font-size: 0.9em;
-  padding-top: 5px;
-  line-height: 20px;
-}
-
-#artist, #album {
-  color: #fff;
-}
-
-.album {
-  display: block;
-  width: 300px;
-  height: 300px;
-  margin: 10px auto;
-}
-
-.loading{
-  background: url('../img/common/ajax-loader.gif') no-repeat;
-  width: 170px;
-  padding-left: 16px;
-  color: #aaa;
-  height: 16px;
-  margin: 40px auto;
-}
-
-.transition-background{
-  transition: background 2s;
-  -moz-transition: background 2s; /* Firefox 4 */
-  -webkit-transition: background 2s; /* Safari and Chrome */
-  -o-transition: background 2s; /* Opera */
-}
-
-.transition-color {
-  transition: color 2s;
-  -moz-transition: color 2s; /* Firefox 4 */
-  -webkit-transition: color 2s; /* Safari and Chrome */
-  -o-transition: color 2s; /* Opera */
-}
-
-p {
-  line-height: 1.5em;
-  font-size: 16px;
-  color: #666;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  /*color: rgba(255,82,82, 0.8);*/
-  /*color: rgba(100, 150, 200, 1);*/
-  color: #000;
-  border-bottom: 1px solid #ccc;
-}
-
-a:hover{
-  color: #666;
-}
-
-.team {
+  line-height: 1.1em;
   margin-bottom: 25px;
 }
 
-#noscript {
+h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: -5px;
+}
+
+h3 {
+  color: rgba(90, 90, 90, 0.9);
+  font-size: 1em;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-family: "Ubuntu", "Helvetica", sans-serif;
+}
+
+h4 {
+  color: rgba(90, 90, 90, 0.8);
+  font-size: 1em;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-family: "Ubuntu", "Helvetica", sans-serif;
+}
+
+p, li {
   line-height: 1.5em;
-  font-size: 16px;
-  color: #666;
-  margin-top: 40px;
-  border-top: 1px solid #aaa;
+  color: #444;
+  font-size: 14px;
+}
+
+h3 + p {
+  margin-top: 0.25em;
+}
+
+a {
+  color: #DE3F1C;
+  text-decoration: none;
+}
+
+code {
+  font-family: "Droid Sans Mono", monospace;
+  font-size: 12px;
+}
+
+pre {
+  background: #222;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+.lineno {
+  color: #aaa;
+}
+
+.nav-link {
+  padding: 5px;
+  background: rgba(0,0,0,0);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  background: #DE3F1C;
+  color: #fff;
+}
+
+.date {
+  margin-top: -5px;
+  margin-bottom: 1em;
+}
+
+.posts {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#content-resume {
+  width: 800px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 /* Don't show shadows when selecting text */
-::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
-::selection { background: #5af; color: #fff; text-shadow: none; }​
+::-moz-selection { background: #DE3F1C; color: #FFD4D4; text-shadow: none; }
+::selection { background: #DE3F1C; color: #FFD4D4; text-shadow: none; }​
+
+/* Nice blue: #5af */
