@@ -6,7 +6,7 @@ triggered_last_fm = false
 $(document).ready(function() {
 
     /* Load the last.fm data when the music link is clicked. */
-    $('#load_lastfm_link').click(function(){loadLastFmData()})
+    loadLastFmData();
 });
 
 /**
@@ -22,7 +22,7 @@ function loadLastFmData() {
         url: 'http://ws.audioscrobbler.com/2.0/',
         data: {
             method : 'user.getrecenttracks',
-            limit  : 10,
+            limit  : 1,
             format : 'json',
             user   : 'premendax',
             api_key: 'fdae06d5f55e33f313eec0d691b201b8'
@@ -39,6 +39,8 @@ function loadLastFmData() {
  */
 function lastFmSuccessHandler(data) {
 
+    $('#last_fm_container').removeClass('hidden');
+
     /* Iterate through the albums to append them to the music div. */
     console.log(data);
     var tracks = data.recenttracks.track;
@@ -49,7 +51,7 @@ function lastFmSuccessHandler(data) {
         var name = track.name;
         var album_name = track.album['#text'];
         var artist = track.artist['#text'];
-        var newSong = jQuery('<li/>', {
+        var newSong = jQuery('<div/>', {
             id: 'song-' + track_id,
             data_artist : artist,
             data_album : album_name,
