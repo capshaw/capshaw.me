@@ -40,8 +40,9 @@ function loadLastFmData() {
 function lastFmSuccessHandler(data) {
 
     /* Iterate through the albums to append them to the music div. */
-    var tracks = data.recentracks.track;
-    Console.log(tracks);
+    console.log(data);
+    var tracks = data.recenttracks.track;
+    console.log(tracks);
     for(track_id in tracks) {
         var album = tracks[track_id];
         var url = track.url;
