@@ -47,19 +47,19 @@ function lastFmSuccessHandler(data) {
         var track = tracks[track_id];
         var url = track.url;
         var name = track.name;
-        var album_name = track.album;
+        var album_name = track.album['#text'];
         var artist = track.artist.name;
         var newSong = jQuery('<li/>', {
             id: 'song-' + track_id,
             data_artist : artist,
             data_album : album_name,
             data_song_name : name
-        }).append('<a/>', {
+        }).append($('<a/>', {
             href : url,
             text : name
-        }).append('<span/>', {
+        })).append($('<span/>', {
             text : ', ' + artist
-        });
+        }));
 
         newSong.appendTo($('#song_list')).fadeTo('slow', 1);
     }
