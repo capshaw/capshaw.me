@@ -61,7 +61,7 @@ function lastFmSuccessHandler(data) {
             text : ', ' + artist
         });
 
-        newAlbum.appendTo($('#song_list')).fadeTo('slow', 1);
+        newSong.appendTo($('#song_list')).fadeTo('slow', 1);
     }
 }
 
