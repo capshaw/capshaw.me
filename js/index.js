@@ -6,7 +6,7 @@ triggered_last_fm = false
 $(document).ready(function() {
 
     /* Load the last.fm data when the music link is clicked. */
-    loadLastFmData();
+    // loadLastFmData();
 });
 
 /**
@@ -45,8 +45,8 @@ function lastFmSuccessHandler(data) {
     console.log(data);
     var tracks = data.recenttracks.track;
     console.log(tracks);
-    // for(track_id in tracks) {
-        var track = tracks[1]; //track_id
+    for(track_id in tracks) {
+        var track = tracks[track_id];
         var url = track.url;
         var name = track.name;
         var artist = track.artist['#text'];
@@ -62,7 +62,7 @@ function lastFmSuccessHandler(data) {
         }));
 
         newSong.appendTo($('#song_list')).fadeTo('slow', 1);
-    // }
+    }
 }
 
 /**
