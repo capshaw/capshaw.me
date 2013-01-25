@@ -39,7 +39,7 @@ function loadLastFmData() {
  */
 function lastFmSuccessHandler(data) {
 
-    $('#last_fm_container').removeClass('hidden');
+    // $('#last_fm_container').removeClass('hidden');
 
     /* Iterate through the albums to append them to the music div. */
     console.log(data);
@@ -49,12 +49,10 @@ function lastFmSuccessHandler(data) {
         var track = tracks[track_id];
         var url = track.url;
         var name = track.name;
-        var album_name = track.album['#text'];
         var artist = track.artist['#text'];
         var newSong = jQuery('<div/>', {
             id: 'song-' + track_id,
             data_artist : artist,
-            data_album : album_name,
             data_song_name : name
         }).append($('<a/>', {
             href : url,
