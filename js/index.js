@@ -57,7 +57,7 @@ function lastFmSuccessHandler(data) {
         }).append('<a/>', {
             href : url,
             text : name
-        }).apend('<span/>', {
+        }).append('<span/>', {
             text : ', ' + artist
         });
 
