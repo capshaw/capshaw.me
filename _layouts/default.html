@@ -28,18 +28,18 @@
         My email is <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a>
       </p>
 
-      <div id='last_fm_container' class='hidden'>
-        Listening to
-        <div id='song_list'>
-        </div>
-      </div>
-
     </div>
 
     <div id='content'>
       <div class='header-spacer'></div>
       {{ content }}
     </div>
+  </div>
+
+  <div id='last-fm-container'>
+      <p id='song-list-loading'>Loading via <a href='http://last.fm'>last.fm</a></p>
+      <p id='song-list' class='hidden'>&#9833;&nbsp;</p>
+      <p id='song-list-error' class='hidden'>Sorry, the <a href='http://last.fm'>last.fm</a> api seems to be down.</p>
   </div>
 
   <script type="text/javascript">
@@ -55,6 +55,8 @@
     })();
 
   </script>
+
+  <script type='text/javascript' src='/js/index.js'></script>
 
 </body>
 </html>
