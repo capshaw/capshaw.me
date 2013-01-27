@@ -1,49 +1,27 @@
 ---
 layout: post
-title: Hello Github Pages
+title: Leaving Facebook, a Thirty Day Test
 tags: [blog]
-published: false
 ---
 
-This is my first test post using <a href='https://github.com/mojombo/jekyll/'>jekyll</a> and <a href='http://pages.github.com'>Github pages</a>. Considering this is a free service provided by github, and the fact this promotes open-source, this is a pretty awesome development.
+Facebook is great for a lot of things, especially communicating with friends; however, lately I have felt Facebook is not right for me. Because of this, I have decided to undergo a thirty day test to see if Facebook is really a necessity for me or whether it is possible to survive without one.
 
-Switching to Github Pages
--------------------------
+## Thirty days
+A thirty day test is a simple idea. Take something that you want to make a habit, or something that you have put off trying, and do that thing for thirty days straight. If you break your promise to yourself, you must start over from the top. At the end of the thirty days, you can decide to break the habit or continue.
 
-Was really easy! I already had a repo called `andrew-capshaw-com` that held my personal website. There were only three steps required in order to change from my previous hosting to the github pages hosting: (1) Rename the repo `capshaw.github.com` (2) Add a CNAME entry to the repo and (3) Changing the DNS settings to point to github's servers.
+## Reasons I want to Leave Facebook
++ **Graph Search**, the new feature that Facebook just unveiled is great. It reveals just how useful their data is. I'm not particularly paranoid about the search functionality itself (in fact, it is a great improvement and step in the right direction for them), but the product itself reveals just how much data the company has about my life. Like others have said before, members of Facebook are its product, not its customer.
++ **It literally makes me unhappy.** As noted by studies out of Stanford, and [reported in the media](http://www.slate.com/articles/double_x/doublex/2011/01/the_antisocial_network.html), networking on the web is capable of making a lot of people unhappy. While the study notes that this isn't unique to social networking, I have definitely noticed that browsing Facebook gives me a negative outlook on life. People primarily post achievements and boast on Facebook. Because of this, it's easy to feel like "everyone else [is] leading a perfect life."
++ **Time.** I have spent an embarrassingly large amount of time on Facebook the last 6 years of my life. What could I have done with this time? I will never know, but that is something I'd like to find out. I've made a habit of opening up Facebook first thing each morning to check what's new; I hate this habit.
++ **I know too much about people I haven't seen in a long time.** I know this might sound ridiculous, but I like catching up with people after a long time away. Knowing exactly what's going on in everyone's life is a little much for me.
++ **Not having a Facebook is shunned (by people my age).** Not having a Facebook should not be weird. There are plenty of ways of networking and talking with friends besides Facebook (see *real life*).
 
-Thanks to <a href='http://www.saltesta.com'>Sal Testa</a> for the suggestion.
+## Reasons I want to stay
++ I will completely lose contact with some friends to whom I have no other mode of communication.
++ It is awfully convenient for group projects. Opening up a quick chat with a peer to coordinate coding assignments is a breeze.
++ Everyone else is doing it.
 
-Testing Syntax Highlighting
----------------------------
+## What I hope to get out of this
+I don't know. I just want to prove to myself that I can live without Facebook. I've tried to leave multiple times, but these attempts have proven unsuccessful up until this point. Maybe this will be the time?
 
-Apparently Github pages has the <a href='http://pygments.org'>pygments</a> plugin built in! So hopefully this following code is highlighted:
-
-{% highlight python linenos %}
-def test(a, b):
-    ''' Silly function. '''
-    if (a == 0) and (b == -100):
-        return true
-    if a == b:
-        return true
-    return false
-{% endhighlight %}
-
-And now a test with Java:
-
-{% highlight java linenos %}
-class Person {
-
-    private String _name;
-    private int _favoriteNumber;
-
-    public Person(String name, int favoriteNumber) {
-        this._name = name;
-        this._favoriteNumber = favoriteNumber;
-    }
-
-    public String getName() {
-        return _name;
-    }
-}
-{% endhighlight %}
+If you need to contact me, you can do so via email or phone.
