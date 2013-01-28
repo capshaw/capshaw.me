@@ -7,13 +7,13 @@
     padding: 20px 50px;
     height: inherit;
     border-bottom: 1px solid #eee;
+    background: rgba(230,230,230,0.2);
   }
 
   #container {
     width: 100%;
     margin: auto;
   }
-
 
   #content {
     width: auto;
