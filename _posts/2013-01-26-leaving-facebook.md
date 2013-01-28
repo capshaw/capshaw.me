@@ -2,6 +2,7 @@
 layout: post
 title: Leaving Facebook, a Thirty Day Test
 tags: [blog]
+published: false
 ---
 
 Facebook is great for a lot of things, especially communicating with friends; however, lately I have felt Facebook is not right for me. Because of this, I have decided to undergo a thirty day test to see if Facebook is really a necessity for me or whether it is possible to survive without one.
