@@ -27,5 +27,3 @@ If you would like to contact me, my email is [capshaw@rice.edu](mailto:capshaw@r
     <li><a href='https://www.github.com/capshaw'>Some cool code</a> on Github</li>
     <li><a href='http://www.last.fm/user/premendax'>Music I listen to</a> on Last.fm</li>
 </ul> -->
-
-<script type='text/javascript' src='/js/index.js'></script>
