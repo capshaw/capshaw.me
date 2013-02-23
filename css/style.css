@@ -12,8 +12,7 @@ body {
 }
 
 h1, h2, h3, h4{
-  font-family: "Merriweather", "Merriweather", "Helvetica", sans-serif;
-  font-weight: 200;
+  font-family: "Merriweather", "Helvetica", sans-serif;
 }
 
 h1 {
@@ -22,13 +21,15 @@ h1 {
   letter-spacing: -1px;
   line-height: 1.1em;
   margin-bottom: 25px;
+  font-weight: 300;
 }
 
 h2 {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 1.5em;
-  margin-top: 30px;
+  color: rgba(10, 10, 10, 0.9);
+  font-size: 1.2em;
+  margin-top: 35px;
   margin-bottom: -5px;
+  font-weight: 300;
 }
 
 h3 {
@@ -64,7 +65,17 @@ a {
 
 code {
   font-family: "Droid Sans Mono", monospace;
-  font-size: 14px;
+  font-size: 12px;
+  background: #eee;
+  padding: 3px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  border: 0;
 }
 
 pre {
