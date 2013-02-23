@@ -6,7 +6,7 @@ triggered_last_fm = false
 $(document).ready(function() {
 
     /* Load the last.fm data when the music link is clicked. */
-    loadLastFmData();
+    // loadLastFmData();
 });
 
 /**

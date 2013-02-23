@@ -1,68 +1,3 @@
-/* Screen of less than 1000px. */
-@media screen and (max-width: 900px) {
-
-  #header {
-    width: auto;
-    margin: auto;
-    padding: 20px 50px;
-    height: inherit;
-    border-bottom: 1px solid #eee;
-    background: rgba(230,230,230,0.2);
-  }
-
-  #container {
-    width: 100%;
-    margin: auto;
-  }
-
-  #content {
-    width: auto;
-    padding: 20px 50px;
-    float: left;
-    /*background: rgba(200, 200, 230, 0.8);*/
-  }
-
-  .header-spacer {
-    margin-top: 0;
-  }
-
-  #last-fm-container {
-    display: none;
-  }
-}
-
-/* Screen of greater than 1000px. */
-@media screen and (min-width: 900px) {
-
-  #container {
-    width: 900px;
-    margin: auto;
-  }
-
-  #header {
-    width: 299px;
-    float: left;
-    position: fixed;
-    padding: 0 50px;
-    height: 100%;
-    border-right: 1px solid #eee;
-  }
-
-
-  #content {
-    width: 400px;
-    padding: 0 50px;
-    float: right;
-    /*background: rgba(200, 200, 230, 0.8);*/
-  }
-
-  .header-spacer {
-    margin-top: 120px;
-  }
-}
-
-/* TODO: add bold / italic like http://stackoverflow.com/questions/6476351/how-to-use-the-computer-modern-font-in-webpages */
-
 html {
   margin: 0;
   padding: 0;
@@ -70,14 +5,14 @@ html {
 
 body {
   height: 100%;
-  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  font-family: "Merriweather", "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
   background: #fff;
 }
 
 h1, h2, h3, h4{
-  font-family: "Source Sans Pro", "Source Sans Pro", "Helvetica", sans-serif;
+  font-family: "Merriweather", "Merriweather", "Helvetica", sans-serif;
   font-weight: 200;
 }
 
@@ -101,7 +36,7 @@ h3 {
   font-size: 1em;
   margin-bottom: 0;
   font-weight: 300;
-  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  font-family: "Merriweather", "Helvetica", sans-serif;
 }
 
 h4 {
@@ -109,7 +44,7 @@ h4 {
   font-size: 1em;
   margin-bottom: 0;
   font-weight: 300;
-  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  font-family: "Merriweather", "Helvetica", sans-serif;
 }
 
 p, li {
@@ -123,7 +58,7 @@ h3 + p {
 }
 
 a {
-  color: #DE3F1C;
+  color: rgba(180, 10, 10, 1.0);
   text-decoration: none;
 }
 
@@ -138,22 +73,46 @@ pre {
   white-space: pre-wrap;
 }
 
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+.header {
+  color: #666;
+  padding: 30px 0;
+  position: fixed;
+  left: 0;
+  right:0;
+  top:  0;
+  background: #333;
+}
+
+.header span {
+  color: #fff;
+}
+
+#content {
+  padding: 30px 0;
+}
+
+.header-spacer {
+  padding-top: 60px;
+}
+
 .lineno {
   color: #aaa;
 }
 
-.nav-link {
-  padding: 5px;
-  background: rgba(0,0,0,0);
-  border-radius: 5px;
-  font-size: 16px;
-  font-family: "Source Sans Pro", "Helvetica", sans-serif;
-  font-weight: 300;
+.pull-right {
+  float: right;
 }
 
-.nav-link:hover {
-  background: #DE3F1C;
+.nav-link {
   color: #fff;
+  font-size: 16px;
+  font-family: "Merriweather", "Helvetica", sans-serif;
+  border-bottom: 1px solid #666;
 }
 
 .date {
@@ -165,10 +124,47 @@ pre {
   display: none;
 }
 
+.full-photo {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 100px;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
 .posts {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
+}
+
+.icon {
+  margin-right: 1em;
+}
+
+.posts li {
+  border-top: 1px solid #eee;
+  padding: 5px;
+}
+
+.posts li:last-child {
+  border-bottom: 1px solid #eee;
+}
+
+.posts li span {
+  float: right;
+}
+
+.caption {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  min-height: 100px;
 }
 
 #content-resume {
@@ -194,7 +190,12 @@ pre {
 }
 
 /* Don't show shadows when selecting text */
-::-moz-selection { background: #DE3F1C; color: #FFD4D4; text-shadow: none; }
-::selection { background: #DE3F1C; color: #FFD4D4; text-shadow: none; }​
+::-moz-selection { background: rgba(71, 71, 71, 1.0); color: rgba(255, 255, 255, 1.0); text-shadow: none; }
+::selection { background: rgba(71, 71, 71, 1.0); color: rgba(255, 255, 255, 1.0); text-shadow: none; }​
 
+
+/*::-moz-selection { background: rgba(71, 146, 121, 1.0); color: rgba(107, 219, 180, 1.0); text-shadow: none; }
+::selection { background: rgba(71, 146, 121, 1.0); color: rgba(107, 219, 180, 1.0); text-shadow: none; }​
+*/
 /* Nice blue: #5af */
+/* Nice red: rgba(71, 146, 121, 1.0) paired with FFD4D4 s*/

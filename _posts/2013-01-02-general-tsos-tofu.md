@@ -1,7 +1,7 @@
 ---
 layout: post
 title: General Tso's Tofu
-published: true
+published: false
 category: recipe
 tags: [tofu, vegan, general tso]
 ---

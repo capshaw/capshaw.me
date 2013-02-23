@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class='full-photo' style='background-image:url(/img/posts/{{ page.photo_url }});'></div>
+
+<div class='caption'><div class='container'>
+    <h1>{{ page.title }}</h1>
+    <h3 class='date'>{{ page.date | date: "%d %B %Y" }}</h3>
+    <div id="post">
+        {{ content }}
+    </div>
+</div></div>
