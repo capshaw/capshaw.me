@@ -8,9 +8,6 @@ I'm an Junior studying computer science at Rice University in Houston, TX. This 
 
 If you would like to contact me, my email is [capshaw@rice.edu](mailto:capshaw@rice.edu).
 
-## Current Project: <a href='http://owlection.appspot.com/'>Rice Elections</a>
-Right now I am working with <a href='http://www.waseemahmad.com/'>Waseem Ahmad</a> to create an application to hold secure automated elections for organizations at Rice and beyond.
-
 ## Posts
 <ul class='posts'>
     {% for post in site.posts %}
