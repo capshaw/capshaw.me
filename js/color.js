@@ -50,8 +50,8 @@ $(document).ready(function() {
  */
 function getCurrentRainbowColor() {
     len = 50
-    center = 225
-    width = 25
+    center = 215
+    width = 20
 
     frequency1 = 0.006
     frequency2 = 0.006

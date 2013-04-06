@@ -10,14 +10,14 @@ body {
   background: #fff;
   font-size: 18px;
 
-  background: rgb(255,255,255); /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(252,252,252,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(252,252,252,1))); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #ffffff; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 
@@ -211,7 +211,7 @@ pre {
 
 .frontpage a, .header a, .footer a {
   color: #000;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #bbb;
 }
 
 .caption {
@@ -219,14 +219,15 @@ pre {
   bottom: 0;
   right: 0;
   left: 0;
-  border-top: 1px solid #aaa
+  border-top: 1px solid #aaa;
   min-height: 100px;
   background: #fff;
 }
 
 .color-toggle {
-  background: rgba(242,201,228, 0.2);
+  background: rgba(242,201,228, 0.9);
   padding: 3px;
+  border: none !important;
 }
 
 ::-moz-selection { background: #d01040; color: #fff;}
