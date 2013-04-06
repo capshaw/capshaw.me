@@ -225,9 +225,9 @@ pre {
 }
 
 .color-toggle {
-  background: rgba(242,201,228, 0.9);
+/*  background: rgba(242,201,228, 0.9);
   padding: 3px;
-  border: none !important;
+  border: none !important;*/
 }
 
 ::-moz-selection { background: #d01040; color: #fff;}
