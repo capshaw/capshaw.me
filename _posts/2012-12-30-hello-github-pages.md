@@ -18,19 +18,20 @@ Testing Syntax Highlighting
 
 Apparently Github pages has the <a href='http://pygments.org'>pygments</a> plugin built in! So hopefully this following code is highlighted:
 
-{% highlight python linenos %}
+<!-- {% highlight python linenos %}
 def test(a, b):
     ''' Silly function. '''
     if (a == 0) and (b == -100):
-        return true
+        return True
     if a == b:
-        return true
-    return false
+        return True
+    return False
 {% endhighlight %}
 
-And now a test with Java:
+And now a test with Java: -->
 
-{% highlight java linenos %}
+{% highlight java %}
+/* This is a really stupid class. */
 class Person {
 
     private String _name;

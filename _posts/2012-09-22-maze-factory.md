@@ -1,7 +1,6 @@
 ---
-layout: photo
+layout: code
 title: Maze Factory
-device: Screenshot
 photo_url: maze-factory.png
 
 tags: [maze, factory, canvas, HTML5]
