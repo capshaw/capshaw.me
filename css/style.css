@@ -227,5 +227,5 @@ pre {
   border: none !important;*/
 }
 
-::-moz-selection { background: #d01040; color: #fff;}
-::selection { background: #d01040; color: #fff;}​ /*e3e3e1*/
+::-moz-selection { background: #008080; color: #fff;}
+::selection { background: #008080; color: #fff;}​ /*e3e3e1*/
