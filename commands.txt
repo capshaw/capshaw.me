@@ -1,0 +1,8 @@
+Some cool random, helpful commands I can never remember since I don't use them that often.
+
+# Hide or show hidden files / folders on a mac
+defaults write com.apple.Finder AppleShowAllFiles TRUE
+killall Finder
+
+# cURL a page repeatedly
+for i in {1..1000}; do curl URL; done
