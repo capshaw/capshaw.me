@@ -11,13 +11,6 @@ body {
   font-size: 18px;
 
   background: #ffffff; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #ffffff 0%,#e5e5e5 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 
@@ -66,14 +59,21 @@ h3 + p {
 }
 
 a {
-  color: #d01040;
+  color: #008080;
   text-decoration: none;
+}
+
+a:hover {
+  color: #ED7851;
+          transition: color 1s;
+  -webkit-transition: color 1s;
 }
 
 code {
   font-family: "Monaco", "Droid Sans Mono", "Consolas", "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 14px;
-  background: #fff; /* #fefefe*/
+  background: #fdfdfd;
+  border-radius: 3px;
   padding: 0 4px;
   height: 16px;
   line-height: 16px;
@@ -141,8 +141,9 @@ pre {
 }
 
 .grand {
-  font-size: 4em;
-  padding-top: 100px;
+  font-size: 2em;
+  margin-top: 100px;
+  color: #555;
 }
 
 .masked{
@@ -208,11 +209,6 @@ pre {
 .footer {
   padding-bottom: 20px;
   text-align: center;
-}
-
-.frontpage a, .header a, .footer a {
-  color: #000;
-  border-bottom: 1px solid #bbb;
 }
 
 .caption {
