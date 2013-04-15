@@ -6,3 +6,6 @@ killall Finder
 
 # cURL a page repeatedly
 for i in {1..1000}; do curl URL; done
+
+# Show hidden files temporarily in Ubuntu 
+CTRL + H
