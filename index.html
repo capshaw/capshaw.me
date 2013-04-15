@@ -3,28 +3,37 @@ layout: front
 title: Home
 ---
 
-<div class='frontpage content masked container'>
-    <div class='grand'>Andrew Capshaw</div>
-    <p class='sweet-justice'>
-        I'm an Junior studying computer science at Rice University in Houston, TX. This is my corner of the web where I keep links to various projects I've been a part of and a blog of my writing and photos. Check out some <a href='https://github.com/capshaw'>code</a> I've written or view my <a href='/files/CapshawAndrew_resume.pdf'>resume</a>.
-    </p>
-    <p>
-        You can get in contact with me via email at <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a>.
-    </p>
-    <h2>Sometimes I write things</h2>
-    <ul class='posts'>
-        {% for post in site.posts %}
-        <li>
-            <span>{{ post.date | date: "%d %B %Y" }}</span>
-            {% if post.layout == 'photo' %}
-                <i class='icon icon-camera'> </i>
-            {% elsif post.layout == 'code' %}
-                <i class='icon icon-folder-open'> </i>
-            {% elsif post.layout == 'post' %}
-                <i class='icon icon-align-justify'> </i>
-            {% endif %}
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+<div class='frontpage content masked'>
+
+    <div class='container'>
+        <div class='grand'>Andrew Capshaw</div>
+    </div>
+    <div class='extended'>
+        <div class='container'>
+            <p class='sweet-justice'>
+                I'm an Junior studying computer science at Rice University in Houston, TX. This is my corner of the web where I keep links to various projects I've been a part of and a blog of my writing and photos. Check out some <a href='https://github.com/capshaw'>code</a> I've written or view my <a href='/files/CapshawAndrew_resume.pdf'>resume</a>.
+            </p>
+            <p>
+                You can get in contact with me via email at <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a>.
+            </p>
+        </div>
+    </div>
+    <div class='container'>
+        <h2>Sometimes I write things</h2>
+        <ul class='posts'>
+            {% for post in site.posts %}
+            <li>
+                <span>{{ post.date | date: "%d %B %Y" }}</span>
+                {% if post.layout == 'photo' %}
+                    <i class='icon icon-camera'> </i>
+                {% elsif post.layout == 'code' %}
+                    <i class='icon icon-folder-open'> </i>
+                {% elsif post.layout == 'post' %}
+                    <i class='icon icon-align-justify'> </i>
+                {% endif %}
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

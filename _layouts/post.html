@@ -3,9 +3,14 @@ layout: default
 ---
 
 <div class='content'>
+    <div class='extended'>
+        <div class='container'>
+            <h1>{{ page.title }}</h1>
+            <h3 class='date'>{{ page.date | date: "%d %B %Y" }}</h3>
+        </div>
+    </div>
+
     <div class='container'>
-        <h1>{{ page.title }}</h1>
-        <h3 class='date'>{{ page.date | date: "%d %B %Y" }}</h3>
 
         <div id="post" class='sweet-justice'>
             {{ content }}
