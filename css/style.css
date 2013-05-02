@@ -113,6 +113,27 @@ pre {
   border-radius: 100%;
 }
 
+.small-list {
+  font-size: 0.8em;
+  float: left;
+  vertical-align: top;
+  width: 33%;
+}
+
+.small-list ul {
+  list-style-type: none;
+}
+
+.small-list li {
+  line-height: 1em;
+}
+
+/*.small-list li:before {
+  content: "-";
+  margin-left: -1.5em;
+  margin-right: 1em;
+}
+*/
 /* Smaller elements. */
 .highlighted, .container, .post p, .post h1, .post h2, .post h3, .header div, .post ul, .post iframe {
   max-width: 600px;

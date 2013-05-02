@@ -9,8 +9,10 @@ title: Home
         I'm a rising senior in the computer science department at Rice University in Houston, TX. I like to build things of all sorts, especially websites <a href='#' id='about-toggle'>...</a>
     </p>
     <div id='about' class='hidden'>
-        <img src='/img/common/me.jpg' class='inline-image' alt='Me on Enchanted Rock'>
-        <p class='caption'>Hiking on Enchanted Rock.</p>
+        <img src='/img/common/me.jpg' class='inline-image' alt='Hiking on Enchanted Rock'>
+        <p class='caption'>
+            Hiking on Enchanted Rock.
+        </p>
         <p>
             I began building websites when I was in middle school and have been doing so ever since. From the beginning, I have always had an emphasis on user-friendly interfaces and sensible design on the backend.
         </p>
@@ -18,26 +20,44 @@ title: Home
             When I'm not hacking away at some code, I can be found attempting to compose music, hiking the trails of central texas or attending concerts.
         </p>
     </div>
-    <ul class='posts'>
-        <li><i class='icon icon-map-marker'> </i> Houston, TX</li>
-        <li><i class='icon icon-envelope'> </i> <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a></li>
-       <!--  <li><a href='http://www.last.fm/user/premendax' class='social-icon last-fm-icon' data-toggle='tooltip' title='Last.fm'></a>
-            <a href='https://facebook.com/capshaw' class='social-icon facebook-icon' data-toggle='tooltip' title='Facebook'></a>
-            <a href='https://github.com/capshaw' class='social-icon github-icon' data-toggle='tooltip' title='Github'></a>
-            <a href='https://www.linkedin.com/in/andrewcapshaw/' class='social-icon linkedIn-icon' data-toggle='tooltip' title='LinkedIn'></a></li> -->
-    </ul>
-<!-- TODO: list of skill sets -->
-<!-- Current Previous Dead -->
-<!-- TODO: list of projects -->
-<!-- TODO: list of networks -->
-<!--     <div class='container outbound-links'>
-        <a href='/files/capshawAndrew_resume.pdf'>Resume</a> &middot;
-        <a href='#'>Facebook</a> &middot;
-        <a href='#'>last.fm</a> &middot;
-        <a href='#'>Github</a> &middot;
-        <a href='mailto:capshaw@rice.edu' class='email-link'>capshaw@rice.edu</a>
+    <div class='highlighted'>
+        <ul class='posts'>
+            <li><i class='icon icon-map-marker'> </i> Houston, TX</li>
+            <li><i class='icon icon-envelope'> </i> <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a></li>
+        </ul>
     </div>
- -->    <div class='highlighted'>
+    <!-- div class='highlighted'>
+        <div class='small-list'>
+            <h3>Contact</h3>
+            <ul>
+                <li><a href='#'>Facebook</a></li>
+                <li><a href='#'>LinkedIn</a></li>
+                <li><a href='#'>Github</a></li>
+                <li><a href='#'>Last.fm</a></li>
+            </ul>
+        </div>
+        <div class='small-list'>
+            <h3>Projects</h3>
+            <ul>
+                <li><a href='#'>UElect</a></li>
+                <li><a href='#'>Maze Factory</a></li>
+                <li><a href='#'>General Cluster</a></li>
+                <li><a href='#'>Rice Degree Planner</a></li>
+            </ul>
+        </div>
+        <div class='small-list'>
+            <h3>Technologies</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>MySQL / MariaDB</li>
+                <li>Ubuntu / OSX</li>
+            </ul>
+        </div>
+        <br class='clear'>
+    </div -->
+    <div class='container'>
         <h3>Sometimes I write things.</h3>
         <ul class='posts'>
             {% for post in site.posts %}
