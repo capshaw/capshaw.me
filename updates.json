@@ -3,6 +3,7 @@
         {
             "title" : "Accidentally Looks Like Facebook",
             "time"  : 136745634,
+            "type"  : "major",
             "description" : "Using the components from the last update, but heavily simplified. Blue bar looks like facebook.",
             "img" : "img/designs/looks_like_facebook.png"
         },
