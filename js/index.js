@@ -5,9 +5,34 @@ triggered_last_fm = false
  */
 $(document).ready(function() {
 
+    if ($('#about-toggle').length != 0) {
+        $('#about-toggle').click(function(e){
+            e.preventDefault();
+            $('#about').slideDown();
+            $(this).hide();
+            return false;
+        })
+    }
+
     /* Load the last.fm data when the music link is clicked. */
     // loadLastFmData();
+    // $(document).scroll(function() {
+    //     headerBasedOnScrollPositionHandler($(this).scrollTop())
+    // });
 });
+
+function headerBasedOnScrollPositionHandler(pos) {
+    // console.log(pos)
+    var OFFSET = 5;
+    var height = $('#header').outerHeight();
+    if (pos > $('#header').outerHeight() - OFFSET) {
+        $('#header').css('position', 'fixed')
+        $('#header').css('top', -1 * pos + OFFSET)
+    } else {
+        $('#header').css('position', 'absolute')
+        $('#header').css('top', 0)
+    }
+}
 
 /**
  * Load data via the last.fm api

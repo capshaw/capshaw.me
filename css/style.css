@@ -7,20 +7,24 @@ body {
   font-family: "Lora", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: #fff;
-  font-size: 18px;
+  background: #fcfdfe;
+  font-size: 1.25em;
+  padding: 80px 20px 0 20px;
+}
 
-  background: #ffffff; /* Old browsers */
-
+ul {
+  margin-left: 10px;
+  padding-left: 0;
 }
 
 h1, h2, h3, h4{
   font-family: "Lora", "Helvetica", sans-serif;
-  font-weight: normal;
+  font-weight: 300;
+  text-align: left;
 }
 
 h1 {
-  color: rgba(10, 10, 10, 0.9);
+  color: rgba(40, 40, 40, 0.9);
   font-size: 2.5em;
   letter-spacing: -1px;
   line-height: 1.1em;
@@ -28,26 +32,24 @@ h1 {
 }
 
 h2 {
-  color: rgba(10, 10, 10, 0.9);
+  color: rgba(40, 40, 40, 0.9);
   font-size: 1.4em;
-  margin-top: 35px;
-  font-style: italic;
+  margin-top: 25px;
   margin-bottom: -5px;
+  font-style: italic;
 }
 
 h3 {
   color: rgba(90, 90, 90, 0.9);
   font-size: 1em;
-  font-style: italic;
   margin-bottom: 0;
-  font-family: "Lora", "Helvetica", sans-serif;
+  font-style: italic;
 }
 
 h4 {
   color: rgba(90, 90, 90, 0.8);
   font-size: 1em;
   margin-bottom: 0;
-  font-family: "Lora", "Helvetica", sans-serif;
 }
 
 p, li {
@@ -59,12 +61,12 @@ h3 + p {
 }
 
 a {
-  color: #2694DE;
+  color: #608CD1;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ED7851;
+  color: rgb(96,108,136);
           transition: color 1s;
   -webkit-transition: color 1s;
 }
@@ -89,25 +91,57 @@ pre code {
 }
 
 pre {
+  background: #333;
   white-space: pre-wrap;
+  padding: 20px;
 }
 
-.canvas-window {
+.ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  float: left;
+  margin: 0 20px 20px 0;
+  border: 1px solid #eee;
+  vertical-align: middle;
+  padding: 3px;
+  background: #fff;
+}
+
+.ring img{
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom: 0;
-  z-index: 0;
+  border-radius: 100%;
 }
 
-.container {
+/* Smaller elements. */
+.highlighted, .container, .post p, .post h1, .post h2, .post h3, .header div, .post ul, .post iframe {
   max-width: 600px;
-  padding: 0 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Larger elements. */
+.highlight, .post img {
+  width: 100%;
+  max-width: 800px;
   margin: auto;
+  display: block;
+}
+
+.post iframe {
+  display: block;
+}
+
+.post li {
+  margin: 10px 0;
+}
+
+.standard-break {
+  margin-bottom: 20px;
+}
+
+.content {
+  margin-bottom: 20px;
 }
 
 .unstyled {
@@ -116,47 +150,64 @@ pre {
   margin: 0px;
 }
 
+.highlighted {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 0 40px;
+}
+
 .header {
-  font-family: "Lora", "Helvetica", sans-serif;
   font-weight: 300;
-/*  border-bottom: 1px solid #eee;
-  background: #fefefe;
-  opacity: 0.95;
-*/  padding: 40px;
+  padding: 20px;
+  background: rgb(96,108,136); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(96,108,136,1)), color-stop(100%,rgba(63,76,107,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-size: 100% 200px;
+  position: absolute;
+  top: 0; right: 0; left: 0;
+  color: #fff;
+  z-index: 2;
 }
 
-.extended {
-  border-top:1px solid #eaeaec;
-  border-bottom: 1px solid #eaeaec;
-  background: #fcfdfe;
-  padding: 20px 0;
+.top-bar {
+  background: rgba(63,76,107,1);
+  height: 4px;
+  position: fixed;
+  left:  0;
+  right: 0;
+  top:   0;
 }
 
-.header span a {
-  font-style: italic;
-  color: #333;
+.name-link {
   border: none;
   font-weight: normal;
+  color: #fff;
+  font-style: italic;
 }
 
-.header a {
+.email-link {
   font-style: normal;
+  color: #efefef;
 }
 
-.topmost {
-  z-index: 1000;
-  position: relative;
+.world-link {
+  background: url('../img/common/37-white.png');
+  width: 16px;
+  height: 16px;
+  display: inline-block;
 }
 
-.grand {
-  font-size: 2em;
-  margin-top: 100px;
-  color: #555;
-  padding-bottom: 20px;
+.name-link:hover, .email-link:hover {
+  color: #fff;
 }
 
-.masked{
-  color: rgb(69,72,77);
+.facebook {
+  background: #3b5998;
 }
 
 .lineno {
@@ -181,14 +232,10 @@ pre {
 }
 
 .full-photo {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 103px;
-  bottom: 100px;
-  background-position: center;
-  background-size: cover;
-  z-index: -1;
+  width: 100%;
+  max-width: 1400px;
+  max-height: 800px;
+  height: auto;
 }
 
 .posts {
@@ -197,39 +244,54 @@ pre {
   padding-left: 0;
 }
 
+.posts .icon {
+  margin-top: 6px;
+}
+
 .icon {
   margin-right: 1em;
   margin-top: 4px;
 }
 
 .posts li {
-  padding: 5px;
+  margin: 5px;
 }
 
 .posts li span {
   float: right;
 }
 
-.footer {
-  padding-bottom: 20px;
-  text-align: center;
-}
-
 .caption {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-top: 1px solid #aaa;
-  min-height: 100px;
-  background: #fff;
+  text-align: center;
+  font-style: italic;
 }
 
-.color-toggle {
-/*  background: rgba(242,201,228, 0.9);
-  padding: 3px;
-  border: none !important;*/
+.social-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin: 0;
 }
 
-::-moz-selection { background: #2694DE; color: #fff;}
-::selection { background: #2694DE; color: #fff;}​ /*e3e3e1*/
+.tooltip-inner {
+  font-family: sans-serif;
+}
+
+.last-fm-icon {
+  background: url('../img/index/icons/LastFM.png')
+}
+
+.facebook-icon {
+  background: url('../img/index/icons/Facebook.png')
+}
+
+.github-icon {
+  background: url('../img/index/icons/Github.png')
+}
+
+.linkedIn-icon {
+  background: url('../img/index/icons/LinkedIn.png')
+}
+
+::-moz-selection { background: #eee; color: #333;}
+::selection { background: #eee; color: #333;}​ /*e3e3e1*/

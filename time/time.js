@@ -1,6 +1,3 @@
-/**
- * Load the canvas and 2D context when the page loads.
- */
 $(document).ready(function() {
     $('.time-since').each(function() {
         var now = new Date();

@@ -1,24 +1,42 @@
 ---
-layout: front
+layout: default
 title: Home
 ---
 
-<div class='frontpage content masked'>
-
-    <div class='container'>
-        <div class='grand'>Andrew Capshaw</div>
+<div class='content post'>
+    <h2>Hi, I'm Andrew</h2>
+    <p>
+        I'm a Junior studying computer science at Rice University in Houston, TX. I like to build things. <a href='#' id='about-toggle'>More about me.</a>
+    </p>
+    <div id='about' class='hidden'>
+        <img src='/img/common/me.jpg' class='inline-image' alt='Me on Enchanted Rock'>
+        <p>
+            I began building websites when I was in middle school and have been doing so ever since. From the beginning, I have always had an emphasis on making the user interface of my sites as friendly as possible.
+        </p>
+        <p>
+            When I'm not hacking away at some code, I can be found attempting to compose music, hiking the trails of central texas or attending concerts.
+        </p>
     </div>
-    <div class='extended'>
-        <div class='container'>
-            <p class='sweet-justice'>
-                I'm an Junior studying computer science at Rice University in Houston, TX. This is my corner of the web where I keep links to various projects I've been a part of and a blog of my writing and photos. Check out some <a href='https://github.com/capshaw'>code</a> I've written or view my <a href='/files/CapshawAndrew_resume.pdf'>resume</a>.
-            </p>
-            <p>
-                You can get in contact with me via email at <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a>.
-            </p>
-        </div>
+    <ul class='posts'>
+        <li><i class='icon icon-map-marker'> </i> Houston, TX</li>
+        <li><i class='icon icon-envelope'> </i> <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a></li>
+       <!--  <li><a href='http://www.last.fm/user/premendax' class='social-icon last-fm-icon' data-toggle='tooltip' title='Last.fm'></a>
+            <a href='https://facebook.com/capshaw' class='social-icon facebook-icon' data-toggle='tooltip' title='Facebook'></a>
+            <a href='https://github.com/capshaw' class='social-icon github-icon' data-toggle='tooltip' title='Github'></a>
+            <a href='https://www.linkedin.com/in/andrewcapshaw/' class='social-icon linkedIn-icon' data-toggle='tooltip' title='LinkedIn'></a></li> -->
+    </ul>
+<!-- TODO: list of skill sets -->
+<!-- Current Previous Dead -->
+<!-- TODO: list of projects -->
+<!-- TODO: list of networks -->
+<!--     <div class='container outbound-links'>
+        <a href='/files/capshawAndrew_resume.pdf'>Resume</a> &middot;
+        <a href='#'>Facebook</a> &middot;
+        <a href='#'>last.fm</a> &middot;
+        <a href='#'>Github</a> &middot;
+        <a href='mailto:capshaw@rice.edu' class='email-link'>capshaw@rice.edu</a>
     </div>
-    <div class='container'>
+ -->    <div class='highlighted'>
         <h2>Sometimes I write things</h2>
         <ul class='posts'>
             {% for post in site.posts %}
