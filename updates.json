@@ -1,8 +1,15 @@
 {
     "updates" : [
         {
+            "title" : "Dat Rainbow",
+            "time"  : 1368319440,
+            "type"  : "minor",
+            "description" : "Got tired of my site looking like facebook. Accidentally made it look a little googley now...",
+            "img" : "img/designs/dat_rainbow.png"
+        },
+        {
             "title" : "Accidentally Looks Like Facebook",
-            "time"  : 136745634,
+            "time"  : 1367456340,
             "type"  : "major",
             "description" : "Using the components from the last update, but heavily simplified. Blue bar looks like facebook.",
             "img" : "img/designs/looks_like_facebook.png"

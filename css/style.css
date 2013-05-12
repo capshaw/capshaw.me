@@ -60,15 +60,18 @@ h3 + p {
   margin-top: 0.25em;
 }
 
+  /*background: -o-linear-gradient(left,  #90ca77 0%,#90ca77 19%,#81c6dd 19%,#81c6dd 39%,#e9b64d 39%,#e9b64d 60%,#e48743 60%,#e48743 80%,#9e3b33 80%); /* Opera 11.10+ */
+
+
 a {
-  color: #608CD1;
+  color: #345661;
   text-decoration: none;
+          transition: all 1s;
+  -webkit-transition: all 1s;
 }
 
 a:hover {
-  color: rgb(96,108,136);
-          transition: color 1s;
-  -webkit-transition: color 1s;
+  color: #669FB3;
 }
 
 code {
@@ -211,25 +214,53 @@ pre {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c90000', endColorstr='#ad2424',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.grey-bar {
+  background: #333;
+}
+
+.rainbow-bar {
+  background: #90ca77; /* Old browsers */
+  background: -moz-linear-gradient(left,  #90ca77 0%, #90ca77 19%, #81c6dd 19%, #81c6dd 39%, #e9b64d 39%, #e9b64d 60%, #e48743 60%, #e48743 80%, #9e3b33 80%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#90ca77), color-stop(19%,#90ca77), color-stop(19%,#81c6dd), color-stop(39%,#81c6dd), color-stop(39%,#e9b64d), color-stop(60%,#e9b64d), color-stop(60%,#e48743), color-stop(80%,#e48743), color-stop(80%,#9e3b33)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #90ca77 0%,#90ca77 19%,#81c6dd 19%,#81c6dd 39%,#e9b64d 39%,#e9b64d 60%,#e48743 60%,#e48743 80%,#9e3b33 80%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #90ca77 0%,#90ca77 19%,#81c6dd 19%,#81c6dd 39%,#e9b64d 39%,#e9b64d 60%,#e48743 60%,#e48743 80%,#9e3b33 80%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #90ca77 0%,#90ca77 19%,#81c6dd 19%,#81c6dd 39%,#e9b64d 39%,#e9b64d 60%,#e48743 60%,#e48743 80%,#9e3b33 80%); /* IE10+ */
+  background: linear-gradient(to right,  #90ca77 0%,#90ca77 19%,#81c6dd 19%,#81c6dd 39%,#e9b64d 39%,#e9b64d 60%,#e48743 60%,#e48743 80%,#9e3b33 80%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#90ca77', endColorstr='#9e3b33',GradientType=1 ); /* IE6-9 */
+
+}
+
 .header {
   padding: 20px;
   background-size: 100% 200px;
   position: absolute;
   top: 0; right: 0; left: 0;
   color: #fff;
+  text-shadow: 1px 1px 1px #222;
+  font-weight: 400;
   z-index: 2;
 }
 
 .top-bar {
   height: 4px;
-  position: fixed;
+  position: absolute;
   left:  0;
   right: 0;
+  top:   66px;
+}
+
+.top-bar-fixed {
+  position: fixed;
   top:   0;
 }
 
 .name-link {
   color: #fff;
+  border: none;
+}
+
+.name-link:hover {
+  border: none;
 }
 
 .email-link {
