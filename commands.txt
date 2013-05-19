@@ -5,7 +5,8 @@ defaults write com.apple.Finder AppleShowAllFiles TRUE
 killall Finder
 
 # Turn off shadows on screen captures 
-defaults write com.apple.screencapture disable-shadow -bool true
+defaults write com.apple.screencapture disable-shadow -bool false
+killall SystemUIServer
 
 # cURL a page repeatedly
 for i in {1..1000}; do curl URL; done
