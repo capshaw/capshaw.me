@@ -10,6 +10,11 @@ body {
   background: #fcfdfe;
   font-size: 1.25em;
   padding: 80px 20px 0 20px;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
 }
 
 ul {
@@ -236,13 +241,18 @@ pre {
   position: absolute;
   top: 0; right: 0; left: 0;
   color: #fff;
-  text-shadow: 1px 1px 1px #222;
-  font-weight: 400;
   z-index: 2;
 }
 
+.name-link {
+  color: #eee;
+  border: none;
+  font-weight: 300;
+  text-shadow: 0 0 10px #333;
+}
+
 .top-bar {
-  height: 4px;
+  height: 6px;
   position: absolute;
   left:  0;
   right: 0;
@@ -252,11 +262,6 @@ pre {
 .top-bar-fixed {
   position: fixed;
   top:   0;
-}
-
-.name-link {
-  color: #fff;
-  border: none;
 }
 
 .name-link:hover {
@@ -317,9 +322,9 @@ pre {
   padding-left: 0;
 }
 
-.posts .icon {
-  margin-top: 8px;
+.icon {
   margin-right: 0.5em;
+  width: 2em;
 }
 
 .posts li {
@@ -333,33 +338,6 @@ pre {
 .caption {
   text-align: center;
   font-style: italic;
-}
-
-.social-icon {
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  margin: 0;
-}
-
-.tooltip-inner {
-  font-family: sans-serif;
-}
-
-.last-fm-icon {
-  background: url('../img/index/icons/LastFM.png')
-}
-
-.facebook-icon {
-  background: url('../img/index/icons/Facebook.png')
-}
-
-.github-icon {
-  background: url('../img/index/icons/Github.png')
-}
-
-.linkedIn-icon {
-  background: url('../img/index/icons/LinkedIn.png')
 }
 
 ::-moz-selection { background: #eee; color: #333;}
