@@ -14,8 +14,8 @@ $(document).ready(function() {
         })
     }
 
-    $(".post").children().delay(0).animate({'opacity' : 0}, 0)
-    $(".post").children().delay(0).animate({'opacity' : 1}, 500)
+    // $(".post").children().delay(0).animate({'opacity' : 0}, 0)
+    // $(".post").children().delay(0).animate({'opacity' : 1}, 500)
 
     /* Load the last.fm data when the music link is clicked. */
     // loadLastFmData();
