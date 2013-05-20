@@ -144,7 +144,7 @@ pre {
 */
 /* Smaller elements. */
 .highlighted, .container, .post p, .post h1, .post h2, .post h3, .header div, .post ul, .post iframe {
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
