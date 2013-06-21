@@ -5,8 +5,8 @@ tags: [blog, summer]
 published: true
 ---
 
-<iframe src="https://embed.spotify.com/?uri=spotify:track:2Foc5Q5nqNiosCNqttzHof" width="100%" height="80" frameborder="0" allowtransparency="true"> </iframe>
-<p class='caption'>A catchy song to start the summer.</p>
+<!-- iframe src="https://embed.spotify.com/?uri=spotify:track:2Foc5Q5nqNiosCNqttzHof" width="100%" height="80" frameborder="0" allowtransparency="true"> </iframe>
+<p class='caption'>A catchy song to start the summer.</p -->
 
 My junior year is coming to an end. I just turned in my final paper, and am still recovering from pulling an all-nighter two nights ago. I decided I should write about what I learned from the past two semesters, lest I forget. Here's a short list of some things I learned:
 

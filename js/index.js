@@ -1,4 +1,6 @@
 triggered_last_fm = false
+TRACKS_TO_LOAD = 2;
+ONLY_NEW = true;
 
 /*
  * Click handlers and other stuff to handle when the page loads.
@@ -9,33 +11,14 @@ $(document).ready(function() {
         $('#about-toggle').click(function(e){
             e.preventDefault();
             $('#about').slideDown();
-            $(this).hide();
+            $('#show-more-link').hide();
             return false;
         })
     }
 
-    // $(".post").children().delay(0).animate({'opacity' : 0}, 0)
-    // $(".post").children().delay(0).animate({'opacity' : 1}, 500)
-
     /* Load the last.fm data when the music link is clicked. */
-    // loadLastFmData();
-    // $(document).scroll(function() {
-    //     headerBasedOnScrollPositionHandler($(this).scrollTop())
-    // });
+    loadLastFmData();
 });
-
-function headerBasedOnScrollPositionHandler(pos) {
-    // console.log(pos)
-    var OFFSET = 5;
-    var height = $('#header').outerHeight();
-    if (pos > $('#header').outerHeight() - OFFSET) {
-        $('#header').css('position', 'fixed')
-        $('#header').css('top', -1 * pos + OFFSET)
-    } else {
-        $('#header').css('position', 'absolute')
-        $('#header').css('top', 0)
-    }
-}
 
 /**
  * Load data via the last.fm api
@@ -50,7 +33,7 @@ function loadLastFmData() {
         url: 'http://ws.audioscrobbler.com/2.0/',
         data: {
             method : 'user.getrecenttracks',
-            limit  : 2,
+            limit  : TRACKS_TO_LOAD,
             format : 'json',
             user   : 'premendax',
             api_key: 'fdae06d5f55e33f313eec0d691b201b8'
@@ -125,30 +108,37 @@ function lastFmSuccessHandler(data) {
         }
 
         var artist = track.artist['#text'];
-        var newSong = jQuery('<span/>', {
+        var newSong = jQuery('<div/>', {
             id: 'song-' + track_id,
             data_artist : artist,
-            data_song_name : name
-        }).append($('<a/>', {
+            data_song_name : name,
+            class: 'last-fm-container'
+        }).append($('<span/>', {
+            text : music_date,
+            class: 'pull-right'
+        })).append($('<i/>', {
+            class: 'icon icon-music'
+        })).append($('<a/>', {
             href : url,
-            text : name
-        })).append($('<span/>', {
-            text : ' by ' + artist + ' '
-        })).append($('<span/>', {
-            class : 'music-date',
-            text : music_date
-        }));
+            text : name + ' \u00B7 '
+        })).append($('<em/>', {
+            text : artist + ' '
+        }))
 
-        newSong.appendTo($('#song-list')).fadeTo('slow', 1);
-        break;
+        /* Only display a track if there is a new one to display. */
+        if (ONLY_NEW && milliseconds_since_play > an_hour) {
+            continue;
+        }
+
+        newSong.appendTo($('#last-fm'))
+        if (TRACKS_TO_LOAD == 2) break;
     }
+    $('#last-fm').fadeTo('3000', 1);
 }
 
 /**
  * Let the user know that the last.fm api isn't working.
  */
 function lastFmErrorHandler(xhr, textStatus, errorThrown){
-    $('#song-list-loading').addClass('hidden');
-    $('#song-list-error').removeClass('hidden');
     console.log(errorThrown);
 }
