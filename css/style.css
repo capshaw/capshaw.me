@@ -255,6 +255,10 @@ pre {
   color: #fff;
 }
 
+.artist {
+  opacity: 0.5;
+}
+
 .posts {
   list-style-type: none;
   margin-left: 0;

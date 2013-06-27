@@ -27,7 +27,7 @@ function loadLastFmData() {
 
     /* Keep track if we've called the api already on this site load. */
     if(triggered_last_fm) return;
-    triggered_last_fm = true
+    triggered_last_fm = true;
 
     $.ajax({
         url: 'http://ws.audioscrobbler.com/2.0/',
@@ -56,7 +56,7 @@ function lastFmSuccessHandler(data) {
     /* Iterate through the albums to append them to the music div. */
     var tracks = data.recenttracks.track;
 
-    console.log(tracks)
+    console.log(tracks);
 
     var now = new Date();
     var utc = Date.UTC(
@@ -121,7 +121,8 @@ function lastFmSuccessHandler(data) {
         })).append($('<a/>', {
             href : url,
             text : name + ' \u00B7 '
-        })).append($('<em/>', {
+        })).append($('<span/>', {
+            class: 'artist',
             text : artist + ' '
         }))
 
