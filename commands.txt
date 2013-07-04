@@ -1,7 +1,7 @@
 Some cool random, helpful commands I can never remember since I don't use them that often.
 
 # Hide or show hidden files / folders on a mac
-defaults write com.apple.Finder AppleShowAllFiles TRUE
+defaults write com.apple.Finder AppleShowAllFiles YES
 killall Finder
 
 # Turn off shadows on screen captures 
