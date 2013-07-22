@@ -1,0 +1,174 @@
+$accentColor : #1B7EE0;
+
+$tablet-max : 700px;
+
+html, body {
+    margin: 0;
+    padding: 0 20px;
+    font-family: 'adobe-garamond-pro', sans-serif;
+    font-size: 24px;
+    background: #eee;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: $accentColor;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: darken($accentColor, 20%);
+}
+
+p, ul {
+    line-height: 1.6em;
+}
+
+img {
+    display: block;
+}
+
+h1 {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.break {
+    height: 0px;
+    border-top: 1px solid #eee;
+    margin: 40px 0;
+}
+
+.break-short {
+    height: 0px;
+    width: 100px;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+    margin: auto;
+}
+
+.highlight {
+    padding: 20px;
+    background: #333;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.caption {
+    font-style: italic;
+}
+
+.container, .nav {
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 400px;
+}
+
+.nav {
+    padding: 20px 0;
+
+    text-align: right;
+
+    a {
+        color: #333;
+    }
+
+    a:hover{
+        color: $accentColor;
+    }
+}
+
+.container {
+
+    background: #fff;
+    padding: 80px 0;
+    border-top: 2px solid $accentColor;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+
+    p, ul, h1, h2, h3, .link-holder {
+        max-width: $tablet-max;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 40px;
+    }
+
+    img, .highlight {
+        max-width: 100%;
+        max-height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        text-indent: 0;
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    li:before {
+        color: #333;
+        content: "\2013";
+        position: relative;
+        left: -1em;
+    }
+}
+
+.post-title {
+    text-align: center;
+}
+
+.link-holder {
+    height: 3em;
+    position: relative;
+}
+
+.previous-post {
+    position: absolute;
+    left: 0;
+    top : 1em;
+    max-width: 50%;
+    padding-left: 40px;
+}
+
+.next-post {
+    text-align: right;
+    position: absolute;
+    top   : 1em;
+    right : 0;
+    width: 50%;
+    padding-right: 40px;
+}
+
+::selection {
+    background: $accentColor;
+    color: lighten($accentColor, 40%);
+}
+
+.typekit-badge {
+    display: none !important;
+}
+
+.twitter {
+    color: #53d4ff;
+}
+
+.last-fm {
+    color: #D51007;
+}
+
+.rdio {
+    color: #008fd5;
+}

@@ -8,19 +8,18 @@ body, html{
 #line{
 	font-size:20px;
 	text-align:center;
-	color:#666;
+	color:#333;
 	height:21px;
 	width:960px;
 	padding:20px;
 	margin:auto;
-	border-radius:20px;
-	background:#333;
 	position:absolute;
 	top:50%;
 	left:50%;
-	margin-left:-480px;
-	margin-top:-35px;
-	background:rgba(150,150,150,0.1);
+	margin-left:-500px;
+	margin-top: 115px;
+	background: #fff;
+	border-bottom: 1px solid #aaa;
 }
 
 a{
@@ -34,4 +33,14 @@ a:hover{
 
 .the404{
 	color:#999;
+}
+
+.kitten {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 1000px;
+	height: 600px;
+	margin-top: -450px;
+	margin-left: -500px;
 }

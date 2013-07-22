@@ -1,29 +1,31 @@
 ---
-layout: default
+layout: header
 ---
 
-<div class='content'>
-    <div class='post sweet-justice'>
-        <h1>{{ page.title }}</h1>
-        <!-- <h3 class='date'>{{ page.date | date: "%d %B %Y" }}</h3> -->
-        {{ content }}
-    </div>
-    <div class='highlighted'>
-      <h2>Vaguely Related Posts</h2>
-      <ul class="posts">
-        {% for post in site.related_posts limit:3 %}
-        <li>
-            <span>{{ post.date | date: "%d %B %Y" }}</span>
-            {% if post.layout == 'photo' %}
-                <i class='icon icon-camera'> </i>
-            {% elsif post.layout == 'code' %}
-                <i class='icon icon-folder-open'> </i>
-            {% elsif post.layout == 'post' %}
-                <i class='icon icon-angle-right'> </i>
-            {% endif %}
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
+<div class='post-title'>
+    <h1>{{ page.title }}</h1>
+    <div class='break-short'></div>
+    <p>{{ page.date | date: "%B %d, %Y" }}</p>
+</div>
+
+{{ content }}
+
+<div class='break-short'></div>
+
+<div class='link-holder'>
+  {% if page.previous.url %}
+  <div class='previous-post'>
+      &larr; <em>Previously</em> <br>
+      <a href="{{page.previous.url}}" title="Previous: {{page.previous.title}}">
+        {{page.previous.title}}
+      </a>
   </div>
+  {% endif %}
+
+  {% if page.next.url %}
+  <div class='next-post'>
+      <em>Subsequently</em> &rarr;<br>
+      <a href="{{page.next.url}}" title="Next: {{page.next.title}}">{{page.next.title}} </a>
+  </div>
+  {% endif %}
 </div>
