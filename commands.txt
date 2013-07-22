@@ -1,7 +1,7 @@
 Some cool random, helpful commands I can never remember since I don't use them that often.
 
 # Hide or show hidden files / folders on a mac
-defaults write com.apple.Finder AppleShowAllFiles TRUE
+defaults write com.apple.Finder AppleShowAllFiles YES
 killall Finder
 
 # Turn off shadows on screen captures 
@@ -16,3 +16,12 @@ CTRL + H
 
 # Apache error log location when attempting to fix .htacess problems 
 tail -f /var/log/apache2/error.log
+
+
+Tricks:
+
+# Push to both the master branch and gh-pages branch on GitHub. Make similar changes in .git/config to the following lines.
+[remote "origin"]
+  url = git@github.com:capshaw/sudoku.git
+	push = +refs/heads/master:refs/heads/gh-pages
+	push = +refs/heads/master:refs/heads/master
