@@ -12,6 +12,8 @@ title: Wishlist
 + Cable conduit system for desktop computer
 + Beer drinkware
 + Heavy Loop Resistance Band
++ *The Design of Everyday Things* by Donald A. Norman
++ *About Face 3: The Essentials of Interaction Design* by Alan Cooper, Robert Reimann, and David Cronin
 
 ## $50 - $150
 
