@@ -7,13 +7,14 @@ title: Wishlist
 
 ## $10 - $50
 
-+ Comfortable (padded) guitar strap
++ Comfortable (padded + wide) black guitar strap
 + Guitar strap locks
 + Cable conduit system for desktop computer
 + Beer drinkware
 + Heavy Loop Resistance Band
 + *The Design of Everyday Things* by Donald A. Norman
 + *About Face 3: The Essentials of Interaction Design* by Alan Cooper, Robert Reimann, and David Cronin
++ *The Visual Display of Quantitative Information* by Edward Tufte
 
 ## $50 - $150
 
