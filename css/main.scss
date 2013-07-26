@@ -16,7 +16,7 @@ html, body {
 a {
     text-decoration: none;
     color: $accentColor;
-    transition: all 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
 }
 
 a:hover {
@@ -85,7 +85,7 @@ h2 {
         color: #333;
     }
 
-    a:hover{
+    a:hover {
         color: $accentColor;
     }
 }
@@ -123,6 +123,10 @@ h2 {
         content: "\2013";
         position: relative;
         left: -1em;
+    }
+
+    li {
+        text-indent: -0.5em;
     }
 }
 

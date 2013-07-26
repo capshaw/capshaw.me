@@ -11,7 +11,7 @@ html, body {
 a {
   text-decoration: none;
   color: #1b7ee0;
-  transition: all 0.5s ease-in-out; }
+  transition: color 0.5s ease-in-out; }
 
 a:hover {
   color: #104b85; }
@@ -93,6 +93,8 @@ h2 {
     content: "\2013";
     position: relative;
     left: -1em; }
+  .container li {
+    text-indent: -0.5em; }
 
 .post-title {
   text-align: center; }
