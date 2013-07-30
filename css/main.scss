@@ -44,6 +44,10 @@ h2 {
     text-align: center;
 }
 
+code {
+    font-family: 'Droid Sans Mono', monospace;
+}
+
 .break {
     height: 0px;
     border-top: 1px solid #eee;
@@ -82,11 +86,19 @@ h2 {
     text-align: right;
 
     a {
-        color: #333;
+        color: #555;
+        font-family: sans-serif;
+        font-size: 16px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: 5px;
+        transition: none;
     }
 
     a:hover {
-        color: $accentColor;
+        background: $accentColor;
+        color: #fff;
     }
 }
 

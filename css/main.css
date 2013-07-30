@@ -33,6 +33,9 @@ h2 {
   font-size: 1.2em;
   text-align: center; }
 
+code {
+  font-family: 'Droid Sans Mono', monospace; }
+
 .break {
   height: 0px;
   border-top: 1px solid #eee;
@@ -64,9 +67,17 @@ h2 {
   padding: 20px 0;
   text-align: right; }
   .nav a {
-    color: #333; }
+    color: #555;
+    font-family: sans-serif;
+    font-size: 16px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: none; }
   .nav a:hover {
-    color: #1b7ee0; }
+    background: #1b7ee0;
+    color: #fff; }
 
 .container {
   background: #fff;
