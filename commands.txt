@@ -15,10 +15,8 @@ for i in {1..1000}; do curl URL; done
 CTRL + H
 
 # Apache error log location when attempting to fix .htacess problems 
+# (updates as file changes occur)
 tail -f /var/log/apache2/error.log
-
-
-Tricks:
 
 # Push to both the master branch and gh-pages branch on GitHub. Make similar changes in .git/config to the following lines.
 [remote "origin"]
