@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0 20px;
-  font-family: 'adobe-garamond-pro', sans-serif;
+  font-family: 'adobe-garamond-pro', 'Georgia', serif;
   font-size: 24px;
   background: #eee;
   text-rendering: geometricPrecision;
