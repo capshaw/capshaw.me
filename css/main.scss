@@ -48,10 +48,10 @@ h1 {
 }
 
 h2 {
-    margin-top: 40px;
-    font-weight: 600;
-    font-size: 1.2em;
     text-align: center;
+    margin-top: 40px;
+    font-weight: 400;
+    font-style: italic;
 }
 
 code {
@@ -179,8 +179,8 @@ code {
 }
 
 ::selection {
-    background: $accentColor;
-    color: lighten($accentColor, 40%);
+    background: #eee;
+    color: #333;
 }
 
 .typekit-badge {
@@ -197,4 +197,19 @@ code {
 
 .rdio {
     color: #008fd5;
+}
+
+.project-image {
+
+    display: block;
+    margin: 1em auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 400px;
+    background: #eee;
+    transition: 2s all;
+
+    &:hover{
+        box-shadow: 0 0 10px #aaa;
+    }
 }

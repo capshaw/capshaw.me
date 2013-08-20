@@ -46,10 +46,10 @@ h1 {
   text-align: center; }
 
 h2 {
+  text-align: center;
   margin-top: 40px;
-  font-weight: 600;
-  font-size: 1.2em;
-  text-align: center; }
+  font-weight: 400;
+  font-style: italic; }
 
 code {
   font-family: 'Droid Sans Mono', monospace; }
@@ -148,8 +148,8 @@ code {
   padding-right: 40px; }
 
 ::selection {
-  background: #1b7ee0;
-  color: #cee4f9; }
+  background: #eee;
+  color: #333; }
 
 .typekit-badge {
   display: none !important; }
@@ -162,3 +162,14 @@ code {
 
 .rdio {
   color: #008fd5; }
+
+.project-image {
+  display: block;
+  margin: 1em auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+  background: #eee;
+  transition: 2s all; }
+  .project-image:hover {
+    box-shadow: 0 0 10px #aaa; }
