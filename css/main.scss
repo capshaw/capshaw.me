@@ -1,5 +1,4 @@
-$accentColor : #1B7EE0;
-
+$accent-color : #1B7EE0;
 $tablet-max : 700px;
 
 html, body {
@@ -12,25 +11,22 @@ html, body {
     -webkit-font-smoothing: antialiased;
     color: #333;
     min-height: 100%;
-    background: #f3f3f3; /* Old browsers */
-    background: -moz-linear-gradient(top,  #f3f3f3 0%, #e5e5e5 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #f3f3f3 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #f3f3f3 0%,#e5e5e5 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #f3f3f3 0%,#e5e5e5 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #f3f3f3 0%,#e5e5e5 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-    background-attachment: fixed;
+    background: #f3f3f3;
+
+    @media screen and (max-width: $tablet-max) {
+        padding: 0;
+        font-size: 20px;
+    }
 }
 
 a {
     text-decoration: none;
-    color: $accentColor;
+    color: $accent-color;
     transition: color 0.5s ease-in-out;
 }
 
 a:hover {
-    color: darken($accentColor, 20%);
+    color: darken($accent-color, 20%);
 }
 
 p, ul {
@@ -83,40 +79,32 @@ code {
     font-style: italic;
 }
 
-.container, .nav {
-    position: relative;
-    margin: auto;
-    max-width: 1000px;
-    min-width: 400px;
-}
-
 .nav {
-    padding: 20px 0;
-
+    height: 60px;
     text-align: right;
+    background: #333;
+    z-index: 1000;
+    margin-top: 10px;
 
     a {
-        color: #555;
-        font-family: sans-serif;
-        font-size: 16px;
-        background: #fff;
-        padding: 10px;
-        border-radius: 5px;
-        margin-left: 5px;
-        transition: none;
-    }
-
-    a:hover {
-        background: $accentColor;
         color: #fff;
+        font-family: "Abel", sans-serif;
+        font-size: 16px;
+        transition: none;
+        padding: 0 15px;
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+
+        &:hover {
+            background: #222;
+        }
     }
 }
 
 .container {
-
     background: #fff;
-    padding: 80px 0;
-    border-top: 2px solid $accentColor;
+    padding: 40px 0 80px 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 40px;
 
@@ -150,6 +138,12 @@ code {
     li {
         text-indent: -0.5em;
     }
+}
+
+.responsive-container {
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
 }
 
 .post-title {
@@ -199,8 +193,25 @@ code {
     color: #008fd5;
 }
 
-.project-image {
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    background: $accent-color;
+    border-radius: 5px;
+    font-family: "Abel", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    transition: none;
+    border: 1px solid #fff;
 
+    &:hover{
+        background: #eee;
+        border: 1px solid #ddd;
+        color: #333;
+    }
+}
+
+.project-image {
     display: block;
     margin: 1em auto;
     width: 400px;
