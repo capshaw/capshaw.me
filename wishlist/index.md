@@ -15,6 +15,7 @@ title: Wishlist
 + *The Design of Everyday Things* by Donald A. Norman
 + *About Face 3: The Essentials of Interaction Design* by Alan Cooper, Robert Reimann, and David Cronin
 + *The Visual Display of Quantitative Information* by Edward Tufte
++ Matte Black (Field Notes Branded) Space Pen
 
 <div class="break"> </div>
 
@@ -33,6 +34,7 @@ title: Wishlist
 ## $150 - $300
 
 + Logic Pro X
++ AirPort Time Capsule - 2TB
 
 <div class="break"> </div>
 
@@ -45,4 +47,4 @@ title: Wishlist
 + New wardrobe (current clothes like 5 years old)
 + Power supply / storage solution for guitar pedals
 + DSLR Camera
-+ Macbook Air with Mavericks
++ Macbook Air with Mavericks (not yet released)
