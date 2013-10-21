@@ -29,6 +29,7 @@ title: Wishlist
 + Larger, faster food processor
 + Rdio premium subscription
 + [Cloud typography subscription](http://www.typography.com/cloud/welcome/)
++ Kindle (any variety really)
 
 <div class="break"> </div>
 
