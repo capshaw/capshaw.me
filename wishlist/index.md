@@ -39,13 +39,17 @@ title: Wishlist
 
 <div class="break"> </div>
 
-## $300+
+## $300 - $1000
 
-+ Studio monitors / speakers
-+ Tube amp
-+ Synthezier
-+ Piano / Keyboard
++ Tube amp (low wattage)
 + New wardrobe (current clothes like 5 years old)
 + Power supply / storage solution for guitar pedals
+
+<div class="break"> </div>
+
+## $1000+
+
++ Studio monitors
++ Synthesizer / Piano / Keyboard
 + DSLR Camera
 + Macbook Air with Mavericks (not yet released)
