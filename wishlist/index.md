@@ -16,6 +16,7 @@ title: Wishlist
 + *About Face 3: The Essentials of Interaction Design* by Alan Cooper, Robert Reimann, and David Cronin
 + *The Visual Display of Quantitative Information* by Edward Tufte
 + Matte Black (Field Notes Branded) Space Pen
++ Krups 203 Electric Coffee Grinder
 
 <div class="break"> </div>
 
