@@ -45,6 +45,7 @@ title: Wishlist
 + Tube amp (low wattage)
 + New wardrobe (current clothes like 5 years old)
 + Power supply / storage solution for guitar pedals
++ Quadrocopter
 
 <div class="break"> </div>
 
