@@ -17,6 +17,8 @@ title: Wishlist
 + *The Visual Display of Quantitative Information* by Edward Tufte
 + Matte Black (Field Notes Branded) Space Pen
 + Krups 203 Electric Coffee Grinder
++ [Pixelmator](http://www.pixelmator.com/)
++ *Consider Phlebas* by Iain M. Banks
 
 <div class="break"> </div>
 
@@ -55,3 +57,10 @@ title: Wishlist
 + Synthesizer / Piano / Keyboard
 + DSLR Camera
 + Macbook Air with Mavericks (not yet released)
+
+<div class="break"> </div>
+
+## Backburner
+
++ Sketchology App (I'd need an iPad first!)
+
