@@ -2,19 +2,13 @@
 layout: page
 title: Home
 ---
-<h1>Hi, I'm Andrew.</h1>
-<div class='break-short'></div>
-<p>
-    I'm a rising senior in the computer science department at Rice University in Houston, TX.
-</p>
-<!-- <img src="http://placehold.it/1000x400"> -->
-<p>
-    While I am primarily a developer, I enjoy building with an emphasis on the user experience. In my free time, I make music, hike the trails of central Texas and attend local concerts.
-</p>
-<div class='break-short'></div>
-<p>
-    Feel free to catch up with me <a href='mailto:capshaw@rice.edu'>via email</a> or on <a href='https://twitter.com/AndrewCapshaw' class='twitter'>Twitter</a>. Like music? See what I'm listening to on <a class='last-fm' href='http://www.last.fm/user/premendax'>Last.fm</a> and view my playlists on <a href='http://www.rdio.com/people/capshaw/' class='rdio'>Rdio</a>.
-</p>
-<p>
-    Some cool projects (including this website) are open source on <a href="https://github.com/capshaw" class="github">Github</a>.
-</p>
+
+<div class="page" ng-class="{ 'active': labs == true }">
+    <a class="ring" href="#/labs" ng-class="{ 'active': labs == true }"
+             ng-click="labs = !labs"><i class="fa fa-flask"></i></a>
+    <div class="content" ng-class="{ 'active': labs == true }">
+        <div class="container">
+            <p>Hello! I'm Andrew. I'm a developer living in Austin, TX. On this site, you can find various experiments that I've built. If you're seeing this site as it currently stands, the branch <code>update-design</code> accidently got pushed to <code>gh-pages</code>. Opps.</p>
+        </div>
+    </div>
+</div>
