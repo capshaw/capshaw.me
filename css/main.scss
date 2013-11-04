@@ -4,6 +4,8 @@ $labs-color: #78C476;
 $about-color: #C47676;
 $contact-color: #769CC4;
 
+$labs-color: $about-color;
+
 @mixin ring($left-offset, $color) {
     $ring-size: 5 * $unit;
     $ring-size-hover: 6 * $unit;
@@ -56,6 +58,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     color: #fff;
     min-height: 100%;
+    font-family: "Source Sans Pro";
 }
 
 code {
@@ -66,10 +69,11 @@ code {
 }
 
 a {
-    color: darken($labs-color, 10%);
+    color: darken($labs-color, 20%);
     text-decoration: none;
 
     &:hover {
+        color: darken($labs-color, 10%);
         text-decoration: underline;
     }
 }
@@ -105,8 +109,6 @@ a {
 
 .content {
 
-    font-family: "News Cycle";
-
     position: absolute;
     top: 150%;
     width: 100%;
@@ -116,6 +118,7 @@ a {
 
     h1 {
         font-size: $unit;
+        font-family: "News Cycle";
         font-weight: normal;
     }
 
@@ -131,8 +134,8 @@ a {
     }
 
     .break {
-        width: 5 * $unit;
-        border-top: 1px solid #aaa;
+        width: 6 * $unit;
+        border-top: 1px solid #eee;
         margin-bottom: 2 * $unit;
         margin-top: $unit;
     }
@@ -142,6 +145,14 @@ a {
         top: 100px;
         opacity: 1;
     }
+}
+
+.tag {
+    background: $labs-color;
+    color: #fff;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 4px;
 }
 
 ::selection {

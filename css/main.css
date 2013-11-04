@@ -5,7 +5,8 @@ html, body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   color: #fff;
-  min-height: 100%; }
+  min-height: 100%;
+  font-family: "Source Sans Pro"; }
 
 code {
   padding: 2px;
@@ -14,9 +15,10 @@ code {
   border-radius: 4px; }
 
 a {
-  color: #55b552;
+  color: #944040;
   text-decoration: none; }
   a:hover {
+    color: #b55252;
     text-decoration: underline; }
 
 .full-image {
@@ -40,7 +42,7 @@ a {
     text-align: center;
     margin-top: -50px;
     margin-left: -50px;
-    background: #78c476;
+    background: #c47676;
     border-radius: 100px;
     line-height: 100px;
     color: white;
@@ -102,7 +104,7 @@ a {
     text-align: center;
     margin-top: -50px;
     margin-left: 70px;
-    background: #78c476;
+    background: #c47676;
     border-radius: 100px;
     line-height: 100px;
     color: white;
@@ -126,7 +128,6 @@ a {
     overflow: scroll; }
 
 .content {
-  font-family: "News Cycle";
   position: absolute;
   top: 150%;
   width: 100%;
@@ -135,6 +136,7 @@ a {
   margin-top: 0; }
   .content h1 {
     font-size: 20px;
+    font-family: "News Cycle";
     font-weight: normal; }
   .content .container {
     padding: 40px;
@@ -146,8 +148,8 @@ a {
     margin: auto;
     margin-bottom: 20px; }
   .content .break {
-    width: 100px;
-    border-top: 1px solid #aaa;
+    width: 120px;
+    border-top: 1px solid #eee;
     margin-bottom: 40px;
     margin-top: 20px; }
   .content.active {
@@ -155,6 +157,13 @@ a {
     top: 100px;
     opacity: 1; }
 
+.tag {
+  background: #c47676;
+  color: #fff;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 4px; }
+
 ::selection {
-  background: #78c476;
+  background: #c47676;
   color: white; }
