@@ -1,6 +1,6 @@
-capshaw.me
+http://capshaw.me
 ==================
 
-This is the code for my personal website. It is built upon Jekyll, a nifty website generator. 
+This is the source for my personal website. It is built upon Jekyll, a nifty website generator.
 
-<!--:beer:-->
+Current iteration is built on Angular.js and SASS.
