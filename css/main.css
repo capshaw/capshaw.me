@@ -48,28 +48,6 @@ a {
     font-weight: bold;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-    .page .labs .caption {
-      opacity: 0;
-      margin-top: -160px;
-      height: 20px;
-      line-height: 20px;
-      padding: 5px 0;
-      color: #eee;
-      background: #4E5259;
-      font-size: 12px;
-      transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-      .page .labs .caption:before {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        position: absolute;
-        margin-top: 20px;
-        left: 50%;
-        -webkit-transform: rotate(-90deg);
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-right: 8px solid #4E5259; }
     .page .labs:hover, .page .labs.active {
       height: 120px;
       width: 120px;
@@ -101,28 +79,6 @@ a {
     font-weight: bold;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-    .page .about .caption {
-      opacity: 0;
-      margin-top: -160px;
-      height: 20px;
-      line-height: 20px;
-      padding: 5px 0;
-      color: #eee;
-      background: #4E5259;
-      font-size: 12px;
-      transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-      .page .about .caption:before {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        position: absolute;
-        margin-top: 20px;
-        left: 50%;
-        -webkit-transform: rotate(-90deg);
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-right: 8px solid #4E5259; }
     .page .about:hover, .page .about.active {
       height: 120px;
       width: 120px;
@@ -154,28 +110,6 @@ a {
     font-weight: bold;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-    .page .contact .caption {
-      opacity: 0;
-      margin-top: -160px;
-      height: 20px;
-      line-height: 20px;
-      padding: 5px 0;
-      color: #eee;
-      background: #4E5259;
-      font-size: 12px;
-      transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-      .page .contact .caption:before {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        position: absolute;
-        margin-top: 20px;
-        left: 50%;
-        -webkit-transform: rotate(-90deg);
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-right: 8px solid #4E5259; }
     .page .contact:hover, .page .contact.active {
       height: 120px;
       width: 120px;
@@ -203,7 +137,7 @@ a {
     font-size: 20px;
     font-weight: normal; }
   .content .container {
-    padding: 20px;
+    padding: 40px;
     padding-top: 80px;
     max-width: 600px;
     line-height: 1.6em;

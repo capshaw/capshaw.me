@@ -1,10 +1,12 @@
+$unit: 20px;
+
 $labs-color: #78C476;
 $about-color: #C47676;
 $contact-color: #769CC4;
 
 @mixin ring($left-offset, $color) {
-    $ring-size: 100px;
-    $ring-size-hover: 120px;
+    $ring-size: 5 * $unit;
+    $ring-size-hover: 6 * $unit;
 
     display: block;
     z-index: 100;
@@ -25,33 +27,6 @@ $contact-color: #769CC4;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
 
-    .caption {
-        opacity: 0;
-        margin-top: -1 * $ring-size-hover - 40px;
-        height: 20px;
-        line-height: 20px;
-        padding: 5px 0;
-        color: #eee;
-        background: #4E5259;
-        font-size: 12px;
-        transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
-
-        &:before{
-            content:'';
-            display:block;
-            width:0;
-            height:0;
-            position:absolute;
-            margin-top: 20px;
-            left: 50%;
-            -webkit-transform: rotate(-90deg);
-
-            border-top: 8px solid transparent;
-            border-bottom: 8px solid transparent;
-            border-right:8px solid #4E5259;
-        }
-    }
-
     &:hover, &.active {
         height: $ring-size-hover;
         width: $ring-size-hover;
@@ -68,7 +43,7 @@ $contact-color: #769CC4;
     }
 
     &.active {
-        top: 100px;
+        top: 5 * $unit;
         opacity: 0.8;
     }
 }
@@ -140,26 +115,26 @@ a {
     margin-top: 0;
 
     h1 {
-        font-size: 20px;
+        font-size: $unit;
         font-weight: normal;
     }
 
     .container {
-        padding: 20px;
-        padding-top: 80px;
+        padding: 2 * $unit;
+        padding-top: 4 * $unit;
         max-width: 600px;
         line-height: 1.6em;
         background: #fff;
         color: #333;
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: $unit;
     }
 
     .break {
-        width: 100px;
+        width: 5 * $unit;
         border-top: 1px solid #aaa;
-        margin-bottom: 40px;
-        margin-top: 20px;
+        margin-bottom: 2 * $unit;
+        margin-top: $unit;
     }
 
     &.active {
