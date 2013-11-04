@@ -1,4 +1,77 @@
-$bright-color: #78C476;
+$labs-color: #78C476;
+$about-color: #C47676;
+$contact-color: #769CC4;
+
+@mixin ring($left-offset, $color) {
+    $ring-size: 100px;
+    $ring-size-hover: 120px;
+
+    display: block;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: $ring-size;
+    width: $ring-size;
+    text-align: center;
+    margin-top: -1 * $ring-size/2;
+    margin-left: -1 * $ring-size/2 + $left-offset * $ring-size-hover;
+    background: $color;
+    border-radius: $ring-size;
+    line-height: $ring-size;
+    color: lighten($color, 40%);
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
+
+    .caption {
+        opacity: 0;
+        margin-top: -1 * $ring-size-hover - 40px;
+        height: 20px;
+        line-height: 20px;
+        padding: 5px 0;
+        color: #eee;
+        background: #4E5259;
+        font-size: 12px;
+        transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
+
+        &:before{
+            content:'';
+            display:block;
+            width:0;
+            height:0;
+            position:absolute;
+            margin-top: 20px;
+            left: 50%;
+            -webkit-transform: rotate(-90deg);
+
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right:8px solid #4E5259;
+        }
+    }
+
+    &:hover, &.active {
+        height: $ring-size-hover;
+        width: $ring-size-hover;
+        margin-top: -1 * $ring-size-hover/2;
+        margin-left: -1 * $ring-size-hover/2 + $left-offset * $ring-size-hover;
+        border-radius: $ring-size-hover;
+        line-height: $ring-size-hover;
+    }
+
+    &:hover {
+        .caption {
+            opacity: 1;
+        }
+    }
+
+    &.active {
+        top: 100px;
+        opacity: 0.8;
+    }
+}
 
 html, body {
     margin: 0;
@@ -10,13 +83,24 @@ html, body {
     min-height: 100%;
 }
 
+code {
+    padding: 2px;
+    border: 1px solid #eee;
+    background: #fcfcfc;
+    border-radius: 4px;
+}
+
 a {
-    color: darken($bright-color, 10%);
+    color: darken($labs-color, 10%);
     text-decoration: none;
 
     &:hover {
         text-decoration: underline;
     }
+}
+
+.full-image{
+    width: 100%;
 }
 
 .page {
@@ -27,41 +111,18 @@ a {
     top: 0;
     bottom: 0;
 
-    .ring {
-        $ring-size: 100px;
-        $ring-size-hover: 120px;
-
-        z-index: 100;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: $ring-size;
-        width: $ring-size;
-        text-align: center;
-        margin-top: -1 * $ring-size/2;
-        margin-left: -1 * $ring-size/2;
-        background: $bright-color;
-        border-radius: $ring-size;
-        line-height: $ring-size;
-        color: lighten($bright-color, 40%);
-        font-size: 2em;
-        font-weight: bold;
-        text-decoration: none;
-        transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
-
-        &:hover, &.active {
-            height: $ring-size-hover;
-            width: $ring-size-hover;
-            margin-top: -1 * $ring-size-hover/2;
-            margin-left: -1 * $ring-size-hover/2;
-            border-radius: $ring-size-hover;
-            line-height: $ring-size-hover;
-        }
-
-        &.active {
-            top: 100px;
-        }
+    .labs {
+        @include ring(0, $labs-color);
     }
+
+    .about {
+        @include ring(-1, $about-color);
+    }
+
+    .contact {
+        @include ring(1, $labs-color);
+    }
+
     &.active {
         overflow: scroll;
     }
@@ -69,15 +130,24 @@ a {
 
 .content {
 
+    font-family: "News Cycle";
+
     position: absolute;
     top: 150%;
     width: 100%;
     z-index: 99;
+    transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
+    margin-top: 0;
+
+    h1 {
+        font-size: 20px;
+        font-weight: normal;
+    }
 
     .container {
-        max-width: 600px;
         padding: 20px;
         padding-top: 80px;
+        max-width: 600px;
         line-height: 1.6em;
         background: #fff;
         color: #333;
@@ -85,8 +155,12 @@ a {
         margin-bottom: 20px;
     }
 
-    transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
-    margin-top: 0;
+    .break {
+        width: 100px;
+        border-top: 1px solid #aaa;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
 
     &.active {
         display: block;
@@ -96,6 +170,6 @@ a {
 }
 
 ::selection {
-    background: $bright-color;
-    color: lighten($bright-color, 40%);
+    background: $labs-color;
+    color: lighten($labs-color, 50%);
 }

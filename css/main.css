@@ -7,11 +7,20 @@ html, body {
   color: #fff;
   min-height: 100%; }
 
+code {
+  padding: 2px;
+  border: 1px solid #eee;
+  background: #fcfcfc;
+  border-radius: 4px; }
+
 a {
   color: #55b552;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
+
+.full-image {
+  width: 100%; }
 
 .page {
   position: absolute;
@@ -20,7 +29,8 @@ a {
   right: 0;
   top: 0;
   bottom: 0; }
-  .page .ring {
+  .page .labs {
+    display: block;
     z-index: 100;
     position: absolute;
     top: 50%;
@@ -38,34 +48,174 @@ a {
     font-weight: bold;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-    .page .ring:hover, .page .ring.active {
+    .page .labs .caption {
+      opacity: 0;
+      margin-top: -160px;
+      height: 20px;
+      line-height: 20px;
+      padding: 5px 0;
+      color: #eee;
+      background: #4E5259;
+      font-size: 12px;
+      transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
+      .page .labs .caption:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        margin-top: 20px;
+        left: 50%;
+        -webkit-transform: rotate(-90deg);
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #4E5259; }
+    .page .labs:hover, .page .labs.active {
       height: 120px;
       width: 120px;
       margin-top: -60px;
       margin-left: -60px;
       border-radius: 120px;
       line-height: 120px; }
-    .page .ring.active {
-      top: 100px; }
+    .page .labs:hover .caption {
+      opacity: 1; }
+    .page .labs.active {
+      top: 100px;
+      opacity: 0.8; }
+  .page .about {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: -170px;
+    background: #c47676;
+    border-radius: 100px;
+    line-height: 100px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
+    .page .about .caption {
+      opacity: 0;
+      margin-top: -160px;
+      height: 20px;
+      line-height: 20px;
+      padding: 5px 0;
+      color: #eee;
+      background: #4E5259;
+      font-size: 12px;
+      transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
+      .page .about .caption:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        margin-top: 20px;
+        left: 50%;
+        -webkit-transform: rotate(-90deg);
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #4E5259; }
+    .page .about:hover, .page .about.active {
+      height: 120px;
+      width: 120px;
+      margin-top: -60px;
+      margin-left: -180px;
+      border-radius: 120px;
+      line-height: 120px; }
+    .page .about:hover .caption {
+      opacity: 1; }
+    .page .about.active {
+      top: 100px;
+      opacity: 0.8; }
+  .page .contact {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 70px;
+    background: #78c476;
+    border-radius: 100px;
+    line-height: 100px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
+    .page .contact .caption {
+      opacity: 0;
+      margin-top: -160px;
+      height: 20px;
+      line-height: 20px;
+      padding: 5px 0;
+      color: #eee;
+      background: #4E5259;
+      font-size: 12px;
+      transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
+      .page .contact .caption:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        margin-top: 20px;
+        left: 50%;
+        -webkit-transform: rotate(-90deg);
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #4E5259; }
+    .page .contact:hover, .page .contact.active {
+      height: 120px;
+      width: 120px;
+      margin-top: -60px;
+      margin-left: 60px;
+      border-radius: 120px;
+      line-height: 120px; }
+    .page .contact:hover .caption {
+      opacity: 1; }
+    .page .contact.active {
+      top: 100px;
+      opacity: 0.8; }
   .page.active {
     overflow: scroll; }
 
 .content {
+  font-family: "News Cycle";
   position: absolute;
   top: 150%;
   width: 100%;
   z-index: 99;
   transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
   margin-top: 0; }
+  .content h1 {
+    font-size: 20px;
+    font-weight: normal; }
   .content .container {
-    max-width: 600px;
     padding: 20px;
     padding-top: 80px;
+    max-width: 600px;
     line-height: 1.6em;
     background: #fff;
     color: #333;
     margin: auto;
     margin-bottom: 20px; }
+  .content .break {
+    width: 100px;
+    border-top: 1px solid #aaa;
+    margin-bottom: 40px;
+    margin-top: 20px; }
   .content.active {
     display: block;
     top: 100px;
