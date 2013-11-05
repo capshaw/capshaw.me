@@ -1,4 +1,4 @@
-html, body {
+body {
   margin: 0;
   min-height: 100%;
   background: #eee;
@@ -50,11 +50,11 @@ h1 {
     border-radius: 100px;
     line-height: 100px;
     color: white;
-    -webkit-transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
-    -moz-transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
-    -ms-transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
-    -o-transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
-    transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -webkit-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -moz-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -ms-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -o-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
     font-size: 2em;
     font-weight: bold;
     text-decoration: none;

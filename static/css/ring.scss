@@ -15,7 +15,7 @@
     border-radius: $ring-size;
     line-height: $ring-size;
     color: lighten($color, 40%);
-    @include build-prefix-values(transition, margin-top 0.4s cubic-bezier(.66,.01,.25,.99));
+    @include build-prefix-values(transition, all 0.4s cubic-bezier(.66,.01,.25,.99));
     font-size: 2em;
     font-weight: bold;
     text-decoration: none;
