@@ -1,64 +1,27 @@
-$unit: 20px;
+//
+// Constant Definitions and Imports
+//
 
-$labs-color: #78C476;
-$about-color: #C47676;
-$contact-color: #769CC4;
+$primary-color: #C47676;        // The color used for accents, links, etc.
+$unit: 20px;                    // A unit to make padding, margins consistant.
+$ring-size: 5 * $unit;          // The size of the ring when it is not hovered.
+$ring-size-hover: 6 * $unit;    // The size of the ring when it is hovered.
 
-$labs-color: $about-color;
+@import "ring";
+@import "utility";
 
-@mixin ring($left-offset, $color) {
-    $ring-size: 5 * $unit;
-    $ring-size-hover: 6 * $unit;
-
-    display: block;
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: $ring-size;
-    width: $ring-size;
-    text-align: center;
-    margin-top: -1 * $ring-size/2;
-    margin-left: -1 * $ring-size/2 + $left-offset * $ring-size-hover;
-    background: $color;
-    border-radius: $ring-size;
-    line-height: $ring-size;
-    color: lighten($color, 40%);
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
-
-    &:hover, &.active {
-        height: $ring-size-hover;
-        width: $ring-size-hover;
-        margin-top: -1 * $ring-size-hover/2;
-        margin-left: -1 * $ring-size-hover/2 + $left-offset * $ring-size-hover;
-        border-radius: $ring-size-hover;
-        line-height: $ring-size-hover;
-    }
-
-    &:hover {
-        .caption {
-            opacity: 1;
-        }
-    }
-
-    &.active {
-        top: 5 * $unit;
-        opacity: 0.8;
-    }
-}
+//
+// HTML Element Redefinitions
+//
 
 html, body {
     margin: 0;
-    font-family: sans-serif;
+    min-height: 100%;
     background: #eee;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
-    color: #fff;
-    min-height: 100%;
-    font-family: "Source Sans Pro";
 }
 
 code {
@@ -69,18 +32,29 @@ code {
 }
 
 a {
-    color: darken($labs-color, 20%);
+    color: darken($primary-color, 20%);
     text-decoration: none;
 
     &:hover {
-        color: darken($labs-color, 10%);
+        color: darken($primary-color, 10%);
         text-decoration: underline;
     }
 }
 
-.full-image{
-    width: 100%;
+h1 {
+    font-size: $unit;
+    font-family: "News Cycle";
+    font-weight: normal;
 }
+
+::selection {
+    background: $primary-color;
+    color: lighten($primary-color, 50%);
+}
+
+//
+// Non-Utility Classes
+//
 
 .page {
     position: absolute;
@@ -91,15 +65,7 @@ a {
     bottom: 0;
 
     .labs {
-        @include ring(0, $labs-color);
-    }
-
-    .about {
-        @include ring(-1, $about-color);
-    }
-
-    .contact {
-        @include ring(1, $labs-color);
+        @include ring(0, $primary-color, $ring-size, $ring-size-hover);
     }
 
     &.active {
@@ -113,32 +79,8 @@ a {
     top: 150%;
     width: 100%;
     z-index: 99;
-    transition: all 0.4s cubic-bezier(.66,.01,.25,.99);
+    @include build-prefix-values(transition, all 0.4s cubic-bezier(.66,.01,.25,.99));
     margin-top: 0;
-
-    h1 {
-        font-size: $unit;
-        font-family: "News Cycle";
-        font-weight: normal;
-    }
-
-    .container {
-        padding: 2 * $unit;
-        padding-top: 4 * $unit;
-        max-width: 600px;
-        line-height: 1.6em;
-        background: #fff;
-        color: #333;
-        margin: auto;
-        margin-bottom: $unit;
-    }
-
-    .break {
-        width: 6 * $unit;
-        border-top: 1px solid #eee;
-        margin-bottom: 2 * $unit;
-        margin-top: $unit;
-    }
 
     &.active {
         display: block;
@@ -147,15 +89,20 @@ a {
     }
 }
 
-.tag {
-    background: $labs-color;
-    color: #fff;
-    padding: 2px;
-    margin: 2px;
-    border-radius: 4px;
+.container {
+    padding: 2 * $unit;
+    padding-top: 4 * $unit;
+    max-width: 600px;
+    line-height: 1.6em;
+    background: #fff;
+    color: #333;
+    margin: auto;
+    margin-bottom: $unit;
 }
 
-::selection {
-    background: $labs-color;
-    color: lighten($labs-color, 50%);
+.break {
+    width: 6 * $unit;
+    border-top: 1px solid #eee;
+    margin-bottom: 2 * $unit;
+    margin-top: $unit;
 }

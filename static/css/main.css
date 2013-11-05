@@ -1,12 +1,11 @@
 html, body {
   margin: 0;
-  font-family: sans-serif;
-  background: #eee;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  color: #fff;
   min-height: 100%;
-  font-family: "Source Sans Pro"; }
+  background: #eee;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased; }
 
 code {
   padding: 2px;
@@ -21,8 +20,14 @@ a {
     color: #b55252;
     text-decoration: underline; }
 
-.full-image {
-  width: 100%; }
+h1 {
+  font-size: 20px;
+  font-family: "News Cycle";
+  font-weight: normal; }
+
+::selection {
+  background: #c47676;
+  color: white; }
 
 .page {
   position: absolute;
@@ -39,17 +44,21 @@ a {
     left: 50%;
     height: 100px;
     width: 100px;
-    text-align: center;
     margin-top: -50px;
     margin-left: -50px;
     background: #c47676;
     border-radius: 100px;
     line-height: 100px;
     color: white;
+    -webkit-transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -moz-transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -ms-transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -o-transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    transition: margin-top 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
     font-size: 2em;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
+    text-align: center; }
     .page .labs:hover, .page .labs.active {
       height: 120px;
       width: 120px;
@@ -57,71 +66,7 @@ a {
       margin-left: -60px;
       border-radius: 120px;
       line-height: 120px; }
-    .page .labs:hover .caption {
-      opacity: 1; }
     .page .labs.active {
-      top: 100px;
-      opacity: 0.8; }
-  .page .about {
-    display: block;
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    margin-top: -50px;
-    margin-left: -170px;
-    background: #c47676;
-    border-radius: 100px;
-    line-height: 100px;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-    .page .about:hover, .page .about.active {
-      height: 120px;
-      width: 120px;
-      margin-top: -60px;
-      margin-left: -180px;
-      border-radius: 120px;
-      line-height: 120px; }
-    .page .about:hover .caption {
-      opacity: 1; }
-    .page .about.active {
-      top: 100px;
-      opacity: 0.8; }
-  .page .contact {
-    display: block;
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    margin-top: -50px;
-    margin-left: 70px;
-    background: #c47676;
-    border-radius: 100px;
-    line-height: 100px;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99); }
-    .page .contact:hover, .page .contact.active {
-      height: 120px;
-      width: 120px;
-      margin-top: -60px;
-      margin-left: 60px;
-      border-radius: 120px;
-      line-height: 120px; }
-    .page .contact:hover .caption {
-      opacity: 1; }
-    .page .contact.active {
       top: 100px;
       opacity: 0.8; }
   .page.active {
@@ -132,38 +77,29 @@ a {
   top: 150%;
   width: 100%;
   z-index: 99;
+  -webkit-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+  -moz-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+  -ms-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+  -o-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
   transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
   margin-top: 0; }
-  .content h1 {
-    font-size: 20px;
-    font-family: "News Cycle";
-    font-weight: normal; }
-  .content .container {
-    padding: 40px;
-    padding-top: 80px;
-    max-width: 600px;
-    line-height: 1.6em;
-    background: #fff;
-    color: #333;
-    margin: auto;
-    margin-bottom: 20px; }
-  .content .break {
-    width: 120px;
-    border-top: 1px solid #eee;
-    margin-bottom: 40px;
-    margin-top: 20px; }
   .content.active {
     display: block;
     top: 100px;
     opacity: 1; }
 
-.tag {
-  background: #c47676;
-  color: #fff;
-  padding: 2px;
-  margin: 2px;
-  border-radius: 4px; }
+.container {
+  padding: 40px;
+  padding-top: 80px;
+  max-width: 600px;
+  line-height: 1.6em;
+  background: #fff;
+  color: #333;
+  margin: auto;
+  margin-bottom: 20px; }
 
-::selection {
-  background: #c47676;
-  color: white; }
+.break {
+  width: 120px;
+  border-top: 1px solid #eee;
+  margin-bottom: 40px;
+  margin-top: 20px; }
