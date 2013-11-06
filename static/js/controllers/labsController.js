@@ -17,7 +17,7 @@ angular.module('capshawApp')
         $scope.toggleLabs = function () {
             $scope.labs = !$scope.labs;
             $timeout(function() {
-                $scope.pageScrollReady = !$scope.pageScrollReady ;
+                $scope.pageScrollReady = !$scope.pageScrollReady;
             }, $scope.transitionTime);
         }
 

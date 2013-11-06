@@ -13,17 +13,13 @@ code {
   background: #fcfcfc;
   border-radius: 4px; }
 
-a {
-  color: #944040;
-  text-decoration: none; }
-  a:hover {
-    color: #b55252;
-    text-decoration: underline; }
-
 h1 {
   font-size: 20px;
   font-family: "News Cycle";
   font-weight: normal; }
+
+a {
+  color: #fff; }
 
 ::selection {
   background: #c47676;
@@ -97,6 +93,12 @@ h1 {
   color: #333;
   margin: auto;
   margin-bottom: 20px; }
+  .container a {
+    color: #944040;
+    text-decoration: none; }
+    .container a:hover {
+      color: #b55252;
+      text-decoration: underline; }
 
 .break {
   width: 120px;

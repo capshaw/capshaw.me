@@ -31,20 +31,14 @@ code {
     border-radius: 4px;
 }
 
-a {
-    color: darken($primary-color, 20%);
-    text-decoration: none;
-
-    &:hover {
-        color: darken($primary-color, 10%);
-        text-decoration: underline;
-    }
-}
-
 h1 {
     font-size: $unit;
     font-family: "News Cycle";
     font-weight: normal;
+}
+
+a {
+    color: #fff;
 }
 
 ::selection {
@@ -98,6 +92,16 @@ h1 {
     color: #333;
     margin: auto;
     margin-bottom: $unit;
+
+    a {
+        color: darken($primary-color, 20%);
+        text-decoration: none;
+
+        &:hover {
+            color: darken($primary-color, 10%);
+            text-decoration: underline;
+        }
+    }
 }
 
 .break {
