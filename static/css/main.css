@@ -21,6 +21,10 @@ h1 {
 a {
   color: #fff; }
 
+::-moz-selection {
+  background: #6395e6;
+  color: white; }
+
 ::selection {
   background: #6395e6;
   color: white; }

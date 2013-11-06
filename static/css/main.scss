@@ -5,6 +5,7 @@
 $red-color: #C47676;
 $blue-color: #6395E6;
 $green-color: #8ABD8B;
+$pink-color: #EB6CA5;
 
 $primary-color: $blue-color;    // The color used for accents, links, etc.
 $unit: 20px;                    // A unit to make padding, margins consistant.
@@ -43,6 +44,11 @@ h1 {
 
 a {
     color: #fff;
+}
+
+::-moz-selection {
+    background: $primary-color;
+    color: lighten($primary-color, 50%);
 }
 
 ::selection {
