@@ -2,7 +2,11 @@
 // Constant Definitions and Imports
 //
 
-$primary-color: #C47676;        // The color used for accents, links, etc.
+$red-color: #C47676;
+$blue-color: #6395E6;
+$green-color: #8ABD8B;
+
+$primary-color: $blue-color;    // The color used for accents, links, etc.
 $unit: 20px;                    // A unit to make padding, margins consistant.
 $ring-size: 5 * $unit;          // The size of the ring when it is not hovered.
 $ring-size-hover: 6 * $unit;    // The size of the ring when it is hovered.

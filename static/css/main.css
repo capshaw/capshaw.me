@@ -22,7 +22,7 @@ a {
   color: #fff; }
 
 ::selection {
-  background: #c47676;
+  background: #6395e6;
   color: white; }
 
 .page {
@@ -42,7 +42,7 @@ a {
     width: 100px;
     margin-top: -50px;
     margin-left: -50px;
-    background: #c47676;
+    background: #6395e6;
     border-radius: 100px;
     line-height: 100px;
     color: white;
@@ -94,10 +94,10 @@ a {
   margin: auto;
   margin-bottom: 20px; }
   .container a {
-    color: #944040;
+    color: #1f5ec4;
     text-decoration: none; }
     .container a:hover {
-      color: #b55252;
+      color: #3777df;
       text-decoration: underline; }
 
 .break {
