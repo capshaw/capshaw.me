@@ -1,6 +1,6 @@
-<div class="page" ng-class="{ 'active': labs == true }">
+<div class="page" ng-class="{ 'active': pageScrollReady == true }">
     <a class="labs" ng-class="{ 'active': labs == true }"
-             ng-click="labs = !labs"><i class="fa fa-flask"></i></a>
+             ng-click="toggleLabs()"><i class="fa fa-flask"></i></a>
     <div class="content" ng-class="{ 'active': labs == true }">
         <div class="container">
 
