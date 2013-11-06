@@ -6,6 +6,10 @@ capshawApp.config(function($routeProvider) {
             templateUrl: '/static/views/index.html',
             controller: 'LabsCtrl'
         }).
+        when('/wishlist', {
+            templateUrl: '/static/views/index.html',
+            controller: 'StaticCtrl'
+        }).
         otherwise({
             redirectTo: '/'
         });
