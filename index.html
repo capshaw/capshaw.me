@@ -1,20 +1,24 @@
----
-layout: page
-title: Home
----
-<h1>Hi, I'm Andrew.</h1>
-<div class='break-short'></div>
-<p>
-    I'm a rising senior in the computer science department at Rice University in Houston, TX.
-</p>
-<!-- <img src="http://placehold.it/1000x400"> -->
-<p>
-    While I am primarily a developer, I enjoy building with an emphasis on the user experience. In my free time, I make music, hike the trails of central Texas and attend local concerts.
-</p>
-<div class='break-short'></div>
-<p>
-    Feel free to catch up with me <a href='mailto:capshaw@rice.edu'>via email</a> or on <a href='https://twitter.com/AndrewCapshaw' class='twitter'>Twitter</a>. Like music? See what I'm listening to on <a class='last-fm' href='http://www.last.fm/user/premendax'>Last.fm</a> and view my playlists on <a href='http://www.rdio.com/people/capshaw/' class='rdio'>Rdio</a>.
-</p>
-<p>
-    Some cool projects (including this website) are open source on <a href="https://github.com/capshaw" class="github">Github</a>.
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+    <title>Andrew Capshaw</title>
+    <meta name='author' content='Andrew Capshaw' />
+    <meta name='description' content="I'm an Senior studying computer science at Rice University in Houston, TX.">
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
+    <link rel='stylesheet' href='/static/css/main.css' type='text/css' />
+    <link rel='shortcut icon' href='/static/img/common/bolt.png' />
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+</head>
+<body ng-app="capshawApp">
+
+    <div ng-view=""></div>
+
+    <script type="text/javascript" src="/static/js/app.js"></script>
+    <script type="text/javascript" src="/static/js/controllers/labsController.js"></script>
+    <script type="text/javascript" src="/static/js/controllers/staticController.js"></script>
+</body>
+</html>

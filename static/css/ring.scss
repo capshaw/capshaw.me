@@ -1,0 +1,37 @@
+@import "utility";
+
+@mixin ring($left-offset, $color, $ring-size, $ring-size-hover) {
+
+    display: block;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: $ring-size;
+    width: $ring-size;
+    margin-top: -1 * $ring-size/2;
+    margin-left: -1 * $ring-size/2 + $left-offset * $ring-size-hover;
+    background: $color;
+    border-radius: $ring-size;
+    line-height: $ring-size;
+    color: lighten($color, 40%);
+    @include build-prefix-values(transition, all 0.4s cubic-bezier(.66,.01,.25,.99));
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover, &.active {
+        height: $ring-size-hover;
+        width: $ring-size-hover;
+        margin-top: -1 * $ring-size-hover/2;
+        margin-left: -1 * $ring-size-hover/2 + $left-offset * $ring-size-hover;
+        border-radius: $ring-size-hover;
+        line-height: $ring-size-hover;
+    }
+
+    &.active {
+        top: 5 * $unit;
+        opacity: 0.8;
+    }
+}

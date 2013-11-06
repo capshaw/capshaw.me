@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #eee;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased; }
+
+code {
+  padding: 2px;
+  border: 1px solid #eee;
+  background: #fcfcfc;
+  border-radius: 4px; }
+
+h1 {
+  font-size: 20px;
+  font-family: "News Cycle";
+  font-weight: normal; }
+
+a {
+  color: #fff; }
+
+::-moz-selection {
+  background: #6395e6;
+  color: white; }
+
+::selection {
+  background: #6395e6;
+  color: white; }
+
+.page {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+  .page .labs {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    background: #6395e6;
+    border-radius: 100px;
+    line-height: 100px;
+    color: white;
+    -webkit-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -moz-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -ms-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    -o-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center; }
+    .page .labs:hover, .page .labs.active {
+      height: 120px;
+      width: 120px;
+      margin-top: -60px;
+      margin-left: -60px;
+      border-radius: 120px;
+      line-height: 120px; }
+    .page .labs.active {
+      top: 100px;
+      opacity: 0.8; }
+  .page.active {
+    overflow: scroll; }
+
+.content {
+  position: absolute;
+  top: 150%;
+  width: 100%;
+  z-index: 99;
+  -webkit-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+  -moz-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+  -ms-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+  -o-transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+  transition: all 0.4s cubic-bezier(0.66, 0.01, 0.25, 0.99);
+  margin-top: 0; }
+  .content.active {
+    display: block;
+    top: 100px;
+    opacity: 1; }
+
+.container {
+  padding: 40px;
+  padding-top: 80px;
+  max-width: 600px;
+  line-height: 1.6em;
+  background: #fff;
+  color: #333;
+  margin: auto;
+  margin-bottom: 20px; }
+  .container a {
+    color: #1f5ec4;
+    text-decoration: none; }
+    .container a:hover {
+      color: #3777df;
+      text-decoration: underline; }
+
+.break {
+  width: 120px;
+  border-top: 1px solid #eee;
+  margin-bottom: 40px;
+  margin-top: 20px; }
