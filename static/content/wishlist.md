@@ -22,7 +22,6 @@ title: Wishlist
 
 ## $50 - $150
 
-+ Sony (MDR7506) headphones
 + Land's End duffle bag
 + Laser printer
 + USB Joystick
