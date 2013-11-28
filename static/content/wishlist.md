@@ -4,6 +4,12 @@ title: Wishlist
 
 # Wishlist
 
+## Small, Repeatable Gifts
+
++ Coffee (Whole bean variety)
++ Chocolate (Dark)
++ Steam Giftcard
+
 ## $10 - $50
 
 + Comfortable (padded + wide) black guitar strap
