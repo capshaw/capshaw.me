@@ -23,6 +23,7 @@ title: Wishlist
 + Matte Black (Field Notes Branded) Space Pen
 + [Pixelmator](http://www.pixelmator.com/)
 + *Consider Phlebas* by Iain M. Banks
++ Wool socks
 
 <div class="break"> </div>
 
@@ -35,6 +36,8 @@ title: Wishlist
 + Rdio premium subscription
 + [Cloud typography subscription](http://www.typography.com/cloud/welcome/)
 + Kindle (any variety really)
++ Nice, heavy, jacket
++ SSD for Desktop
 
 <div class="break"> </div>
 
@@ -59,7 +62,6 @@ title: Wishlist
 + Studio monitors
 + Synthesizer / Piano / Keyboard
 + DSLR Camera
-+ Macbook Air with Mavericks (not yet released)
 
 <div class="break"> </div>
 
