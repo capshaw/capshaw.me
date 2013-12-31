@@ -24,6 +24,7 @@ title: Wishlist
 + [Pixelmator](http://www.pixelmator.com/)
 + *Consider Phlebas* by Iain M. Banks
 + Wool socks
++ Muse Live at Rome Olympic Stadium (Blu-ray)
 
 <div class="break"> </div>
 
