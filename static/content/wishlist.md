@@ -25,6 +25,7 @@ title: Wishlist
 + *Consider Phlebas* by Iain M. Banks
 + Wool socks
 + Muse Live at Rome Olympic Stadium (Blu-ray)
++ *The World Until Yesterday: What Can We Learn from Traditional Societies?* by Jared Diamond
 
 <div class="break"> </div>
 
