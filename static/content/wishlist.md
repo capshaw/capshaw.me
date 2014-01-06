@@ -52,6 +52,7 @@ title: Wishlist
 
 ## $300 - $1000
 
++ Herman Miller Mirra Chair
 + Tube amp (low wattage)
 + New wardrobe (current clothes like 5 years old)
 + Power supply / storage solution for guitar pedals
