@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# Hello! I'm Andrew. I'm a developer living in Houston, TX.
+# Hello
 
 On this site, you can find various experiments that I've built. Besides building things, I enjoy pretty much everything outdoors.
 

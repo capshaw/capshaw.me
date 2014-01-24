@@ -1,122 +1,162 @@
-//
-// Constant Definitions and Imports
-//
-
-$red-color: #C47676;
-$blue-color: #6395E6;
-$green-color: #8ABD8B;
-$pink-color: #EB6CA5;
-
-$primary-color: $blue-color;    // The color used for accents, links, etc.
-$unit: 20px;                    // A unit to make padding, margins consistant.
-$ring-size: 5 * $unit;          // The size of the ring when it is not hovered.
-$ring-size-hover: 6 * $unit;    // The size of the ring when it is hovered.
-
-@import "ring";
-@import "utility";
+$marketing-height: 640px;
+$u: 40px;
+$accent-color: rgb(65, 106, 142);
 
 //
 // HTML Element Redefinitions
 //
 
-body {
+body, html {
     margin: 0;
     min-height: 100%;
-    background: #eee;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #fff;
+    font-family: "Roboto", sans-serif;
+    color: #232323;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    padding-bottom: 40px; // todo: remove this
 }
 
-code {
-    padding: 2px;
-    border: 1px solid #eee;
-    background: #fcfcfc;
-    border-radius: 4px;
+h2, h3 {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
-h1 {
-    font-size: $unit;
-    font-family: "News Cycle";
-    font-weight: normal;
-}
-
-a {
-    color: #fff;
-}
-
-::-moz-selection {
-    background: $primary-color;
-    color: lighten($primary-color, 50%);
-}
-
-::selection {
-    background: $primary-color;
-    color: lighten($primary-color, 50%);
-}
-
-//
-// Non-Utility Classes
-//
-
-.page {
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
-    .labs {
-        @include ring(0, $primary-color, $ring-size, $ring-size-hover);
-    }
-
-    &.active {
-        overflow: scroll;
-    }
+p {
+    font-family: "Droid Serif", sans-serif;
+    line-height: 1.5em;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .content {
-
-    position: absolute;
-    top: 150%;
-    width: 100%;
-    z-index: 99;
-    @include build-prefix-values(transition, all 0.4s cubic-bezier(.66,.01,.25,.99));
-    margin-top: 0;
-
-    &.active {
-        display: block;
-        top: 100px;
-        opacity: 1;
-    }
-}
-
-.container {
-    padding: 2 * $unit;
-    padding-top: 4 * $unit;
-    max-width: 600px;
-    line-height: 1.6em;
-    background: #fff;
-    color: #333;
+    max-width: 700px;
     margin: auto;
-    margin-bottom: $unit;
+    margin-top: 40px;
 
-    a {
-        color: darken($primary-color, 20%);
+    .card {
+        width: 50%;
+        height: 156px;
+        padding: $u;
+        color: #fff;
+        float: left;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
         text-decoration: none;
 
-        &:hover {
-            color: darken($primary-color, 10%);
-            text-decoration: underline;
+        // TODO: mixin
+
+        &.jellyfish {
+            $color: #6CAD57;
+            background: $color;
+            color: lighten($color, 40%);
+
+            &:hover {
+                background: darken($color, 10%);
+            }
         }
+
+        &.maze-factory {
+            $color: rgb(220, 71, 99);
+            background: $color;
+            color: lighten($color, 40%);
+
+            &:hover {
+                background: darken($color, 10%);
+            }
+        }
+
+        &.sudoku {
+            $color: #1661b2;
+            background: $color;
+            color: lighten($color, 40%);
+
+            &:hover {
+                background: darken($color, 10%);
+            }
+        }
+
+        &.general-cluster {
+            $color: #333;
+            background: $color;
+            color: lighten($color, 40%);
+
+            &:hover {
+                background: darken($color, 10%);
+            }
+        }
+
+        &:hover {
+            background: red;
+        }
+    }
+
+    &:after {
+        clear: both;
     }
 }
 
-.break {
-    width: 6 * $unit;
-    border-top: 1px solid #eee;
-    margin-bottom: 2 * $unit;
-    margin-top: $unit;
+.marketing {
+    height: $marketing-height;
+    background: #eee;
+    display: block;
+    position: relative;
+    background: url(/static/img/temp.png) no-repeat center center;
+    background-size: cover;
+
+    .card {
+        $width: 300px;
+        $height: 400px;
+        $margin: 40px;
+
+        width: $width;
+        height: $height;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -$height / 2;
+        margin-left: -$width / 2;
+        background: rgba(0, 0, 0, 0.1);
+        text-align: center;
+        color: #fff;
+
+        .lead-img {
+            width: $width - $margin * 2;
+            height: $width - $margin * 2;
+            margin: $margin;
+            margin-bottom: $margin / 2;
+            border-radius: $width - $margin * 2;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            font-weight: 100;
+        }
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid $accent-color;
+        font-size: 0;
+        line-height: 0;
+        margin: auto;
+    }
 }
+
