@@ -1,102 +1,122 @@
 body, html {
   margin: 0;
-  min-height: 100%;
   font-family: "Roboto", sans-serif;
   color: #232323;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  font-size: 18px;
-  padding-bottom: 40px; }
+  font-size: 18px; }
 
-h2, h3 {
+h1, h2, h3 {
   margin-bottom: 0;
   margin-top: 0; }
 
 p {
-  font-family: "Droid Serif", sans-serif;
-  line-height: 1.5em;
-  font-style: normal;
-  font-weight: 400; }
+  line-height: 1.5em; }
 
-.content {
-  max-width: 700px;
-  margin: auto;
-  margin-top: 40px; }
-  .content .card {
-    width: 50%;
-    height: 156px;
-    padding: 40px;
-    color: #fff;
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-decoration: none; }
-    .content .card.jellyfish {
-      background: #6cad57;
-      color: #e4f0e0; }
-      .content .card.jellyfish:hover {
-        background: #568c45; }
-    .content .card.maze-factory {
-      background: #dc4763;
-      color: #fdf2f4; }
-      .content .card.maze-factory:hover {
-        background: #ca2645; }
-    .content .card.sudoku {
-      background: #1661b2;
-      color: #a1c8f3; }
-      .content .card.sudoku:hover {
-        background: #104885; }
-    .content .card.general-cluster {
-      background: #333333;
-      color: #999999; }
-      .content .card.general-cluster:hover {
-        background: #1a1a1a; }
-    .content .card:hover {
-      background: red; }
-  .content:after {
-    clear: both; }
-
-.marketing {
-  height: 640px;
+section {
+  margin: 0;
   background: #eee;
-  display: block;
-  position: relative;
-  background: url(/static/img/temp.png) no-repeat center center;
-  background-size: cover; }
-  .marketing .card {
-    width: 300px;
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -200px;
-    margin-left: -150px;
-    background: rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: #fff; }
-    .marketing .card .lead-img {
-      width: 220px;
-      height: 220px;
-      margin: 40px;
-      margin-bottom: 20px;
-      border-radius: 220px;
-      border: 2px solid rgba(0, 0, 0, 0.1); }
-    .marketing .card .name {
-      font-size: 1.5em;
-      font-weight: bold; }
-    .marketing .card .subtitle {
-      font-size: 1.4em;
-      font-weight: 100; }
-  .marketing .arrow-down {
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    width: 0;
+  text-align: center;
+  padding: 1px 0;
+  margin: -1px 0; }
+  @media only screen and (max-width: 500px) {
+    section {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media only screen and (min-width: 501px) and (max-width: 659px) {
+    section {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  section .bounded {
+    max-width: 660px;
+    margin: auto;
+    text-align: left; }
+  section p {
+    margin: 1em 0 0 0; }
+  section a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
+  section h1 {
+    color: rgba(255, 255, 255, 0.95); }
+  section .break {
+    margin: 40px 0;
     height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #416a8e;
-    font-size: 0;
-    line-height: 0;
-    margin: auto; }
+    border-top: 1px solid rgba(200, 200, 200, 0.1); }
+
+.greetings {
+  background: #0b73b5;
+  color: #94d1f8;
+  padding-bottom: 20px; }
+  .greetings h1 {
+    margin-top: 120px;
+    margin-bottom: 0; }
+  .greetings h2 {
+    margin-bottom: 120px;
+    font-weight: 300;
+    font-size: 1.3em; }
+
+.next {
+  background: #3b474f;
+  color: #9fadb7;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .next .project {
+    padding: 20px 0;
+    overflow: auto; }
+    .next .project:first-child {
+      background: red; }
+    .next .project img {
+      width: 200px;
+      float: left;
+      margin: 0 20px 0 0; }
+      @media only screen and (max-width: 500px) {
+        .next .project img {
+          width: 100%;
+          margin-bottom: 20px; } }
+    @media only screen and (max-width: 500px) {
+      .next .project a {
+        padding: 20px;
+        background: rgba(100, 100, 100, 0.5);
+        display: block;
+        border: none;
+        text-align: center;
+        margin: 20px auto; } }
+    .next .project h3 {
+      color: #fff;
+      display: inline-block; }
+    .next .project p {
+      margin-top: 20px; }
+
+.about {
+  background: #ff4847;
+  color: white;
+  text-align: center;
+  padding: 60px 0; }
+
+.song-holder {
+  opacity: 0;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+  @media only screen and (max-width: 500px) {
+    .song-holder {
+      font-size: 0.8em; } }
+  @media only screen and (min-width: 501px) and (max-width: 659px) {
+    .song-holder {
+      font-size: 0.8em; } }
+  @media only screen and (max-width: 500px) {
+    .song-holder .intro {
+      display: block;
+      margin-bottom: 0.5em; } }
+  @media only screen and (min-width: 501px) and (max-width: 659px) {
+    .song-holder .intro {
+      display: block;
+      margin-bottom: 0.5em; } }
+  .song-holder.visible {
+    opacity: 1; }

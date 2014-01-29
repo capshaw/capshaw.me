@@ -1,6 +1,21 @@
-$marketing-height: 640px;
-$u: 40px;
-$accent-color: rgb(65, 106, 142);
+$u: 20px;
+
+// From http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32/
+
+$break-small: 500px;
+$break-large: 660px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
 
 //
 // HTML Element Redefinitions
@@ -8,155 +23,175 @@ $accent-color: rgb(65, 106, 142);
 
 body, html {
     margin: 0;
-    min-height: 100%;
     font-family: "Roboto", sans-serif;
     color: #232323;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     font-size: 18px;
-    padding-bottom: 40px; // todo: remove this
 }
 
-h2, h3 {
+h1, h2, h3 {
     margin-bottom: 0;
     margin-top: 0;
 }
 
 p {
-    font-family: "Droid Serif", sans-serif;
     line-height: 1.5em;
-    font-style: normal;
-    font-weight: 400;
 }
 
-.content {
-    max-width: 700px;
-    margin: auto;
-    margin-top: 40px;
+section {
+    margin: 0;
+    background: #eee;
+    text-align: center;
 
-    .card {
-        width: 50%;
-        height: 156px;
-        padding: $u;
+    padding: 1px 0;
+    margin: -1px 0;
+
+    @include respond-to(handhelds) {
+        padding-left: $u;
+        padding-right: $u;
+    }
+    @include respond-to(medium-screens) {
+        padding-left: $u;
+        padding-right: $u;
+    }
+
+    .bounded {
+        max-width: $break-large;
+        margin: auto;
+        text-align: left;
+    }
+
+    p {
+        margin: 1em 0 0 0;
+    }
+
+    a {
         color: #fff;
-        float: left;
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-
         text-decoration: none;
+        border-bottom: 2px solid #fff;
 
-        // TODO: mixin
+        -webkit-transition: all 0.1s ease-in;
+           -moz-transition: all 0.1s ease-in;
+             -o-transition: all 0.1s ease-in;
+                transition: all 0.1s ease-in;
+    }
 
-        &.jellyfish {
-            $color: #6CAD57;
-            background: $color;
-            color: lighten($color, 40%);
+    h1 {
+        color: rgba(255, 255, 255, 0.95);
+    }
 
-            &:hover {
-                background: darken($color, 10%);
-            }
-        }
+    .break {
+        margin: 2 * $u 0;
+        height: 0;
+        border-top: 1px solid rgba(200, 200, 200, 0.1);
+    }
+}
 
-        &.maze-factory {
-            $color: rgb(220, 71, 99);
-            background: $color;
-            color: lighten($color, 40%);
+.greetings {
+    $color: #0B73B5;
 
-            &:hover {
-                background: darken($color, 10%);
-            }
-        }
+    background: $color;
+    color: lighten($color, 40%);
 
-        &.sudoku {
-            $color: #1661b2;
-            background: $color;
-            color: lighten($color, 40%);
+    padding-bottom: $u;
 
-            &:hover {
-                background: darken($color, 10%);
-            }
-        }
+    h1 {
+        margin-top: 6 * $u;
+        margin-bottom: 0;
+    }
 
-        &.general-cluster {
-            $color: #333;
-            background: $color;
-            color: lighten($color, 40%);
+    h2 {
+        margin-bottom: 6 * $u;
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+}
 
-            &:hover {
-                background: darken($color, 10%);
-            }
-        }
+.next {
+    $color: #3B474F;
+    background: $color;
+    color: lighten($color, 40%);
 
-        &:hover {
+    padding-top: 2 * $u;
+    padding-bottom: 2 * $u;
+
+    .project {
+        padding: $u 0;
+        overflow: auto;
+
+        &:first-child {
             background: red;
         }
-    }
 
-    &:after {
-        clear: both;
+        img {
+            width: 200px;
+            float: left;
+            margin: 0 $u 0 0;
+
+            @include respond-to(handhelds) {
+                width: 100%;
+                margin-bottom: $u;
+            }
+        }
+
+        a {
+            @include respond-to(handhelds) {
+                padding: $u;
+                background: rgba(100, 100, 100, 0.5);
+                display: block;
+                border: none;
+                text-align: center;
+                margin: $u auto;
+            }
+        }
+
+        h3 {
+            color: #fff;
+            display: inline-block;
+        }
+
+        p {
+            margin-top: $u;
+        }
     }
 }
 
-.marketing {
-    height: $marketing-height;
-    background: #eee;
-    display: block;
-    position: relative;
-    background: url(/static/img/temp.png) no-repeat center center;
-    background-size: cover;
-
-    .card {
-        $width: 300px;
-        $height: 400px;
-        $margin: 40px;
-
-        width: $width;
-        height: $height;
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -$height / 2;
-        margin-left: -$width / 2;
-        background: rgba(0, 0, 0, 0.1);
-        text-align: center;
-        color: #fff;
-
-        .lead-img {
-            width: $width - $margin * 2;
-            height: $width - $margin * 2;
-            margin: $margin;
-            margin-bottom: $margin / 2;
-            border-radius: $width - $margin * 2;
-            border: 2px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .name {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        .subtitle {
-            font-size: 1.4em;
-            font-weight: 100;
-        }
-    }
-
-    .arrow-down {
-        position: absolute;
-        bottom: -15px;
-        left: 50%;
-
-        width: 0;
-        height: 0;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        border-top: 15px solid $accent-color;
-        font-size: 0;
-        line-height: 0;
-        margin: auto;
-    }
+.about {
+    $color: #FF4847;
+    background: $color;
+    color: lighten($color, 40%);
+    text-align: center;
+    padding: 3 * $u 0;
 }
 
+.song-holder {
+    opacity: 0;
+
+    -webkit-transition: all 0.1s ease-in;
+       -moz-transition: all 0.1s ease-in;
+         -o-transition: all 0.1s ease-in;
+            transition: all 0.1s ease-in;
+
+    @include respond-to(handhelds) {
+        font-size: 0.8em;
+    }
+    @include respond-to(medium-screens) {
+        font-size: 0.8em;
+    }
+
+    .intro {
+        @include respond-to(handhelds) {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        @include respond-to(medium-screens) {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+    }
+
+    &.visible {
+        opacity: 1;
+    }
+}

@@ -7,43 +7,51 @@
     <meta name='description' content="I'm a Senior studying computer science at Rice University in Houston, TX.">
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
     <link rel='stylesheet' href='/static/css/main.css' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,400italic,900' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <script src='//code.jquery.com/jquery-1.10.2.min.js'></script>
 </head>
 <body>
 
-    <div class='nav'></div>
-    <div class='marketing'>
-        <div class='card'>
-            <img src='/static/img/me.jpg' class='lead-img'>
-            <div class='name'>
-                Andrew Capshaw
+    <section class='greetings'>
+        <h1>Hello! I'm Andrew Capshaw</h1>
+        <h2>Full-stack Developer</h2>
+
+        <span class='song-holder invisible'>
+            <span class='intro'>&#9835; Currently listening to</span>
+            <a href='' class='song-name' id='song'></a>
+        </span>
+    </section>
+    <section class='next'>
+        <div class='bounded'>
+            <h1>About</h1>
+            <p>I'm currently a senior in my final semester at Rice University in Houston, TX. I feel comfortable anywhere in the software stack. However, recently I've really been excited to work on honing my design skills and front-end development.</p>
+            <p>In May, I'll be moving to Austin, TX after graduation. I look forward to starting my first full-time job then!</p>
+
+            <div class='break'></div>
+
+            <div class='project'>
+                <img src='/static/img/sudoku.png'>
+                <h3>Sudoku</h3>
+                <p>A sudoku puzzle generator and solver. Motivated both by the UI challenge and to learn how sudoku puzzles are generated. <a href='http://capshaw.me/sudoku'>Go play some sudoku.</a></p>
             </div>
-            <div class='subtitle'>
-                Full Stack Developer
+
+            <div class='project'>
+                <img src='/static/img/maze-factory.png'>
+                <h3>Maze Factory</h3>
+                <p>One of my earlier experiments with the HTML5 canvas. It draws a DFS-generated maze to the screen live in front of the user. <a href='http://capshaw.me/maze-factory'>Build a maze.</a></p>
+            </div>
+
+            <div class='project'>
+                <img src='/static/img/jellyfish.png'>
+                <h3>Jellyfish</h3>
+                <p>A personal note and document application to make the writing and maintaining of markdown notes and essays painless. <a href='https://github.com/capshaw/jellyfish'>Explore the code.</a></p>
             </div>
         </div>
-        <div class='arrow-down'></div>
-    </div>
-    <div class='content'>
-        <h2>Hello! I'm Andrew. I'm a developer living in Austin, TX</h2>
-        <p>In my free time I develop various experimental applications and toy applications, some of which are highlighted below.</p>
-    </div>
-    <div class='content'>
-        <a class='card jellyfish' href=''>
-            <h3>Jellyfish</h3> a personal note and document application
-        </a>
-        <a class='card sudoku' href=''>
-            <h3>Sudoku</h3> a sudoku puzzle generator and solver
-        </a>
-        <a class='card maze-factory' href=''>
-            <h3>Maze Factory</h3> Strangely psychedelic DFS-generated maze generator
-        </a>
-        <a class='card general-cluster' href=''>
-            <h3>General Cluster</h3> finding clusters using k-means clustering
-        </a>
-    </div>
+    </section>
+    <section class='about'>
+        Want to talk? Email me at <a href='mailto:capshaw@rice.edu'>capshaw@rice.edu</a>.
+    </section>
 
+    <script src='/static/js/index.js'></script>
 </body>
 </html>
