@@ -25,6 +25,7 @@ title: Wishlist
 + *Consider Phlebas* by Iain M. Banks
 + Wool socks
 + Muse Live at Rome Olympic Stadium (Blu-ray)
++ *The World Until Yesterday: What Can We Learn from Traditional Societies?* by Jared Diamond
 
 <div class="break"> </div>
 
@@ -51,6 +52,7 @@ title: Wishlist
 
 ## $300 - $1000
 
++ Herman Miller Mirra Chair
 + Tube amp (low wattage)
 + New wardrobe (current clothes like 5 years old)
 + Power supply / storage solution for guitar pedals

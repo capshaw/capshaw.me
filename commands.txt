@@ -23,3 +23,6 @@ tail -f /var/log/apache2/error.log
   url = git@github.com:capshaw/sudoku.git
 	push = +refs/heads/master:refs/heads/gh-pages
 	push = +refs/heads/master:refs/heads/master
+
+# Simple static file server
+python -m SimpleHTTPServer
