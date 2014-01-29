@@ -82,9 +82,8 @@ section {
     }
 
     .break {
-        margin: 2 * $u 0;
+        margin: $u * 2 auto;
         height: 0;
-        border-top: 1px solid rgba(200, 200, 200, 0.1);
     }
 }
 
@@ -97,12 +96,12 @@ section {
     padding-bottom: $u;
 
     h1 {
-        margin-top: 6 * $u;
+        margin-top: 7 * $u;
         margin-bottom: 0;
     }
 
     h2 {
-        margin-bottom: 6 * $u;
+        margin-bottom: 7 * $u;
         font-weight: 300;
         font-size: 1.3em;
     }
