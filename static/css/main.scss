@@ -88,7 +88,7 @@ section {
 }
 
 .greetings {
-    $color: #0B73B5;
+    $color: #4679B9;
 
     background: $color;
     color: lighten($color, 40%);
@@ -107,7 +107,7 @@ section {
     }
 }
 
-.next {
+.about {
     $color: #3B474F;
     background: $color;
     color: lighten($color, 40%);
@@ -156,7 +156,7 @@ section {
     }
 }
 
-.about {
+.contact {
     $color: #FF4847;
     background: $color;
     color: lighten($color, 40%);
