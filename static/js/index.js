@@ -41,7 +41,6 @@ function lastFMSuccessHandler(data) {
 
     songHolder.html(name);
     songHolder.parent().addClass('visible');
-    songHolder.attr('href', track.url);
 }
 
 function lastFMFailureHandler(xhr, textStatus, errorThrown) {
