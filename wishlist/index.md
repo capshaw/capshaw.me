@@ -1,14 +1,17 @@
 ---
 title: Wishlist
+layout: document
 ---
 
-# Wishlist
+# Wishlist 
 
 ## Small, Repeatable Gifts
 
-+ Coffee (Whole bean variety)
++ Coffee (Whole bean)
 + Chocolate (Dark)
 + Steam Giftcard
+
+- - -
 
 ## $10 - $50
 
@@ -27,7 +30,7 @@ title: Wishlist
 + Muse Live at Rome Olympic Stadium (Blu-ray)
 + *The World Until Yesterday: What Can We Learn from Traditional Societies?* by Jared Diamond
 
-<div class="break"> </div>
+- - -
 
 ## $50 - $150
 
@@ -41,32 +44,32 @@ title: Wishlist
 + Nice, heavy, jacket
 + SSD for Desktop
 
-<div class="break"> </div>
+- - -
 
 ## $150 - $300
 
 + Logic Pro X
 + AirPort Time Capsule - 2TB
 
-<div class="break"> </div>
+- - -
 
 ## $300 - $1000
 
-+ Herman Miller Mirra Chair
-+ Tube amp (low wattage)
-+ New wardrobe (current clothes like 5 years old)
++ Herman Miller Chair (Mirra or Aeron)
++ Tube guitar amplifier (low wattage)
 + Power supply / storage solution for guitar pedals
 + Quadrocopter
 
-<div class="break"> </div>
+- - -
 
 ## $1000+
 
 + Studio monitors
 + Synthesizer / Piano / Keyboard
 + DSLR Camera
++ Mac pro
 
-<div class="break"> </div>
+- - -
 
 ## Backburner
 

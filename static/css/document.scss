@@ -1,0 +1,47 @@
+$u: 20px;
+.document-container {
+    background: #eee;
+    padding: 2 * $u;
+    min-height: 100%;
+
+    .document {
+        background: #fff;
+        margin: auto;
+        max-width: 600px;
+        padding: 2 * $u;
+        font-size: 0.9em;
+
+        h1 {
+            border-bottom: 5px solid #333;
+            color: #333;
+            padding-bottom: $u / 4;
+            margin-bottom: $u;
+        }
+
+        ul {
+            list-style-type: none;
+            display: table;
+        }
+
+        ul li:before{
+            content: "–";
+            position: relative;
+            left: -10px;
+            color: #333;
+            display: table-cell;
+        }
+
+        ul li{
+            // text-indent:-5px;
+            line-height: 1.5em;
+            display: table-row;
+        }
+
+        hr {
+            background: #eee;
+            height: 1px;
+            border: none;
+            margin: $u;
+        }
+    }
+}
