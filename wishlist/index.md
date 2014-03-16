@@ -67,7 +67,7 @@ layout: document
 + Studio monitors
 + Synthesizer / Piano / Keyboard
 + DSLR Camera
-+ Mac pro
++ Gibson Firebird
 
 - - -
 
