@@ -17,18 +17,16 @@ layout: document
 
 + Comfortable (padded + wide) black guitar strap
 + Guitar strap locks
++ Muse Live at Rome Olympic Stadium (Blu-ray)
 + Cable conduit system for desktop computer
 + Beer drinkware
-+ Heavy Loop Resistance Band
++ Matte Black (Field Notes Branded) Space Pen
++ [Pixelmator](http://www.pixelmator.com/)
++ Wool socks
++ *The World Until Yesterday: What Can We Learn from Traditional Societies?* by Jared Diamond
 + *The Design of Everyday Things* by Donald A. Norman
 + *About Face 3: The Essentials of Interaction Design* by Alan Cooper, Robert Reimann, and David Cronin
 + *The Visual Display of Quantitative Information* by Edward Tufte
-+ Matte Black (Field Notes Branded) Space Pen
-+ [Pixelmator](http://www.pixelmator.com/)
-+ *Consider Phlebas* by Iain M. Banks
-+ Wool socks
-+ Muse Live at Rome Olympic Stadium (Blu-ray)
-+ *The World Until Yesterday: What Can We Learn from Traditional Societies?* by Jared Diamond
 
 - - -
 
@@ -43,6 +41,7 @@ layout: document
 + Kindle (any variety really)
 + Nice, heavy, jacket
 + SSD for Desktop
++ *Grid Systems in Graphic Design* by Josef Muller-Brockmann
 
 - - -
 
