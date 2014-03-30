@@ -3,12 +3,24 @@
   background: #eee;
   padding: 40px;
   min-height: 100%; }
+  @media only screen and (max-width: 500px) {
+    .document-container {
+      padding: 40px 0; } }
+  @media only screen and (min-width: 501px) and (max-width: 659px) {
+    .document-container {
+      padding: 40px 0; } }
   .document-container .document {
     background: #fff;
     margin: auto;
     max-width: 600px;
     padding: 40px;
     font-size: 0.9em; }
+    @media only screen and (max-width: 500px) {
+      .document-container .document {
+        padding: 40px 20px; } }
+    @media only screen and (min-width: 501px) and (max-width: 659px) {
+      .document-container .document {
+        padding: 40px 20px; } }
     .document-container .document h1 {
       border-bottom: 5px solid #333;
       color: #333;
@@ -23,9 +35,25 @@
       left: -10px;
       color: #333;
       display: table-cell; }
+      @media only screen and (max-width: 500px) {
+        .document-container .document ul li:before {
+          display: none; } }
+      @media only screen and (min-width: 501px) and (max-width: 659px) {
+        .document-container .document ul li:before {
+          display: none; } }
     .document-container .document ul li {
       line-height: 1.5em;
       display: table-row; }
+      @media only screen and (max-width: 500px) {
+        .document-container .document ul li {
+          display: block;
+          padding: 10px;
+          border-top: 1px solid red; } }
+      @media only screen and (min-width: 501px) and (max-width: 659px) {
+        .document-container .document ul li {
+          display: block;
+          padding: 10px;
+          border-top: 1px solid red; } }
     .document-container .document hr {
       background: #eee;
       height: 1px;
