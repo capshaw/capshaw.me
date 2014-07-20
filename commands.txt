@@ -29,3 +29,6 @@ tail -f /var/log/apache2/error.log
 
 # Simple static file server
 python -m SimpleHTTPServer
+
+# Fix multi-monitor behavior in Gnome
+gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
