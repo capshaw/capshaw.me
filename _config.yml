@@ -1,3 +1,4 @@
 pygments:    true
 permalink: /:title
 post_dirs: false
+markdown: kramdown
