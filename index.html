@@ -2,36 +2,34 @@
 title: Home
 layout: page
 ---
-<section class='greetings'>
-    <h1>Hello! I'm Andrew Capshaw</h1>
-    <h2>Full-stack Developer</h2>
-    <span class='song-holder invisible'>
-        <span class='intro'>&#9835; Currently listening to</span>
-        <a href='http://www.last.fm/user/premendax' class='song-name' id='song'></a>
-    </span>
-</section>
-<section class='about'>
-    <div class='bounded'>
-        <h1>About</h1>
-        <p>I'm currently a senior in my final semester at Rice University in Houston, TX. I'm capable working anywhere within the software anywhere, but I really enjoy honing my skills on the front-end.</p>
-        <p>In May, I'll be moving to Austin, TX after graduation. I look forward to starting my first full-time job then!</p>
-        <div class='break'></div>
-        <div class='project'>
-            <img src='/static/img/sudoku.png'>
-            <h3>Sudoku</h3>
-            <p>A sudoku puzzle generator and solver. Motivated both by the UI challenge and to learn how sudoku puzzles are generated. <a href='http://capshaw.me/sudoku'>Go play some sudoku.</a></p>
-        </div>
-        <div class='project'>
-            <img src='/static/img/maze-factory.png'>
-            <h3>Maze Factory</h3>
-            <p>One of my earlier experiments with the HTML5 canvas. It draws a DFS-generated maze to the screen live in front of the user. <a href='http://capshaw.me/maze-factory'>Build a maze.</a></p>
-        </div>
-        <div class='project'>
-            <img src='/static/img/jellyfish.png'>
-            <h3>Jellyfish</h3>
-            <p>A personal note and document application to make the writing and maintaining of markdown notes and essays painless. <a href='https://github.com/capshaw/jellyfish'>Explore the code.</a></p>
-        </div>
+<canvas class='canvas' id='background-canvas'></canvas>
+
+<section id='card' class='card'>
+    <h1 class='name'>Andrew Capshaw</h1>
+    <h2 class='title'>Software Developer</h2>
+    <div class='social'>
+        <a href='https://www.github.com/capshaw' class='github' title='Github'>
+            <i class='fa fa-github'></i>
+        </a>
+        <a href='http://www.last.fm/user/premendax' class='lastfm' title='Last.fm'>
+            <i class='fa fa-lastfm'></i>
+        </a>
+        <a href='https://www.twitter.com/AndrewCapshaw' class='twitter' title='Twitter'>
+            <i class='fa fa-twitter'></i>
+        </a>
+        <a href='/labs' class='lab' title='Labs: web experiments'>
+            <i class='fa fa-flask'></i>
+        </a>
     </div>
 </section>
 
-<script src='/static/js/index.js'></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script type='text/javascript' src='static/js/index.js'></script>
+<script type='text/javascript'>
+    var app = app();
+    app.init({
+        canvasFrontId: 'background-canvas',
+        numFrames: 3000,
+        maxDelta: 1
+    });
+</script>
