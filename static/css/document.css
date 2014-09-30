@@ -1,33 +1,3 @@
-@charset "UTF-8";
-.document-container {
-  background: #eee;
-  padding: 40px;
-  min-height: 100%; }
-  .document-container .document {
-    background: #fff;
-    margin: auto;
-    max-width: 600px;
-    padding: 40px;
-    font-size: 0.9em; }
-    .document-container .document h1 {
-      border-bottom: 5px solid #333;
-      color: #333;
-      padding-bottom: 5px;
-      margin-bottom: 20px; }
-    .document-container .document ul {
-      list-style-type: none;
-      display: table; }
-    .document-container .document ul li:before {
-      content: "–";
-      position: relative;
-      left: -10px;
-      color: #333;
-      display: table-cell; }
-    .document-container .document ul li {
-      line-height: 1.5em;
-      display: table-row; }
-    .document-container .document hr {
-      background: #eee;
-      height: 1px;
-      border: none;
-      margin: 20px; }
+/*# sourceMappingURL=document.scss.map */
+
+/*# sourceMappingURL=document.css.map */

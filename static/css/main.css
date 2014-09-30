@@ -1,121 +1,55 @@
 body, html {
+  width: 100%;
+  height: 100%;
   margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   color: #232323;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  font-size: 18px; }
+  font-size: 18px;
+  text-overflow: none;
+  overflow: hidden; }
 
-h1, h2, h3 {
-  margin-bottom: 0;
-  margin-top: 0; }
+.canvas {
+  position: absolute;
+  left: 0;
+  top: 0; }
 
-p {
-  line-height: 1.5em; }
+.loading {
+  display: none; }
 
-section {
-  margin: 0;
-  background: #eee;
-  text-align: center;
-  padding: 1px 0;
-  margin: -1px 0; }
-  @media only screen and (max-width: 500px) {
-    section {
-      padding-left: 20px;
-      padding-right: 20px; } }
-  @media only screen and (min-width: 501px) and (max-width: 659px) {
-    section {
-      padding-left: 20px;
-      padding-right: 20px; } }
-  section .bounded {
-    max-width: 660px;
-    margin: auto;
-    text-align: left; }
-  section p {
-    margin: 1em 0 0 0; }
-  section a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 2px solid #fff;
-    -webkit-transition: all 0.1s ease-in;
-    -moz-transition: all 0.1s ease-in;
-    -o-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in; }
-  section h1 {
-    color: rgba(255, 255, 255, 0.95); }
-  section .break {
-    margin: 40px auto;
-    height: 0; }
-
-.greetings {
-  background: #4679b9;
-  color: #dae4f1;
-  padding-bottom: 20px; }
-  .greetings h1 {
-    margin-top: 140px;
-    margin-bottom: 0; }
-  .greetings h2 {
-    margin-bottom: 140px;
+.card {
+  width: 250px;
+  height: 140px;
+  margin-top: -70px;
+  margin-left: -125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center; }
+  .card .name {
+    font-size: 1.2em;
+    margin: 20px 0 0 0; }
+  .card .title {
+    margin-top: 0;
     font-weight: 300;
-    font-size: 1.3em; }
+    font-size: 1em; }
+  .card .social i {
+    margin-left: 10px; }
+  .card .social a {
+    text-decoration: none;
+    color: #232323; }
+  .card .social .lastfm:hover {
+    color: #d60014; }
+  .card .social .github:hover {
+    color: #aaaaaa; }
+  .card .social .twitter:hover {
+    color: #55acee; }
+  .card .social .lab:hover {
+    color: #55b055; }
 
-.about {
-  background: #3b474f;
-  color: #9fadb7;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-  .about .project {
-    padding: 20px 0;
-    overflow: auto; }
-    .about .project:first-child {
-      background: red; }
-    .about .project img {
-      width: 200px;
-      float: left;
-      margin: 0 20px 0 0; }
-      @media only screen and (max-width: 500px) {
-        .about .project img {
-          width: 100%;
-          margin-bottom: 20px; } }
-    @media only screen and (max-width: 500px) {
-      .about .project a {
-        padding: 20px;
-        background: rgba(100, 100, 100, 0.5);
-        display: block;
-        border: none;
-        text-align: center;
-        margin: 20px auto; } }
-    .about .project h3 {
-      color: #fff;
-      display: inline-block; }
-    .about .project p {
-      margin-top: 20px; }
+::selection {
+  background: #e6e6e6; }
 
-.contact {
-  background: #ff4847;
-  color: white;
-  text-align: center;
-  padding: 60px 0; }
-
-.song-holder {
-  opacity: 0;
-  -webkit-transition: all 0.1s ease-in;
-  -moz-transition: all 0.1s ease-in;
-  -o-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in; }
-  @media only screen and (max-width: 500px) {
-    .song-holder {
-      font-size: 0.8em; } }
-  @media only screen and (min-width: 501px) and (max-width: 659px) {
-    .song-holder {
-      font-size: 0.8em; } }
-  @media only screen and (max-width: 500px) {
-    .song-holder .intro {
-      display: block;
-      margin-bottom: 0.5em; } }
-  @media only screen and (min-width: 501px) and (max-width: 659px) {
-    .song-holder .intro {
-      display: block;
-      margin-bottom: 0.5em; } }
-  .song-holder.visible {
-    opacity: 1; }
+/*# sourceMappingURL=main.css.map */
