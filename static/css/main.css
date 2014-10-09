@@ -20,10 +20,10 @@ body, html {
   display: none; }
 
 .card {
-  width: 250px;
+  width: 300px;
   height: 140px;
   margin-top: -70px;
-  margin-left: -125px;
+  margin-left: -150px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,22 +32,37 @@ body, html {
     font-size: 1.2em;
     margin: 20px 0 0 0; }
   .card .title {
-    margin-top: 0;
+    margin: 0 0 20px 0;
     font-weight: 300;
     font-size: 1em; }
   .card .social i {
-    margin-left: 10px; }
+    margin: 8px 0 0 0; }
   .card .social a {
     text-decoration: none;
-    color: #232323; }
+    color: #232323;
+    display: inline-block;
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 5px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px; }
+  .card .social .service {
+    font-size: 0.7em;
+    font-weight: 300; }
   .card .social .lastfm:hover {
-    color: #d60014; }
+    color: #d60014;
+    border: 1px solid #d60014; }
   .card .social .github:hover {
-    color: #aaaaaa; }
+    color: #646464;
+    border: 1px solid #646464; }
   .card .social .twitter:hover {
-    color: #55acee; }
+    color: #55acee;
+    border: 1px solid #55acee; }
   .card .social .lab:hover {
-    color: #55b055; }
+    color: #55b055;
+    border: 1px solid #55b055; }
 
 ::selection {
   background: #e6e6e6; }

@@ -2,34 +2,25 @@
 title: Home
 layout: page
 ---
-<canvas class='canvas' id='background-canvas'></canvas>
-
 <section id='card' class='card'>
     <h1 class='name'>Andrew Capshaw</h1>
     <h2 class='title'>Software Developer</h2>
     <div class='social'>
         <a href='https://www.github.com/capshaw' class='github' title='Github'>
             <i class='fa fa-github'></i>
+            <div class='service'>Github</div>
         </a>
         <a href='http://www.last.fm/user/premendax' class='lastfm' title='Last.fm'>
             <i class='fa fa-lastfm'></i>
+            <div class='service'>Last.fm</div>
         </a>
         <a href='https://www.twitter.com/AndrewCapshaw' class='twitter' title='Twitter'>
             <i class='fa fa-twitter'></i>
+            <div class='service'>Twitter</div>
         </a>
         <a href='/labs' class='lab' title='Labs: web experiments'>
             <i class='fa fa-flask'></i>
+            <div class='service'>Labs</div>
         </a>
     </div>
 </section>
-
-<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-<script type='text/javascript' src='static/js/index.js'></script>
-<script type='text/javascript'>
-    var app = app();
-    app.init({
-        canvasFrontId: 'background-canvas',
-        numFrames: 3000,
-        maxDelta: 1
-    });
-</script>
