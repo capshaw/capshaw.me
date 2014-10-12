@@ -16,8 +16,9 @@ body, html {
   left: 0;
   top: 0; }
 
-.loading {
-  display: none; }
+.loaded a {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
 
 .card {
   width: 300px;
