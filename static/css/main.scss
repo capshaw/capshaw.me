@@ -1,100 +1,143 @@
 @import "_utility";
 
+$side-background: #32393F;
+
 body, html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: "Roboto", sans-serif;
     color: #232323;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
-    font-size: 18px;
-    text-overflow: none;
-    overflow: hidden;
+    background: #f6f6f5;
+    margin: 0;
 }
 
-.canvas {
+.logo {
+    border: 2px solid darken($side-background, 10%);
+    color: darken($side-background, 20%);
+    background: darken($side-background, 1%);
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.pancake {
+    width: 30px;
+    display: inline-block;
+    .layer {
+        width: 100%;
+        height: 4px;
+        margin-bottom: 4px;
+        border-radius: 1px;
+        background: lighten($side-background, 10%);
+    }
+
+    &:hover {
+        .layer {
+            background: lighten($side-background, 20%);
+        }
+    }
+}
+
+.sidebar {
+    width: 200px;
     position: absolute;
     left: 0;
     top: 0;
-}
+    bottom: 0;
+    background: $side-background;
+    border-right: 1px solid darken($side-background, 20%);
+    padding: 20px 0;
 
-.loaded {
-    a {
-        -webkit-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
+    @include respond-to(medium-screens) {
+        position: static;
+        width: 100%;
+    }
+    @include respond-to(handhelds) {
+        position: static;
+        width: 100%;
+    }
+
+    .nav-pancake {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+
+        @include respond-to(wide-screens) {
+            display: none;
+        }
+    }
+
+    .navigation {
+        &.hidden {
+            @include respond-to(medium-screens) {
+                display: none;
+            }
+            @include respond-to(handhelds) {
+                display: none;
+            }
+        }
+    }
+
+    .break {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        text-transform: uppercase;
+        color: lighten($side-background, 30%);
+        font-size: 0.8em;
+        padding: 10px 20px 5px 20px;
+    }
+
+    .nav-link {
+        color: #fff;
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-bottom: 1px solid darken($side-background, 5%);
+
+        &:hover {
+            background: darken($side-background, 10%);
+        }
+
+        &:first-child {
+            border-top: 1px solid darken($side-background, 5%);
+        }
     }
 }
 
-.card {
-    $width: 300px;
-    $height: 140px;
+.main {
+    $content-text-size: 20px;
 
-    width: $width;
-    height: $height;
-    margin-top: -1 * $height / 2;
-    margin-left: -1 * $width / 2;
+    margin: 0 0 0 200px;
+    padding: 20px 40px;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    text-align: center;
-
-    .name {
-        font-size: 1.2em;
-        margin: 20px 0 0 0;
+    @include respond-to(medium-screens) {
+        margin-left: 0;
+    }
+    @include respond-to(handhelds) {
+        margin-left: 0;
     }
 
-    .title {
-        margin: 0 0 20px 0;
-        font-weight: 300;
-        font-size: 1em;
-    }
+    .content {
+        margin: auto;
+        max-width: 700px;
+        font-size: $content-text-size;
+        line-height: $content-text-size * 1.8;
+        font-family: "Droid Serif", serif;
 
-    .social {
-
-        i {
-            margin: 8px 0 0 0;
+        h1 {
+            font-family: "Roboto";
+            font-weight: bold;
         }
 
-        a {
-            text-decoration: none;
-            color: #232323;
-            display: inline-block;
-            border: 1px solid #eee;
-            background: #fff;
-            padding: 5px;
-            text-align: center;
-            width: 50px;
-            height: 50px;
-            margin-left: 5px;
-        }
-
-        .service {
-            font-size: 0.7em;
-            font-weight: 300;
-        }
-
-        .lastfm:hover {
-            color: rgb(214, 0, 20);
-            border: 1px solid rgb(214, 0, 20);
-        }
-
-        .github:hover {
-            color: rgb(100, 100, 100);
-            border: 1px solid rgb(100, 100, 100);
-        }
-
-        .twitter:hover {
-            color: rgb(85, 172, 238);
-            border: 1px solid rgb(85, 172, 238);
-        }
-
-        .lab:hover {
-            color: rgb(85, 176, 85);
-            border: 1px solid rgb(85, 176, 85);
+        p {
+            margin: $content-text-size * 1.8 0 0 0;
         }
     }
 }

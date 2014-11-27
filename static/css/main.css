@@ -1,69 +1,104 @@
 body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
   color: #232323;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  font-size: 18px;
-  text-overflow: none;
-  overflow: hidden; }
+  background: #f6f6f5;
+  margin: 0; }
 
-.canvas {
+.logo {
+  border: 2px solid #1b1f23;
+  color: #050606;
+  background: #30363c;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 50px;
+  line-height: 50px;
+  font-size: 25px; }
+
+.pancake {
+  width: 30px;
+  display: inline-block; }
+  .pancake .layer {
+    width: 100%;
+    height: 4px;
+    margin-bottom: 4px;
+    border-radius: 1px;
+    background: #49535b; }
+  .pancake:hover .layer {
+    background: #5f6c78; }
+
+.sidebar {
+  width: 200px;
   position: absolute;
   left: 0;
-  top: 0; }
-
-.loaded a {
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out; }
-
-.card {
-  width: 300px;
-  height: 140px;
-  margin-top: -70px;
-  margin-left: -150px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center; }
-  .card .name {
-    font-size: 1.2em;
-    margin: 20px 0 0 0; }
-  .card .title {
-    margin: 0 0 20px 0;
-    font-weight: 300;
-    font-size: 1em; }
-  .card .social i {
-    margin: 8px 0 0 0; }
-  .card .social a {
+  top: 0;
+  bottom: 0;
+  background: #32393F;
+  border-right: 1px solid #050606;
+  padding: 20px 0; }
+  @media only screen and (min-width: 501px) and (max-width: 659px) {
+    .sidebar {
+      position: static;
+      width: 100%; } }
+  @media only screen and (max-width: 500px) {
+    .sidebar {
+      position: static;
+      width: 100%; } }
+  .sidebar .nav-pancake {
+    position: absolute;
+    top: 60px;
+    right: 20px; }
+    @media only screen and (min-width: 660px) {
+      .sidebar .nav-pancake {
+        display: none; } }
+  @media only screen and (min-width: 501px) and (max-width: 659px) {
+    .sidebar .navigation.hidden {
+      display: none; } }
+  @media only screen and (max-width: 500px) {
+    .sidebar .navigation.hidden {
+      display: none; } }
+  .sidebar .break {
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+  .sidebar .subtitle {
+    text-transform: uppercase;
+    color: #778693;
+    font-size: 0.8em;
+    padding: 10px 20px 5px 20px; }
+  .sidebar .nav-link {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #232323;
-    display: inline-block;
-    border: 1px solid #eee;
-    background: #fff;
-    padding: 5px;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    margin-left: 5px; }
-  .card .social .service {
-    font-size: 0.7em;
-    font-weight: 300; }
-  .card .social .lastfm:hover {
-    color: #d60014;
-    border: 1px solid #d60014; }
-  .card .social .github:hover {
-    color: #646464;
-    border: 1px solid #646464; }
-  .card .social .twitter:hover {
-    color: #55acee;
-    border: 1px solid #55acee; }
-  .card .social .lab:hover {
-    color: #55b055;
-    border: 1px solid #55b055; }
+    border-bottom: 1px solid #272c31; }
+    .sidebar .nav-link:hover {
+      background: #1b1f23; }
+    .sidebar .nav-link:first-child {
+      border-top: 1px solid #272c31; }
+
+.main {
+  margin: 0 0 0 200px;
+  padding: 20px 40px; }
+  @media only screen and (min-width: 501px) and (max-width: 659px) {
+    .main {
+      margin-left: 0; } }
+  @media only screen and (max-width: 500px) {
+    .main {
+      margin-left: 0; } }
+  .main .content {
+    margin: auto;
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: "Droid Serif", serif; }
+    .main .content h1 {
+      font-family: "Roboto";
+      font-weight: bold; }
+    .main .content p {
+      margin: 36px 0 0 0; }
 
 ::selection {
   background: #e6e6e6; }
