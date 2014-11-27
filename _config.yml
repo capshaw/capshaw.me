@@ -1,4 +1,4 @@
 highlighter: pygments
-permalink: /:title
+permalink: pretty
 post_dirs: false
 markdown: kramdown
