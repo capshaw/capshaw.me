@@ -1,4 +1,5 @@
 @import "_utility";
+
 $side-background: #32393F;
 
 body, html {
@@ -97,7 +98,6 @@ body, html {
         color: #fff;
         display: block;
         padding: 10px 20px;
-        // font-weight: 300;
         text-decoration: none;
         border-bottom: 1px solid darken($side-background, 5%);
 
@@ -116,7 +116,6 @@ body, html {
 
     margin: 0 0 0 200px;
     padding: 20px 40px;
-    // border-top: 4px solid #0BBD82;
 
     @include respond-to(medium-screens) {
         margin-left: 0;
