@@ -1,0 +1,15 @@
+---
+title: Posts
+layout: text-page
+---
+
+<h1>Posts</h1>
+Hey world. These are things I've written or photographs I've taken. Feel free to peruse if you want.
+
+{% for post in site.posts %}
+    <div class='post preview'>
+        <h2><a href='{{ post.url }}' class='no-decoration'>{{ post.title}}</a></h2>
+        {{ post.content | strip_html | truncatewords: 30}}
+        <a href='{{ post.url }}' class='no-decoration'>&rarr;</a>
+    </div>
+{% endfor %}
