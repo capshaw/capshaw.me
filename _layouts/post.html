@@ -1,0 +1,19 @@
+---
+layout: page
+---
+<div id='main' class='main'>
+    {% if page.lead_photo %}
+        <!-- TODO: use common photo plugin -->
+        <div class='photo-container'>
+            <div class='photo'>
+                <img src='/static/photos/{{page.lead_photo}}' width='100%'>
+            </div>
+        </div>
+    {% endif %}
+    <div class='content'>
+        <h1>{{ page.title }}</h1>
+        <div class='long-caption'>
+            {{ content }}
+        </div>
+    </div>
+</section>

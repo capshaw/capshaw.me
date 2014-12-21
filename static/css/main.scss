@@ -1,6 +1,6 @@
 @import "_utility";
 
-$side-background: #32393F;
+$side-background: #2c2c2c;
 $accent: #119E63;
 
 body, html {
@@ -8,7 +8,6 @@ body, html {
     color: #232323;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
-    background: #f6f6f5;
     margin: 0;
 }
 
@@ -16,12 +15,15 @@ a {
     color: $accent;
     text-decoration: none;
     border-bottom: 1px solid $accent;
+
+    &.no-decoration {
+        border-bottom: none;
+    }
 }
 
 .logo {
-    border: 2px solid darken($side-background, 10%);
-    color: darken($side-background, 20%);
-    background: darken($side-background, 1%);
+    background: $accent;
+    color: lighten($accent, 50%);
     text-align: center;
     width: 50px;
     height: 50px;
@@ -29,6 +31,7 @@ a {
     border-radius: 50px;
     line-height: 50px;
     font-size: 25px;
+    opacity: 0.8;
 }
 
 .pancake {
@@ -51,9 +54,45 @@ a {
     }
 }
 
+.photo-container {
+    padding: 20px 20px 0 20px;
+
+    @include respond-to(medium-screens) {
+        padding: 0;
+    }
+    @include respond-to(handhelds) {
+        padding: 0;
+    }
+
+    .photo {
+        margin: auto;
+        max-width: 700px;
+        max-height: 800px;
+
+        @include respond-to(medium-screens) {
+            margin-top: 0;
+        }
+        @include respond-to(handhelds) {
+            margin-top: 0;
+        }
+    }
+}
+
+.post {
+    &.preview {
+        border-top: 1px solid #f2f2f2;
+        padding: 20px 0 0 0;
+        margin: 20px 0;
+
+        h2 {
+            margin-top: 0;
+        }
+    }
+}
+
 .sidebar {
     width: 200px;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
@@ -104,14 +143,14 @@ a {
     }
 
     .nav-link {
-        color: #fff;
+        color: #ccc;
         display: block;
-        padding: 10px 20px;
+        padding: 12px 20px;
         text-decoration: none;
         border-bottom: 1px solid darken($side-background, 5%);
 
         &:hover {
-            background: darken($side-background, 10%);
+            background: darken($side-background, 5%);
         }
 
         &:first-child {
@@ -120,11 +159,19 @@ a {
     }
 }
 
+.expand-image {
+    &.large {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
 .main {
     $content-text-size: 20px;
 
     margin: 0 0 0 200px;
-    padding: 20px 40px;
 
     @include respond-to(medium-screens) {
         margin-left: 0;
@@ -134,15 +181,20 @@ a {
     }
 
     .content {
+        padding: 20px 40px;
         margin: auto;
         max-width: 700px;
         font-size: $content-text-size;
         line-height: $content-text-size * 1.8;
         font-family: "Droid Serif", serif;
 
-        h1 {
+        h1, h2 {
             font-family: "Roboto";
             font-weight: bold;
+        }
+
+        h2 {
+            font-size: 1.3em;
         }
 
         p {
