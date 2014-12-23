@@ -3,8 +3,7 @@ title: New Camera
 layout: post
 ---
 
-These are some of the first photoes I took with my new camera -- a Sony Alpha A6000. I am excited about the
-portability of this mirrorless camera.
+These are some of the first photos I took with my new camera -- a Sony Alpha A6000. I am excited about the portability of this mirrorless camera.
 
 I was especially surprised about how well the lighting came out in this dark setting. My last camera did terrible in low light so this will really open up a lot of options for creativity. Hopefully many more photos will come out of it!
 
