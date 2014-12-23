@@ -16,9 +16,15 @@
 </head>
 <body>
 
-<section id='sidebar' class='sidebar'>
+<div id='sidebar' class='sidebar'>
     <a href='/' class='no-decoration'>
-        <div class='logo'>&forall;</div>
+        <section class='cube-container'>
+            <div class='cube'>
+                <figure class='front'></figure>
+                <figure class='left'></figure>
+                <figure class='bottom'></figure>
+            </div>
+        </section>
     </a>
     <a class='pancake nav-pancake' href='#' id='pancake'>
         <div class='layer'></div>
@@ -52,7 +58,7 @@
             </a>
         </div>
     </div>
-</section>
+</div>
 
 {{ content }}
 
