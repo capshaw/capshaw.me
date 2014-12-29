@@ -14,7 +14,6 @@ layout: post
 
 ## $10 - $50
 
-+ Beer drinkware
 + Rhodia stationery
 + Matte Black (Field Notes Branded) Space Pen
 + *The Sixth Extinction: An Unnatural History (Kindle Edition)* by Elizabeth Kolbert
