@@ -17,7 +17,7 @@ layout: post
 + Beer drinkware
 + Rhodia stationery
 + Matte Black (Field Notes Branded) Space Pen
-+ Wool socks
++ *The Sixth Extinction: An Unnatural History (Kindle Edition)* by Elizabeth Kolbert
 + *The World Until Yesterday: What Can We Learn from Traditional Societies?* by Jared Diamond
 + *The Design of Everyday Things* by Donald A. Norman
 + *About Face 3: The Essentials of Interaction Design* by Alan Cooper, Robert Reimann, and David Cronin
