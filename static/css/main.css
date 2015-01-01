@@ -134,10 +134,6 @@ hr {
     .sidebar .nav-link:first-child {
       border-top: 1px solid #1f1f1f; }
 
-.social .icon {
-  color: #929292;
-  margin-right: 10px; }
-
 .expand-image.large {
   width: 100%;
   position: absolute;
