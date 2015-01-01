@@ -32,19 +32,19 @@ hr {
   transform-style: preserve-3d;
   transform: rotateX(35deg) rotateY(50deg); }
   .cube figure {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: block;
     position: absolute; }
   .cube .front {
     transform: rotateY(0deg) translateZ(20px);
-    background: #119E63; }
+    background: #1a9562; }
   .cube .left {
     transform: rotateY(-90deg) translateZ(20px);
-    background: #0c7046; }
+    background: #126a45; }
   .cube .bottom {
     transform: rotateX(-90deg) translateZ(20px);
-    background: #074229; }
+    background: #0b3e29; }
 
 .pancake {
   width: 30px;
@@ -133,6 +133,10 @@ hr {
       background: #1f1f1f; }
     .sidebar .nav-link:first-child {
       border-top: 1px solid #1f1f1f; }
+
+.social .icon {
+  color: #929292;
+  margin-right: 10px; }
 
 .expand-image.large {
   width: 100%;

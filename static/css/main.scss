@@ -44,25 +44,25 @@ hr {
     transform: rotateX(35deg) rotateY(50deg);
 
     figure {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         display: block;
         position: absolute;
     }
 
     .front  {
         transform: rotateY(0deg) translateZ(20px);
-        background: $accent;
+        background: desaturate($accent, 10%);
     }
 
     .left   {
         transform: rotateY(-90deg) translateZ(20px);
-        background: darken($accent, 10%);
+        background: desaturate(darken($accent, 10%), 10%);
     }
 
     .bottom {
         transform: rotateX(-90deg) translateZ(20px);
-        background: darken($accent, 20%);
+        background: desaturate(darken($accent, 20%), 10%);
     }
 }
 
@@ -188,6 +188,13 @@ hr {
         &:first-child {
             border-top: 1px solid darken($side-background, 5%);
         }
+    }
+}
+
+.social {
+    .icon {
+        color: lighten($side-background, 40%);
+        margin-right: 10px;
     }
 }
 
