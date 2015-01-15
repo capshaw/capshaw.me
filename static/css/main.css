@@ -6,9 +6,9 @@ body, html {
   margin: 0; }
 
 a {
-  color: #2282F0;
+  color: #347DD1;
   text-decoration: none;
-  border-bottom: 1px solid #2282F0; }
+  border-bottom: 1px solid #347DD1; }
   a.no-decoration {
     border-bottom: none; }
 
@@ -23,7 +23,7 @@ hr {
   height: 80px;
   position: relative;
   perspective: 1000px;
-  margin: 20px auto; }
+  margin: 30px auto 10px auto; }
 
 .cube {
   width: 100%;
@@ -38,13 +38,13 @@ hr {
     position: absolute; }
   .cube .front {
     transform: rotateY(0deg) translateZ(14px);
-    background: #2e83e4; }
+    background: #407ec5; }
   .cube .left {
     transform: rotateY(-90deg) translateZ(14px);
-    background: #196ac6; }
+    background: #3165a1; }
   .cube .bottom {
     transform: rotateX(-90deg) translateZ(14px);
-    background: #145198; }
+    background: #254d7a; }
 
 .pancake {
   width: 30px;

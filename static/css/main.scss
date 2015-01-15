@@ -2,7 +2,7 @@
 
 $side-background: #2c2c2c;
 $old-accent: #119E63;
-$accent: #2282F0;
+$accent: #347DD1;
 
 body, html {
     font-family: "Roboto", sans-serif;
@@ -34,7 +34,7 @@ hr {
   height: 80px;
   position: relative;
   perspective: 1000px;
-  margin: 20px auto;
+  margin: 30px auto 10px auto;
 }
 
 .cube {
