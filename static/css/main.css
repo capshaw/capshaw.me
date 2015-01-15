@@ -6,9 +6,9 @@ body, html {
   margin: 0; }
 
 a {
-  color: #119E63;
+  color: #2282F0;
   text-decoration: none;
-  border-bottom: 1px solid #119E63; }
+  border-bottom: 1px solid #2282F0; }
   a.no-decoration {
     border-bottom: none; }
 
@@ -32,19 +32,19 @@ hr {
   transform-style: preserve-3d;
   transform: rotateX(35deg) rotateY(50deg); }
   .cube figure {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     display: block;
     position: absolute; }
   .cube .front {
-    transform: rotateY(0deg) translateZ(20px);
-    background: #1a9562; }
+    transform: rotateY(0deg) translateZ(14px);
+    background: #2e83e4; }
   .cube .left {
-    transform: rotateY(-90deg) translateZ(20px);
-    background: #126a45; }
+    transform: rotateY(-90deg) translateZ(14px);
+    background: #196ac6; }
   .cube .bottom {
-    transform: rotateX(-90deg) translateZ(20px);
-    background: #0b3e29; }
+    transform: rotateX(-90deg) translateZ(14px);
+    background: #145198; }
 
 .pancake {
   width: 30px;
@@ -133,6 +133,12 @@ hr {
       background: #1f1f1f; }
     .sidebar .nav-link:first-child {
       border-top: 1px solid #1f1f1f; }
+
+.social-icon {
+  color: #525252;
+  width: 20px;
+  margin-right: 8px;
+  text-align: right; }
 
 .expand-image.large {
   width: 100%;

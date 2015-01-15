@@ -1,7 +1,8 @@
 @import "_utility";
 
 $side-background: #2c2c2c;
-$accent: #119E63;
+$old-accent: #119E63;
+$accent: #2282F0;
 
 body, html {
     font-family: "Roboto", sans-serif;
@@ -44,24 +45,24 @@ hr {
     transform: rotateX(35deg) rotateY(50deg);
 
     figure {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
         display: block;
         position: absolute;
     }
 
     .front  {
-        transform: rotateY(0deg) translateZ(20px);
+        transform: rotateY(0deg) translateZ(14px);
         background: desaturate($accent, 10%);
     }
 
     .left   {
-        transform: rotateY(-90deg) translateZ(20px);
+        transform: rotateY(-90deg) translateZ(14px);
         background: desaturate(darken($accent, 10%), 10%);
     }
 
     .bottom {
-        transform: rotateX(-90deg) translateZ(20px);
+        transform: rotateX(-90deg) translateZ(14px);
         background: desaturate(darken($accent, 20%), 10%);
     }
 }
@@ -189,6 +190,13 @@ hr {
             border-top: 1px solid darken($side-background, 5%);
         }
     }
+}
+
+.social-icon {
+    color: lighten($side-background, 15%);;
+    width: 20px;
+    margin-right: 8px;
+    text-align: right;
 }
 
 .expand-image {
