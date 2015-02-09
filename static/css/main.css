@@ -1,169 +1,94 @@
-body, html {
-  font-family: "Roboto", sans-serif;
-  color: #232323;
+html, body {
+  font-family: "Helvetica", sans-serif;
+  background: #2A333D;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  margin: 0; }
+  color: #fff;
+  margin: 0;
+  padding: 0; }
 
 a {
-  color: #119E63;
-  text-decoration: none;
-  border-bottom: 1px solid #119E63; }
-  a.no-decoration {
+  color: #fff;
+  border-bottom: 1px solid #eee;
+  text-decoration: none; }
+
+section {
+  padding: 60px 20px; }
+  section.bordered {
+    border-bottom: 1px solid #3E4A57; }
+
+.container {
+  max-width: 600px;
+  margin: auto; }
+
+.hello {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 1em; }
+
+.subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  color: #D4D4D4; }
+
+.footer {
+  color: #999DA2;
+  font-size: smaller; }
+  .footer a {
+    color: #999DA2;
     border-bottom: none; }
+    .footer a:hover {
+      color: #fff;
+      border-bottom: 1px solid #fff; }
 
-hr {
-  height: 0;
-  border-top: 1px solid #eee;
-  border-bottom: none;
-  margin-left: 0; }
-
-.cube-container {
-  width: 120px;
-  height: 80px;
-  position: relative;
-  perspective: 1000px;
-  margin: 20px auto; }
-
-.cube {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transform: rotateX(35deg) rotateY(50deg); }
-  .cube figure {
-    width: 35px;
-    height: 35px;
-    display: block;
-    position: absolute; }
-  .cube .front {
-    transform: rotateY(0deg) translateZ(20px);
-    background: #1a9562; }
-  .cube .left {
-    transform: rotateY(-90deg) translateZ(20px);
-    background: #126a45; }
-  .cube .bottom {
-    transform: rotateX(-90deg) translateZ(20px);
-    background: #0b3e29; }
-
-.pancake {
-  width: 30px;
-  display: inline-block;
-  border-bottom: none; }
-  .pancake .layer {
-    width: 100%;
-    height: 4px;
-    margin-bottom: 4px;
-    border-radius: 1px;
-    background: #464646; }
-  .pancake:hover .layer {
-    background: #5f5f5f; }
-
-.photo-container {
-  padding: 20px 20px 0 20px; }
-  @media only screen and (min-width: 501px) and (max-width: 659px) {
-    .photo-container {
-      padding: 0; } }
-  @media only screen and (max-width: 500px) {
-    .photo-container {
-      padding: 0; } }
-  .photo-container .photo {
-    margin: auto;
-    max-width: 700px;
-    max-height: 800px; }
-    @media only screen and (min-width: 501px) and (max-width: 659px) {
-      .photo-container .photo {
-        margin-top: 0; } }
-    @media only screen and (max-width: 500px) {
-      .photo-container .photo {
-        margin-top: 0; } }
-
-.post.preview {
-  border-top: 1px solid #f2f2f2;
-  padding: 20px 0 0 0;
-  margin: 20px 0; }
-  .post.preview h2 {
+.about {
+  font-weight: 300; }
+  .about p {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #D4D4D4; }
+  .about p:first-child {
     margin-top: 0; }
-
-.sidebar {
-  width: 200px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background: #2c2c2c;
-  border-right: 1px solid black;
-  padding: 20px 0; }
-  @media only screen and (min-width: 501px) and (max-width: 659px) {
-    .sidebar {
-      position: static;
-      width: 100%; } }
-  @media only screen and (max-width: 500px) {
-    .sidebar {
-      position: static;
-      width: 100%; } }
-  .sidebar .nav-pancake {
-    position: absolute;
-    top: 70px;
-    right: 20px; }
-    @media only screen and (min-width: 660px) {
-      .sidebar .nav-pancake {
-        display: none; } }
-  @media only screen and (min-width: 501px) and (max-width: 659px) {
-    .sidebar .navigation.hidden {
-      display: none; } }
-  @media only screen and (max-width: 500px) {
-    .sidebar .navigation.hidden {
-      display: none; } }
-  .sidebar .break {
-    padding-bottom: 20px;
-    margin-bottom: 20px; }
-  .sidebar .subtitle {
-    text-transform: uppercase;
-    color: #787878;
-    font-size: 0.8em;
-    padding: 10px 20px 5px 20px; }
-  .sidebar .nav-link {
-    color: #ccc;
+  .about a.main-link {
+    color: #eee;
     display: block;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-bottom: 1px solid #1f1f1f; }
-    .sidebar .nav-link:hover {
-      background: #1f1f1f; }
-    .sidebar .nav-link:first-child {
-      border-top: 1px solid #1f1f1f; }
-
-.expand-image.large {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.main {
-  margin: 0 0 0 200px; }
-  @media only screen and (min-width: 501px) and (max-width: 659px) {
-    .main {
-      margin-left: 0; } }
-  @media only screen and (max-width: 500px) {
-    .main {
-      margin-left: 0; } }
-  .main .content {
-    padding: 20px 40px;
-    margin: 20px auto;
-    max-width: 700px;
-    font-size: 20px;
-    line-height: 36px;
-    font-family: "Droid Serif", serif; }
-    .main .content h1, .main .content h2 {
-      font-family: "Roboto";
-      font-weight: bold; }
-    .main .content h2 {
-      font-size: 1.3em; }
-    .main .content p {
-      margin: 36px 0 0 0; }
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 200px; }
+    @media only screen and (max-width: 500px) {
+      .about a.main-link {
+        max-width: 100%; } }
+    .about a.main-link.last-fm {
+      color: #93DC7C;
+      border: 1px solid #93DC7C; }
+      .about a.main-link.last-fm:hover {
+        color: #b4e7a4;
+        border: 1px solid #b4e7a4; }
+    .about a.main-link.github {
+      color: #7CDCB4;
+      border: 1px solid #7CDCB4; }
+      .about a.main-link.github:hover {
+        color: #a4e7cb;
+        border: 1px solid #a4e7cb; }
+    .about a.main-link.twitter {
+      color: #7CCEDC;
+      border: 1px solid #7CCEDC; }
+      .about a.main-link.twitter:hover {
+        color: #a4dde7;
+        border: 1px solid #a4dde7; }
+    .about a.main-link.soundcloud {
+      color: #7CACDC;
+      border: 1px solid #7CACDC; }
+      .about a.main-link.soundcloud:hover {
+        color: #a4c5e7;
+        border: 1px solid #a4c5e7; }
+  .about a.first-link {
+    margin-top: 40px; }
 
 ::selection {
-  background: #e6e6e6; }
+  background: #5e666f; }
 
 /*# sourceMappingURL=main.css.map */
