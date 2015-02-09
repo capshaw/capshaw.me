@@ -26,6 +26,9 @@ section {
   font-size: 1.3em;
   margin-bottom: 1em; }
 
+.lead {
+  background: #1B1E22; }
+
 .subtitle {
   font-weight: 300;
   font-size: 20px;
