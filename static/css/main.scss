@@ -1,248 +1,123 @@
 @import "_utility";
 
-$side-background: #2c2c2c;
-$old-accent: #119E63;
-$accent: #347DD1;
+$accent: #2A333D;
 
-body, html {
-    font-family: "Roboto", sans-serif;
-    color: #232323;
+html, body {
+    font-family: "Helvetica", sans-serif;
+    background: #2A333D;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
+    color: #fff;
     margin: 0;
+    padding: 0;
 }
 
 a {
-    color: $accent;
+    color: #fff;
+    border-bottom: 1px solid #eee;
     text-decoration: none;
-    border-bottom: 1px solid $accent;
+}
 
-    &.no-decoration {
+section {
+    &.bordered {
+        border-bottom: 1px solid #3E4A57;
+    }
+
+    padding: 3 * $u $u;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hello {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    color: #D4D4D4;
+}
+
+.footer {
+    color: #999DA2;
+    font-size: smaller;
+
+    a {
+        color: #999DA2;
         border-bottom: none;
-    }
-}
-
-hr {
-    height: 0;
-    border-top: 1px solid #eee;
-    border-bottom: none;
-    margin-left: 0;
-}
-
-.cube-container {
-  width: 120px;
-  height: 80px;
-  position: relative;
-  perspective: 1000px;
-  margin: 30px auto 10px auto;
-}
-
-.cube {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transform: rotateX(35deg) rotateY(50deg);
-
-    figure {
-        width: 25px;
-        height: 25px;
-        display: block;
-        position: absolute;
-    }
-
-    .front  {
-        transform: rotateY(0deg) translateZ(14px);
-        background: desaturate($accent, 10%);
-    }
-
-    .left   {
-        transform: rotateY(-90deg) translateZ(14px);
-        background: desaturate(darken($accent, 10%), 10%);
-    }
-
-    .bottom {
-        transform: rotateX(-90deg) translateZ(14px);
-        background: desaturate(darken($accent, 20%), 10%);
-    }
-}
-
-.pancake {
-    width: 30px;
-    display: inline-block;
-    border-bottom: none;
-
-    .layer {
-        width: 100%;
-        height: 4px;
-        margin-bottom: 4px;
-        border-radius: 1px;
-        background: lighten($side-background, 10%);
-    }
-
-    &:hover {
-        .layer {
-            background: lighten($side-background, 20%);
-        }
-    }
-}
-
-.photo-container {
-    padding: 20px 20px 0 20px;
-
-    @include respond-to(medium-screens) {
-        padding: 0;
-    }
-    @include respond-to(handhelds) {
-        padding: 0;
-    }
-
-    .photo {
-        margin: auto;
-        max-width: 700px;
-        max-height: 800px;
-
-        @include respond-to(medium-screens) {
-            margin-top: 0;
-        }
-        @include respond-to(handhelds) {
-            margin-top: 0;
-        }
-    }
-}
-
-.post {
-    &.preview {
-        border-top: 1px solid #f2f2f2;
-        padding: 20px 0 0 0;
-        margin: 20px 0;
-
-        h2 {
-            margin-top: 0;
-        }
-    }
-}
-
-.sidebar {
-    width: 200px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background: $side-background;
-    border-right: 1px solid darken($side-background, 20%);
-    padding: 20px 0;
-
-    @include respond-to(medium-screens) {
-        position: static;
-        width: 100%;
-    }
-    @include respond-to(handhelds) {
-        position: static;
-        width: 100%;
-    }
-
-    .nav-pancake {
-        position: absolute;
-        top: 70px;
-        right: 20px;
-
-        @include respond-to(wide-screens) {
-            display: none;
-        }
-    }
-
-    .navigation {
-        &.hidden {
-            @include respond-to(medium-screens) {
-                display: none;
-            }
-            @include respond-to(handhelds) {
-                display: none;
-            }
-        }
-    }
-
-    .break {
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-    }
-
-    .subtitle {
-        text-transform: uppercase;
-        color: lighten($side-background, 30%);
-        font-size: 0.8em;
-        padding: 10px 20px 5px 20px;
-    }
-
-    .nav-link {
-        color: #ccc;
-        display: block;
-        padding: 12px 20px;
-        text-decoration: none;
-        border-bottom: 1px solid darken($side-background, 5%);
 
         &:hover {
-            background: darken($side-background, 5%);
-        }
-
-        &:first-child {
-            border-top: 1px solid darken($side-background, 5%);
+            color: #fff;
+            border-bottom: 1px solid #fff;
         }
     }
 }
 
-.social-icon {
-    color: lighten($side-background, 15%);;
-    width: 20px;
-    margin-right: 8px;
-    text-align: right;
-}
+.about {
 
-.expand-image {
-    &.large {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
+    font-weight: 300;
 
-.main {
-    $content-text-size: 20px;
-
-    margin: 0 0 0 200px;
-
-    @include respond-to(medium-screens) {
-        margin-left: 0;
-    }
-    @include respond-to(handhelds) {
-        margin-left: 0;
+    p {
+        max-width: 400px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #D4D4D4;
     }
 
-    .content {
-        padding: 20px 40px;
-        margin: 20px auto;
-        max-width: 700px;
-        font-size: $content-text-size;
-        line-height: $content-text-size * 1.8;
-        font-family: "Droid Serif", serif;
+    p:first-child {
+        margin-top: 0;
+    }
 
-        h1, h2 {
-            font-family: "Roboto";
-            font-weight: bold;
+    a.main-link {
+        @include respond-to(handhelds) {
+            max-width: 100%;
         }
 
-        h2 {
-            font-size: 1.3em;
+        color: #eee;
+        display: block;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        padding: $u/2;
+        margin-top: $u;
+        max-width: 200px;
+
+        @mixin styled($color) {
+            color: $color;
+            border: 1px solid $color;
+
+            &:hover {
+                color: lighten($color, 10%);
+                border: 1px solid lighten($color, 10%);
+            }
         }
 
-        p {
-            margin: $content-text-size * 1.8 0 0 0;
+        &.last-fm {
+            @include styled(#93DC7C);
         }
+
+        &.github {
+            @include styled(#7CDCB4);
+        }
+
+        &.twitter {
+            @include styled(#7CCEDC);
+        }
+
+        &.soundcloud {
+            @include styled(#7CACDC);
+        }
+    }
+
+    a.first-link {
+        margin-top: 2 * $u;
     }
 }
 
 ::selection {
-    background: rgb(230, 230, 230);
+    background: desaturate(lighten(#2A333D, 20%), 10%);
 }
