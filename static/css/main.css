@@ -1,3 +1,33 @@
+.wishlist {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  margin: 20px 0;
+  font-weight: 300;
+  border: 1px solid #3E4A57; }
+  .wishlist h1 {
+    font-weight: 300;
+    color: #8B9AA9;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px; }
+  .wishlist li {
+    line-height: 1.6em; }
+  .wishlist hr {
+    width: 20%;
+    margin: 2em auto;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: none;
+    height: 0; }
+  .wishlist .info {
+    border: 1px solid #7E9CBA;
+    padding: 20px;
+    border-radius: 5px;
+    background: #E0E9F2;
+    line-height: 1.3em;
+    color: #446E98; }
+  .wishlist ::selection {
+    background: #eee; }
+
 html, body {
   font-family: "Helvetica", sans-serif;
   background: #2A333D;

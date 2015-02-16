@@ -1,0 +1,43 @@
+@import "_utility";
+
+.wishlist {
+    background: #fff;
+    color: #333;
+    padding: $u;
+    margin: $u 0;
+
+    font-weight: 300;
+    border: 1px solid #3E4A57;
+
+    h1 {
+        font-weight: 300;
+        color: #8B9AA9;
+        border-bottom: 1px solid #E8E8E8;
+        padding-bottom: 20px;
+    }
+
+    li {
+        line-height: 1.6em;
+    }
+
+    hr {
+        width: 20%;
+        margin: 2em auto;
+        border-top: 1px solid #E8E8E8;
+        border-bottom: none;
+        height: 0;
+    }
+
+    .info {
+        border: 1px solid #7E9CBA;
+        padding: $u;
+        border-radius: 5px;
+        background: #E0E9F2;
+        line-height: 1.3em;
+        color: #446E98;
+    }
+
+    ::selection {
+        background: #eee;
+    }
+}
