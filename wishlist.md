@@ -55,7 +55,7 @@ layout: wishlist
 + MIDI Keyboard
 + Herman Miller Chair (Mirra or Aeron)
 + Various E-Mount lenses
-+ iPhone 6
++ iPad Mini
 
 - - -
 
