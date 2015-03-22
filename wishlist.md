@@ -14,7 +14,7 @@ layout: wishlist
 + Coffee (Whole bean)
 + Chocolate (Dark)
 + Giftcards: Amazon, Starbucks, Specs, etc.
-+ Alcohol: Craft Beer, Whiskey, Gin, etc.
++ Alcohol: Craft Beer, Whiskey, Gin, Wine, etc.
 + Various succulents
 
 - - -
@@ -22,44 +22,47 @@ layout: wishlist
 ## $10 - $50
 
 + Rhodia stationery
-+ Matte Black Space Pen
-+ *The World Until Yesterday: What Can We Learn from Traditional Societies?* by Jared Diamond
-+ *The Design of Everyday Things* by Donald A. Norman
-+ *About Face 3: The Essentials of Interaction Design* by Alan Cooper, Robert Reimann, and David Cronin
-+ Wool Socks
++ Nice illustration pens
 
 - - -
 
 ## $50 - $150
 
-+ Land's End duffle bag
-+ Laser printer
 + Food processor
 + Hiking boots
 + *Grid Systems in Graphic Design* by Josef Muller-Brockmann
 + Porch Hammock
++ Marmot Minimalist Rain Jacket
++ Apple Mouse
++ Apple Wireless Keyboard
++ Laser printer
++ Shreader
 
 - - -
 
 ## $150 - $300
 
-+ Logic Pro X
-+ Nice, heavy, jacket
++ Logic Pro
++ Heavy winter jacket
 + AirPort Time Capsule - 2TB
-+ External Monitor
++ External Computer Monitor
 
 - - -
 
 ## $300 - $1000
 
++ Manfrotto tripod + Manfrotto Ball Head with Quick Release
++ Teenage Engineering OP-1
++ Roland Octapad SPD-30
++ Roland SPD-SX
 + MIDI Keyboard
 + Herman Miller Chair (Mirra or Aeron)
 + Various E-Mount lenses
 + iPad Mini
++ Yamaha HS Studio monitors (HS-5 or HS-7 probably)
 
 - - -
 
 ## $1000+
 
-+ Studio monitors
-+ Synthesizer / Piano / Keyboard
++ Piano / Keyboard
