@@ -63,6 +63,10 @@ section {
   font-weight: 300;
   font-size: 20px;
   color: #D4D4D4; }
+  .subtitle p {
+    max-width: 400px;
+    line-height: 1.3em;
+    margin-bottom: 0; }
 
 .footer {
   color: #999DA2;
@@ -122,6 +126,6 @@ section {
     margin-top: 40px; }
 
 ::selection {
-  background: #5e666f; }
+  background: #7CACDC; }
 
 /*# sourceMappingURL=main.css.map */

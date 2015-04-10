@@ -44,6 +44,12 @@ section {
     font-weight: 300;
     font-size: 20px;
     color: #D4D4D4;
+
+    p {
+        max-width: 400px;
+        line-height: 1.3em;
+        margin-bottom: 0;
+    }
 }
 
 .footer {
@@ -62,7 +68,6 @@ section {
 }
 
 .about {
-
     font-weight: 300;
 
     p {
@@ -89,7 +94,7 @@ section {
         margin-top: $u;
         max-width: 200px;
 
-        @mixin styled($color) {
+        @mixin outlined-link($color) {
             color: $color;
             border: 1px solid $color;
 
@@ -100,19 +105,19 @@ section {
         }
 
         &.last-fm {
-            @include styled(#93DC7C);
+            @include outlined-link(#93DC7C);
         }
 
         &.github {
-            @include styled(#7CDCB4);
+            @include outlined-link(#7CDCB4);
         }
 
         &.twitter {
-            @include styled(#7CCEDC);
+            @include outlined-link(#7CCEDC);
         }
 
         &.soundcloud {
-            @include styled(#7CACDC);
+            @include outlined-link(#7CACDC);
         }
     }
 
@@ -122,5 +127,5 @@ section {
 }
 
 ::selection {
-    background: desaturate(lighten(#2A333D, 20%), 10%);
+    background: #7CACDC;
 }
