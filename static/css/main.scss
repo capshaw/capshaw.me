@@ -130,8 +130,3 @@ section {
         margin-top: 2 * $u;
     }
 }
-
-::selection {
-    background: #6FD69C;
-    color: lighten(#6FD69C, 40%);
-}
