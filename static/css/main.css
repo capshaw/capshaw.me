@@ -30,17 +30,19 @@
 
 html, body {
   font-family: "Helvetica", sans-serif;
-  background: #2A333D;
+  background: #fff;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-  color: #fff;
+  color: #333;
   margin: 0;
   padding: 0; }
 
 a {
-  color: #fff;
-  border-bottom: 1px solid #eee;
+  color: #666;
+  border-bottom: 1px solid #ccc;
   text-decoration: none; }
+  a:hover {
+    color: #4d4d4d; }
 
 section {
   padding: 60px 20px; }
@@ -54,7 +56,8 @@ section {
 .hello {
   font-weight: bold;
   font-size: 1.3em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  color: #fff; }
 
 .lead {
   background: #1B1E22; }
@@ -75,7 +78,7 @@ section {
     color: #999DA2;
     border-bottom: none; }
     .footer a:hover {
-      color: #fff;
+      color: #7e838a;
       border-bottom: 1px solid #fff; }
 
 .about {
@@ -84,7 +87,7 @@ section {
     max-width: 400px;
     font-size: 18px;
     line-height: 30px;
-    color: #D4D4D4; }
+    color: #333; }
   .about p:first-child {
     margin-top: 0; }
   .about a.main-link {
@@ -99,33 +102,34 @@ section {
       .about a.main-link {
         max-width: 100%; } }
     .about a.main-link.last-fm {
-      color: #93DC7C;
+      color: #439728;
       border: 1px solid #93DC7C; }
       .about a.main-link.last-fm:hover {
-        color: #b4e7a4;
+        color: #55bf33;
         border: 1px solid #b4e7a4; }
     .about a.main-link.github {
-      color: #7CDCB4;
+      color: #289769;
       border: 1px solid #7CDCB4; }
       .about a.main-link.github:hover {
-        color: #a4e7cb;
+        color: #33bf85;
         border: 1px solid #a4e7cb; }
     .about a.main-link.twitter {
-      color: #7CCEDC;
+      color: #288797;
       border: 1px solid #7CCEDC; }
       .about a.main-link.twitter:hover {
-        color: #a4dde7;
+        color: #33abbf;
         border: 1px solid #a4dde7; }
     .about a.main-link.soundcloud {
-      color: #7CACDC;
+      color: #285f97;
       border: 1px solid #7CACDC; }
       .about a.main-link.soundcloud:hover {
-        color: #a4c5e7;
+        color: #3379bf;
         border: 1px solid #a4c5e7; }
   .about a.first-link {
     margin-top: 40px; }
 
 ::selection {
-  background: #7CACDC; }
+  background: #6FD69C;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */
