@@ -23,6 +23,8 @@ layout: wishlist
 
 + Rhodia stationery
 + Nice illustration pens
++ Sony BC-TRW W Series Battery Charger
++ Sony 64GB SDXC Class 10 UHS-1 R40 Memory Card
 
 - - -
 
