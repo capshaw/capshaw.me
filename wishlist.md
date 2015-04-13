@@ -19,7 +19,7 @@ layout: wishlist
 
 - - -
 
-## $10 - $50
+## $10 &#65515; $50
 
 + Rhodia stationery
 + Nice illustration pens
@@ -28,7 +28,7 @@ layout: wishlist
 
 - - -
 
-## $50 - $150
+## $50 &#65515; $150
 
 + Food processor
 + Hiking boots
@@ -42,7 +42,7 @@ layout: wishlist
 
 - - -
 
-## $150 - $300
+## $150 &#65515; $300
 
 + Logic Pro
 + Heavy winter jacket
@@ -51,7 +51,7 @@ layout: wishlist
 
 - - -
 
-## $300 - $1000
+## $300 &#65515; $1000
 
 + Manfrotto tripod + Manfrotto Ball Head with Quick Release
 + Teenage Engineering OP-1
