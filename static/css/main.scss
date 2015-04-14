@@ -95,13 +95,15 @@ section {
         display: block;
         border: 1px solid #eee;
         border-radius: 4px;
-        padding: $u/2;
+        padding: $u / 3 * 2 0 $u / 3 * 2 55px;
         margin-top: $u;
         max-width: 200px;
 
-        @mixin outlined-link($color) {
+        @mixin outlined-link($color, $name) {
             color: darken($color, 30%);
             border: 1px solid $color;
+            background: url(/static/img/#{$name}.png) 5px center no-repeat;
+            background-size: 40px;
 
             &:hover {
                 color: darken($color, 20%);
@@ -110,19 +112,19 @@ section {
         }
 
         &.last-fm {
-            @include outlined-link(#93DC7C);
+            @include outlined-link(#93DC7C, "last-fm");
         }
 
         &.github {
-            @include outlined-link(#7CDCB4);
+            @include outlined-link(#7CDCB4, "github");
         }
 
         &.twitter {
-            @include outlined-link(#7CCEDC);
+            @include outlined-link(#7CCEDC, "twitter");
         }
 
         &.soundcloud {
-            @include outlined-link(#7CACDC);
+            @include outlined-link(#7CACDC, "soundcloud");
         }
     }
 

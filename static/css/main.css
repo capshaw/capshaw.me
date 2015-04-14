@@ -94,7 +94,7 @@ section {
     display: block;
     border: 1px solid #eee;
     border-radius: 4px;
-    padding: 10px;
+    padding: 13.33333px 0 13.33333px 55px;
     margin-top: 20px;
     max-width: 200px; }
     @media only screen and (max-width: 500px) {
@@ -102,25 +102,33 @@ section {
         max-width: 100%; } }
     .about a.main-link.last-fm {
       color: #439728;
-      border: 1px solid #93DC7C; }
+      border: 1px solid #93DC7C;
+      background: url(/static/img/last-fm.png) 5px center no-repeat;
+      background-size: 40px; }
       .about a.main-link.last-fm:hover {
         color: #55bf33;
         border: 1px solid #b4e7a4; }
     .about a.main-link.github {
       color: #289769;
-      border: 1px solid #7CDCB4; }
+      border: 1px solid #7CDCB4;
+      background: url(/static/img/github.png) 5px center no-repeat;
+      background-size: 40px; }
       .about a.main-link.github:hover {
         color: #33bf85;
         border: 1px solid #a4e7cb; }
     .about a.main-link.twitter {
       color: #288797;
-      border: 1px solid #7CCEDC; }
+      border: 1px solid #7CCEDC;
+      background: url(/static/img/twitter.png) 5px center no-repeat;
+      background-size: 40px; }
       .about a.main-link.twitter:hover {
         color: #33abbf;
         border: 1px solid #a4dde7; }
     .about a.main-link.soundcloud {
       color: #285f97;
-      border: 1px solid #7CACDC; }
+      border: 1px solid #7CACDC;
+      background: url(/static/img/soundcloud.png) 5px center no-repeat;
+      background-size: 40px; }
       .about a.main-link.soundcloud:hover {
         color: #3379bf;
         border: 1px solid #a4c5e7; }
