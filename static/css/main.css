@@ -49,7 +49,7 @@ section {
     border-bottom: 1px solid #3E4A57; }
 
 .container {
-  max-width: 600px;
+  max-width: 400px;
   margin: auto; }
 
 .hello {
@@ -72,7 +72,18 @@ section {
 
 .footer {
   color: #999DA2;
-  font-size: smaller; }
+  font-size: smaller;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: right;
+  padding: 0 20px;
+  background: #fff; }
+  @media only screen and (max-width: 500px) {
+    .footer {
+      position: relative;
+      text-align: left; } }
   .footer a {
     color: #999DA2;
     border-bottom: none; }
@@ -83,56 +94,84 @@ section {
 .about {
   font-weight: 300; }
   .about p {
-    max-width: 400px;
     font-size: 18px;
     line-height: 30px;
     color: #333; }
   .about p:first-child {
     margin-top: 0; }
-  .about a.main-link {
-    color: #eee;
-    display: block;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    padding: 13.33333px 0 13.33333px 55px;
-    margin-top: 20px;
-    max-width: 200px; }
-    @media only screen and (max-width: 500px) {
-      .about a.main-link {
-        max-width: 100%; } }
-    .about a.main-link.last-fm {
-      color: #439728;
-      border: 1px solid #93DC7C;
-      background: url(/static/img/last-fm.png) 5px center no-repeat;
-      background-size: 40px; }
-      .about a.main-link.last-fm:hover {
-        color: #55bf33;
-        border: 1px solid #b4e7a4; }
-    .about a.main-link.github {
-      color: #289769;
-      border: 1px solid #7CDCB4;
-      background: url(/static/img/github.png) 5px center no-repeat;
-      background-size: 40px; }
-      .about a.main-link.github:hover {
-        color: #33bf85;
-        border: 1px solid #a4e7cb; }
-    .about a.main-link.twitter {
-      color: #288797;
-      border: 1px solid #7CCEDC;
-      background: url(/static/img/twitter.png) 5px center no-repeat;
-      background-size: 40px; }
-      .about a.main-link.twitter:hover {
-        color: #33abbf;
-        border: 1px solid #a4dde7; }
-    .about a.main-link.soundcloud {
-      color: #285f97;
-      border: 1px solid #7CACDC;
-      background: url(/static/img/soundcloud.png) 5px center no-repeat;
-      background-size: 40px; }
-      .about a.main-link.soundcloud:hover {
-        color: #3379bf;
-        border: 1px solid #a4c5e7; }
-  .about a.first-link {
-    margin-top: 40px; }
+
+a.main-link {
+  font-weight: 300;
+  color: #333;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 13.33333px 0;
+  margin-top: 20px;
+  max-width: 200px;
+  transition: background 0.2s; }
+  a.main-link:hover {
+    background: #333;
+    color: #fff; }
+  a.main-link.full-size {
+    max-width: 100%;
+    width: 100%;
+    text-align: center; }
+  a.main-link.last-fm {
+    color: #cf0015;
+    border: 1px solid #cf0015;
+    background-size: 40px; }
+    a.main-link.last-fm:hover {
+      background: #cf0015;
+      border: 1px solid #9c0010;
+      color: #fff; }
+  a.main-link.github {
+    color: #333;
+    border: 1px solid #333;
+    background-size: 40px; }
+    a.main-link.github:hover {
+      background: #333;
+      border: 1px solid #1a1a1a;
+      color: #fff; }
+  a.main-link.twitter {
+    color: #4e96db;
+    border: 1px solid #4e96db;
+    background-size: 40px; }
+    a.main-link.twitter:hover {
+      background: #4e96db;
+      border: 1px solid #2a7dcc;
+      color: #fff; }
+  a.main-link.soundcloud {
+    color: #ff4f00;
+    border: 1px solid #ff4f00;
+    background-size: 40px; }
+    a.main-link.soundcloud:hover {
+      background: #ff4f00;
+      border: 1px solid #cc3f00;
+      color: #fff; }
+
+a.first-link {
+  margin-top: 40px; }
+
+.error-container {
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -200px; }
+  @media only screen and (max-width: 500px) {
+    .error-container {
+      position: relative;
+      text-align: left;
+      padding: 20px;
+      height: auto;
+      left: 0;
+      top: 0;
+      margin: 0; } }
+  .error-container p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #333; }
 
 /*# sourceMappingURL=main.css.map */

@@ -30,7 +30,7 @@ section {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -60,6 +60,19 @@ section {
 .footer {
     color: #999DA2;
     font-size: smaller;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: right;
+
+    @include respond-to(handhelds) {
+        position: relative;
+        text-align: left;
+    }
+
+    padding: 0 $u;
+    background: #fff;
 
     a {
         color: #999DA2;
@@ -76,7 +89,6 @@ section {
     font-weight: 300;
 
     p {
-        max-width: 400px;
         font-size: 18px;
         line-height: 30px;
         color: #333;
@@ -85,50 +97,86 @@ section {
     p:first-child {
         margin-top: 0;
     }
+}
 
-    a.main-link {
-        @include respond-to(handhelds) {
-            max-width: 100%;
-        }
+a.main-link {
+    font-weight: 300;
 
-        color: #eee;
-        display: block;
-        border: 1px solid #eee;
-        border-radius: 4px;
-        padding: $u / 3 * 2 0 $u / 3 * 2 55px;
-        margin-top: $u;
-        max-width: 200px;
+    color: #333;
+    display: block;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: $u / 3 * 2 0;
+    margin-top: $u;
+    max-width: 200px;
+    transition: background 0.2s;
 
-        @mixin outlined-link($color, $name) {
-            color: darken($color, 30%);
-            border: 1px solid $color;
-            background: url(/static/img/#{$name}.png) 5px center no-repeat;
-            background-size: 40px;
+    &:hover {
+        background: #333;
+        color: #fff;
+    }
 
-            &:hover {
-                color: darken($color, 20%);
-                border: 1px solid lighten($color, 10%);
-            }
-        }
+    &.full-size {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
 
-        &.last-fm {
-            @include outlined-link(#93DC7C, "last-fm");
-        }
+    @mixin outlined-link($color) {
+        color: $color;
+        border: 1px solid $color;
+        background-size: 40px;
 
-        &.github {
-            @include outlined-link(#7CDCB4, "github");
-        }
-
-        &.twitter {
-            @include outlined-link(#7CCEDC, "twitter");
-        }
-
-        &.soundcloud {
-            @include outlined-link(#7CACDC, "soundcloud");
+        &:hover {
+            background: $color;
+            border: 1px solid darken($color, 10%);
+            color: #fff;
         }
     }
 
-    a.first-link {
-        margin-top: 2 * $u;
+    &.last-fm {
+        @include outlined-link(rgb(207, 0, 21));
+    }
+
+    &.github {
+        @include outlined-link(#333);
+    }
+
+    &.twitter {
+        @include outlined-link(rgb(78, 150, 219));
+    }
+
+    &.soundcloud {
+        @include outlined-link(rgb(255, 79, 0));
+    }
+}
+
+a.first-link {
+    margin-top: 2 * $u;
+}
+
+.error-container {
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -200px;
+
+    @include respond-to(handhelds) {
+        position: relative;
+        text-align: left;
+        padding: $u;
+
+        height: auto;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        color: #333;
     }
 }
