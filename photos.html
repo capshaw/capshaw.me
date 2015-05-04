@@ -1,0 +1,129 @@
+---
+title: Photos
+layout: page
+---
+
+<!--
+    A WARNING
+
+    Super hacky app, written in a couple of hours with blantant disregard to best practices. :)
+
+    Just sayin'. Don't judge. Or do judge. I don't care.
+
+    Andrew
+-->
+
+<link rel='stylesheet' href='/static/css/animate.css' />
+<style>
+    .photos-container {
+        display: block;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .photos-container img {
+        max-width: 100%;
+        margin: 30px 0;
+    }
+</style>
+
+<div class='photos-container'>
+    <img src='/static/img/camera.png' alt='Photos' width='80px'/>
+    <div id='loading'></div>
+    <div id='photo-area'></div>
+    <div id='after-photo-area'></div>
+</div>
+
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+<script type='text/javascript'>
+
+    var PhotosApp = function() {
+
+        var photos = [];
+        var currentIndex = -1;
+
+        var elements = {
+            loadingElement: $('#loading'),
+            photoAreaElement: $('#photo-area'),
+            afterPhotoAreaElement: $('#after-photo-area')
+        }
+
+        var run = function() {
+            getGuide();
+            setUpScrolling();
+        };
+
+        var setUpScrolling = function () {
+            $(document).scroll(function () {
+                if (_isScrolledIntoView(elements.afterPhotoAreaElement)) {
+                    revealPhoto();
+                }
+            })
+        };
+
+        var turnOffScrolling = function () {
+            $(document).unbind('scroll');
+        };
+
+        var _isScrolledIntoView = function (elem) {
+            // Source: https://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+
+            var $elem = $(elem);
+            var $window = $(window);
+
+            var docViewTop = $window.scrollTop();
+            var docViewBottom = docViewTop + $window.height();
+
+            var elemTop = $elem.offset().top;
+            var elemBottom = elemTop + $elem.height();
+
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
+
+        var getGuide = function () {
+            $.ajax({
+                url: '/raw/photos/guide.json',
+                cache: false,
+                success: function (data) {
+                    console.log(data.photos)
+                    getGuideSuccess(data);
+                }
+            });
+        };
+
+        var getGuideSuccess = function (data) {
+            this.photos = data.photos;
+            this.currentIndex = -1;
+            revealPhoto();
+            revealPhoto();
+        };
+
+        var revealPhoto = function () {
+            elements.loadingElement.hide();
+
+            this.currentIndex++;
+            if (this.currentIndex >= this.photos.length) {
+                this.currentIndex--;
+                turnOffScrolling();
+                return;
+            }
+
+            var name = this.photos[this.currentIndex];
+            console.log(this.photos)
+            console.log(this.currentIndex);
+            elements.photoAreaElement.append($('<img/>', {
+                'class': 'animated fadeIn',
+                'src': '/raw/photos/' + name
+            }));
+        };
+
+        return {
+            run: run
+        };
+    };
+
+    $(function() {
+        var app = new PhotosApp();
+        app.run();
+    });
+</script>
