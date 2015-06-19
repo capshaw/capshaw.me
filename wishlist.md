@@ -30,20 +30,17 @@ layout: wishlist
 
 ## $50 &#65515; $150
 
-+ Food processor
-+ Hiking boots
-+ *Grid Systems in Graphic Design* by Josef Muller-Brockmann
 + Porch Hammock
-+ Marmot Minimalist Rain Jacket
 + Apple Mouse
 + Apple Wireless Keyboard
 + Laser printer
-+ Shreader
++ Shredder
 
 - - -
 
 ## $150 &#65515; $300
 
++ MXR Carbon Copy Delay pedal
 + Logic Pro
 + Heavy winter jacket
 + AirPort Time Capsule - 2TB
