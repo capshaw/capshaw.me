@@ -73,17 +73,8 @@ section {
 .footer {
   color: #999DA2;
   font-size: smaller;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  text-align: right;
-  padding: 0 20px;
+  padding: 40px 0;
   background: #fff; }
-  @media only screen and (max-width: 500px) {
-    .footer {
-      position: relative;
-      text-align: left; } }
   .footer a {
     color: #999DA2;
     border-bottom: none; }

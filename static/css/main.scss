@@ -60,18 +60,8 @@ section {
 .footer {
     color: #999DA2;
     font-size: smaller;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: right;
 
-    @include respond-to(handhelds) {
-        position: relative;
-        text-align: left;
-    }
-
-    padding: 0 $u;
+    padding: $u * 2 0;
     background: #fff;
 
     a {
