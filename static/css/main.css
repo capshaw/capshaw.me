@@ -26,7 +26,8 @@ html, body {
   max-width: 1000px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  margin: 40px auto; }
+  margin: 40px auto;
+  text-align: center; }
   .icon-container a {
     width: 16%;
     display: inline-block;
@@ -34,7 +35,7 @@ html, body {
     color: #333;
     text-decoration: none;
     font-weight: 300;
-    padding: 20px 0; }
+    padding: 20px 0 30px 0; }
     .icon-container a:hover {
       color: #999;
       background: #eee; }
@@ -83,9 +84,15 @@ html, body {
     font-weight: bold; }
   @media only screen and (min-width: 501px) and (max-width: 659px) {
     .footer {
-      display: none; } }
+      position: inherit;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 40px; } }
   @media only screen and (max-width: 500px) {
     .footer {
-      display: none; } }
+      position: inherit;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 40px; } }
 
 /*# sourceMappingURL=main.css.map */

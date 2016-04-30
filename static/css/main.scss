@@ -58,6 +58,7 @@ html, body {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin: 40px auto;
+  text-align: center;
 
   a {
     width: 16%;
@@ -66,7 +67,7 @@ html, body {
     color: #333;
     text-decoration: none;
     font-weight: 300;
-    padding: 20px 0;
+    padding: 20px 0 30px 0;
 
     &:hover {
       color: #999;
@@ -131,13 +132,19 @@ html, body {
     font-weight: bold;
   }
 
-  // TODO: figure something better out.
+  // TODO: DRY
   @include respond-to(medium-screens) {
-    display: none;
+    position: inherit;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
   }
 
-  // TODO: figure something better out.
+  // TODO: DRY
   @include respond-to(handhelds) {
-    display: none;
+    position: inherit;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
   }
 }
