@@ -1,172 +1,143 @@
-@import "_utility";
-@import "wishlist";
+$u: 20px;
 
-html, body {
-    font-family: "Helvetica", sans-serif;
-    background: #fff;
-    text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
-    color: #333;
-    margin: 0;
-    padding: 0;
+$break-small: 500px;
+$break-large: 660px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
 }
 
-a {
-    color: #666;
-    border-bottom: 1px solid #ccc;
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    border-top: 1px solid #6CA882;
+}
+
+.home-container {
+  margin-top: 20%;
+
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+
+    a {
+      margin: 0 10px;
+    }
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2, h3 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  a {
+    color: #6CA882;
     text-decoration: none;
 
     &:hover {
-        color: darken(#666, 10%);
+      color: #8FCCA5;
     }
+  }
 }
 
-section {
-    &.bordered {
-        border-bottom: 1px solid #3E4A57;
-    }
+.icon-container {
+  max-width: 1000px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: 40px auto;
 
-    padding: 3 * $u $u;
-}
-
-.container {
-    max-width: 400px;
-    margin: auto;
-}
-
-.hello {
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-bottom: 1em;
-    color: #fff;
-}
-
-.lead {
-    background: #1B1E22;
-}
-
-.subtitle {
+  a {
+    width: 16%;
+    display: inline-block;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
     font-weight: 300;
-    font-size: 20px;
-    color: #D4D4D4;
+    padding: 20px 0;
 
-    p {
-        max-width: 400px;
-        line-height: 1.3em;
-        margin-bottom: 0;
+    &:hover {
+      color: #999;
+      background: #eee;
+
+      .icon {
+        opacity: 0.7;
+      }
     }
+
+    @include respond-to(medium-screens) {
+      width: 100%;
+    }
+
+    @include respond-to(handhelds) {
+      width: 100%;
+    }
+  }
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  margin: 10px auto;
+}
+
+.icon--github {
+  background-image: url(/static/img/icons/code.png);
+}
+
+.icon--strava {
+  background-image: url(/static/img/icons/running.png);
+}
+
+.icon--last-fm {
+  background-image: url(/static/img/icons/wave.png);
+}
+
+.icon--soundcloud {
+  background-image: url(/static/img/icons/transcript.png);
+}
+
+.icon--instagram {
+  background-image: url(/static/img/icons/camera.png);
+}
+
+.icon--goodreads {
+  background-image: url(/static/img/icons/bookshelf.png);
 }
 
 .footer {
-    color: #999DA2;
-    font-size: smaller;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #aaa;
+  font-size: smaller;
 
-    padding: $u * 2 0;
-    background: #fff;
+  a {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-    a {
-        color: #999DA2;
-        border-bottom: none;
+  // TODO: figure something better out.
+  @include respond-to(medium-screens) {
+    display: none;
+  }
 
-        &:hover {
-            color: darken(#999DA2, 10%);
-            border-bottom: 1px solid #fff;
-        }
-    }
-}
-
-.about {
-    font-weight: 300;
-
-    p {
-        font-size: 18px;
-        line-height: 30px;
-        color: #333;
-    }
-
-    p:first-child {
-        margin-top: 0;
-    }
-}
-
-a.main-link {
-    font-weight: 300;
-
-    color: #333;
-    display: block;
-    border: 1px solid #333;
-    border-radius: 4px;
-    padding: $u / 3 * 2 0;
-    margin-top: $u;
-    max-width: 200px;
-    transition: background 0.2s;
-
-    &:hover {
-        background: #333;
-        color: #fff;
-    }
-
-    &.full-size {
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
-    }
-
-    @mixin outlined-link($color) {
-        color: $color;
-        border: 1px solid $color;
-        background-size: 40px;
-
-        &:hover {
-            background: $color;
-            border: 1px solid darken($color, 10%);
-            color: #fff;
-        }
-    }
-
-    &.last-fm {
-        @include outlined-link(rgb(207, 0, 21));
-    }
-
-    &.github {
-        @include outlined-link(#333);
-    }
-
-    &.twitter {
-        @include outlined-link(rgb(78, 150, 219));
-    }
-
-    &.soundcloud {
-        @include outlined-link(rgb(255, 79, 0));
-    }
-}
-
-a.first-link {
-    margin-top: 2 * $u;
-}
-
-.error-container {
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -300px;
-    margin-left: -200px;
-
-    @include respond-to(handhelds) {
-        position: relative;
-        text-align: left;
-        padding: $u;
-
-        height: auto;
-        left: 0;
-        top: 0;
-        margin: 0;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 30px;
-        color: #333;
-    }
+  // TODO: figure something better out.
+  @include respond-to(handhelds) {
+    display: none;
+  }
 }
