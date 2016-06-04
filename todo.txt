@@ -1,0 +1,2 @@
+- Resume as HTML and PDF
+- Remove CSS files and generate those on deploy
