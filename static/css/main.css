@@ -24,8 +24,6 @@ html, body {
 
 .icon-container {
   max-width: 1000px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
   margin: 40px auto;
   text-align: center; }
   .icon-container a {
@@ -37,10 +35,8 @@ html, body {
     font-weight: 300;
     padding: 20px 0 30px 0; }
     .icon-container a:hover {
-      color: #999;
-      background: #eee; }
-      .icon-container a:hover .icon {
-        opacity: 0.7; }
+      background: #fafafa;
+      color: #111; }
     @media only screen and (min-width: 501px) and (max-width: 659px) {
       .icon-container a {
         width: 100%; } }
@@ -49,37 +45,32 @@ html, body {
         width: 100%; } }
 
 .icon {
-  width: 32px;
-  height: 32px;
-  background-size: 32px;
+  width: 28px;
+  height: 28px;
+  background-size: 28px;
   margin: 10px auto; }
-
-.icon--github {
-  background-image: url(/static/img/icons/code.png); }
-
-.icon--strava {
-  background-image: url(/static/img/icons/running.png); }
-
-.icon--last-fm {
-  background-image: url(/static/img/icons/wave.png); }
-
-.icon--soundcloud {
-  background-image: url(/static/img/icons/transcript.png); }
-
-.icon--instagram {
-  background-image: url(/static/img/icons/camera.png); }
-
-.icon--goodreads {
-  background-image: url(/static/img/icons/bookshelf.png); }
+  .icon.icon--github {
+    background-image: url(/static/img/icons/code.png); }
+  .icon.icon--strava {
+    background-image: url(/static/img/icons/running.png); }
+  .icon.icon--last-fm {
+    background-image: url(/static/img/icons/wave.png); }
+  .icon.icon--soundcloud {
+    background-image: url(/static/img/icons/transcript.png); }
+  .icon.icon--instagram {
+    background-image: url(/static/img/icons/camera.png); }
+  .icon.icon--goodreads {
+    background-image: url(/static/img/icons/bookshelf.png); }
 
 .footer {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  color: #aaa;
-  font-size: smaller; }
+  color: #ccc;
+  font-size: smaller;
+  font-weight: 300; }
   .footer a {
-    color: #aaa;
+    color: #ccc;
     text-decoration: none;
     font-weight: bold; }
   @media only screen and (min-width: 501px) and (max-width: 659px) {
