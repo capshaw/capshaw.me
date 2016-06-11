@@ -54,7 +54,8 @@ hr {
       top: 0;
       left: 0;
       margin: 0;
-      width: auto; } }
+      width: auto;
+      padding: 40px 20px; } }
   @media only screen and (max-width: 600px) {
     .home-container {
       border: 0px solid #fff; } }
