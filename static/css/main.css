@@ -46,7 +46,7 @@ hr {
   margin-left: -275px;
   border-radius: 5px;
   background: #fff;
-  border: 1px solid #acceb8;
+  border: 1px solid #84c0f1;
   box-shadow: 0 0 10px #ddd; }
   @media only screen and (max-width: 600px) {
     .home-container {
@@ -74,10 +74,10 @@ hr {
     font-size: 16px;
     font-weight: 300; }
   .home-container a {
-    color: #6CA882;
+    color: #2991E6;
     text-decoration: none; }
     .home-container a:hover {
-      color: #8FCCA5; }
+      color: #57a8eb; }
 
 .secondary-links {
   text-align: center; }
@@ -94,7 +94,7 @@ hr {
         border: 1px solid #eee; } }
 
 ::selection {
-  background: #acceb8;
-  color: #416d51; }
+  background: #84c0f1;
+  color: #125b97; }
 
 /*# sourceMappingURL=main.css.map */
