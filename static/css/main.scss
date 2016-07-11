@@ -1,141 +1,82 @@
-$u: 20px;
-
-$break-small: 600px;
-$break-large: 660px;
-
-$theme-color: #2991E6;
-
-@mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == medium-screens {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
-  }
-  @else if $media == wide-screens {
-    @media only screen and (min-width: $break-large) { @content; }
-  }
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  background: #0A1334;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica', sans-serif;
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100 */
-    background: rgb(255,255,255); /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-    min-height: 100%;
+section {
+  padding: 80px 0;
 }
 
-hr {
-    border-top: 1px solid #eee;
-    border-bottom: none;
-    margin: 20px 0;
-    clear: both;
+p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  font-weight: 300;
+  color: #3AFFCC;
+  letter-spacing: 0.53px;
 }
 
-.logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 80px;
-    background: url(/static/img/profile.jpg) no-repeat center center;
-    background-size: cover;
-    margin: 0 30px 30px 0;
-    float: left;
-
-    @include respond-to(handhelds) {
-        float: none;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-}
-
-.home-container {
-    width: 440px;
-    margin: auto;
-    padding: 50px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -125px;
-    margin-left: -275px;
-    border-radius: 5px;
-
-    @include respond-to(handhelds) {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin: 0;
-        width: auto;
-        padding: 40px 20px;
-    }
-
-    background: #fff;
-    border: 1px solid lighten($theme-color, 20%);
-    box-shadow: 0 0 10px #ddd;
-
-    @include respond-to(handhelds) {
-        border: 0px solid #fff;
-    }
-
-    h1, h2, h3 {
-        text-align: left;
-        margin-bottom: 10px;
-        margin-top: 0;
-
-        @include respond-to(handhelds) {
-            text-align: center;
-        }
-
-        a {
-            margin: 0 10px 0 0;
-        }
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    h2, h3 {
-        font-size: 16px;
-        font-weight: 300;
-    }
-
-    a {
-        color: $theme-color;
-        text-decoration: none;
-
-        &:hover {
-            color: lighten($theme-color, 10%);
-        }
-    }
-}
-
-.secondary-links {
-    text-align: center;
-
-    a {
-        color: #aaa;
-        font-size: smaller;
-        font-weight: 300;
-        margin-right: 10px;
-
-        @include respond-to(handhelds) {
-            display: block;
-            padding: 10px;
-            margin: 10px;
-            border: 1px solid #eee;
-        }
-    }
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #3AFFCC;
+  color: #3AFFCC;
 }
 
 ::selection {
-    background: lighten($theme-color, 20%);
-    color: darken($theme-color, 20%);
+  background: #19316C;
+  color: #3AFFCC;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+  padding: 0 30px;
+}
+
+#header {
+  background: #3AFFCC;
+  text-align: center;
+}
+
+#welcome {
+  background: #0C1D50;
+}
+
+#links {
+  background: #0A1334;
+
+  a {
+    font-weight: bold;
+    display: block;
+    border: 1px solid #3AFFCC;
+    border-radius: 2px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    &:hover {
+      background: #3AFFCC;
+      color: #19316C;
+    }
+  }
+}
+
+.mountains {
+  display: block;
+  width: 200px;
+  margin: 0 auto 30px auto;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.logo-container {
+  max-width: 500px;
+  display: inline-block;
+}
+
+.hello-world, .me-online {
+  margin: 0 0 20px 0;
 }
