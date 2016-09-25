@@ -1,10 +1,10 @@
-$accent-color: #F8F11C;
+$accent-color: darken(#091027, 50%);
 
 body, html {
   padding: 0;
   margin: 0;
   font-family: 'Helvetica', sans-serif;
-  background: #091027;
+  background: #eee;
 }
 
 section {
@@ -25,8 +25,15 @@ a {
   color: $accent-color;
 }
 
+h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+  letter-spacing: 0.53px;
+}
+
 ::selection {
-  background: #19316C;
+  background: pink;
   color: $accent-color;
 }
 
@@ -37,16 +44,17 @@ a {
 }
 
 #header {
-  background: $accent-color;
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
   text-align: center;
 }
 
 #welcome {
-  background: #091027;
+  background: #eee;
 }
 
 #links {
-  background: #091027;
+  background: #eee;
 
   a {
     display: block;
@@ -57,7 +65,7 @@ a {
     margin-bottom: 20px;
 
     &:hover {
-      background: $accent-color;
+      border: 1px dashed $accent-color;
       color: #19316C;
     }
   }
@@ -74,7 +82,7 @@ a {
 }
 
 .logo-container {
-  max-width: 500px;
+  max-width: 300px;
   display: inline-block;
 }
 
