@@ -33,7 +33,7 @@ h2 {
 }
 
 ::selection {
-  background: pink;
+  background: #21A66F;
   color: $accent-color;
 }
 
@@ -82,7 +82,8 @@ h2 {
 }
 
 .logo-container {
-  max-width: 300px;
+  font-family: Courier, monospace;
+  font-size: 1.4em;
   display: inline-block;
 }
 
