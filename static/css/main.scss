@@ -8,7 +8,7 @@ body, html {
 }
 
 section {
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
 p {
@@ -17,6 +17,7 @@ p {
   font-weight: 100;
   color: $accent-color;
   letter-spacing: 0.53px;
+  margin-bottom: 1em;
 }
 
 a {
@@ -32,14 +33,18 @@ h2 {
   letter-spacing: 0.53px;
 }
 
+em {
+  font-style: italic;
+}
+
 ::selection {
   background: #21A66F;
-  color: $accent-color;
+  color: darken(#21A66F, 20%);
 }
 
 .container {
   margin: auto;
-  max-width: 800px;
+  max-width: 600px;
   padding: 0 30px;
 }
 
@@ -71,20 +76,10 @@ h2 {
   }
 }
 
-.mountains {
-  display: block;
-  width: 200px;
-  margin: 0 auto 30px auto;
-}
-
-.logo {
-  max-width: 100%;
-}
-
 .logo-container {
   font-family: Courier, monospace;
-  font-size: 1.4em;
   display: inline-block;
+  font-size: 110%;
 }
 
 .hello-world, .me-online {
