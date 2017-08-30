@@ -4,7 +4,6 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: 'Helvetica', sans-serif;
-  background: #eee;
 }
 
 section {
@@ -49,17 +48,16 @@ em {
 }
 
 #header {
-  background: #1e1d25;
-  border-bottom: 1px solid #000;
+  background: #fff;
   text-align: center;
 }
 
 #welcome {
-  background: #eee;
+  background: #fff;
 }
 
 #links {
-  background: #eee;
+  background: #fff;
 
   a {
     display: block;
@@ -79,7 +77,7 @@ em {
 .logo-container {
   display: inline-block;
   font-size: 110%;
-  color: #fff;
+  color: #000;
   font-weight: bold;
   letter-spacing: 0.4px;
 }
