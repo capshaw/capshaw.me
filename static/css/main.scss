@@ -8,7 +8,7 @@ body, html {
 }
 
 section {
-  padding: 70px 0;
+  margin-top: 40px;
 }
 
 p {
@@ -37,14 +37,14 @@ em {
   font-style: italic;
 }
 
-::selection {    
+::selection {
   background: #9eceff;
   color: #354e67;
 }
 
 .container {
   margin: auto;
-  max-width: 600px;
+  max-width: 400px;
   padding: 0 30px;
 }
 
