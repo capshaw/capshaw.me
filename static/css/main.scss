@@ -46,6 +46,10 @@ em {
   margin: auto;
   max-width: 400px;
   padding: 0 30px;
+
+  &--larger {
+     max-width: 600px; 
+  }
 }
 
 #header {
