@@ -4,7 +4,7 @@ layout: page
 ---
 
 <div class="container">
-  <div class="inner-container">
+  <div id="real" class="inner-container">
     <p>
         Hi, I'm Andrew!
     </p>
@@ -20,4 +20,23 @@ layout: page
         or check out my <a href="/resume">resume</a>.
     </p>
   </div>
+  <div id="salgorithm" class="hidden inner-container">
+     <img src="/static/img/this-is-a-joke.gif" alt="Under Construction">
+     <br><br><!-- Like it's 2006 -->
+     <p>The REAL Salvatore Testa Fan Club</p> 
+     <p>Thank you for visiting this wonderful webpage.</p> 
+     <p>Based upon your browsing history you might also like <a href="https://saltesta.com/">his real website</a>.</p>  
+     <p>Come again soon!</p>
+  </div>
 </div>
+
+<script type="text/javascript">
+  // The salgorithm hack.
+  if (window.location.href.includes('salgorithm')) {
+    document.body.classList.add('salgorithm');
+    window.document.title = 'The REAL Salvatore Testa fan club';
+
+    document.getElementById('real').classList.add('hidden');
+    document.getElementById('salgorithm').classList.remove('hidden');
+  }
+</script>

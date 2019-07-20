@@ -9,6 +9,11 @@ body, html {
     color: #3e3d5a;
     height: 100%;
     position: relative;
+
+    &.salgorithm {
+        background: #b1ff57;
+        font-family: "Comic Sans MS";
+    }
 }
 
 html  {
@@ -23,6 +28,11 @@ a {
     text-decoration: none;
     border-bottom: 2px solid #cbcbcb;
     color: #3e3d5a;
+
+    .salgorithm & {
+        color: red;
+        border-bottom: 1px solid red;
+    }
 }
 
 .container {
@@ -32,6 +42,11 @@ a {
     border-radius: 9px;
     padding: 2px;
     background: linear-gradient(to bottom right, #F44336, #2196F3);
+
+    .salgorithm & {
+        background: linear-gradient(to bottom right, #673ab7, #cddc39);
+        transform: rotate(45deg);
+    }
 
     @media only screen and (max-width: 600px) {
         position: absolute;
@@ -49,6 +64,10 @@ a {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+
+        .salgorithm & {
+            top: 20%;
+        }
     }
 }
 
@@ -59,6 +78,10 @@ a {
     height: 100%;
     box-sizing: border-box; 
 
+    .salgorithm & { 
+        background: #b1ff57;
+    }
+
     @media only screen and (max-width: 600px) {
         position: absolute;
         padding: 30px;
@@ -67,4 +90,8 @@ a {
         bottom: 0;
         right: 0;
     }
+}
+
+.hidden {
+    display: none;
 }
