@@ -39,3 +39,11 @@ layout: page
     document.getElementById('salgorithm').classList.remove('hidden');
   }
 </script>
+
+<script>
+  // Dark mode
+  var currentHour = (new Date()).getHours();
+  if (currentHour > 19 || currentHour < 8) {
+    document.body.classList.add('darkmode');
+  }
+</script>

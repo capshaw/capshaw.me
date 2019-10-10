@@ -14,6 +14,11 @@ body, html {
         background: #b1ff57;
         font-family: "Comic Sans MS", "Marker Felt", sans-serif;
     }
+
+    &.darkmode {
+        background: #222;
+        color: #999;
+    }
 }
 
 html  {
@@ -32,6 +37,10 @@ a {
     .salgorithm & {
         color: red;
         border-bottom: 1px solid red;
+    }
+
+    .darkmode & {
+        color: #fff;
     }
 }
 
@@ -82,6 +91,10 @@ a {
         background: #b1ff57;
     }
 
+    .darkmode & {
+        background: #222;
+    }
+
     @media only screen and (max-width: 600px) {
         position: absolute;
         padding: 30px;
@@ -94,4 +107,12 @@ a {
 
 .hidden {
     display: none;
+}
+
+::selection {
+    background: #eee;
+
+    .darkmode & {
+        background: #111;
+    }
 }
