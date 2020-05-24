@@ -1,4 +1,6 @@
 _site/
+.sass-cache/
+static/.sass-cache/
 static/css/.sass-cache/
 static/css/main.css
 *.css.map
