@@ -1,49 +1,61 @@
 ---
-title: Software Engineer in Austin, TX
+title: Software Engineering Manager in Austin, TX
 layout: page
 ---
 
 <div class="container">
   <div id="real" class="inner-container">
+    <h1>
+      → Hello, I'm Andrew!
+    </h1>
     <p>
-        Hi, I'm Andrew!
+        I am a software engineering manager in Austin, TX. 
     </p>
     <p>
-        I'm a software engineering manager in Austin, TX. I aim to build things that make other people's lives better.
+        In my professional life I aim to build products that make people's lives better.
     </p>
     <p>
-        When not at my day job, I’m outside hiking, running, or exploring the world. Often I bring along a <a href="https://photos.capshaw.me">camera</a> or a <a href="https://goodreads.com/capshaw">book</a>.
-        Sometimes I <a href="https://508bce.com">write</a> things.
+      When I'm not at work, I try to spend as much time outside as possible, running, hiking, or just relaxing in a nice park.
     </p>
     <p>
-        Feel free to check out my <a href="/resume/">resume</a>.
+      Across the web, you can find me
+        <ul>
+          <li>Reading on <a href="https://goodreads.com/capshaw">goodreads</a></li>
+          <li>Writing on <a href="https://508bce.com">my blog</a></li>
+          <li>Posting photos on my <a href="https://photos.capshaw.me">stream</a></li>
+          <li>Lurking on <a href="https://twitter.com/AndrewCapshaw">twitter</a></li>
+        </ul>
     </p>
-  </div>
-  <div id="salgorithm" class="hidden inner-container">
-     <img src="/static/img/this-is-a-joke.gif" alt="Under Construction">
-     <br><br><!-- Like it's 2006 -->
-     <p>The REAL Salvatore Testa Fan Club</p> 
-     <p>Thank you for visiting this wonderful webpage.</p> 
-     <p>Based upon your browsing history you might also like <a href="https://saltesta.com/">his real website</a>.</p>  
-     <p>Come again soon!</p>
+    <p>
+      Feel free to check out my <a href="/resume/">resume</a>.
+  </p>
   </div>
 </div>
 
-<script type="text/javascript">
-  // The salgorithm hack.
-  if (window.location.href.includes('salgorithm')) {
-    document.body.classList.add('salgorithm');
-    window.document.title = 'The REAL Salvatore Testa fan club';
-
-    document.getElementById('real').classList.add('hidden');
-    document.getElementById('salgorithm').classList.remove('hidden');
-  }
-</script>
+<a href="#" id="toggle-dark-mode" class="bulb" aria-label="Toggle dark mode on and off">	
+  &#9790;
+</a>
 
 <script>
   // Dark mode
   var currentHour = (new Date()).getHours();
   if (currentHour > 17 || currentHour < 8 || window.location.href.includes('darkmode')) {
-    document.body.classList.add('darkmode');
+    handleDarkModeToggle(null);
   }
+
+  function handleDarkModeToggle(event) {
+    if (document.body.classList.contains('darkmode')) {
+      document.body.classList.remove('darkmode');
+      document.getElementById('toggle-dark-mode').innerHTML = '&#9790;';
+    } else {
+      document.body.classList.add('darkmode');
+      document.getElementById('toggle-dark-mode').innerHTML = '&#9728;';
+    }
+    if (event) {
+      event.preventDefault();
+    }
+  }
+
+  // Enable the bulb button to toggle dark mode.
+  document.getElementById('toggle-dark-mode').addEventListener('click', handleDarkModeToggle);
 </script>
