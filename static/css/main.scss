@@ -1,23 +1,25 @@
+$accent-color: #FDF6E3;
+$mobile-break-width: 600px;
+
 html, body {
     font-size: 1.1em;
     line-height: 1.55em;
     padding: 0;
     margin: 0;
-    font-family: 'Noto Serif', serif;
+    font-family: Georgia, 'Noto Serif', serif;
 
-    @media only screen and (max-width: 600px) {
-        font-size: 1.1em;
+    @media only screen and (max-width: $mobile-break-width) {
+        // font-size: 1em;
         line-height: 1.55em;
     }
 }
 
 body {
-    background: #ffedab;
-    min-height: 100vh;
+    background: $accent-color;
 
     &.darkmode {
         background: #222;
-        color: #999;
+        color: #aaa;
     }
 }
 
@@ -31,10 +33,11 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 0.25em;
     font-size: 1em;
-    
+    position: relative;
+
     .darkmode & {
-        color: #ffedab;
-        border-color: #ffedab;
+        color: $accent-color;
+        border-color: $accent-color;
     }
 }
 
@@ -44,8 +47,8 @@ a {
     color: #0041C3;
 
     .darkmode & {
-        color: #ffedab;
-        border-color: #ffedab;
+        color: #6699ff;
+        border-color: #6699ff;
     }
 
     &.bulb {
@@ -62,18 +65,18 @@ a {
         color: #222;
 
         .darkmode & {   
-            color: #ffedab;
+            color: $accent-color;
         }
     }
 }
 
 .container {
     margin: auto;
-    max-width: 420px;
-    padding: 60px 40px 40px 40px;
+    max-width: 400px;
+    padding: 60px 20px 20px 20px;
 
-    @media only screen and (max-width: 600px) {
-        padding: 20px 40px 40px 40px;
+    @media only screen and (max-width: $mobile-break-width) {
+        padding: 20px;
     }
 }
 
