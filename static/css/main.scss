@@ -50,24 +50,6 @@ a {
         color: #6699ff;
         border-color: #6699ff;
     }
-
-    &.bulb {
-        text-decoration: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: none;
-        display: block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        color: #222;
-
-        .darkmode & {   
-            color: $accent-color;
-        }
-    }
 }
 
 .container {
@@ -85,7 +67,7 @@ a {
 }
 
 ::selection {
-    background: #fff;
+    background: darken($accent-color, 20%);
 
     .darkmode & {
         background: #111;

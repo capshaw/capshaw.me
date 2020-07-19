@@ -32,30 +32,13 @@ layout: page
   </div>
 </div>
 
-<a href="#" id="toggle-dark-mode" class="bulb" aria-label="Toggle dark mode on and off">	
-  &#9790;
-</a>
-
 <script>
-  // Dark mode
   var currentHour = (new Date()).getHours();
-  if (currentHour > 17 || currentHour < 8 || window.location.href.includes('darkmode')) {
-    handleDarkModeToggle(null);
+  var isTimeForDarkMode = currentHour > 17 || currentHour < 8;
+  var hasDarkModeToggle = window.location.href.includes('darkmode');
+  var hasLightModeToggle = window.location.href.includes('lightmode');
+  
+  if ((isTimeForDarkMode || hasDarkModeToggle) && !hasLightModeToggle) {
+    document.body.classList.add('darkmode');
   }
-
-  function handleDarkModeToggle(event) {
-    if (document.body.classList.contains('darkmode')) {
-      document.body.classList.remove('darkmode');
-      document.getElementById('toggle-dark-mode').innerHTML = '&#9790;';
-    } else {
-      document.body.classList.add('darkmode');
-      document.getElementById('toggle-dark-mode').innerHTML = '&#9728;';
-    }
-    if (event) {
-      event.preventDefault();
-    }
-  }
-
-  // Enable the bulb button to toggle dark mode.
-  document.getElementById('toggle-dark-mode').addEventListener('click', handleDarkModeToggle);
 </script>
