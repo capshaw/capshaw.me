@@ -16,5 +16,17 @@
 
 {{ content }}
 
+<script>
+    // Hacky code to enable dark-mode by opt-in or time-of-day
+    var currentHour = (new Date()).getHours();
+    var isTimeForDarkMode = currentHour > 17 || currentHour < 8;
+    var hasDarkModeToggle = window.location.href.includes('darkmode');
+    var hasLightModeToggle = window.location.href.includes('lightmode');
+
+    if ((isTimeForDarkMode || hasDarkModeToggle) && !hasLightModeToggle) {
+        document.body.classList.add('darkmode');
+    }
+</script>
+  
 </body>
 </html>

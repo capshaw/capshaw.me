@@ -4,41 +4,25 @@ layout: page
 ---
 
 <div class="container">
-  <div id="real" class="inner-container">
-    <h1>
-      Hello, I'm Andrew!
-    </h1>
-    <p>
-        I am a software engineering manager in Austin, TX. 
-    </p>
-    <p>
-        In my professional life I aim to build products that make people's lives better.
-    </p>
-    <p>
-      When I'm not at work, I try to spend as much time outside as possible, running, hiking, or just relaxing in a nice park.
-    </p>
-    <p>
-      Across the web, you can find me
-        <ul>
-          <li>Reading on <a href="https://goodreads.com/capshaw">goodreads</a></li>
-          <li>Writing on <a href="https://508bce.com">my blog</a></li>
-          <li>Posting photos on my <a href="https://photos.capshaw.me">stream</a></li>
-          <li>Lurking on <a href="https://twitter.com/AndrewCapshaw">twitter</a></li>
-        </ul>
-    </p>
-    <p>
-      Feel free to check out my <a href="/resume/">resume</a>.
+  <h1>
+    Hello, I'm Andrew!
+  </h1>
+  <p>
+      I am a software engineering manager in Austin, TX. 
   </p>
-  </div>
+  <p>
+      In my professional life I aim to build products that make people's lives better.
+  </p>
+  <p>
+    When I'm not at work, I try to spend as much time outside as possible, running, hiking, or just relaxing in a nice park.
+  </p>
+  <p>
+    Across the web, you can find me
+      <ul>
+        <li>Reading on <a href="https://goodreads.com/capshaw">goodreads</a></li>
+        <li>Writing on <a href="/posts/">my blog</a></li>
+        <li>Posting photos on my <a href="https://photos.capshaw.me">stream</a></li>
+        <li>Lurking on <a href="https://twitter.com/AndrewCapshaw">twitter</a></li>
+      </ul>
+  </p>
 </div>
-
-<script>
-  var currentHour = (new Date()).getHours();
-  var isTimeForDarkMode = currentHour > 17 || currentHour < 8;
-  var hasDarkModeToggle = window.location.href.includes('darkmode');
-  var hasLightModeToggle = window.location.href.includes('lightmode');
-  
-  if ((isTimeForDarkMode || hasDarkModeToggle) && !hasLightModeToggle) {
-    document.body.classList.add('darkmode');
-  }
-</script>

@@ -62,12 +62,27 @@ a {
     }
 }
 
+.navigation {
+    background:#e3e5fd;
+    padding: 20px;
+    margin: 0 0 40px 0;
+
+    .darkmode & {
+        background: #262626;
+    }
+
+    &--end {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+}
+
 .hidden {
     display: none;
 }
 
 ::selection {
-    background: darken($accent-color, 20%);
+    background: darken($accent-color, 10%);
 
     .darkmode & {
         background: #111;

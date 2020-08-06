@@ -1,0 +1,17 @@
+---
+title: Posts
+layout: post
+---
+
+Below are the most recent posts on my blog and may or may not have any relevance to anyone but myself.
+<ul>
+{% assign count = 0 %}
+{% for page in site.pages reversed %}
+  {% if page.in_navigation and count < 6 %}
+    <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
+    {% assign count = count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+</ul>
