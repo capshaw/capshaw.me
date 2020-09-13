@@ -23,7 +23,7 @@ body {
     }
 }
 
-h1, p {
+h1, h2, p {
     margin: 1em 0;
 }
 
@@ -34,6 +34,23 @@ h1 {
     padding-bottom: 0.25em;
     font-size: 1em;
     position: relative;
+
+    .darkmode & {
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+}
+
+h2 {
+    font-weight: bold;
+    border-bottom: 1px dashed #222;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 0.25em;
+    font-size: 1em;
+    padding-top: 40px;
+
+    background: url('/static/img/wave.svg') no-repeat top center;
+    background-size: 30px;
 
     .darkmode & {
         color: $accent-color;
@@ -52,6 +69,16 @@ a {
     }
 }
 
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub { 
+    top: 0.4em; 
+}
+
 .container {
     margin: auto;
     max-width: 400px;
@@ -65,7 +92,7 @@ a {
 .navigation {
     background:#e3e5fd;
     padding: 20px;
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
 
     .darkmode & {
         background: #262626;
@@ -75,6 +102,14 @@ a {
         margin-top: 40px;
         margin-bottom: 0;
     }
+}
+
+.hard-break {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: url('/static/img/wave.svg') no-repeat center center;
+    background-size: 40px;
 }
 
 .hidden {
