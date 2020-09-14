@@ -55,6 +55,8 @@ h2 {
     .darkmode & {
         color: $accent-color;
         border-color: $accent-color;
+        background: url('/static/img/wave_darkmode.svg') no-repeat top center;
+        background-size: 30px;
     }
 }
 
@@ -102,14 +104,6 @@ sub {
         margin-top: 40px;
         margin-bottom: 0;
     }
-}
-
-.hard-break {
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background: url('/static/img/wave.svg') no-repeat center center;
-    background-size: 40px;
 }
 
 .hidden {
