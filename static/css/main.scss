@@ -2,11 +2,12 @@ $accent-color: #FDF6E3;
 $mobile-break-width: 600px;
 
 html, body {
-    font-size: 1.1em;
+    font-size: 1.05em;
     line-height: 1.55em;
     padding: 0;
     margin: 0;
-    font-family: Georgia, 'Noto Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 
     @media only screen and (max-width: $mobile-break-width) {
         // font-size: 1em;
@@ -30,7 +31,6 @@ h1, h2, p {
 h1 {
     font-weight: bold;
     border-bottom: 3px solid #000;
-    font-family: 'Open Sans', sans-serif;
     padding-bottom: 0.25em;
     font-size: 1em;
     position: relative;
@@ -43,14 +43,9 @@ h1 {
 
 h2 {
     font-weight: bold;
-    border-bottom: 1px dashed #222;
-    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #222;
     padding-bottom: 0.25em;
     font-size: 1em;
-    padding-top: 40px;
-
-    background: url('/static/img/wave.svg') no-repeat top center;
-    background-size: 30px;
 
     .darkmode & {
         color: $accent-color;

@@ -25,16 +25,14 @@ These are career-related posts that I intend to return to periodically.
 
 Below are the most recent posts on my blog and may or may not have any relevance to anyone but myself.
 <ul>
-{% assign count = 0 %}
 {% for page in site.pages reversed %}
-  {% if page.in_navigation and page.evergreen != true and count < 6 %}
+  {% if page.in_navigation and page.evergreen != true %}
     <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
       {% if page.forward %}
         &mdash; {{ page.forward }}
       {% endif %}
     </li>
-    {% assign count = count | plus: 1 %}
   {% endif %}
 {% endfor %}
 </ul>
