@@ -4,18 +4,20 @@ layout: page
 
 <div class="container">
     <div class="navigation">
-        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
         <a href="/">Home</a>
-        {% for crumb in crumbs offset: 1 %}
-          {% if forloop.last %}
-            / {{ page.title }}
-          {% else %}
-            / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-          {% endif %}
-        {% endfor %}
+        / {{ page.title }}
     </div>
 
     <h1>{{ page.title }}</h1>
+    <code>{{ page.date }}</code> 
+
+    {% if page.in_navigation == false %}
+    <div class="navigation">
+      <strong>Heads up.</strong> You have found a hidden / archived post of mine. Feel free to enjoy it. However, know that I probably hid it because I'm embarrassed of the writing or content. 
+    
+      Congrats on finding it!
+    </div>
+    {% endif %}
     
     {{ content }}
 

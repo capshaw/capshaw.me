@@ -14,14 +14,21 @@ layout: page
     When not at work, I try to spend as much time outside as possible: running, hiking, or just relaxing in a nice park.
   </p>
   <p>
-    Across the web, you can find me
-      <ul>
-        <li>Reading on <a href="https://goodreads.com/capshaw">goodreads</a></li>
-        <li>Writing on <a href="/posts/">my blog</a></li>
-        <li>Lurking on <a href="https://twitter.com/AndrewCapshaw">twitter</a></li>
-      </ul>
+    Across the web, you can find me reading on <a href="https://goodreads.com/capshaw">goodreads</a> and lurking on <a href="https://twitter.com/AndrewCapshaw">twitter</a></li>.
   </p>
   <p>
     You can view <a href="/resume">my resume</a> if you'd like.
   </p>
+  <h2>Blog</h2>
+  <p>The main reason I write is to get better at writing. I still have a lot to learn.</p>
+  <ul>
+  {% for page in site.pages reversed %}
+    {% if page.in_navigation %}
+      <li>
+        <code>{{ page.date }}</code> &mdash;
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
 </div>
