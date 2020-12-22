@@ -62,6 +62,21 @@ a {
         color: #6699ff;
         border-color: #6699ff;
     }
+
+    &:visited {
+        color: purple;
+        border-bottom: 2px solid purple;
+
+        .darkmode & {
+            color: #f5bcf5;
+            border-color: #f5bcf5;
+        }    
+    }
+
+    &:not([href]) {
+        color: inherit;
+        border: none;
+    }
 }
 
 sup, sub {
