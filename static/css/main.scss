@@ -114,6 +114,34 @@ sub {
     }
 }
 
+.book-image {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+.rating-explanation {
+    font-size: smaller;
+}
+
+.rating-stars {
+    display: inline-block;
+
+    &--good {
+        color: #ffeb3b;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    &--bad {
+        color: #999;
+
+        .darkmode & {
+            color: #666;
+        }
+    }
+}
+
 .hidden {
     display: none;
 }

@@ -9,7 +9,6 @@ layout: page
     </div>
 
     <h1>{{ page.title }}</h1>
-    <code>{{ page.date }}</code> 
 
     {% if page.in_navigation == false %}
     <div class="navigation">
@@ -20,6 +19,8 @@ layout: page
     {% endif %}
     
     {{ content }}
+
+    <code>{{ page.date }}</code> 
 
     {% if content.size > 800 %}
     <div class="navigation navigation--end">
