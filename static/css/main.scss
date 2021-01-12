@@ -1,18 +1,12 @@
 $accent-color: #FDF6E3;
-$mobile-break-width: 600px;
+$mobile-break-width: 800px;
 
 html, body {
     font-size: 1.05em;
     line-height: 1.55em;
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-
-    @media only screen and (max-width: $mobile-break-width) {
-        // font-size: 1em;
-        line-height: 1.55em;
-    }
+    font-family: 'Georgia', serif;
 }
 
 body {
@@ -79,6 +73,20 @@ a {
     }
 }
 
+blockquote {
+    font-style: italic;
+}
+
+// Super hack. Fix up
+table {
+    margin: auto;
+}
+
+td code {
+    padding-left: 20px;
+}
+// End super hack
+
 sup, sub {
     vertical-align: baseline;
     position: relative;
@@ -91,11 +99,28 @@ sub {
 
 .container {
     margin: auto;
-    max-width: 400px;
+    max-width: 500px;
     padding: 60px 20px 20px 20px;
 
     @media only screen and (max-width: $mobile-break-width) {
         padding: 20px;
+    }
+}
+
+.grid-container {
+    margin: auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 60px 20px 20px 20px;
+    column-gap: 20px;
+
+    @media only screen and (max-width: $mobile-break-width) {   
+        grid-template-columns: auto;
+    }
+
+    > div {
+        padding: 10px;
     }
 }
 
@@ -105,23 +130,24 @@ sub {
     margin: 0 0 20px 0;
 
     .darkmode & {
-        background: #262626;
+        background: #2b2828;
     }
 
     &--end {
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 0;
     }
+}
+
+.profile-image-container {
+    max-width: 400px;
+    margin: auto;
 }
 
 .book-image {
     width: 200px;
     margin: auto;
     display: block;
-}
-
-.rating-explanation {
-    font-size: smaller;
 }
 
 .rating-stars {
@@ -142,12 +168,23 @@ sub {
     }
 }
 
+.aside {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: smaller;
+
+    .darkmode & {
+        background: #333131;
+    }
+}
+
 .hidden {
     display: none;
 }
 
 ::selection {
-    background: darken($accent-color, 10%);
+    background: #fc6883;
 
     .darkmode & {
         background: #111;

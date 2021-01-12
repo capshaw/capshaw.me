@@ -5,34 +5,32 @@ layout: post
 
 {{ content }}
 
-Rating:
-{% for counter in (1..5) %}
-    {% if page.rating >= counter %}
-        <div class="rating-stars rating-stars--good">★</div>
-    {% else %}
-        <div class="rating-stars rating-stars--bad">☆</div>
-    {% endif %}
-{% endfor %}
-
-<div class="rating-explanation">
-    (Interpret as: 
-    {% if page.rating == 1 %}
-        I regret reading it.
-    {% endif %}
-    {% if page.rating == 2 %}
-        I would not recommend it.
-    {% endif %}
-    {% if page.rating == 3 %}
-        It was okay.
-    {% endif %}
-    {% if page.rating == 4 %}
-        I enjoyed it and am glad I read it.
-    {% endif %}
-    {% if page.rating == 5 %}
-        I would love to reread this.
-    {% endif %})
+<div class="aside">
+    <a href="{{page.goodreads}}">{{page.title}}</a><br>
+    {% for counter in (1..5) %}
+        {% if page.rating >= counter %}
+            <div class="rating-stars rating-stars--good">★</div>
+        {% else %}
+            <div class="rating-stars rating-stars--bad">☆</div>
+        {% endif %}
+    {% endfor %}
+    <!-- <div class="rating-explanation">
+        Interpret as: 
+        {% if page.rating == 1 %}
+            I regret reading it.
+        {% endif %}
+        {% if page.rating == 2 %}
+            I would not recommend it.
+        {% endif %}
+        {% if page.rating == 3 %}
+            It was okay.
+        {% endif %}
+        {% if page.rating == 4 %}
+            I enjoyed it and am glad I read it.
+        {% endif %}
+        {% if page.rating == 5 %}
+            I would love to reread this.
+        {% endif %}
+    </div> -->
+    <br>{{page.forward}}
 </div>
-
-<ul>
-    <li><a href="{{page.goodreads}}">{{page.title}} on Goodreads</a></li>
-</ul>
