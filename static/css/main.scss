@@ -13,7 +13,7 @@ body {
     background: $accent-color;
 
     &.darkmode {
-        background: #222;
+        background: #15172b;
         color: #aaa;
     }
 }
@@ -133,7 +133,7 @@ td {
     margin: 0 0 20px 0;
 
     .darkmode & {
-        background: #2b2828;
+        background: #1e223a;
     }
 
     &--end {
@@ -192,7 +192,7 @@ td {
     font-size: smaller;
 
     .darkmode & {
-        background: #333131;
+        background: #1e223a;
     }
 }
 
@@ -208,6 +208,6 @@ td {
     background: #99b6f0;
 
     .darkmode & {
-        background: #111;
+        background: #1b2a4b;
     }
 }
