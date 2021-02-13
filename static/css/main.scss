@@ -24,10 +24,10 @@ h1, h2, p {
 
 h1 {
     font-weight: bold;
-    border-bottom: 3px solid #000;
-    padding-bottom: 0.25em;
     font-size: 1em;
     position: relative;
+    font-family: sans-serif;
+    font-size: 1.2em;
 
     .darkmode & {
         color: $accent-color;
@@ -37,9 +37,9 @@ h1 {
 
 h2 {
     font-weight: bold;
-    border-bottom: 1px solid #222;
-    padding-bottom: 0.25em;
     font-size: 1em;
+    font-family: sans-serif;
+    font-size: 1.1em;
 
     .darkmode & {
         color: $accent-color;
@@ -48,8 +48,8 @@ h2 {
 }
 
 a {
-    text-decoration: none;
-    border-bottom: 2px solid #0041C3;
+    text-decoration: underline;
+    // border-bottom: 2px solid #0041C3;
     color: #0041C3;
 
     .darkmode & {
@@ -57,15 +57,16 @@ a {
         border-color: #6699ff;
     }
 
-    &:visited {
-        color: purple;
-        border-bottom: 2px solid purple;
+    // re 'visit' this ;)
+    // &:visited {
+    //     color: purple;
+    //     border-bottom: 2px solid purple;
 
-        .darkmode & {
-            color: #f5bcf5;
-            border-color: #f5bcf5;
-        }    
-    }
+    //     .darkmode & {
+    //         color: #f5bcf5;
+    //         border-color: #f5bcf5;
+    //     }    
+    // }
 
     &:not([href]) {
         color: inherit;
@@ -77,15 +78,10 @@ blockquote {
     font-style: italic;
 }
 
-// Super hack. Fix up
-table {
-    margin: auto;
-}
-
-td code {
+// Still kind of a hack
+td:not(:first-child) {
     padding-left: 20px;
 }
-// End super hack
 
 sup, sub {
     vertical-align: baseline;
@@ -95,6 +91,16 @@ sup, sub {
 
 sub { 
     top: 0.4em; 
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    &.right-align-text {
+        text-align: right;
+    }
 }
 
 .container {
@@ -109,19 +115,15 @@ sub {
 
 .grid-container {
     margin: auto;
-    max-width: 800px;
+    max-width: 400px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     padding: 60px 20px 20px 20px;
     column-gap: 20px;
 
     @media only screen and (max-width: $mobile-break-width) {   
         grid-template-columns: auto;
-        padding: 20px;
-    }
-
-    > div {
-        padding: 10px;
+        padding: 20px 0;
     }
 }
 
@@ -169,6 +171,20 @@ sub {
     }
 }
 
+.book-review-tag {
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 0.7em;
+    font-family: sans-serif;
+    color: #000;
+    border: 1px solid #000;
+
+    .darkmode & {
+        color: #eee;
+        border: 1px solid #eee;
+    }
+}
+
 .aside {
     background: #fff;
     padding: 20px;
@@ -184,8 +200,12 @@ sub {
     display: none;
 }
 
+.no-break {
+    white-space: nowrap;
+}
+
 ::selection {
-    background: #fc6883;
+    background: #99b6f0;
 
     .darkmode & {
         background: #111;

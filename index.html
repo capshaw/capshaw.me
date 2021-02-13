@@ -9,7 +9,7 @@ layout: page
       Hello, I'm Andrew!
     </h1>
     <p>
-      I am a software engineering manager in Austin, TX. 
+      I am a software engineering manager in <span class="no-break">Austin, TX.</span>
     </p>
     <p>
       When not at work, I try to spend as much time outside as possible: running, hiking, or just relaxing in a nice park.
@@ -22,36 +22,16 @@ layout: page
     </p>
   </div>
   <div>
-    <div class="profile-image-container">
-      <img src="/static/img/profile.jpg" width="100%" alt="Me, with snow all around." />
-    </div>
-  </div>
-  <div>
     <h2>Blog</h2>
-    <p>The main reason I write is to get better at writing. I still have a lot to learn.</p>
     <table>
     {% for page in site.pages reversed %}
-      {% if page.in_navigation and page.layout != 'book' %}
+      {% if page.in_navigation %}
         <tr>
           <td><a href="{{ page.url }}">{{ page.title }}</a></td>
-          <td><code>{{ page.date }}</code></td>
+          <td class="right-align-text">{% if page.layout == 'book' %}<span class="book-review-tag">Book Review</span>{% endif %}</td>
         </li>
       {% endif %}
     {% endfor %}
     </table>
-  </div>
-  <div>
-    <h2>Books I'm Reading</h2>
-    <p>I write about the books I read to force myself to process and engage with them.</p>
-    <table>
-    {% for page in site.pages reversed %}
-      {% if page.in_navigation and page.layout == 'book' %}
-        <tr>
-          <td><a href="{{ page.url }}">{{ page.title }}</a></td>
-          <td><code>{{ page.date }}</code></td>
-        </tr>
-      {% endif %}
-    {% endfor %}
-      </table>
   </div>
 </div>
