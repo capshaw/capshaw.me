@@ -1,9 +1,7 @@
 ---
 title: Meditations
 layout: post
-in_navigation: true
 date: 2018-01-02
-forward: Discussing Meditations by Marcus Aurelius
 ---
 
 I have avoided reading classics for so much of my life, perhaps a surprising fact about someone with a blog named [508 <small>BCE</small>](https://en.wikipedia.org/wiki/Athenian_democracy).

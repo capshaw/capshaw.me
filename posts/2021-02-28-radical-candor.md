@@ -2,11 +2,10 @@
 title: Radical Candor
 layout: book
 date: 2021-02-28
-in_navigation: true
-rating: 5
-forward: Broad recommendations on how to be a better manager through better communication and relationships
-book_image: scott_radical_candor.jpg
-goodreads: https://www.goodreads.com/book/show/44300042-radical-candor
+
+book_rating: 5
+book_author: Kim Scott
+book_goodreads: https://www.goodreads.com/book/show/44300042-radical-candor
 ---
 
 Honestly surprised by how much I enjoyed _Radical Candor_.

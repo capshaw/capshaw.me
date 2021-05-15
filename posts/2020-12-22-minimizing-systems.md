@@ -2,8 +2,6 @@
 title: Minimizing systems
 layout: post
 date: 2020-12-22
-in_navigation: true
-forward: Some brief thoughts on systems and my desire to minimize them
 ---
 
 This will be a brief post in the hopes of writing more, smaller, posts more often.

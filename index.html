@@ -3,13 +3,10 @@ title: Software Engineering Manager in Austin, TX
 layout: page
 ---
 
-<div class="grid-container">
-  <div>
-    <h1>
-      Hello, I'm Andrew!
-    </h1>
+<div class="container">
+  <div class="intro">
     <p>
-      I am a software engineering manager in <span class="no-break">Austin, TX.</span>
+      Hello, I'm Andrew! I am a software engineering manager in <span class="no-break">Austin, TX.</span>
     </p>
     <p>
       When not at work, I try to spend as much time outside as possible: running, hiking, or just relaxing in a nice park.
@@ -17,21 +14,5 @@ layout: page
     <p>
       Across the web, you can find me reading on <a href="https://goodreads.com/capshaw">goodreads</a> and lurking on <a href="https://twitter.com/AndrewCapshaw">twitter</a></li>.
     </p>
-    <p>
-      If you're curious to find out more about me you can check out <a href="/resume/AndrewCapshaw_resume.pdf">my resume</a> and <a class="no-break" href="/manager-beliefs/AndrewCapshaw_beliefs.pdf">management beliefs</a>.
-    </p>
-  </div>
-  <div>
-    <h2>Blog</h2>
-    <table>
-    {% for page in site.pages reversed %}
-      {% if page.in_navigation %}
-        <tr>
-          <td><a href="{{ page.url }}">{{ page.title }}</a></td>
-          <td class="right-align-text">{% if page.layout == 'book' %}<span class="book-review-tag">Book Review</span>{% endif %}</td>
-        </li>
-      {% endif %}
-    {% endfor %}
-    </table>
   </div>
 </div>

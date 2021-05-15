@@ -2,11 +2,10 @@
 title: Automating Inequality
 layout: book
 date: 2021-01-05
-in_navigation: true
-rating: 4
-forward: Compelling. At the very least it's clear that ethics should be taught in every computer science program and even more broadly. 
-book_image: eubanks_automating-inequality.jpg
-goodreads: https://www.goodreads.com/book/show/34964830-automating-inequality
+
+book_rating: 4
+book_author: Virginia Eubanks
+book_goodreads: https://www.goodreads.com/book/show/34964830-automating-inequality
 ---
 
 Compelling. At the very least it's clear that ethics should be taught in every computer science program and even more broadly. 

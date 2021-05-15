@@ -3,29 +3,9 @@ layout: page
 ---
 
 <div class="container">
-    <div class="navigation">
-        <a href="/">Home</a>
-        / {{ page.title }}
-    </div>
-
     <h1>{{ page.title }}</h1>
-
-    {% if page.in_navigation == false %}
-    <div class="navigation">
-      <strong>Heads up.</strong> You have found a hidden / archived post of mine. Feel free to enjoy it. However, know that I probably hid it because I'm embarrassed of the writing or content. 
-    
-      Congrats on finding it!
-    </div>
-    {% endif %}
     
     {{ content }}
 
-    <!-- <code>{{ page.date }}</code>  -->
-
-    {% if content.size > 800 %}
-    <div class="navigation navigation--end">
-      <a href="/">Home</a>
-      / {{ page.title }}
-    </div>
-    {% endif %}
+    <em>Posted on {{ page.date | date: "%B %-d, %Y" }}</em>
 </div>

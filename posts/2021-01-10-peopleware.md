@@ -2,11 +2,10 @@
 title: Peopleware
 layout: book
 date: 2021-01-10
-in_navigation: true
-rating: 3
-forward: Nuggets of wisdom, with some noise and out-of-date topics.
-book_image: demarco_peopleware.jpg
-goodreads: https://www.goodreads.com/book/show/18895165-peopleware
+
+book_rating: 3
+book_author: Tom DeMarco, Timothy Lister
+book_goodreads: https://www.goodreads.com/book/show/18895165-peopleware
 ---
 
 > The ultimate management sin is wasting people’s time.

@@ -1,0 +1,18 @@
+---
+title: Software Engineering Manager in Austin, TX
+layout: page
+---
+
+<div class="container">
+  <div>
+    <h1>Writing</h1>
+    <div class="writing-container">
+    {% for page in site.pages reversed %}
+      {% if page.layout == 'post' %}
+        <div><a href="{{ page.url }}">{{ page.title }}</a></div>
+        <time>{{ page.date }}</time>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+</div>

@@ -2,11 +2,10 @@
 title: The End of Policing
 layout: book
 date: 2021-02-21
-in_navigation: true
-rating: 4
-forward: A broad primer for current policing practices, their histories, and areas for improvement, valuable for all to know
-book_image: vitale_the_end_of_policing.jpg
-goodreads: https://www.goodreads.com/book/show/35403039-the-end-of-policing
+
+book_rating: 4
+book_author: Alex Vitale
+book_goodreads: https://www.goodreads.com/book/show/35403039-the-end-of-policing
 ---
 
 > When we organize our society around fake meritocracy, we erase the history of exploitation and the ways the game is rigged to prevent economic and social mobility.

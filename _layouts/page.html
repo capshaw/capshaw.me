@@ -10,15 +10,21 @@
     <link rel="icon" href="/static/img/foreach.png" />
     <link rel="stylesheet" href="/static/css/main.css" type="text/css" />
     <link rel="apple-touch-icon" href="/static/img/foreach.png" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<div class="container">
+    <div class="navigation">
+        <a href="/" class="header-link">Andrew Capshaw</a> &middot;
+        <a href="/reading">Reading</a> &middot;
+        <a href="/writing">Writing</a> &middot;
+        <a href="/resume/AndrewCapshaw_resume.pdf">Resume</a>
+    </div>
+</div>
 {{ content }}
 
-<script>
+<!-- Temporarily stopping this until I can make it better -->
+<!-- <script>
     // Hacky code to enable dark-mode by opt-in or time-of-day
     var currentHour = (new Date()).getHours();
     var isTimeForDarkMode = currentHour > 17 || currentHour < 8;
@@ -29,6 +35,6 @@
         document.body.classList.add('darkmode');
     }
 </script>
-  
+   -->
 </body>
 </html>

@@ -1,0 +1,22 @@
+---
+title: Software Engineering Manager in Austin, TX
+layout: page
+---
+
+<div class="container">
+  <div>
+    <h1>Reading</h1>
+    <div class="reading-container">
+    {% for page in site.pages reversed %}
+      {% if page.layout == 'book' %}
+        <div><a href="{{ page.url }}">{{ page.title }}</a></div>
+        <div>{{ page.book_author }}</div>
+        <time>{{ page.date }}</time>
+        <div class="rating-stars">
+          {% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+</div>

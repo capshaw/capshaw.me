@@ -1,36 +1,13 @@
 ---
 layout: post
 ---
-<img src="/static/img/books/{{page.book_image}}"/ alt="{{page.title}} book cover" class="book-image">
 
 {{ content }}
 
-<div class="aside">
-    <a href="{{page.goodreads}}">{{page.title}}</a><br>
-    {% for counter in (1..5) %}
-        {% if page.rating >= counter %}
-            <div class="rating-stars rating-stars--good">★</div>
-        {% else %}
-            <div class="rating-stars rating-stars--bad">☆</div>
-        {% endif %}
-    {% endfor %}
-    <!-- <div class="rating-explanation">
-        Interpret as: 
-        {% if page.rating == 1 %}
-            I regret reading it.
-        {% endif %}
-        {% if page.rating == 2 %}
-            I would not recommend it.
-        {% endif %}
-        {% if page.rating == 3 %}
-            It was okay.
-        {% endif %}
-        {% if page.rating == 4 %}
-            I enjoyed it and am glad I read it.
-        {% endif %}
-        {% if page.rating == 5 %}
-            I would love to reread this.
-        {% endif %}
-    </div> -->
-    <br>{{page.forward}}
-</div>
+<h2>About the book</h2>
+<ul>
+    <li>Goodreads: <a href="{{page.book_goodreads}}">{{page.title}}</a></li>
+    <li>Author: {{page.book_author}}</li>
+    <li>My rating: <div class="rating-stars">{% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}</div></li>
+</ul>
+    
