@@ -109,7 +109,7 @@ time {
 }
 
 ::selection {
-    background: #ffeb3b;
+    background: #b5deff;
 
     .darkmode & {
         background: #1b2a4b;
@@ -147,15 +147,9 @@ time {
 .alert {
     background:#e3e5fd;
     padding: 20px;
-    // margin: 20px 0;
 
     .darkmode & {
         background: #1e223a;
-    }
-
-    &--end {
-        margin-top: 20px;
-        margin-bottom: 0;
     }
 }
 
@@ -201,7 +195,9 @@ time {
 
         // Moderately a hack
         :nth-child(4n) {
-            padding-bottom: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 2px dashed #000;
         }
     }
 }
