@@ -15,11 +15,9 @@ html, body {
 }
 
 body {
-    // background: $accent-color;
-
     &.darkmode {
-        background: #15172b;
-        color: #ccc;
+        background: #232840;
+        color: #eee;
     }
 }
 
@@ -72,12 +70,10 @@ h3 {
 
 a {
     text-decoration: none;
-    // border-bottom: 2px solid #0041C3;
     color: #0041C3;
 
     .darkmode & {
-        color: #6699ff;
-        border-color: #6699ff;
+        color: #4de4a5;
     }
 
     &:not([href]) {
@@ -134,12 +130,16 @@ time {
     padding: 20px 0;
 
     .darkmode & {
-        background: #1e223a;
+        border-color: #424565;
     }
 
     .header-link {
         color: #000;
         font-weight: bold;
+
+        .darkmode & {
+            color: #fff;
+        }
     }
 }
 
@@ -179,8 +179,11 @@ time {
 
 .rating-stars {
     display: inline-block;
-    color: #000;
     font-size: smaller;
+
+    .darkmode & {
+        color: #ccc;
+    }
 }
 
 .reading-container {
@@ -215,6 +218,10 @@ time {
     grid-template-columns: minmax(0, 1fr) min-content;
     padding: 20px;
     background: #eee;
+
+    .darkmode & {
+        background: #2a304b;
+    }
 
     div {
         text-overflow: ellipsis;
