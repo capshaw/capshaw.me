@@ -38,7 +38,6 @@ h1 {
 
     .darkmode & {
         color: $accent-color;
-        border-color: $accent-color;
     }
 }
 
@@ -63,7 +62,6 @@ h3 {
 
     .darkmode & {
         color: $accent-color;
-        border-color: $accent-color;
     }
 }
 
@@ -141,6 +139,19 @@ time {
             color: #fff;
         }
     }
+
+    a {
+        @media only screen and (max-width: $mobile-break-width) {   
+            display: block;
+        }
+    }
+
+    .navigation-divider {
+        display: inline;
+        @media only screen and (max-width: $mobile-break-width) {   
+            display: none;;
+        }
+    }
 }
 
 .alert {
@@ -200,6 +211,10 @@ time {
             padding-bottom: 10px;
             margin-bottom: 10px;
             border-bottom: 2px dashed #000;
+
+            .darkmode & {
+                border-color: #424565;
+            }
         }
     }
 }
