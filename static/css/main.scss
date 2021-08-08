@@ -18,7 +18,7 @@ body {
     background: #efe8dc;
     
     &.darkmode {
-        background: #232840;
+        background: #090c1b;
         color: #eee;
     }
 }
@@ -73,7 +73,7 @@ a {
     color: #0041C3;
 
     .darkmode & {
-        color: #4de4a5;
+        color: #ffc107;
     }
 
     &:not([href]) {
@@ -152,7 +152,7 @@ time {
             transition: all 0.2s ease-in;
 
             .darkmode & {
-                background: #434969;
+                background: #242b4d;
             }
         }
 
@@ -225,7 +225,7 @@ time {
         :nth-child(4n) {
             padding-bottom: 10px;
             margin-bottom: 10px;
-            border-bottom: 2px dashed #000;
+            border-bottom: 1px solid #000;
 
             .darkmode & {
                 border-color: #424565;
