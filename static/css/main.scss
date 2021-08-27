@@ -1,4 +1,4 @@
-$accent-color: #FDF6E3;
+$accent-color: #fff;
 $mobile-break-width: 800px;
 
 // -----------------------------
@@ -103,6 +103,10 @@ time {
     white-space: pre;
 }
 
+img {
+    max-width: 100%;
+}
+
 ::selection {
     background: #b5deff;
 
@@ -119,6 +123,10 @@ time {
     margin: auto;
     max-width: 700px;
     padding: 20px 20px 0 20px;
+
+    &--photo {
+        max-width: 1140px;
+    }
 
     &:last-of-type {
         padding-bottom: 20px;
@@ -257,5 +265,25 @@ time {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+    }
+}
+
+.photo-stats {
+    color: #333;
+
+    .darkmode & {
+        color: #eee;
+    }
+}
+
+// Reconcile with above
+.container--photo {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 200px;
+
+    @media only screen and (max-width: $mobile-break-width) {   
+        grid-template-columns: auto;
     }
 }
