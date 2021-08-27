@@ -8,7 +8,7 @@ I did something recently that I've wanted to do for a long time: delete the moun
 
 In total I reduced my Gmail archive from ~48k emails to a number I'll pretend rounds to five hundred.
 
-<img src="/static/img/2021-08-27-500-emails-total-count.png" style="margin:20px auto;height:50px;display:block;" alt="Gmail screenshot showing 586 emails">
+<p style="background:linear-gradient(0, rgb(114 103 119) 0%, rgb(101 93 121) 100%);"><img src="/static/img/2021-08-27-500-emails-total-count.png" style="margin:20px auto;height:50px;display:block;" alt="Gmail screenshot showing 586 emails" /></p>
 
 ## But why?
 
