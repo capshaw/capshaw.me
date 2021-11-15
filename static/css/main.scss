@@ -225,9 +225,12 @@ img {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     grid-template-columns: 1fr 1fr min-content 100px;
+    grid-auto-rows: 1fr;
+    align-items: center;
 
     @media only screen and (max-width: $mobile-break-width) {   
         grid-template-columns: auto;
+        grid-auto-rows: auto;
 
         // Moderately a hack
         :nth-child(4n) {

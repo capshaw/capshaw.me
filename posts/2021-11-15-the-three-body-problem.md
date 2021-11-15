@@ -5,6 +5,10 @@ date: 2021-11-15
 
 book_rating: 2
 book_author: Liu Cixin
+book_author_primary: 刘
+book_author_secondary: 慈欣
+book_author_ruby_primary: Liu
+book_author_ruby_secondary: Cixin
 book_goodreads: https://www.goodreads.com/book/show/20518872-the-three-body-problem
 ---
 

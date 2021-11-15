@@ -5,6 +5,10 @@ date: 2021-04-17
 
 book_rating: 3
 book_author: Cho Nam-Joo
+book_author_primary: 조
+book_author_secondary: 남주
+book_author_ruby_primary: Cho
+book_author_ruby_secondary: Nam-Joo
 book_goodreads: https://www.goodreads.com/book/show/51104536-kim-jiyoung-born-1982
 ---
 

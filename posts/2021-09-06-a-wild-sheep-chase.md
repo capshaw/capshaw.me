@@ -5,6 +5,10 @@ date: 2021-09-06
 
 book_rating: 4
 book_author: Haruki Murakami
+book_author_primary: 村上
+book_author_secondary: 春樹
+book_author_ruby_primary: Murakami
+book_author_ruby_secondary: Haruki
 book_goodreads: https://www.goodreads.com/book/show/27224887-a-wild-sheep-chase
 ---
 

@@ -7,7 +7,16 @@ layout: post
 <h2>About the book</h2>
 <ul>
     <li>Goodreads: <a href="{{page.book_goodreads}}">{{page.title}}</a></li>
-    <li>Author: {{page.book_author}}</li>
+    <li>Author: 
+        {% if page.book_author_primary %}
+          <ruby>
+            {{ page.book_author_primary }} <rp>(</rp><rt>{{ page.book_author_ruby_primary }}</rt><rp>)</rp>
+            {{ page.book_author_secondary }} <rp>(</rp><rt>{{ page.book_author_ruby_secondary }}</rt><rp>)</rp>
+          </ruby>
+        {% else %}
+          <div>{{ page.book_author }}</div>
+        {% endif %}
+    </li>
     <li>My rating: <div class="rating-stars">{% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}</div></li>
 </ul>
     
