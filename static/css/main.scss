@@ -153,7 +153,8 @@ img {
     a {
         display: inline-block;
         border-radius: 5px;
-        padding: 5px 10px;
+        padding: 10px;
+        line-height: 1;
 
         &:hover {
             background: #f9f6f0;
