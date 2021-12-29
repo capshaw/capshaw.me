@@ -11,10 +11,11 @@ layout: page
       {% if page.layout == 'book' %}
         <div><a href="{{ page.url }}">{{ page.title }}</a></div>
         {% if page.book_author_primary %}
-          <ruby>
+          {{ page.book_author_ruby_primary }} {{ page.book_author_ruby_secondary }}
+          <!-- <ruby>
             {{ page.book_author_primary }} <rp>(</rp><rt>{{ page.book_author_ruby_primary }}</rt><rp>)</rp>
             {{ page.book_author_secondary }} <rp>(</rp><rt>{{ page.book_author_ruby_secondary }}</rt><rp>)</rp>
-          </ruby>
+          </ruby> -->
         {% else %}
           <div>{{ page.book_author }}</div>
         {% endif %}
