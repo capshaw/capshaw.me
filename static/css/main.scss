@@ -31,6 +31,12 @@ h1, h2, p {
     }
 }
 
+p { 
+    .darkmode & {
+        color: #babed1;
+    }
+}
+
 h1 {
     font-weight: bold;
     font-size: 1em;
