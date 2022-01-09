@@ -2,7 +2,7 @@
 title: The End of Everything
 subtitle: (Astrophysically Speaking)
 layout: book
-date: 2022-01-9
+date: 2022-01-09
 
 book_rating: 4
 book_author: Katie Mack
