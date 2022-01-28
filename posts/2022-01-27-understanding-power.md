@@ -15,6 +15,6 @@ Three stars for the Q&A format which was ultimately tedious; four or more stars 
 
 Overall the word for this book is _breadth_. The four-hundred page book covers almost as many distinct topics as there are pages. As such, this book is a great introduction to many of these ideas and valuable as a thought-provoking starting place. 
 
-The Q&A format gets tedious because of the repetitious structure and rapid change-of-pace in topics within the book. Ultimately, no matter how well edited the book is, the conversational nature leads to a scatter-brained result.
+The Q&A format gets tedious because of the repetitious structure and rapid rate of new topics within the book. Ultimately, no matter how well edited the book is, the conversational nature leads to a scatter-brained result.
 
 I ended up skimming much of the last 30% of the book due to the tedium. In fact, I suspect a strategy of seeking out small bits of content within—and pertaining to subjects one cares about—is a way to enjoy this book a bit more. I will consider revisiting it in this way over the years.
