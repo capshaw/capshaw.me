@@ -7,7 +7,7 @@ layout: page
   <div>
     <h1>Reading</h1>
     <div class="reading-container">
-    {% for page in site.pages reversed %}
+    {% for page in site.posts %}
       {% if page.layout == 'book' %}
         <div><a href="{{ page.url }}">{{ page.title }}</a></div>
         {% if page.book_author_primary %}
@@ -19,7 +19,7 @@ layout: page
         {% else %}
           <div>{{ page.book_author }}</div>
         {% endif %}
-        <time>{{ page.date }}</time>
+        <time>{{ page.date | date: "%Y-%m-%d" }}</time>
         <div class="rating-stars">
           {% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}
         </div>
