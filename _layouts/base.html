@@ -17,12 +17,17 @@
 
 <script>
     // Hacky code to enable dark-mode by opt-in or time-of-day
+    // Would be really cool to base this on sun and/or user preferences too
     var currentHour = (new Date()).getHours();
     var isTimeForDarkMode = currentHour > 17 || currentHour < 8;
     var hasDarkModeToggle = window.location.href.includes('darkmode');
     var hasLightModeToggle = window.location.href.includes('lightmode');
 
-    if ((isTimeForDarkMode || hasDarkModeToggle) && !hasLightModeToggle) {
+    // For whatever reason, use cookie keys instead of values for simplicity
+    var hasDarkModeCookie = document.cookie.match(/^(.*;)?\s*darkmode\s*=\s*[^;]+(.*)?$/);
+    var hasLightModeCookie = document.cookie.match(/^(.*;)?\s*lightmode\s*=\s*[^;]+(.*)?$/);
+
+    if ((isTimeForDarkMode || hasDarkModeToggle || hasDarkModeCookie) && !hasLightModeToggle && !hasLightModeCookie) {
         document.body.classList.add('darkmode');
     }
 </script>

@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-    background: #efe8dc;
+    background: #EAD7D1;
     
     &.darkmode {
         background: #090c1b;
@@ -73,13 +73,12 @@ h3 {
     }
 }
 
-
 a {
     text-decoration: none;
-    color: #0041C3;
+    color: #C33149;
 
     .darkmode & {
-        color: #a4c1ff;
+        color: #6DAEDB;
     }
 
     &:not([href]) {
@@ -140,16 +139,17 @@ img {
 }
 
 .navigation {
-    border-bottom: 2px solid #000;
-    padding: 20px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid darken(#EAD7D1, 10%);
 
     .darkmode & {
-        border-color: #424565;
+        border-color: lighten(#090c1b, 10%);
     }
 
     .header-link {
         color: #000;
         font-weight: bold;
+        margin-left: -10px;
 
         .darkmode & {
             color: #fff;
@@ -161,9 +161,10 @@ img {
         border-radius: 5px;
         padding: 10px;
         line-height: 1;
+        text-decoration: none;
 
         &:hover {
-            background: #f9f6f0;
+            background: #fff;
             transition: all 0.2s ease-in;
 
             .darkmode & {
@@ -176,11 +177,8 @@ img {
         }
     }
 
-    .navigation-divider {
-        display: inline;
-        @media only screen and (max-width: $mobile-break-width) {   
-            display: none;;
-        }
+    .container {
+        padding: 0 20px;
     }
 }
 
@@ -215,7 +213,7 @@ img {
 // -----------------------------
 
 .intro {
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .rating-stars {
@@ -243,7 +241,7 @@ img {
         :nth-child(4n) {
             padding-bottom: 10px;
             margin-bottom: 10px;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid darken(#EAD7D1, 10%);
 
             .darkmode & {
                 border-color: #424565;
