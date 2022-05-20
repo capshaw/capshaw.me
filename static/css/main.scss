@@ -243,7 +243,7 @@ img {
     filter: invert(80%);
     display: none;
 
-    // Overly complicated — fix
+    // Overly complicated - fix
     .darkmode & {
         display: inline-block;
         @media only screen and (max-width: $mobile-break-width) {   
