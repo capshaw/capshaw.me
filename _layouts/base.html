@@ -16,8 +16,10 @@
 {{ content }}
 
 <script>
-    // Hacky code to enable dark-mode by opt-in or time-of-day
+    // ******************************************************************************
+    // Hacky code to enable dark-mode by opt-in or time-of-day — please don't judge!
     // Would be really cool to base this on sun and/or user preferences too
+    // ******************************************************************************
     var currentHour = (new Date()).getHours();
     var isTimeForDarkMode = currentHour > 17 || currentHour < 8;
     var hasDarkModeToggle = window.location.href.includes('darkmode');
@@ -27,9 +29,71 @@
     var hasDarkModeCookie = document.cookie.match(/^(.*;)?\s*darkmode\s*=\s*[^;]+(.*)?$/);
     var hasLightModeCookie = document.cookie.match(/^(.*;)?\s*lightmode\s*=\s*[^;]+(.*)?$/);
 
-    if ((isTimeForDarkMode || hasDarkModeToggle || hasDarkModeCookie) && !hasLightModeToggle && !hasLightModeCookie) {
-        document.body.classList.add('darkmode');
+    /**
+     * Copied from https://javascript.info/cookie
+     */
+    function setCookie(name, value, options = {}) {
+
+        options = {
+            path: '/',
+            // add other defaults here if necessary
+            ...options
+        };
+
+        if (options.expires instanceof Date) {
+            options.expires = options.expires.toUTCString();
+        }
+
+        let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+        for (let optionKey in options) {
+            updatedCookie += "; " + optionKey;
+            let optionValue = options[optionKey];
+            if (optionValue !== true) {
+                updatedCookie += "=" + optionValue;
+            }
+        }
+
+        document.cookie = updatedCookie;
     }
+
+    /**
+     * Copied from https://javascript.info/cookie
+     */
+    function deleteCookie(name) {
+        setCookie(name, "", {
+            'max-age': -1
+        })
+    }
+
+    function makeDark(forSession=false) {
+        document.body.classList.add('darkmode');
+
+        if (forSession) {
+            setCookie("darkmode", "true");
+            deleteCookie("lightmode");
+        }
+    }
+
+    function makeLight(forSession=false) {
+        document.body.classList.remove('darkmode');
+
+        if (forSession) {
+            setCookie("lightmode", "true");
+            deleteCookie("darkmode");
+        }
+    }
+
+    if ((isTimeForDarkMode || hasDarkModeToggle || hasDarkModeCookie) && !hasLightModeToggle && !hasLightModeCookie) {
+        makeDark();
+    }
+
+    document.getElementById("shades--dark-button").addEventListener("click", function() {
+        makeDark(forSession=true);
+    });
+    document.getElementById("shades--light-button").addEventListener("click", function() {
+        makeLight(forSession=true);
+    });
 </script>
 </body>
 </html>

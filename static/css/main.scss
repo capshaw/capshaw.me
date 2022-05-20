@@ -209,6 +209,50 @@ img {
 }
 
 // -----------------------------
+// Dark / light mode functionality
+// -----------------------------
+
+.shades-button {
+    float: right;
+    width: 1em;
+
+    @media only screen and (max-width: $mobile-break-width) {   
+        display: block;
+        width: auto;
+        float: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        
+        width: 15px;
+        height: 15px;
+    }
+}
+
+#shades--dark-button {
+    background: url('/static/img/saturn-svgrepo-com.svg') no-repeat center center;
+    background-size: contain;
+    .darkmode & {
+        display: none;
+    }
+}
+
+#shades--light-button {
+    background: url('/static/img/sunrise-svgrepo-com.svg') no-repeat center center;
+    background-size: contain;
+    filter: invert(80%);
+    display: none;
+
+    // Overly complicated — fix
+    .darkmode & {
+        display: inline-block;
+        @media only screen and (max-width: $mobile-break-width) {   
+            display: block;
+        }
+    }
+}
+
+// -----------------------------
 // Page-specific
 // -----------------------------
 
