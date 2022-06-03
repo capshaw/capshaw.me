@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-    background: #EAD7D1;
+    background: #f4e3de;
     
     &.darkmode {
         background: #090c1b;
@@ -42,7 +42,6 @@ h1 {
     font-size: 1em;
     position: relative;
     font-family: sans-serif;
-    font-size: 1.2em;
 
     .darkmode & {
         color: $accent-color;
@@ -53,7 +52,6 @@ h2 {
     font-weight: bold;
     font-size: 1em;
     font-family: sans-serif;
-    font-size: 1.1em;
 
     .darkmode & {
         color: $accent-color;
@@ -139,11 +137,10 @@ img {
 }
 
 .navigation {
-    padding: 15px 0;
-    border-bottom: 1px solid darken(#EAD7D1, 10%);
+    padding: 20px 0 0 0;
 
-    .darkmode & {
-        border-color: lighten(#090c1b, 10%);
+    @media only screen and (max-width: $mobile-break-width) {   
+        padding: 15px 0 0 0;
     }
 
     .header-link {
