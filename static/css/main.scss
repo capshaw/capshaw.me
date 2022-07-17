@@ -111,6 +111,29 @@ img {
     max-width: 100%;
 }
 
+table {
+    border-collapse: collapse;
+    line-height: 1;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #c59788;
+
+    .darkmode & {
+        border-color: #323b65;
+    }
+}
+
+th {
+    background: #f4ded8;
+    text-align: left;
+
+    .darkmode & {
+        background: #1b2248;
+    }
+}
+
 ::selection {
     background: #b5deff;
 
@@ -181,6 +204,38 @@ img {
 
     .container {
         padding: 0 20px;
+    }
+}
+
+.book-tag {
+    text-transform: capitalize;
+
+    &::before {
+        content: "●";
+    }
+
+    &--cosmology::before {
+        color: rgb(209, 115, 209);
+    }
+
+    &--history::before {
+        color: rgb(231, 113, 121);
+    }
+
+    &--sociology::before {
+        color: rgb(116, 164, 231);
+    }
+
+    &--politics::before {
+        color: rgb(223, 210, 89);
+    }
+
+    &--fiction::before {
+        color: rgb(108, 205, 103);
+    }
+
+    &--engineering::before {
+        color: rgb(227, 171, 107);
     }
 }
 
@@ -293,39 +348,6 @@ img {
                 border-color: #424565;
             }
         }
-    }
-
-    .book-tag {
-        padding: 0 5px;
-        text-transform: capitalize;
-
-        &::before {
-            content: "●";
-        }
-    }
-
-    .book-tag--cosmology::before {
-        color: rgb(209, 115, 209);
-    }
-
-    .book-tag--history::before {
-        color: rgb(231, 113, 121);
-    }
-
-    .book-tag--sociology::before {
-        color: rgb(116, 164, 231);
-    }
-
-    .book-tag--politics::before {
-        color: rgb(223, 210, 89);
-    }
-
-    .book-tag--fiction::before {
-        color: rgb(108, 205, 103);
-    }
-
-    .book-tag--engineering::before {
-        color: rgb(227, 171, 107);
     }
 }
 
