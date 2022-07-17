@@ -3,7 +3,7 @@ title: Reading
 layout: page
 ---
 
-<div class="container">
+<div class="container container--reading-list">
   <div>
     <h1>Reading</h1>
     <div class="reading-container">
@@ -11,7 +11,7 @@ layout: page
       {% if page.layout == 'book' %}
         <div><a href="{{ page.url }}">{{ page.title }}</a></div>
         {% if page.book_author_primary %}
-          <div>{{ page.book_author_ruby_primary }} {{ page.book_author_ruby_secondary }}</div>
+          <div>{{ page.book_author_ruby_primary }}, {{ page.book_author_ruby_secondary }}</div>
           <!-- <ruby>
             {{ page.book_author_primary }} <rp>(</rp><rt>{{ page.book_author_ruby_primary }}</rt><rp>)</rp>
             {{ page.book_author_secondary }} <rp>(</rp><rt>{{ page.book_author_ruby_secondary }}</rt><rp>)</rp>
@@ -19,6 +19,9 @@ layout: page
         {% else %}
           <div>{{ page.book_author }}</div>
         {% endif %}
+        <div class="book-tag book-tag--{{ page.book_tag }}">
+          {{ page.book_tag }}
+        </div>
         <time>{{ page.date | date: "%Y-%m-%d" }}</time>
         <div class="rating-stars">
           {% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}

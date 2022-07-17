@@ -7,6 +7,7 @@ date: 2022-01-27
 book_rating: 3
 book_author: Noam Chomsky
 book_goodreads: https://www.goodreads.com/book/show/11415156-understanding-power
+book_tag: politics
 ---
 
 > If you act on the assumption that things can change, well, maybe they will. Okay, the only rational choice, given those alternatives, is to forget the pessimism.

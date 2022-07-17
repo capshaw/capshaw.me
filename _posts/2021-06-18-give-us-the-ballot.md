@@ -6,6 +6,7 @@ date: 2021-06-18
 book_rating: 4
 book_author: Ari Berman
 book_goodreads: https://www.goodreads.com/book/show/22929518-give-us-the-ballot
+book_tag: history
 ---
 
 Well-written book documenting the rise and fall of the Voting Rights Act (VRA). The book itself is semi-chronological, though it does jump back as necessary to frame the story.

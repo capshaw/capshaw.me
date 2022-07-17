@@ -7,6 +7,7 @@ date: 2022-01-09
 book_rating: 4
 book_author: Katie Mack
 book_goodreads: https://www.goodreads.com/book/show/48845994-the-end-of-everything
+book_tag: cosmology
 ---
 
 I have my money on vacuum decay, personally.

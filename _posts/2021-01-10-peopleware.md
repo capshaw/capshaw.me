@@ -4,8 +4,9 @@ layout: book
 date: 2021-01-10
 
 book_rating: 3
-book_author: Tom DeMarco, Timothy Lister
+book_author: Tom DeMarco; Timothy Lister
 book_goodreads: https://www.goodreads.com/book/show/18895165-peopleware
+book_tag: engineering
 ---
 
 > The ultimate management sin is wasting people’s time.

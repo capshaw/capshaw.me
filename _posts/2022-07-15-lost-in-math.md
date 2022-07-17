@@ -5,6 +5,7 @@ date: 2022-07-15
 book_rating: 3
 book_author: Sabine Hossenfelder
 book_goodreads: https://www.goodreads.com/book/show/36507346-lost-in-math
+book_tag: cosmology
 ---
 
 The premise of this book can be summed up in an early quote from the book—

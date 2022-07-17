@@ -10,6 +10,7 @@ book_author_secondary: 慈欣
 book_author_ruby_primary: Liu
 book_author_ruby_secondary: Cixin
 book_goodreads: https://www.goodreads.com/book/show/20518872-the-three-body-problem
+book_tag: fiction
 ---
 
 Clunky, a missed opportunity.

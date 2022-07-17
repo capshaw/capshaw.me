@@ -5,6 +5,7 @@ date: 2022-03-29
 book_rating: 4
 book_author: Max Tegmark
 book_goodreads: https://www.goodreads.com/book/show/19705607-our-mathematical-universe
+book_tag: cosmology
 ---
 
 > Like an ostrich with its head in the sand, we humans have repeatedly assumed that all we could see was all that existed, hubristically imagining ourselves at the center of everything.

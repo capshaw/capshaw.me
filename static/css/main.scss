@@ -1,4 +1,3 @@
-$accent-color: #fff;
 $mobile-break-width: 800px;
 
 // -----------------------------
@@ -44,7 +43,7 @@ h1 {
     font-family: sans-serif;
 
     .darkmode & {
-        color: $accent-color;
+        color: #fff;
     }
 }
 
@@ -54,8 +53,8 @@ h2 {
     font-family: sans-serif;
 
     .darkmode & {
-        color: $accent-color;
-        border-color: $accent-color;
+        color: #fff;
+        border-color: #fff;
     }
 }
 
@@ -67,7 +66,7 @@ h3 {
     border-bottom: 1px solid #000;
 
     .darkmode & {
-        color: $accent-color;
+        color: #fff;
     }
 }
 
@@ -124,11 +123,15 @@ img {
 
 .container {
     margin: auto;
-    max-width: 700px;
+    max-width: 750px;
     padding: 20px 20px 0 20px;
 
     &--photo {
         max-width: 1140px;
+    }
+
+    &--reading-list {
+        max-width: 750px;
     }
 
     &:last-of-type {
@@ -270,7 +273,7 @@ img {
     display: grid;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    grid-template-columns: 1fr 1fr min-content 100px;
+    grid-template-columns: 1fr 1fr 110px min-content 100px;
     grid-auto-rows: 1fr;
     align-items: center;
 
@@ -279,7 +282,7 @@ img {
         grid-auto-rows: auto;
 
         // Moderately a hack
-        :nth-child(4n) {
+        :nth-child(5n) {
             padding-bottom: 10px;
             margin-bottom: 10px;
             border-bottom: 1px solid darken(#EAD7D1, 10%);
@@ -288,6 +291,38 @@ img {
                 border-color: #424565;
             }
         }
+    }
+
+    .book-tag {
+        padding: 0 5px;
+
+        &::before {
+            content: "●";
+        }
+    }
+
+    .book-tag--cosmology::before {
+        color: rgb(209, 115, 209);
+    }
+
+    .book-tag--history::before {
+        color: rgb(231, 113, 121);
+    }
+
+    .book-tag--sociology::before {
+        color: rgb(116, 164, 231);
+    }
+
+    .book-tag--politics::before {
+        color: rgb(223, 210, 89);
+    }
+
+    .book-tag--fiction::before {
+        color: rgb(108, 205, 103);
+    }
+
+    .book-tag--engineering::before {
+        color: rgb(227, 171, 107);
     }
 }
 

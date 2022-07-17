@@ -6,6 +6,7 @@ date: 2021-11-26
 book_rating: 5
 book_author: Martin Luther King Jr.
 book_goodreads: https://www.goodreads.com/book/show/11082099-why-we-can-t-wait
+book_tag: history
 ---
 
 > Injustice anywhere is a threat to justice everywhere. We are caught in an inescapable network of mutuality, tied in a single garment of destiny. Whatever affects one directly, affects all indirectly.

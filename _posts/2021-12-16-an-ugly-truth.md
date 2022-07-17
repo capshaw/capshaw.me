@@ -4,8 +4,9 @@ layout: book
 date: 2021-12-16
 
 book_rating: 3
-book_author: Sheera Frenkel, Cecilia Kang
+book_author: Sheera Frenkel; Cecilia Kang
 book_goodreads: https://www.goodreads.com/book/show/57438967-an-ugly-truth
+book_tag: history
 ---
 
 A perfectly-suitable broad overview of Facebook, focused more on the near history than the distant. Well-written.
