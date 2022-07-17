@@ -297,6 +297,7 @@ img {
 
     .book-tag {
         padding: 0 5px;
+        text-transform: capitalize;
 
         &::before {
             content: "●";
