@@ -1,0 +1,6 @@
+[submodule "manager-beliefs"]
+	path = manager-beliefs
+	url = https://github.com/capshaw/manager-beliefs
+[submodule "resume"]
+	path = resume
+	url = https://github.com/capshaw/resume
