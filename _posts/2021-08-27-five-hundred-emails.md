@@ -2,6 +2,8 @@
 title: Five hundred emails
 layout: post
 date: 2021-08-27
+
+journal_tag: update
 ---
 
 I did something recently that I've wanted to do for a long time: delete the mountain of emails in my archive that I'll never revisit. 

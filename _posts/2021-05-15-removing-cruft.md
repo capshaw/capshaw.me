@@ -2,6 +2,8 @@
 title: Removing cruft
 layout: post
 date: 2021-05-15
+
+journal_tag: update
 ---
 
 I've spent the last day on and off redesigning this site and removing some cruft. 

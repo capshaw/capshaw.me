@@ -2,6 +2,8 @@
 title: Photo workflow learnings
 layout: post
 date: 2022-07-03
+
+journal_tag: update
 ---
 
 A few weeks ago <a href="https://www.flickr.com/photos/capshaw/">I rejoined Flickr</a> after years off of the platform. 

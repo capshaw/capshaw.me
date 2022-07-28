@@ -10,6 +10,9 @@ layout: page
     {% for page in site.posts %}
       {% if page.layout == 'post' %}
         <div><a href="{{ page.url }}">{{ page.title }}</a></div>
+        <div class="journal-tag journal-tag--{{ page.journal_tag }}">
+          {{ page.journal_tag }}
+        </div>
         <time>{{ page.date | date: "%Y-%m-%d" }}</time>
       {% endif %}
     {% endfor %}

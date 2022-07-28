@@ -2,6 +2,8 @@
 title: Minimizing systems
 layout: post
 date: 2020-12-22
+
+journal_tag: philosophy
 ---
 
 This will be a brief post in the hopes of writing more, smaller, posts more often.
