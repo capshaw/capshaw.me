@@ -392,23 +392,3 @@ th {
         overflow: hidden;
     }
 }
-
-.photo-stats {
-    color: #333;
-
-    .darkmode & {
-        color: #eee;
-    }
-}
-
-// Reconcile with above
-.container--photo {
-    display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr 200px;
-
-    @media only screen and (max-width: $mobile-break-width) {   
-        grid-template-columns: auto;
-    }
-}
