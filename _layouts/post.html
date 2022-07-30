@@ -7,5 +7,7 @@ layout: page
     
     {{ content }}
 
-    <p><em>Posted on {{ page.date | date: "%B %-d, %Y" }}</em></p>
+    {% if page.date %}
+        <p><em>Posted on {{ page.date | date: "%B %-d, %Y" }}</em></p>
+    {% endif %}
 </div>
