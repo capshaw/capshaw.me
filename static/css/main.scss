@@ -153,18 +153,6 @@ th {
     margin: auto;
     max-width: 750px;
     padding: 20px 20px 0 20px;
-
-    &--photo {
-        max-width: 1140px;
-    }
-
-    &--reading-list {
-        max-width: 750px;
-    }
-
-    &:last-of-type {
-        padding-bottom: 20px;
-    }
 }
 
 .navigation {
@@ -346,7 +334,7 @@ th {
     display: grid;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    grid-template-columns: 1fr 1fr 110px min-content 100px;
+    grid-template-columns: 1fr 1fr 110px min-content min-content;
     grid-auto-rows: 1fr;
     align-items: center;
 
