@@ -156,10 +156,10 @@ th {
 }
 
 .navigation {
-    padding: 20px 0 0 0;
+    border-bottom: 1px solid #eee;
 
-    @media only screen and (max-width: $mobile-break-width) {   
-        padding: 15px 0 0 0;
+    .darkmode & {
+        border-color: #192044;
     }
 
     .header-link {
@@ -194,7 +194,7 @@ th {
     }
 
     .container {
-        padding: 0 20px;
+        padding: 20px;
     }
 }
 
@@ -347,7 +347,7 @@ th {
         :nth-child(5n) {
             padding-bottom: 10px;
             margin-bottom: 10px;
-            border-bottom: 1px solid #afb2d7;
+            border-bottom: 1px solid #eee;
 
             .darkmode & {
                 border-color: #424565;
@@ -370,7 +370,7 @@ th {
         :nth-child(3n) {
             padding-bottom: 10px;
             margin-bottom: 10px;
-            border-bottom: 1px solid #afb2d7;
+            border-bottom: 1px solid #eee;
 
             .darkmode & {
                 border-color: #424565;
