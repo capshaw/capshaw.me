@@ -2,3 +2,6 @@ highlighter: pygments
 permalink: pretty
 post_dirs: false
 markdown: kramdown
+collections:
+  lists:
+    output: true

@@ -138,7 +138,7 @@ th {
 }
 
 ::selection {
-    background: #b5deff;
+    background: #fffdb5;
 
     .darkmode & {
         color: #232840;
@@ -246,6 +246,15 @@ th {
 .alert {
     background:#e3e5fd;
     padding: 20px;
+
+    .darkmode & {
+        background: #1e223a;
+    }
+}
+
+.breadcrumb {
+    background:#eff0fa;
+    padding: 10px;
 
     .darkmode & {
         background: #1e223a;
