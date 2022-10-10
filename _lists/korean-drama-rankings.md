@@ -3,6 +3,8 @@ title: Korean drama rankings
 layout: list
 ---
 
+Ranked relatively within the buckets.
+
 ## S
 - Itaewon Class
 - Kingdom
@@ -10,6 +12,8 @@ layout: list
 - Extraordinary Attorney Woo
 
 ## A
+- Little Women
+- Narco-Saints
 - Vincenzo
 - Hyenas
 - Signal
