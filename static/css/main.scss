@@ -283,43 +283,57 @@ th {
 // Dark / light mode functionality
 // -----------------------------
 
-.shades-button {
+.darkmode-toggle {
+    // Adapted from https://danklammer.com/articles/simple-css-toggle-switch/
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 42px;
+    height: 22px;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    background-color: #2f2753;
+    transition: background-color ease 0.3s;
+    margin-top: 8px;
     float: right;
-    width: 1em;
+    border: 1px solid rgba(0,0,0,0.2);
 
     @media only screen and (max-width: $mobile-break-width) {   
         display: block;
-        width: auto;
-        float: none;
         position: absolute;
         top: 10px;
         right: 10px;
-        
-        width: 15px;
-        height: 15px;
     }
-}
 
-#shades--dark-button {
-    background: url('/static/img/saturn-svgrepo-com.svg') no-repeat center center;
-    background-size: contain;
-    .darkmode & {
-        display: none;
+    &:before {
+        content: "🌤 🌙";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        text-indent: -18px;
+        word-spacing: 22px;
+        white-space: nowrap;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;    
     }
-}
 
-#shades--light-button {
-    background: url('/static/img/sunrise-svgrepo-com.svg') no-repeat center center;
-    background-size: contain;
-    filter: invert(80%);
-    display: none;
+    &:checked {
+        background-color: #eee;
+        border: 1px solid #ddd;
 
-    // Overly complicated - fix
-    .darkmode & {
-        display: inline-block;
-        @media only screen and (max-width: $mobile-break-width) {   
-            display: block;
-        }
+        &:before {
+            left: 22px;
+        }  
     }
 }
 
@@ -336,7 +350,7 @@ th {
     font-size: smaller;
 
     .darkmode & {
-        color: #ccc;
+        color: rgb(115, 117, 142);
     }
 }
 
@@ -348,6 +362,7 @@ th {
     grid-template-columns: 1fr 1fr 110px min-content min-content;
     grid-auto-rows: 1fr;
     align-items: center;
+    margin-bottom: 20px;
 
     @media only screen and (max-width: $mobile-break-width) {   
         grid-template-columns: auto;
@@ -371,6 +386,7 @@ th {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     grid-template-columns: 1fr 110px min-content;
+    margin-bottom: 20px;
 
     @media only screen and (max-width: $mobile-break-width) {   
         grid-template-columns: auto;

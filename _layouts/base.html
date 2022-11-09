@@ -24,6 +24,7 @@
     var isTimeForDarkMode = currentHour > 17 || currentHour < 8;
     var hasDarkModeToggle = window.location.href.includes('darkmode');
     var hasLightModeToggle = window.location.href.includes('lightmode');
+    var darkmodeSwitch = document.getElementById("shades-switch");
 
     // For whatever reason, use cookie keys instead of values for simplicity
     var hasDarkModeCookie = document.cookie.match(/^(.*;)?\s*darkmode\s*=\s*[^;]+(.*)?$/);
@@ -68,6 +69,7 @@
 
     function makeDark(forSession=false) {
         document.body.classList.add('darkmode');
+        darkmodeSwitch.checked = false;
 
         if (forSession) {
             setCookie("darkmode", "true");
@@ -77,6 +79,7 @@
 
     function makeLight(forSession=false) {
         document.body.classList.remove('darkmode');
+        darkmodeSwitch.checked = true;
 
         if (forSession) {
             setCookie("lightmode", "true");
@@ -86,13 +89,16 @@
 
     if ((isTimeForDarkMode || hasDarkModeToggle || hasDarkModeCookie) && !hasLightModeToggle && !hasLightModeCookie) {
         makeDark();
+    } else {
+        makeLight();
     }
 
-    document.getElementById("shades--dark-button").addEventListener("click", function() {
-        makeDark(forSession=true);
-    });
-    document.getElementById("shades--light-button").addEventListener("click", function() {
-        makeLight(forSession=true);
+    darkmodeSwitch.addEventListener("click", function() {
+        if (darkmodeSwitch.checked) {
+            makeLight(forSession=true);
+        } else {
+            makeDark(forSession=true);
+        }
     });
 </script>
 </body>
