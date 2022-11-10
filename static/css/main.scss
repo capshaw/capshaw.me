@@ -310,19 +310,21 @@ th {
     }
 
     &:before {
-        content: "🌤 🌙";
+        content: "☼ ☽";
         display: block;
         position: absolute;
         z-index: 2;
         width: 16px;
         height: 16px;
+        font-size: 14px;
         background: #fff;
         left: 2px;
         top: 2px;
         border-radius: 50%;
-        text-indent: -18px;
-        word-spacing: 22px;
+        text-indent: -17px;
+        word-spacing: 24px;
         white-space: nowrap;
+        color: #7368a2;
         box-shadow: 0 1px 2px rgba(0,0,0,0.2);
         transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;    
     }
@@ -333,6 +335,7 @@ th {
 
         &:before {
             left: 22px;
+            color: rgb(141, 141, 141);
         }  
     }
 }
