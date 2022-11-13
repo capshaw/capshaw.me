@@ -310,7 +310,7 @@ th {
     }
 
     &:before {
-        content: "☼ ☽";
+        content: "L D";
         display: block;
         position: absolute;
         z-index: 2;
@@ -321,7 +321,8 @@ th {
         left: 2px;
         top: 2px;
         border-radius: 50%;
-        text-indent: -17px;
+        text-indent: -14px;
+        font-weight: bold;
         word-spacing: 24px;
         white-space: nowrap;
         color: #7368a2;
