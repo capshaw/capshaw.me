@@ -1,5 +1,5 @@
 ---
-title: Interview ideas
+title: Work — Interview ideas
 layout: list
 ---
 
@@ -7,3 +7,4 @@ layout: list
 - Design your own process (points)
 - Correspondence interview (email/written communication)
 - Tell people questions ahead of time 
+- Writing as most important thing; documentation and persuasive writing interview

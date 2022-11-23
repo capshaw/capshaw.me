@@ -3,7 +3,7 @@ title: Lists
 layout: post
 ---
 
-Over the years, I've stored a bunch of miscellaneous lists in various notes apps spread across the web. I figured I could store the public ones on my website instead. This area of my site is pretty unrefined—consider everything a continuous draft.
+Below are unrefined lists and notes. Everything here is a continuous draft and might make no sense without context. For slightly more refined writing, see the [Journal](/journal) section.
 
 <ul>
 {% for list in site.lists %}

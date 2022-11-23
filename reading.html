@@ -30,4 +30,11 @@ layout: page
     {% endfor %}
     </div>
   </div>
+  <div>
+    {% for page in site.posts %}
+      {% if page.layout == 'book' and page.book_key %}
+        <img class="book-image" src="/static/img/books/{{page.book_key}}.jpg" alt="{{page.title}} cover"/>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
