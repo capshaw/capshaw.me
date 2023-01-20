@@ -1,5 +1,6 @@
 ---
 title: At the Edge of Time
+subtitle: Exploring the Mysteries of Our Universe’s First Seconds
 layout: book
 date: 2022-05-19
 book_rating: 5

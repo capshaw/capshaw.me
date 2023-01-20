@@ -1,5 +1,6 @@
 ---
 title: The Cult of We
+subtitle: WeWork, Adam Neumann, and the Great Startup Delusion
 layout: book
 date: 2022-08-12
 book_rating: 4

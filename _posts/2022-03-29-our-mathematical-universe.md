@@ -1,5 +1,6 @@
 ---
 title: Our Mathematical Universe
+subtitle: My Quest for the Ultimate Nature of Reality
 layout: book
 date: 2022-03-29
 book_rating: 4

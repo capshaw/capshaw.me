@@ -1,5 +1,6 @@
 ---
 title: Looking Like the Enemy
+subtitle: My Story of Imprisonment in Japanese American Internment Camps
 layout: book
 date: 2022-02-13
 book_rating: 3

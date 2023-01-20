@@ -1,5 +1,6 @@
 ---
 title: Garbology
+subtitle: Our Dirty Love Affair with Trash
 layout: book
 date: 2021-05-23
 

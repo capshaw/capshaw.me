@@ -1,5 +1,6 @@
 ---
 title: An Ugly Truth
+subtitle: Inside Facebook's Battle for Domination
 layout: book
 date: 2021-12-16
 

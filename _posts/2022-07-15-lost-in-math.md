@@ -1,5 +1,6 @@
 ---
 title: Lost in Math
+subtitle: How Beauty Leads Physics Astray
 layout: book
 date: 2022-07-15
 book_rating: 3

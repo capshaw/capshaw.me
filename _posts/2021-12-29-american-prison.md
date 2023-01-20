@@ -1,5 +1,6 @@
 ---
 title: American Prison
+subtitle: A Reporter's Undercover Journey into the Business of Punishment
 layout: book
 date: 2021-12-29
 

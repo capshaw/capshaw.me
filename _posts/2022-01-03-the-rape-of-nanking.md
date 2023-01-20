@@ -1,5 +1,6 @@
 ---
 title: The Rape of Nanking
+subtitle: The Forgotten Holocaust of World War II
 layout: book
 date: 2022-01-03
 

@@ -1,5 +1,6 @@
 ---
 title: The Rising Sun
+subtitle: The Decline and Fall of the Japanese Empire, 1936-1945
 layout: book
 date: 2023-01-19
 

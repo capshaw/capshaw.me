@@ -1,5 +1,6 @@
 ---
 title: Radical Candor
+subtitle: Be a Kick-Ass Boss Without Losing Your Humanity
 layout: book
 date: 2021-02-28
 

@@ -1,5 +1,6 @@
 ---
 title: Einstein's Monsters
+subtitle: The Life and Times of Black Holes
 layout: book
 date: 2022-04-28
 book_rating: 4

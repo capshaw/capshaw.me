@@ -1,5 +1,6 @@
 ---
 title: Empire and Righteous Nation
+subtitle: 600 Years of China-Korea Relations
 layout: book
 date: 2022-12-27
 

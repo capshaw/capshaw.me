@@ -1,5 +1,6 @@
 ---
 title: Helgoland
+subtitle: The World of Quantum Theory
 layout: book
 date: 2022-04-13
 book_rating: 3

@@ -1,5 +1,6 @@
 ---
 title: Peopleware
+subtitle: Productive Projects and Teams
 layout: book
 date: 2021-01-10
 

@@ -1,5 +1,6 @@
 ---
 title: Halfway Home
+subtitle: Race, Punishment, and the Afterlife of Mass Incarceration
 layout: book
 date: 2021-08-03
 

@@ -1,5 +1,6 @@
 ---
 title: Give Us the Ballot
+subtitle: The Modern Struggle for Voting Rights in America
 layout: book
 date: 2021-06-18
 

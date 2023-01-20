@@ -1,12 +1,13 @@
 ---
 title: Automating Inequality
+subtitle: How High-Tech Tools Profile, Police, and Punish the Poor
 layout: book
 date: 2021-01-05
 
 book_rating: 4
 book_author: Virginia Eubanks
 book_goodreads: https://www.goodreads.com/book/show/34964830-automating-inequality
-book_tag: engineering
+book_tag: sociology
 ---
 
 Compelling. At the very least it's clear that ethics should be taught in every computer science program and even more broadly. 
