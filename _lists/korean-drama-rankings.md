@@ -9,6 +9,7 @@ Ranked relatively within the buckets.
 - Itaewon Class
 - Kingdom
 - Reply 1988
+- The Glory
 - Under the Queen's Umbrella
 - Extraordinary Attorney Woo
 
