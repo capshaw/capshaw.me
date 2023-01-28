@@ -1,4 +1,5 @@
 [submodule "manager-beliefs"]
+	branch = main
 	path = manager-beliefs
 	url = https://github.com/capshaw/manager-beliefs
 [submodule "resume"]
