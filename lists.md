@@ -3,7 +3,7 @@ title: Lists
 layout: post
 ---
 
-Below are unrefined lists and notes. Everything here is a continuous draft and might make no sense without context. For slightly more refined writing, see the [Journal](/journal) section.
+Below are unrefined lists and notes. Everything here is a continuous draft and might be nonsensical context. For slightly more refined writing, see the [Journal](/journal) section.
 
 <ul>
 {% for list in site.lists %}
