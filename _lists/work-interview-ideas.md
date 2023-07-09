@@ -3,9 +3,10 @@ title: Work — Interview ideas
 layout: list
 ---
 
-- Interview on your own battlefield
+I'm not a huge fan of the technical interview for software engineers. Below are misc. ideas I've had around this—most probably bad.
+
+- Design your own process / Interview on your own battlefield (choose your interview, show certain set of requirements, points)
 - Undo exercise. A regression has happened, here is the changeset, what is the fix?
-- Design your own process (points)
 - Correspondence interview (email/written communication)
 - Tell people questions ahead of time 
 - Writing as most important thing; documentation and persuasive writing interview

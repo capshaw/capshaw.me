@@ -9,4 +9,3 @@ Ideas for changes for this site
 - "wanna know my favorite books?" feature or top bookshelf
 - Create web of related books
 - Images of books as alternative view
-- Put photography section

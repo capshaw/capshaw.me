@@ -1,19 +1,11 @@
 ---
 layout: page
 ---
+ 
+<fieldset>
+    <legend>{{ page.title }}{% if page.subtitle %}: <span class="subtitle">{{ page.subtitle }}</span>{% endif %}</legend>
 
-<div class="container">
-    <h1>
-        {{ page.title }}{% if page.subtitle %}: 
-            <span class="subtitle">
-                {{ page.subtitle }}
-            </span>
-        {% endif %}
-    </h1>  
-    
-    {{ content }}
-
-    {% if page.date %}
-        <p><em>Posted on {{ page.date | date: "%B %-d, %Y" }}</em></p>
-    {% endif %}
-</div>
+    <div class="fieldset-container">
+        {{ content }}
+    </div>
+</fieldset>

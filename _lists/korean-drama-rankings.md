@@ -15,6 +15,8 @@ Ranked relatively within the buckets.
 
 ## A
 - Little Women
+- The Glory
+- Bloodhounds
 - Narco-Saints
 - Vincenzo
 - Hyenas

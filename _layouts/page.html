@@ -1,6 +1,16 @@
 ---
 layout: base
 ---
-{% include navigation.html %}
-
-{{ content }}
+<div class="header">
+    <span class="emoji">🪧</span> Hi, I'm Andrew
+</div>
+<div class="container">
+    <div class="grid-container">
+        <div>
+            {% include navigation.html %}
+        </div>
+        <div>
+            {{ content }}
+        </div>
+    </div>
+</div>

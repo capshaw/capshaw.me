@@ -1,40 +1,30 @@
 ---
-title: Reading
-layout: page
+title: What I've been reading
+layout: post
 ---
-
-<div class="container container--reading-list">
-  <div>
-    <h1>Reading</h1>
-    <div class="reading-container">
-    {% for page in site.posts %}
-      {% if page.layout == 'book' %}
-        <div><a href="{{ page.url }}">{{ page.title }}</a></div>
-        {% if page.book_author_primary %}
-          <div>{{ page.book_author_ruby_primary }}, {{ page.book_author_ruby_secondary }}</div>
-          <!-- <ruby>
-            {{ page.book_author_primary }} <rp>(</rp><rt>{{ page.book_author_ruby_primary }}</rt><rp>)</rp>
-            {{ page.book_author_secondary }} <rp>(</rp><rt>{{ page.book_author_ruby_secondary }}</rt><rp>)</rp>
-          </ruby> -->
-        {% else %}
-          <div>{{ page.book_author }}</div>
-        {% endif %}
-        <div class="book-tag book-tag--{{ page.book_tag }}">
-          {{ page.book_tag }}
-        </div>
-        <time>{{ page.date | date: "%Y-%m-%d" }}</time>
-        <div class="rating-stars">
-          {% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}
-        </div>
-      {% endif %}
-    {% endfor %}
+<div class="reading-container">
+{% for page in site.posts %}
+  {% if page.layout == 'book' %}
+    <div><a href="{{ page.url }}">{{ page.title }}</a></div>
+    {% if page.book_author_primary %}
+      <div>{{ page.book_author_ruby_primary }}, {{ page.book_author_ruby_secondary }}</div>
+      <!-- <ruby>
+        {{ page.book_author_primary }} <rp>(</rp><rt>{{ page.book_author_ruby_primary }}</rt><rp>)</rp>
+        {{ page.book_author_secondary }} <rp>(</rp><rt>{{ page.book_author_ruby_secondary }}</rt><rp>)</rp>
+      </ruby> -->
+    {% else %}
+      <div>{{ page.book_author }}</div>
+    {% endif %}
+    <div class="book-tag book-tag--{{ page.book_tag }}">
+      {{ page.book_tag }}
     </div>
-  </div>
-  <div>
-    {% for page in site.posts %}
-      {% if page.layout == 'book' and page.book_key %}
-        <img class="book-image" src="/static/img/books/{{page.book_key}}.jpg" alt="{{page.title}} cover"/>
-      {% endif %}
-    {% endfor %}
-  </div>
+    <!-- <time>{{ page.date | date: "%Y-%m-%d" }}</time> -->
+    <div>
+      <div class="rating-stars">
+        {% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
 </div>
