@@ -4,9 +4,10 @@
 @charset "UTF-8";
 
 $mobile-break-width: 1080px;
-$navigation-break-width: 985px;
+$navigation-break-width: 990px;
 $photo-break-width: 600px;
 $theme-color: #E0C9A6;
+$link-hover-color: #005eff;
 
 // -----------------------------
 // Built-ins
@@ -66,7 +67,8 @@ a {
     border-bottom: 1px dashed darken($theme-color, 60%);
 
     &:hover {
-        color: darken($theme-color, 30%);
+        color: $link-hover-color;
+        border-color: $link-hover-color;
     }
 
     &:not([href]) {
