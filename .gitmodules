@@ -8,3 +8,9 @@
 [submodule "particles"]
 	path = particles
 	url = https://github.com/capshaw/particles
+[submodule "sudoku"]
+	path = sudoku
+	url = https://github.com/capshaw/sudoku
+[submodule "flock.js"]
+	path = flock.js
+	url = https://github.com/capshaw/flock.js
