@@ -6,11 +6,13 @@
 	path = resume
 	url = https://github.com/capshaw/resume
 [submodule "particles"]
+	branch = main
 	path = particles
 	url = https://github.com/capshaw/particles
 [submodule "flock.js"]
 	path = flock.js
 	url = https://github.com/capshaw/flock.js
 [submodule "api/erging"]
+	branch = main
 	path = api/erging
 	url = git@github.com:capshaw/erging.git
