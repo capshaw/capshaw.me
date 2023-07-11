@@ -11,3 +11,6 @@
 [submodule "flock.js"]
 	path = flock.js
 	url = https://github.com/capshaw/flock.js
+[submodule "api/erging"]
+	path = api/erging
+	url = git@github.com:capshaw/erging.git
