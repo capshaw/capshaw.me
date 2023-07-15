@@ -11,6 +11,7 @@ book_author_ruby_primary: Cho
 book_author_ruby_secondary: Nam-Joo
 book_goodreads: https://www.goodreads.com/book/show/51104536-kim-jiyoung-born-1982
 book_tag: fiction
+book_image: kim_jiyoung_born_1982.jpg
 ---
 
 I have trouble writing much about this book. I really struggled to finish the book due to its style. It felt like a trudge to get through what is overall a pretty short book.

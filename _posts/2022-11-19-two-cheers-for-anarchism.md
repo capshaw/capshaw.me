@@ -2,10 +2,12 @@
 title: Two Cheers for Anarchism
 layout: book
 date: 2022-11-19
+
 book_rating: 4
 book_author: James C. Scott
 book_goodreads: https://www.goodreads.com/book/show/18854078-two-cheers-for-anarchism
 book_tag: politics
+book_image: two_cheers_for_anarchism.jpg
 ---
 
 > I am suggesting that two centuries of a strong state and liberal economies may have socialized us so that we have largely lost the habits of mutuality and are in danger now of becoming precisely the dangerous predators that Hobbes thought populated the state of nature.

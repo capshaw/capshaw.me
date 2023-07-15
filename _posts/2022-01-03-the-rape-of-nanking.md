@@ -8,6 +8,7 @@ book_rating: 4
 book_author: Iris Chang
 book_goodreads: https://www.goodreads.com/book/show/18874122-the-rape-of-nanking
 book_tag: history
+book_image: the_rape_of_nanking.jpg
 ---
 
 A solid book about a horrifying subject. Straight-forward to read—heavy in subject but not in prose.

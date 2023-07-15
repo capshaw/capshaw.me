@@ -245,6 +245,12 @@ legend {
     display: inline-block;
 }
 
+.breadcrumb {
+    &--centered {
+        text-align: center;
+    }
+}
+
 // -----------------------------
 // Page-specific
 // -----------------------------
@@ -269,6 +275,59 @@ legend {
             margin-bottom: 10px;
             border-bottom: 1px dotted darken($theme-color, 70%);;
         }
+    }
+}
+
+.reading-images-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+
+    a {
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        line-height: 1;
+    }
+
+    .book {
+        position: relative;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(189,173,149,1);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(189,173,149,1);
+        box-shadow: 0px 0px 10px 0px rgba(189,173,149,1);
+        border: 1px solid rgba(189,173,149,1);
+
+        &:hover {
+            -webkit-box-shadow: 0px 0px 10px 0px rgba($link-hover-color, 0.75);
+            -moz-box-shadow: 0px 0px 10px 0px rgba($link-hover-color, 0.75);
+            box-shadow: 0px 0px 10px 0px rgba($link-hover-color, 0.75);
+            border: 1px solid rgba($link-hover-color, 0.75);
+        }
+
+        // Book ridge
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 2px;
+            bottom: 0;
+            width: 3px;
+            background: rgba(0,0,0,0.06);
+            box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    img {
+        width: 100%;
+        mix-blend-mode: multiply;
+        vertical-align: top;  
+    }
+
+    @media only screen and (max-width: $photo-break-width) {   
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

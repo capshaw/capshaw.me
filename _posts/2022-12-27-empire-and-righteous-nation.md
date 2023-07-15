@@ -8,6 +8,7 @@ book_rating: 4
 book_author: Odd Arne Westad
 book_goodreads: https://www.goodreads.com/book/show/62121778-empire-and-righteous-nation
 book_tag: history
+book_image: empire_and_righteous_nation.jpg
 ---
 
 The book is a short, broad, and dense three-part book on the history of China-Korea relations. I found the book deeply insightful. The book moves fast. The first part of the book covers the years 1392 through 1866; the second the years 1866 through 1992; and the third covers modern relations between the nations. Personally, I found more value in the first two parts more than the contemporary section.

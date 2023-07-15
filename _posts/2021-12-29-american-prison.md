@@ -8,6 +8,7 @@ book_rating: 4
 book_author: Shane Bauer
 book_goodreads: https://www.goodreads.com/book/show/40733151-american-prison
 book_tag: sociology
+book_image: american_prison.jpg
 ---
 
 Terrific book and reporting. The author dives head-first into privatized prisons by joining one as a guard.

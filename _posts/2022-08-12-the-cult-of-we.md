@@ -3,10 +3,12 @@ title: The Cult of We
 subtitle: WeWork, Adam Neumann, and the Great Startup Delusion
 layout: book
 date: 2022-08-12
+
 book_rating: 4
 book_author: Eliot Brown; Maureen Farrell 
 book_goodreads: https://www.goodreads.com/book/show/55306323-the-cult-of-we
 book_tag: history
+book_image: the_cult_of_we.jpg
 ---
 
 > But the ever-inflating valuation was blinding for all involved; it was easy to believe that everything was working fine because everyone was getting richer on paper.

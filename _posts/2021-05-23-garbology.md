@@ -8,6 +8,7 @@ book_rating: 3
 book_author: Edward Humes
 book_goodreads: https://www.goodreads.com/book/show/19051271-garbology
 book_tag: history
+book_image: garbology.jpg
 ---
 
 Well-written overview of the history and current state of trash in the United States. The book only just scratches the surface of various focus areas and moves at a rapid pace. 

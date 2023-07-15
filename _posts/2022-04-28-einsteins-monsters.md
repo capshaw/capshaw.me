@@ -3,10 +3,12 @@ title: Einstein's Monsters
 subtitle: The Life and Times of Black Holes
 layout: book
 date: 2022-04-28
+
 book_rating: 4
 book_author: Chris Impey
 book_goodreads: https://www.goodreads.com/book/show/42279123-einstein-s-monsters
 book_tag: cosmology
+book_image: einsteins_monsters.jpg
 ---
 
 > It’s very easy to forget that we rely on indirect information. The universe is full of matter: dust grains, gas clouds, moons, planets, stars, and galaxies. We don’t see this matter directly; we infer its properties by the way it interacts with electromagnetic radiation. Chemical elements are diagnosed by the particular spectral lines they emit or absorb. Dust grains reveal themselves by absorbing light and emitting infrared radiation. Moons and planets are seen in the reflected light of nearby stars. Stars are seen by the radiation they leak out as a byproduct of nuclear fusion. Galaxies are mapped using Doppler shifts of spectral lines from their gas and stars. All of this is indirect, and it only relates to the 5% of the universe that’s normal matter. The 95% that’s dark matter and dark energy is still invisible to us because it doesn’t interact with radiation. The astronomical objects are the actors, but the “stage” for this cosmic drama is also unseen.

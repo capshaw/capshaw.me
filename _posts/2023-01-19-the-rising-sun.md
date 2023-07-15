@@ -8,6 +8,7 @@ book_rating: 5
 book_author: John Toland
 book_goodreads: https://www.goodreads.com/book/show/23668074-the-rising-sun
 book_tag: history
+book_image: the_rising_sun.jpg
 ---
 
 I finished this book with four hours left on my library loan, showing that this is the kind of book that encourages you to finish what you started. While the book is a long and thorough book, it's also a compelling page turner.

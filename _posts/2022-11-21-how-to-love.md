@@ -6,6 +6,7 @@ book_rating: 5
 book_author: Thich Nhat Hanh
 book_goodreads: https://www.goodreads.com/book/show/22309627-how-to-love
 book_tag: philosophy
+book_image: how_to_love.jpg
 ---
 
 I put this book in the category of _books everyone should read_. Perhaps I'd even say that this is a _book everyone should read multiple times in their life_.

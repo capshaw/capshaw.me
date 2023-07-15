@@ -8,6 +8,7 @@ book_rating: 5
 book_author: Kim Scott
 book_goodreads: https://www.goodreads.com/book/show/44300042-radical-candor
 book_tag: engineering
+book_image: radical_candor.jpg
 ---
 
 Honestly surprised by how much I enjoyed _Radical Candor_.

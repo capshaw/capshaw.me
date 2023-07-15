@@ -7,6 +7,7 @@ book_rating: 4
 book_author: Alex Vitale
 book_goodreads: https://www.goodreads.com/book/show/35403039-the-end-of-policing
 book_tag: history
+book_image: the_end_of_policing.jpg
 ---
 
 > When we organize our society around fake meritocracy, we erase the history of exploitation and the ways the game is rigged to prevent economic and social mobility.

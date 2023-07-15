@@ -11,6 +11,7 @@ book_author_ruby_primary: Murakami
 book_author_ruby_secondary: Haruki
 book_goodreads: https://www.goodreads.com/book/show/17800.Dance_Dance_Dance
 book_tag: fiction
+book_image: dance_dance_dance.jpg
 ---
 
 > So went the dream. Or whatever it was.

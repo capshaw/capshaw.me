@@ -3,10 +3,12 @@ title: Our Mathematical Universe
 subtitle: My Quest for the Ultimate Nature of Reality
 layout: book
 date: 2022-03-29
+
 book_rating: 4
 book_author: Max Tegmark
 book_goodreads: https://www.goodreads.com/book/show/19705607-our-mathematical-universe
 book_tag: cosmology
+book_image: our_mathematical_universe.jpg
 ---
 
 > Like an ostrich with its head in the sand, we humans have repeatedly assumed that all we could see was all that existed, hubristically imagining ourselves at the center of everything.

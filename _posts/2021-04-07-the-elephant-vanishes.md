@@ -11,6 +11,7 @@ book_author_ruby_primary: Murakami
 book_author_ruby_secondary: Haruki
 book_goodreads: https://www.goodreads.com/book/show/52746646-the-elephant-vanishes
 book_tag: fiction
+book_image: the_elephant_vanishes.jpg
 ---
 
 > There are lots of things we never understand, no matter how many years we put on, no matter how much experience we accumulate. All I can do is look up from the train at the windows in the buildings that might be hers. Every one of them could be her window, it sometimes seems to me, and at other times I think that none of them could be hers. There are simply too many of them.

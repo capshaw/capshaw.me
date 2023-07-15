@@ -8,6 +8,7 @@ book_rating: 4
 book_author: Reuben Jonathan Miller
 book_goodreads: https://www.goodreads.com/book/show/56510503-halfway-home
 book_tag: sociology
+book_image: halfway_home.jpg
 ---
 
 > The problem of mass incarceration has never really been about crime. It’s that the people who Americans are afraid of are subject to a separate set of rules. They live in a separate and altogether different social world, because they belong to a different political community. No social-service agency, no matter how well funded, can bridge the divide between these two worlds, nor can any of our criminal justice–policy reforms. We have not yet come to grips with our problems or imagined an adequate response because our assumptions about the extent and causes of crime have been wrong from the beginning. You cannot treat or arrest or, perhaps, even reform your way out of mass incarceration because mass incarceration is about citizenship, not criminal behavior, and citizenship is about belonging. 

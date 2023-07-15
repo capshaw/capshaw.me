@@ -7,6 +7,7 @@ book_rating: 4
 book_author: Ling Ma
 book_goodreads: https://www.goodreads.com/book/show/38472277-severance
 book_tag: fiction
+book_image: severance.jpg
 ---
 
 _Severance_ is an entrancing novel that drew me in with short-and-sweet chapters. "Just one more chapter" I would find myself saying as I read more than I intended in any given sitting.
