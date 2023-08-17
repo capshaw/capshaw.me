@@ -72,11 +72,16 @@ h3 {
 a {
     text-decoration: none;
     color: $link-color;
-    // border-bottom: 1px solid $link-color;
 
     &:hover {
         color: $link-hover-color;
         border-color: $link-hover-color;
+    }
+
+    &:focus-visible {
+        outline: 1px solid $link-hover-color;
+        border-radius: 5px;
+        outline-offset: 2px;
     }
 
     &:not([href]) {
@@ -141,7 +146,7 @@ th {
 }
 
 ::selection {
-    background: #FCF1DD;
+    background: lighten($link-color, 40%);
 }
 
 // -----------------------------
@@ -160,6 +165,47 @@ th {
 }
 
 .navigation {
+
+    #nav-dropdown {
+        display: none;
+    }
+
+    .submenu {
+        display: inline-block;
+
+        @media only screen and (max-width: $mobile-break-width) { 
+            display: none;
+        }
+    }
+
+    .burger-label {
+        position: absolute;
+        cursor: pointer;
+        font-size: 1.4em;
+        text-align: center;
+
+        line-height: 35px;
+        height: 35px;
+        width: 35px;
+        right: 30px;
+
+        border-radius: 10px;
+
+        &:hover {
+            background: #fafafa;
+        }
+
+        @media only screen and (min-width: $mobile-break-width) {  
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: $mobile-break-width) { 
+        input:checked~div.submenu {
+            display: block;
+        }
+    }
+    
     a {
         border-radius: 5px;
         padding: 10px;
@@ -170,6 +216,13 @@ th {
         &.a--home-link {
             color: black;
             font-weight: bold;
+            @media only screen and (max-width: $mobile-break-width) {   
+                display: inline-block;
+            }
+        }
+
+        &:focus-visible {
+            outline: 1px solid $link-hover-color;
         }
 
         &:hover {
@@ -311,6 +364,11 @@ th {
         padding: 0;
         display: block;
         line-height: 1;
+
+        &:focus-visible {
+            outline: none;
+            box-shadow: $hover-drop-shadow
+        }
     }
 
     .book {
@@ -367,6 +425,15 @@ th {
 
     a {
         border: none;
+
+        &:focus-visible {
+            outline: none;
+
+            .img {
+                box-shadow: $hover-drop-shadow;
+                border: $hover-border;
+            }
+        }
     }
 
     .img {
