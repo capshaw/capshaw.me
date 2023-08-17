@@ -1,0 +1,44 @@
+---
+title: Welcome
+title-skip: true
+layout: post
+---
+
+<p>
+    Hi there! This is my personal site where I collect things I write, photos I take, and other miscellany. 
+</p>
+
+<div class="callout">
+    <div class="callout-title">Rowing goal status</div>
+    <p>
+        At some point in 2023 I made the horrible decision to start tracking my erging progress against the distance to the moon. 
+        
+        Since I've started in June 2023, I've erged <span id="ergMeters">?</span> meters. 
+        
+        That's <span id="moonPercent">?</span>% of the way to the moon.
+    </p>
+    <p>
+        Below is a progress bar. No that's not a mistake... I've got a way to go.
+    </p>
+    <div class="progress-bar">
+        <div class="progress-bar-inner" id="rowingProgress">&nbsp;</div>
+    </div>
+</div>
+
+
+<script>
+    // Congrats, you've subscribed to moon facts.
+    const DISTANCE_TO_MOON_M = 384400000;
+
+    function replaceErgingMeters(data) {
+        const ergMeters = data['season_erg_meters'];
+        const percentToMoon = parseFloat(ergMeters / DISTANCE_TO_MOON_M * 100).toFixed(4)
+        document.getElementById('ergMeters').innerHTML = ergMeters.toLocaleString();
+        document.getElementById('moonPercent').innerHTML = percentToMoon;
+        document.getElementById('rowingProgress').style.width = percentToMoon + '%'
+    }
+
+    fetch('/api/erging/season_meters.json')
+        .then(response => response.json())
+        .then(json => replaceErgingMeters(json))
+</script>

@@ -20,6 +20,7 @@ Ranked relatively within the buckets.
 - [Celebrity](https://en.wikipedia.org/wiki/Celebrity_(South_Korean_TV_series))  
 
 ## <span class="emoji">🥈</span> B-tier
+- [Sweet Home](https://en.wikipedia.org/wiki/Sweet_Home_(TV_series))
 - [Vincenzo](https://en.wikipedia.org/wiki/Vincenzo_(TV_series))
 - [Hyena](https://en.wikipedia.org/wiki/Hyena_(TV_series))
 - [Signal](https://en.wikipedia.org/wiki/Signal_(South_Korean_TV_series))

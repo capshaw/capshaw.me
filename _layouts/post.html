@@ -2,10 +2,12 @@
 layout: page
 ---
  
-<fieldset>
-    <legend>{{ page.title }}{% if page.subtitle %}: <span class="subtitle">{{ page.subtitle }}</span>{% endif %}</legend>
+{% if page.title-skip %}
 
-    <div class="fieldset-container">
-        {{ content }}
-    </div>
-</fieldset>
+{% else %}
+<h1>
+    {{ page.title }}{% if page.subtitle %}: <span class="subtitle">{{ page.subtitle }}</span>{% endif %}
+</h1>
+{% endif %}
+
+{{ content }}

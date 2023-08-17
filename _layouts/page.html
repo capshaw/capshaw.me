@@ -2,15 +2,8 @@
 layout: base
 ---
 <div class="header">
-    <span class="emoji">🪧</span> Hi, I'm Andrew
+    {% include navigation.html %}
 </div>
 <div class="container">
-    <div class="grid-container">
-        <div>
-            {% include navigation.html %}
-        </div>
-        <div>
-            {{ content }}
-        </div>
-    </div>
+    {{ content }}
 </div>

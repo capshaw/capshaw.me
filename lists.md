@@ -3,7 +3,7 @@ title: Lists
 layout: post
 ---
 
-Welcome to the home of living notes and unrefined lists. Everything here is a continuous draft and is likely to not make much sense without context. For slightly more refined writing, see the [Journal](/journal) section.
+Welcome to the home of living notes, unrefined lists, and personal wiki. Everything here is a continuous draft and is likely to not make much sense without context. For slightly more refined writing, see the [Journal](/journal) section.
 
 <ul>
 {% for list in site.lists %}
