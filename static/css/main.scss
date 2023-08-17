@@ -12,6 +12,10 @@ $link-hover-color: #4187ff;
 $fieldset-color: #725c4f;
 
 $standard-drop-shadow: 0px 0px 10px 0px rgba(189,189,189,0.5);
+$standard-drop-shadow-border: 1px solid #ccc;
+
+$hover-drop-shadow: 0px 0px 10px 0px rgba($link-hover-color, 0.75);
+$hover-border: 1px solid rgba($link-hover-color, 0.75);
 
 // -----------------------------
 // Built-ins
@@ -147,13 +151,12 @@ th {
 .container {
     margin: auto;
     max-width: 800px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .header {
     background: #fff;
     box-shadow: $standard-drop-shadow;
-    padding: 20px;
 }
 
 .navigation {
@@ -177,10 +180,6 @@ th {
             display: block;
         }
     }
-
-    .container {
-        padding: 0px;
-    }
 }
 
 .callout {
@@ -196,12 +195,13 @@ th {
 }
 
 .progress-bar {
-    border: 1px solid #ccc;
+    border: $standard-drop-shadow-border;
     box-shadow: $standard-drop-shadow;
     height: 20px;
 
     .progress-bar-inner {
-        background: #ddd;
+        background: $link-hover-color;
+        border-right: 1px solid $link-color;
         font-size: 0.2em;
         height: 100%;
         width: 0%;
@@ -316,25 +316,11 @@ th {
     .book {
         position: relative;
         box-shadow: $standard-drop-shadow;
-        border: 1px solid rgba(189,173,149,1);
+        border: $standard-drop-shadow-border;
 
         &:hover {
-            -webkit-box-shadow: 0px 0px 10px 0px rgba($link-hover-color, 0.75);
-            -moz-box-shadow: 0px 0px 10px 0px rgba($link-hover-color, 0.75);
-            box-shadow: 0px 0px 10px 0px rgba($link-hover-color, 0.75);
-            border: 1px solid rgba($link-hover-color, 0.75);
-        }
-
-        // Book ridge
-        &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 2px;
-            bottom: 0;
-            width: 3px;
-            background: rgba(0,0,0,0.06);
-            box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+            box-shadow: $hover-drop-shadow;
+            border: $hover-border;
         }
     }
 
@@ -392,7 +378,14 @@ th {
         background-position: center;
         background-size: cover;
         position: relative;
+
         box-shadow: $standard-drop-shadow;
+        border: $standard-drop-shadow-border;
+
+        &:hover {
+            box-shadow: $hover-drop-shadow;
+            border: $hover-border;
+        }
             
         span {
             font-weight: bold;

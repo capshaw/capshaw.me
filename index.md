@@ -4,7 +4,7 @@ title-skip: true
 layout: post
 ---
 
-Hi there! I'm Andrew. I'm a software engineer and gardener.
+Hi there! I'm Andrew. I'm a software engineer and aspiring native gardener.
 
 This is my personal site where I collect [things I write](/journal), [photos I take](/photos), and [other miscellany](/experiments). 
 
