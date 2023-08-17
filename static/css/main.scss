@@ -255,7 +255,8 @@ th {
 
     .progress-bar-inner {
         background: $link-hover-color;
-        border-right: 1px solid $link-color;
+        // Disproportionately wrong at small numbers for now. To be removed.
+        // border-right: 1px solid $link-color;
         font-size: 0.2em;
         height: 100%;
         width: 0%;
