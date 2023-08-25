@@ -414,9 +414,10 @@ th {
     }
 }
 
+// HACK: class names here should be refactored
 .photo-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -425,7 +426,23 @@ th {
         grid-template-columns: 1fr;
     }
 
-    a {
+    .left-arrow {
+        display: inline-block;
+
+        @media only screen and (max-width: $photo-break-width) {   
+            display: none;
+        }
+    }
+
+    .up-arrow {
+        display: none;
+
+        @media only screen and (max-width: $photo-break-width) {   
+            display: inline-block;
+        }
+    }
+
+    .img-link {
         border: none;
 
         &:focus-visible {
@@ -438,36 +455,29 @@ th {
         }
     }
 
+    .album-title {
+        font-weight: bold;
+        padding-top: 30px;
+        display: block;
+        
+        @media only screen and (max-width: $photo-break-width) {   
+            padding-top: 0;
+        }
+    }
+
     .img {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        aspect-ratio: 1 / 1;
-        background-position: center;
-        background-size: cover;
-        position: relative;
+        line-height: 1;
+        padding: 30px;
+        background: #fff;
+        box-sizing: border-box;
 
         box-shadow: $standard-drop-shadow;
-        border: $standard-drop-shadow-border;
+        border: 1px solid #fff;
 
         &:hover {
             box-shadow: $hover-drop-shadow;
             border: $hover-border;
-        }
-            
-        span {
-            font-weight: bold;
-            background: #fff;
-            text-align: center;
-            position: absolute;
-            padding: 5px 0; 
-        }   
-
-        .upper {
-            top: 0;
-            left: 0;
-            width: 100%;
         }
     }
 }
