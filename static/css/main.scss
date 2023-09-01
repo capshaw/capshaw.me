@@ -9,8 +9,6 @@ $photo-break-width: 600px;
 $link-color: #005eff;
 $link-hover-color: #4187ff;
 
-$fieldset-color: #725c4f;
-
 $standard-drop-shadow: 0px 0px 10px 0px rgba(189,189,189,0.5);
 $standard-drop-shadow-border: 1px solid #ccc;
 
@@ -133,11 +131,13 @@ img {
 table {
     border-collapse: collapse;
     line-height: 1;
+    box-shadow: $standard-drop-shadow;
 }
 
 td, th {
     padding: 15px;
-    border: 1px solid #111;
+    background: #f6f6f6;
+    border: $standard-drop-shadow-border;
 }
 
 th {
@@ -269,6 +269,8 @@ th {
 
     &::before {
         content: "●";
+        position: relative;
+        top: -1px;
     }
 
     &--cosmology::before {
@@ -331,6 +333,7 @@ th {
 // -----------------------------
 
 // TODO: Consolidate shared features of the following grid containers
+$standard-grid-collapse-border: 1px solid #d5d5d5;
 
 .reading-container {
     display: grid;
@@ -348,7 +351,7 @@ th {
         :nth-child(4n) {
             padding-bottom: 10px;
             margin-bottom: 10px;
-            border-bottom: 1px dotted #ccc;
+            border-bottom: $standard-grid-collapse-border;
         }
     }
 }
@@ -409,7 +412,7 @@ th {
         :nth-child(3n) {
             padding-bottom: 10px;
             margin-bottom: 10px;
-            border-bottom: 1px dotted #ccc;
+            border-bottom: $standard-grid-collapse-border;
         }
     }
 }
@@ -459,7 +462,7 @@ th {
         font-weight: bold;
         padding-top: 30px;
         display: block;
-        
+
         @media only screen and (max-width: $photo-break-width) {   
             padding-top: 0;
         }
@@ -474,6 +477,10 @@ th {
 
         box-shadow: $standard-drop-shadow;
         border: 1px solid #fff;
+
+        @media only screen and (max-width: $photo-break-width) {   
+            padding: 20px;
+        }
 
         &:hover {
             box-shadow: $hover-drop-shadow;
