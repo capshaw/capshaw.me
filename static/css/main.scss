@@ -510,10 +510,24 @@ $standard-grid-collapse-border: 1px solid #d5d5d5;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
     grid-template-columns: minmax(0, 1fr) min-content;
+    margin-bottom: 20px;
 
     div {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+    }
+}
+
+.book-card {
+    background: #fff;
+    padding: 20px;
+    box-shadow: $standard-drop-shadow;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 100px 1fr;
+
+    .subtitle {
+        font-style: italic;
     }
 }

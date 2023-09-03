@@ -1,0 +1,14 @@
+<div class="book-card">
+    <img src="/static/img/books/{{page.book_image}}" alt="Book cover for {{page.title}}"/>
+    <div>
+        <a href="{{page.book_goodreads}}">{{page.title}}</a><br>
+        {% if page.subtitle %}
+            <span class="subtitle">{{page.subtitle}}</span><br>
+        {% endif %}
+        {{ page.book_author }}
+        <div class="book-tag book-tag--{{page.book_tag}}">
+            {{page.book_tag}}
+        </div>
+        <div class="rating-stars">{% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}</div>
+    </div>
+</div>

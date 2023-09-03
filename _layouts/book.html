@@ -4,34 +4,4 @@ layout: post
 
 {{ content }}
 
-<h2>About the book</h2>
-
-<table>
-  <tr>
-    <th>Goodreads</th>
-    <td><a href="{{page.book_goodreads}}">{{page.title}}</a></td>
-  </tr>
-  <tr>
-    <th>Author</th>
-    <td>
-      {% if page.book_author_primary %}
-          <ruby>
-            {{ page.book_author_primary }} <rp>(</rp><rt>{{ page.book_author_ruby_primary }}</rt><rp>)</rp>
-            {{ page.book_author_secondary }} <rp>(</rp><rt>{{ page.book_author_ruby_secondary }}</rt><rp>)</rp>
-          </ruby>
-        {% else %}
-          {{ page.book_author }}
-        {% endif %}
-    </td>
-  </tr>
-  <tr>
-    <th>Tag</th>
-    <td><div class="book-tag book-tag--{{page.book_tag}}">
-      {{page.book_tag}}
-    </div></td>
-  </tr>
-  <tr>
-    <th>Rating</th>
-    <td><div class="rating-stars">{% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}</div></td>
-  </tr>
-</table>
+{% include book.html %}
