@@ -89,7 +89,23 @@ a {
 }
 
 blockquote {
-    font-style: italic;
+    // background: #fff;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    box-shadow: $standard-drop-shadow;
+    border: $standard-drop-shadow-border;
+
+    p:first-child::before {
+        content: '“';
+        color: #999;
+        margin-right: 4px;
+    }
+    p:last-child::after {
+        content: '”';
+        color: #999;
+        margin-left: 4px;
+    }
 
     .emphasis {
         margin: 0 -0.4em;
