@@ -324,6 +324,10 @@ th {
     &--update::before {
         color: rgb(223, 210, 89);
     }
+
+    &--gardening::before {
+        color: rgb(147, 198, 144);
+    }
 }
 
 .rating-stars {
@@ -333,14 +337,22 @@ th {
     margin-bottom: -2px;
 }
 
-.emoji {
-    font-family: 'Noto Emoji', sans-serif;
-    display: inline-block;
-}
-
 .breadcrumb {
     &--centered {
         text-align: center;
+    }
+}
+
+.book-card {
+    background: #fff;
+    padding: 20px;
+    box-shadow: $standard-drop-shadow;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 100px 1fr;
+
+    .subtitle {
+        font-style: italic;
     }
 }
 
@@ -516,18 +528,5 @@ $standard-grid-collapse-border: 1px solid #d5d5d5;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-    }
-}
-
-.book-card {
-    background: #fff;
-    padding: 20px;
-    box-shadow: $standard-drop-shadow;
-    display: grid;
-    grid-column-gap: 20px;
-    grid-template-columns: 100px 1fr;
-
-    .subtitle {
-        font-style: italic;
     }
 }
