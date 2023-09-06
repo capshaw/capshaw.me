@@ -9,11 +9,13 @@ $photo-break-width: 600px;
 $link-color: #3d8544;
 $link-hover-color: lighten($link-color, 20%);
 
-$standard-drop-shadow: 0px 0px 10px 0px rgba(189,189,189,0.5);
+$standard-drop-shadow: 0px 5px 10px 0px rgba(189,189,189,0.2);
 $standard-drop-shadow-border: 1px solid #ccc;
 
 $hover-drop-shadow: 0px 0px 10px 0px rgba($link-hover-color, 0.75);
 $hover-border: 1px solid rgba($link-hover-color, 0.75);
+
+$standard-border-radius: 5px;
 
 // -----------------------------
 // Built-ins
@@ -95,6 +97,7 @@ blockquote {
     padding: 20px;
     box-shadow: $standard-drop-shadow;
     border: $standard-drop-shadow-border;
+    border-radius: $standard-border-radius;
 
     p:first-child::before {
         content: '“';
@@ -257,6 +260,7 @@ th {
     box-shadow: $standard-drop-shadow;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: $standard-border-radius;
 
     .callout-title {
         font-weight: bold;
@@ -347,6 +351,7 @@ th {
     background: #fff;
     padding: 20px;
     box-shadow: $standard-drop-shadow;
+    border-radius: $standard-border-radius;
     display: grid;
     grid-column-gap: 20px;
     grid-template-columns: 100px 1fr;

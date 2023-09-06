@@ -6,7 +6,7 @@ date: 2023-09-04
 journal_tag: gardening
 ---
 
-Its a rough time of year for my garden. Every plant in my garden has been suffering the wrath of the hot summer sun. The natives have of course been doing better than the plants less adapted to the 100°F+ weather, but even they have been suffering. The one plant that seems uniquely immune is the Texas mountain laurel. I love that plant. I just wish it would grow faster!
+It's a rough time of year for my garden. Every plant in my garden has been suffering the wrath of the hot summer sun. The natives have of course been doing better than the plants less adapted to the 100°F+ weather, but even they have been suffering. The one plant that seems uniquely immune is the Texas mountain laurel. I love that plant. I just wish it would grow faster!
 
 **Fruiting trees**
 

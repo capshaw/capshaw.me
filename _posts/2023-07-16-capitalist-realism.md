@@ -25,8 +25,6 @@ The author goes on to discuss the inevitable consumeristic tragedy of the common
 
 > The 'mental health plague' in capitalist societies would suggest that, instead of being the only social system that works, capitalism is inherently dysfunctional, and that the cost of it appearing to work is very high.
 
-—
-
 > By privatizing these problems - treating them as if they were caused only by chemical imbalances in the individual's neurology and/or by their family background - any question of social systemic causation is ruled out.
 
 From chapter six, the author focuses on the ineffective bureaucracy created by capitalism, comparing and contrasting it against critiques made against socialism. A specific example is around propaganda created by these systems. The author's thesis is that modern capitalism optimizes for is not reality, but PR and the perception of reality—

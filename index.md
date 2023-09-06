@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Welcome!
 title-skip: true
 layout: post
 ---
