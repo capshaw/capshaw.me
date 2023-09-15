@@ -5,7 +5,11 @@
         {% if page.subtitle %}
             <span class="subtitle">{{page.subtitle}}</span><br>
         {% endif %}
-        {{ page.book_author }}
+        {% if page.book_author_primary %}
+            <div>{{ page.book_author_ruby_primary }}, {{ page.book_author_ruby_secondary }}</div>
+        {% else %}
+            <div>{{ page.book_author }}</div>
+        {% endif %}
         <div class="book-tag book-tag--{{page.book_tag}}">
             {{page.book_tag}}
         </div>
