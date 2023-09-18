@@ -8,22 +8,16 @@ layout: post
     By representing them publicly here, I hope to not lose sight of them and let them fall back into the background.
 </p>
 <div class="callout">
-    <div class="callout-title">Row to the moon</div>
+    <div class="callout-title">Exercise to the moon</div>
     <p>
-        At some point in 2023 I made the horrible decision to start tracking my erging progress against the distance to the moon. 
+        At some point in 2023 I made the horrible decision to start tracking my run and erg progress against the distance to the moon. 
         
-        Since I've started in June 2023, I've erged <span id="ergMeters">?</span> meters. 
+        Since I've started collecting data (going back at least to 2018), I've exercised <span id="totalMeters">?</span> meters. 
         
-        That's <span id="moonPercent">?</span>% of the way to the moon.
-    </p>
-    <p>
-        Below is a progress bar. No that's not a mistake... I've got a way to go. 
-    </p>
-    <p>
-        Will I make it? Probably not. Do I care? No. It's the journey or something.
+        That's <span id="moonPercent">?</span>% of the way to the moon. I've got a way to go!
     </p>
     <div class="progress-bar">
-        <div class="progress-bar-inner" id="rowingProgress">&nbsp;</div>
+        <div class="progress-bar-inner" id="exerciseProgress">&nbsp;</div>
     </div>
     <p><a href="https://log.concept2.com/profile/2015678">Join me on the Concept2 logbook</a> if you'd like!</p>
 </div>
@@ -32,17 +26,21 @@ layout: post
     // Congrats, you've subscribed to moon facts.
     const DISTANCE_TO_MOON_M = 384400000;
 
-    function replaceErgingMeters(data) {
-        const ergMeters = data['season_erg_meters'];
-        const percentToMoon = parseFloat(ergMeters / DISTANCE_TO_MOON_M * 100).toFixed(4)
-        document.getElementById('ergMeters').innerHTML = ergMeters.toLocaleString();
+    function replaceExerciseMeters(data) {
+        const ergMeters = data['lifetime_erg_meters'];
+        const runMeters = data['lifetime_run_meters'];
+        const totalMeters = ergMeters + runMeters;
+
+        const percentToMoon = parseFloat(totalMeters / DISTANCE_TO_MOON_M * 100).toFixed(4)
+
+        document.getElementById('totalMeters').innerHTML = totalMeters.toLocaleString();
         document.getElementById('moonPercent').innerHTML = percentToMoon;
-        document.getElementById('rowingProgress').style.width = percentToMoon + '%'
+        document.getElementById('exerciseProgress').style.width = percentToMoon + '%'
     }
 
-    fetch('/api/erging/season_meters.json')
+    fetch('/api/erging/lifetime_exercise_meters.json')
         .then(response => response.json())
-        .then(json => replaceErgingMeters(json))
+        .then(json => replaceExerciseMeters(json))
 </script>
 
 <div class="callout">
