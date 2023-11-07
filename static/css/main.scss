@@ -1,6 +1,8 @@
 ---
 ---
 
+// TODO: break this into multiple component-first files with imports
+
 @charset "UTF-8";
 
 $mobile-break-width: 750px;
@@ -54,7 +56,6 @@ ul, li {
 h1 {
     font-weight: bold;
     font-size: 1em;
-    position: relative;
 }
 
 h2 {
@@ -65,8 +66,6 @@ h2 {
 h3 {
     font-weight: bold;
     font-size: 1em;
-    font-size: 1em;
-    border-bottom: 1px solid #000;
 }
 
 a {
@@ -165,7 +164,7 @@ th {
 }
 
 ::selection {
-    background: lighten($link-color, 40%);
+    background: #fff8dd;
 }
 
 // -----------------------------
@@ -340,8 +339,19 @@ th {
 }
 
 .breadcrumb {
+    margin: 20px 0;
     &--centered {
         text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.page-break {
+    text-align: center;
+    &::before {
+        content: '〰〰';
+        color: #7c7c7c;
+        margin: 20px 0;
     }
 }
 

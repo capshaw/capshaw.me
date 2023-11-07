@@ -1,17 +1,19 @@
 ---
-title: Manager thoughts
+title: Thoughts on management
 layout: post
 ---
 
-As I've grown and developed as a manager, I've built various beliefs about what it means to be a great leader—and some anti-patterns to avoid. On this page and the linked documents, I'll collect these thoughts as I think of and worth through them. These documents are meant to be changed—they are not immutable—and they will grow as I do.
+I have been an engineering manager for almost five years now. During this time, I've built up beliefs about what it means to be a great leader. I've also developed thoughts on some anti-patterns to avoid at all costs. This part of my site collects these thoughts and beliefs.
 
-There's several reasons I've made this page. One is for me to force me to work through thoughts that exist in my head and solidify what I truly believe so that I can express this again to others in the future. Another reason is more hypothetical at the moment—this could be a great way to show others looking to hire me what I truly believe in. Lastly, these might be interesting documents to share with people I work with—a starting point for discussion with colleagues. 
+# Opinions
+
+- 📌 [My management philosophy](/management/philosophy) — these are my core management tenets
+- [Leaders should make their calendars public](/management/public-calendars) — transparency is key
 
 # Documents
 
-<ul>
-{% for document in site.management %}
-  <li><a href="{{document.url}}">{{document.title}}</a></li>
-{% endfor %}
-  <li>... and more coming soon!</li>
-</ul>
+- [First 1x1 template](/management/first-1x1) — slightly outdated at this point and in need of a refresh
+
+# Have thoughts?
+
+Reach out by email with my first name at this domain and I'm more than happy to chat!

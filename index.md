@@ -6,7 +6,7 @@ layout: post
 
 Hi there! I'm Andrew. 
 
-I am a software engineer and an aspiring native gardener. 
+I am a [software engineering manager](/management) and an aspiring native gardener. 
 
 This is my personal site where I collect a variety of my thoughts and photos.
 
