@@ -1,0 +1,12 @@
+.callout {
+    background: #fff;
+    box-shadow: $standard-drop-shadow;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: $standard-border-radius;
+
+    .callout-title {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+.book-card {
+    background: #fff;
+    padding: 20px;
+    box-shadow: $standard-drop-shadow;
+    border-radius: $standard-border-radius;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 100px 1fr;
+
+    .subtitle {
+        font-style: italic;
+    }
+}

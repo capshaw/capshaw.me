@@ -1,0 +1,50 @@
+.book-tag,
+.journal-tag {
+    text-transform: capitalize;
+
+    &::before {
+        content: "●";
+        position: relative;
+        top: -1px;
+    }
+
+    &--cosmology::before {
+        color: rgb(209, 115, 209);
+    }
+
+    &--history::before {
+        color: rgb(231, 113, 121);
+    }
+
+    &--sociology::before {
+        color: rgb(116, 164, 231);
+    }
+
+    &--politics::before {
+        color: rgb(223, 210, 89);
+    }
+
+    &--fiction::before {
+        color: rgb(108, 205, 103);
+    }
+
+    &--engineering::before {
+        color: rgb(227, 171, 107);
+    }
+
+    &--goals::before {
+        color: rgb(116, 164, 231);
+    }
+
+    &--philosophy::before {
+        color: rgb(115, 209, 204);
+    }
+
+    &--update::before {
+        color: rgb(223, 210, 89);
+    }
+
+    &--gardening::before {
+        color: rgb(147, 198, 144);
+    }
+}

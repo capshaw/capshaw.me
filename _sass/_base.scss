@@ -1,0 +1,142 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
+}
+
+body {
+    background: #eee;
+    color: #000;
+}
+
+h1, h2, p {
+    margin: 1em 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+ul, li {
+    margin-top: 5px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+
+    &:hover {
+        color: $link-hover-color;
+        border-color: $link-hover-color;
+    }
+
+    &:focus-visible {
+        outline: 1px solid $link-hover-color;
+        border-radius: 5px;
+        outline-offset: 2px;
+    }
+
+    &:not([href]) {
+        color: inherit;
+        border: none;
+    }
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    box-shadow: $standard-drop-shadow;
+    border: $standard-drop-shadow-border;
+    border-radius: $standard-border-radius;
+
+    p:first-child::before {
+        content: '“';
+        color: #999;
+        margin-right: 4px;
+    }
+    p:last-child::after {
+        content: '”';
+        color: #999;
+        margin-left: 4px;
+    }
+
+    .emphasis {
+        margin: 0 -0.4em;
+        padding: 0.1em 0.4em;
+        border-radius: 0.8em 0.3em;
+        background: transparent;
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 225, 0, 0.1),
+            rgba(255, 225, 0, 0.7) 4%,
+            rgba(255, 225, 0, 0.3)
+        );
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+}
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub { 
+    top: 0.4em; 
+}
+
+time {
+    padding-right: .25em;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -.012em;
+    white-space: pre;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    line-height: 1;
+    box-shadow: $standard-drop-shadow;
+}
+
+td, th {
+    padding: 15px;
+    background: #f6f6f6;
+    border: $standard-drop-shadow-border;
+}
+
+th {
+    text-align: left;
+    background: #fff;
+}
+
+::selection {
+    background: lighten($link-color, 35%)
+}

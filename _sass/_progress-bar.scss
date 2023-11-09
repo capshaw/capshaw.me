@@ -1,0 +1,12 @@
+.progress-bar {
+    border: $standard-drop-shadow-border;
+    box-shadow: $standard-drop-shadow;
+    height: 20px;
+
+    .progress-bar-inner {
+        background: $link-hover-color;
+        font-size: 0.2em;
+        height: 100%;
+        width: 0%;
+    }
+}

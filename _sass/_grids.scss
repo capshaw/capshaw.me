@@ -1,0 +1,172 @@
+
+// TODO: Consolidate shared features of the following grid containers
+// TODO: separate imports as well
+$standard-grid-collapse-border: 1px solid #d5d5d5;
+
+.reading-container {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr 125px min-content;
+    grid-auto-rows: 1fr;
+    align-items: center;
+
+    @media only screen and (max-width: $mobile-break-width) {   
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+
+        // Moderately a hack
+        :nth-child(4n) {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: $standard-grid-collapse-border;
+        }
+    }
+}
+
+.reading-images-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+
+    a {
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        line-height: 1;
+
+        &:focus-visible {
+            outline: none;
+            box-shadow: $hover-drop-shadow
+        }
+    }
+
+    .book {
+        position: relative;
+        box-shadow: $standard-drop-shadow;
+        border: $standard-drop-shadow-border;
+
+        &:hover {
+            box-shadow: $hover-drop-shadow;
+            border: $hover-border;
+        }
+    }
+
+    img {
+        width: 100%;
+        mix-blend-mode: multiply;
+        vertical-align: top;  
+    }
+
+    @media only screen and (max-width: $photo-break-width) {   
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.writing-container {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 130px min-content;
+
+    @media only screen and (max-width: $mobile-break-width) {   
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+
+        // Moderately a hack
+        :nth-child(3n) {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: $standard-grid-collapse-border;
+        }
+    }
+}
+
+// HACK: class names here should be refactored
+.photo-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    @media only screen and (max-width: $photo-break-width) {   
+        grid-template-columns: 1fr;
+    }
+
+    .left-arrow {
+        display: inline-block;
+
+        @media only screen and (max-width: $photo-break-width) {   
+            display: none;
+        }
+    }
+
+    .up-arrow {
+        display: none;
+
+        @media only screen and (max-width: $photo-break-width) {   
+            display: inline-block;
+        }
+    }
+
+    .img-link {
+        border: none;
+
+        &:focus-visible {
+            outline: none;
+
+            .img {
+                box-shadow: $hover-drop-shadow;
+                border: $hover-border;
+            }
+        }
+    }
+
+    .album-title {
+        font-weight: bold;
+        padding-top: 30px;
+        display: block;
+
+        @media only screen and (max-width: $photo-break-width) {   
+            padding-top: 0;
+        }
+    }
+
+    .img {
+        width: 100%;
+        line-height: 1;
+        padding: 30px;
+        background: #fff;
+        box-sizing: border-box;
+
+        box-shadow: $standard-drop-shadow;
+        border: 1px solid #fff;
+
+        @media only screen and (max-width: $photo-break-width) {   
+            padding: 20px;
+        }
+
+        &:hover {
+            box-shadow: $hover-drop-shadow;
+            border: $hover-border;
+        }
+    }
+}
+
+.elephant-vanishes-grid {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: minmax(0, 1fr) min-content;
+    margin-bottom: 20px;
+
+    div {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
