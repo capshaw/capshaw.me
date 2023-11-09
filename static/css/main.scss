@@ -164,7 +164,7 @@ th {
 }
 
 ::selection {
-    background: #ffaaaa;
+    background: lighten($link-color, 35%)
 }
 
 // -----------------------------
