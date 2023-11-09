@@ -164,7 +164,7 @@ th {
 }
 
 ::selection {
-    background: #fff8dd;
+    background: #ffaaaa;
 }
 
 // -----------------------------
@@ -349,7 +349,7 @@ th {
 .page-break {
     text-align: center;
     &::before {
-        content: '〰〰';
+        content: '\3030\FE0E\3030\FE0E';
         color: #7c7c7c;
         margin: 20px 0;
     }

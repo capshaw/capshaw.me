@@ -1,5 +1,5 @@
 ---
-title: My management philosophy
+title: My leadership philosophy
 layout: management-post
 ---
 
@@ -22,7 +22,7 @@ This is _the_ classic one. Traditionally this is called _servant_ leadership, bu
 - __It means that I am only successful when my team is successful.__ I should be measured by the success of my direct reports and team as a whole. Keeping my team happy with their work life—with the support needed to enable a productive work environment—is my number one priority. Anything that gets in my team’s way of being happy and productive is where I should focus my efforts. As Andrew Grove said in _High Output Management_: 
 > [T]he performance rating of a manager cannot be higher than the one we would accord to (their) organization
 
-- __It means that I am against process that only serves me.__ I've been on teams before where I have been asked to follow process that only seems to benefit the manager and not me and my peers. The most common ask is around reporting. If I’m asking my team to do something out of their way just so I can measure or report on something that only management cares about, it is likely not in the best interest of the team to use their time on that. I'll do my best to do this for the team myself or shield the team from the request in some other manner.
+- __It means that I am against process that only serves me.__ I've been on teams before where I have been asked to follow process that only seems to benefit the manager and not the individual contributors on the team. The most common ask is around reporting. If I’m asking my team to do something out of their way just so I can measure or report on something that only management cares about, it is likely not in the best interest of the team to use their time on that. I'll do my best to do this for the team myself or shield the team from the request in some other manner.
 
 <div class="page-break"></div>
 
@@ -57,7 +57,7 @@ This section is about respect. I am to exemplify behaviors I want to see out of 
 
 <div class="page-break"></div>
 
-## Conclusion 
+## Conclusion: my promise as a manager 
 
 My promise as a manager is that I will strive to do these things and more. I am always open to being wrong. I will never stop growing and improving myself. This document will grow and change over time as I do. Thank you so much for reading through this—let me know if you’d like to talk about it!
 

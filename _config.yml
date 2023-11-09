@@ -6,5 +6,5 @@ future: true
 collections:
   lists:
     output: true
-  management:
+  work:
     output: true
