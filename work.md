@@ -9,4 +9,4 @@ During this time, I've built up beliefs about what it means to be a great leader
 
 - [My leadership philosophy](/work/leadership-philosophy) — these are my core management tenets
 - [Leaders should make their calendars public](/work/public-calendars) — transparency is key
-- [First 1x1 template](/management/first-1x1) — slightly outdated at this point and in need of a refresh
+- [First 1x1 template](/work/first-1x1) — slightly outdated at this point and in need of a refresh
