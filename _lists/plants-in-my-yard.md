@@ -5,9 +5,23 @@ layout: list
 
 An incomplete list of plants in my yard.
 
-| Common name | Scientific name | Notes |
-|-------------|-----------------|-------|
-| Chinese fringe flower | Loropetalum | Purple bush, one surviving. |
-| Lilyturf | Liriope spicata | Long leaf grass/purple flower |
-| False heather / Mexican heather | Cuphea hyssopifolia | Not sure if these are keepers long term |
-| Texas sage |  Leucophyllum frutescens | Five, mostly doing well |
+# Love these
+
+- Texas sage
+- Crossvine
+- Red oak
+- Texas mountain laurel
+- Dwarf magnolia of some sort
+- Crape myrtle
+- Fig tree
+- Star jasmine
+
+# Mid
+
+- False heather / Mexican heather
+- Persimmon tree
+
+# Replace these eventually 
+
+- Chinese fringe flower
+- Lilyturf
