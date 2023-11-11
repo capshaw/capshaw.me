@@ -16,9 +16,7 @@ layout: post
         
         That's <span id="moonPercent">?</span>% of the way to the moon. I've got a way to go!
     </p>
-    <div class="progress-bar">
-        <div class="progress-bar-inner" id="exerciseProgress">&nbsp;</div>
-    </div>
+    <div class="progress-bar"><div class="progress-bar-inner" id="exerciseProgress">&nbsp;</div><div class="progress-bar-text" id="moonPercentProgressBar">0.23%</div></div>
     <p><a href="https://log.concept2.com/profile/2015678">Join me on the Concept2 logbook</a> if you'd like!</p>
 </div>
 
@@ -36,6 +34,7 @@ layout: post
         document.getElementById('totalMeters').innerHTML = totalMeters.toLocaleString();
         document.getElementById('moonPercent').innerHTML = percentToMoon;
         document.getElementById('exerciseProgress').style.width = percentToMoon + '%'
+        document.getElementById('moonPercentProgressBar').innerHTML = '← ' + percentToMoon + '%';
     }
 
     fetch('/api/erging/lifetime_exercise_meters.json')
