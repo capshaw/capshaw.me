@@ -17,7 +17,7 @@ As a reader, let me know what you think and let’s talk!
 
 This is _the_ classic one. Traditionally this is called _servant_ leadership, but I prefer the _service_ label. Slightly different word, same meaning. What does this mean to me?
 
-- __It means that I am here to serve my team (duh?).__ My fundamental purpose as a manager is to elevate my engineers and the team to have an impact and be happy. Some of the core ways I do that are by removing the team's roadblocks, providing the team guidance and direction, and assisting the team in fulfilling their career ambitions, among other things. Notice that every role I mentioned there concerns the team. Without a team to support, I am unnecessary.
+- __It means that I am here to serve my team.__ My fundamental purpose as a manager is to elevate my engineers and the team to have an impact and be happy. Some of the core ways I do that are by removing the team's roadblocks, providing the team guidance and direction, and assisting the team in fulfilling their career ambitions, among other things. Notice that every role I mentioned there concerns the team. Without a team to support, I am unnecessary.
 
 - __It means that I am only successful when my team is successful.__ I should be measured by the success of my direct reports and team as a whole. Keeping my team happy with their work life—with the support needed to enable a productive work environment—is my number one priority. Anything that gets in my team’s way of being happy and productive is where I should focus my efforts. As Andrew Grove said in _High Output Management_: 
 > [T]he performance rating of a manager cannot be higher than the one we would accord to (their) organization
