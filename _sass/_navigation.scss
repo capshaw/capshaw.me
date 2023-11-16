@@ -1,7 +1,6 @@
 
 .header {
-    background: #fff;
-    box-shadow: $standard-drop-shadow;
+    border-bottom: 1px  solid #ddd;
 }
 
 .navigation {
@@ -36,7 +35,7 @@
             background: #fafafa;
         }
 
-        @media only screen and (min-width: $mobile-break-width) {  
+        @media only screen and (min-width: $mobile-break-width + 1) {  
             display: none;
         }
     }
