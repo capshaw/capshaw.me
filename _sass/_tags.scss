@@ -32,6 +32,10 @@
         color: rgb(227, 171, 107);
     }
 
+    &--reference::before {
+        color: rgb(195, 183, 171);
+    }
+
     &--goals::before {
         color: rgb(116, 164, 231);
     }

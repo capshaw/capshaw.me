@@ -35,7 +35,7 @@
             background: #fafafa;
         }
 
-        @media only screen and (min-width: $mobile-break-width + 1) {  
+        @media only screen and (min-width: $mobile-break-width + 1px) {  
             display: none;
         }
     }
