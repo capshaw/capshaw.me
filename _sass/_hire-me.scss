@@ -1,0 +1,59 @@
+.hire-panel {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: $standard-drop-shadow;
+    border-radius: 5px;
+    position: relative;
+    // border: 1px solid #000;
+    background: #fff;
+
+    &--with-button {
+        padding: 20px 20px 80px 20px;
+    }
+
+    img {
+        float: right;
+        max-width: 200px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    ul, li {
+        padding-left: 0;
+        margin-left: 10px;
+    }
+  
+    .hire-button {
+        background: #000;
+        box-sizing: border-box;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px 14px;
+        display: inline-block;
+        box-shadow: $standard-drop-shadow;
+
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: calc(100% - 40px);
+  
+        &:hover {
+            transition: all 0.2s;
+            background: lighten($link-color, 10%);
+        }
+    }
+}
+
+.hire-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+
+    @media only screen and (max-width: $mobile-break-width) { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

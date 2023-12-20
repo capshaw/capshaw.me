@@ -1,6 +1,21 @@
-
 .header {
-    border-bottom: 1px  solid #ddd;
+    background: #fff;
+
+    padding: 20px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 160px;
+
+    @media only screen and (max-width: $navigation-break-width) { 
+        position: relative;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        width: auto;
+    }
 }
 
 .navigation {
@@ -10,11 +25,17 @@
     }
 
     .submenu {
-        display: inline-block;
+        display: block;
 
-        @media only screen and (max-width: $mobile-break-width) { 
+        @media only screen and (max-width: $navigation-break-width) { 
             display: none;
         }
+    }
+
+    .subsection {
+        border-top: 1px solid #eee;
+        margin-top: 10px;
+        padding-top: 5px;
     }
 
     .burger-label {
@@ -26,39 +47,50 @@
         line-height: 55px;
         height: 55px;
         width: 55px;
-        right: 20px;
-        top: 20px;
+        right: 10px;
+        top: 10px;
 
         border-radius: 10px;
 
         &:hover {
-            background: #fafafa;
+            background: lighten($link-color, 35%);
         }
 
-        @media only screen and (min-width: $mobile-break-width + 1px) {  
+        @media only screen and (min-width: $navigation-break-width + 1px) {  
             display: none;
         }
     }
 
-    @media only screen and (max-width: $mobile-break-width) { 
+    @media only screen and (max-width: $navigation-break-width) { 
         input:checked~div.submenu {
             display: block;
         }
     }
-    
+
     a {
         border-radius: 5px;
         padding: 10px;
         line-height: 1;
-        text-decoration: none;
         border: none;
+        display: block;
+        margin-top: 5px;
+        color: #000;
+
+        span {
+            border-bottom: 1px solid #eee;
+        }
 
         &.a--home-link {
             color: black;
             font-weight: bold;
-            margin-left: -10px;
-            @media only screen and (max-width: $mobile-break-width) {   
-                display: inline-block;
+            margin-top: 0;
+
+            &:hover {
+                color: black;
+            }
+
+            @media only screen and (max-width: $navigation-break-width) {  
+                margin-right: 60px;
             }
         }
 
@@ -67,11 +99,12 @@
         }
 
         &:hover {
-            background: #fafafa;
-        }
+            background: lighten($link-color, 35%);
+            color: $link-color;
 
-        @media only screen and (max-width: $mobile-break-width) {   
-            display: block;
+            span {
+                border-bottom: none;
+            }
         }
     }
 }

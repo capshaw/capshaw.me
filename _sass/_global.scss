@@ -1,8 +1,9 @@
 $mobile-break-width: 750px;
+$navigation-break-width: 970px;
 $photo-break-width: 600px;
 
-$link-color: #384ad9;
-$link-hover-color: lighten($link-color, 20%);
+$link-color: rgb(61, 80, 255);
+$link-hover-color: lighten($link-color, 10%);
 
 $standard-drop-shadow: 0px 5px 10px 0px rgba(189,189,189,0.2);
 $standard-drop-shadow-border: 1px solid #ccc;

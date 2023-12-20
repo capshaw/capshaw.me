@@ -1,13 +1,12 @@
 ---
 title: Welcome!
-title-skip: true
-layout: post
+layout: page
 ---
 
-Hi there! I'm Andrew. 
+Hi, I'm Andrew.
 
-I am a [software engineering manager](/work) and an aspiring native gardener. 
+I am a software engineering manager and an aspiring native gardener. 
 
-This is my personal site where I collect a variety of my thoughts and photos.
+This is my personal spot on the web where I collect a variety of my thoughts and photos.
 
-Feel free to email me using my first name at this domain.
+If you want to get in touch, free to [email me](mailto:andrew.capshaw@gmail.com).
