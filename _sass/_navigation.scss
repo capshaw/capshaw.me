@@ -1,8 +1,5 @@
 .header {
-    background: #fff;
-
     padding: 20px;
-
     position: fixed;
     left: 0;
     top: 0;
@@ -15,6 +12,8 @@
         top: auto;
         bottom: auto;
         width: auto;
+        
+        border-bottom: 1px solid darken($body-background-color, 10%);
     }
 }
 
@@ -33,9 +32,7 @@
     }
 
     .subsection {
-        border-top: 1px solid #eee;
-        margin-top: 10px;
-        padding-top: 5px;
+        margin-top: 20px;
     }
 
     .burger-label {
@@ -53,7 +50,7 @@
         border-radius: 10px;
 
         &:hover {
-            background: lighten($link-color, 35%);
+            background: #fff;
         }
 
         @media only screen and (min-width: $navigation-break-width + 1px) {  
@@ -76,12 +73,7 @@
         margin-top: 5px;
         color: #000;
 
-        span {
-            border-bottom: 1px solid #eee;
-        }
-
         &.a--home-link {
-            color: black;
             font-weight: bold;
             margin-top: 0;
 
@@ -95,12 +87,11 @@
         }
 
         &:focus-visible {
-            outline: 1px solid $link-hover-color;
+            outline: 1px solid $accent-color-hover;
         }
 
         &:hover {
-            background: lighten($link-color, 35%);
-            color: $link-color;
+            background: #fff;
 
             span {
                 border-bottom: none;

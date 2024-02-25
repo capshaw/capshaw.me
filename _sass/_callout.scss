@@ -1,5 +1,5 @@
 .callout {
-    background: #fff;
+    background: lighten($body-background-color, 10%);
     box-shadow: $standard-drop-shadow;
     padding: 20px;
     margin-bottom: 20px;

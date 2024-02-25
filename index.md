@@ -3,10 +3,10 @@ title: Welcome!
 layout: page
 ---
 
-Hi, I'm Andrew.
+# Hello, you found me!
 
-I am a software engineering manager and an aspiring native gardener. 
+Hi, I'm Andrew. I am a software engineering manager and an aspiring native gardener. Welcome to my site where I collect a variety of my thoughts and photos.
 
-This is my personal spot on the web where I collect a variety of my thoughts and photos.
+If you're new here, I recommend checking out my [photography page](/photos/) or [reading list](/reading/). 
 
 If you want to get in touch, free to [email me](mailto:andrew.capshaw@gmail.com).

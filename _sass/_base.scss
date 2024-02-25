@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    background: #eee;
+    background: $body-background-color;
     color: #000;
 }
 
@@ -44,6 +44,7 @@ h3 {
 }
 
 a {
+    border-bottom: 1px solid #000;
     text-decoration: none;
     color: $link-color;
 
@@ -67,20 +68,21 @@ a {
 blockquote {
     margin-left: 0;
     margin-right: 0;
-    padding: 20px;
-    box-shadow: $standard-drop-shadow;
-    border: $standard-drop-shadow-border;
+    padding: 10px 20px;
     border-radius: $standard-border-radius;
 
     p:first-child::before {
         content: '“';
-        color: #999;
-        margin-right: 4px;
+        color: #000;
+        margin-right: 2px;
+        font-size: larger;
     }
+
     p:last-child::after {
         content: '”';
-        color: #999;
-        margin-left: 4px;
+        color: #000;
+        margin-left: 2px;
+        font-size: larger;
     }
 
     .emphasis {
@@ -138,5 +140,5 @@ th {
 }
 
 ::selection {
-    background: lighten($link-color, 35%)
+    background:$accent-color-hover;
 }

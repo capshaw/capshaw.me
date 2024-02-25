@@ -41,7 +41,7 @@
   
         &:hover {
             transition: all 0.2s;
-            background: lighten($link-color, 10%);
+            background: $accent-color;
         }
     }
 }
