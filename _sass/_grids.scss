@@ -45,7 +45,7 @@
     .book {
         position: relative;
         box-shadow: $standard-drop-shadow;
-        border: $standard-drop-shadow-border;
+        border: 1px solid $body-background-color;
 
         &:hover {
             box-shadow: $hover-drop-shadow;
