@@ -1,5 +1,5 @@
 ---
-title: First 1:1
+title: First 1x1 template
 layout: management-post
 ---
 
