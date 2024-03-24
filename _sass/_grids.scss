@@ -125,7 +125,7 @@
 
     .album-title {
         font-weight: bold;
-        padding-top: 30px;
+        padding-top: 20px;
         display: block;
 
         @media only screen and (max-width: $photo-break-width) {   
@@ -136,7 +136,7 @@
     .img {
         width: 100%;
         line-height: 1;
-        padding: 30px;
+        padding: 20px;
         background: #fff;
         box-sizing: border-box;
 
