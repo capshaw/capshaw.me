@@ -69,20 +69,17 @@ blockquote {
     margin-left: 0;
     margin-right: 0;
     padding: 10px 20px;
-    border-radius: $standard-border-radius;
 
     p:first-child::before {
         content: '“';
         color: #000;
         margin-right: 2px;
-        font-size: larger;
     }
 
     p:last-child::after {
         content: '”';
         color: #000;
         margin-left: 2px;
-        font-size: larger;
     }
 
     .emphasis {
