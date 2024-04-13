@@ -4,18 +4,3 @@
     padding: 25px 30px;
     position: relative;
 }
-
-// TODO: move and rename
-.right-hand-panel {
-    position: absolute;
-    left: 200px;
-    top: 0;
-    right: 0;
-
-    @media only screen and (max-width: $navigation-break-width) { 
-        position: relative;
-        left: 0;
-        top: 0;
-        right: 0;
-    }
-}

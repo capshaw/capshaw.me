@@ -136,7 +136,7 @@
     .img {
         width: 100%;
         line-height: 1;
-        padding: 20px;
+        padding: 30px;
         background: #fff;
         box-sizing: border-box;
 
@@ -144,7 +144,7 @@
         border: 1px solid #fff;
 
         @media only screen and (max-width: $photo-break-width) {   
-            padding: 20px;
+            padding: 10px;
         }
 
         &:hover {
