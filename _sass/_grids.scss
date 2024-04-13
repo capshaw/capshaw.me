@@ -143,6 +143,10 @@
         box-shadow: $standard-drop-shadow;
         border: 1px solid #fff;
 
+        @media only screen and (max-width: $navigation-break-width) {
+            padding: 20px;
+        }
+
         @media only screen and (max-width: $photo-break-width) {   
             padding: 10px;
         }
