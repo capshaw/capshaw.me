@@ -73,13 +73,11 @@ blockquote {
     p:first-child::before {
         content: '“';
         color: #000;
-        margin-right: 2px;
     }
 
     p:last-child::after {
         content: '”';
         color: #000;
-        margin-left: 2px;
     }
 
     .emphasis {
