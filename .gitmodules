@@ -12,3 +12,6 @@
 	branch = main
 	path = api/erging
 	url = git@github.com:capshaw/erging.git
+[submodule "nonogram"]
+	path = nonogram
+	url = git@github.com:capshaw/nonogram.git
