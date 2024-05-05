@@ -13,6 +13,7 @@ Ranked relatively within the buckets.
 - [Little Women](https://en.wikipedia.org/wiki/Little_Women_(2022_TV_series))
 
 ## 🥇 A-tier
+- [Parasyte](https://en.wikipedia.org/wiki/Parasyte)
 - [Mask Girl](https://en.wikipedia.org/wiki/Mask_Girl)
 - [Under the Queen's Umbrella](https://en.wikipedia.org/wiki/Under_the_Queen%27s_Umbrella)
 - [Extraordinary Attorney Woo](https://en.wikipedia.org/wiki/Extraordinary_Attorney_Woo)
