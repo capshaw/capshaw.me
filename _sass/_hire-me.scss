@@ -4,7 +4,7 @@
     box-shadow: $standard-drop-shadow;
     border-radius: 5px;
     position: relative;
-    background: #fff;
+    background: $background-color-step-up;
 
     &--with-button {
         padding: 20px 20px 80px 20px;

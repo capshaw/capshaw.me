@@ -11,5 +11,5 @@ These are my core management tenets
 [Leaders should make their calendars public](/work/public-calendars)\
 Transparency is key and it's a great opportunity to lead by example
 
-[First 1x1 template](/work/first-1x1)\
+[Template: First 1x1](/work/first-1x1)\
 Slightly outdated at this point and in need of a refresh

@@ -9,15 +9,20 @@ An incomplete list of plants in my yard.
 
 - Texas sage
 - Crossvine
-- Red oak
 - Texas mountain laurel
+- Mexican feather grass
+
+# Pretty good
+
+- Dwarf yaupon
+- Red oak
 - Dwarf magnolia of some sort
-- Crape myrtle
 - Fig tree
-- Star jasmine
 
 # Mid
 
+- Crape myrtle
+- Star jasmine
 - False heather / Mexican heather
 - Persimmon tree
 
