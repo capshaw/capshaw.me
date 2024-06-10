@@ -27,4 +27,4 @@ At the end of the book, after showing just how hurtful some of these systems can
 
 > I will remember that the technologies I design are not aimed at data points, probabilities, or patterns, but at human beings.
 
-I think this book -- or one like it -- should be mandatory reading for every person who builds systems that effect real human lives.
+I think this book, or one like it, should be mandatory reading for every person who builds systems that affect real human lives.
