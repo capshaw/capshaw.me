@@ -16,3 +16,6 @@
 	branch = main
 	path = nonogram
 	url = git@github.com:capshaw/nonogram.git
+[submodule "sudoku"]
+	path = sudoku
+	url = https://github.com/capshaw/sudoku
