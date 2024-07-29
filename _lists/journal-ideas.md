@@ -13,3 +13,4 @@ Things I might wish to write a journal entry about.
   - git documentation great
   - docs are dead end
   - writing as key remote skill
+- How this website is set up / deploy script
