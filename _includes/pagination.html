@@ -1,0 +1,11 @@
+<div class="pagination-container">
+    {% for page in (1..paginator.total_pages) %}<!--
+      -->{% if page == paginator.page %}<!--
+        --><a class="pagination-link pagination-link--selected" href="{{ '/journal' | relative_url }}">{{ page }}</a><!--
+      -->{% elsif page == 1 %}<!--
+        --><a class="pagination-link" href="{{ '/journal' | relative_url }}">{{ page }}</a><!--
+      -->{% else %}<!--
+        --><a class="pagination-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a><!--
+    -->{% endif %}<!--
+    -->{% endfor %}
+</div>

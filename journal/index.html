@@ -1,0 +1,31 @@
+---
+title: Journal
+layout: post
+---
+
+{% include pagination.html %}
+
+{% for post in paginator.posts %}
+  <div class="post">
+    <div class="info">
+      <h2>
+        <a href="{{ post.url }}">{% if post.book_tag %}Book review:{% endif %} {{ post.title }}</a>
+      </h2>
+      {% if post.book_tag %}
+        <div class="rating-stars">
+          {% for counter in (1..5) %}{% if post.book_rating >= counter %}★{% endif %}{% endfor %}
+        </div>
+      {% else %}
+        <span class="journal-tag journal-tag--{{post.journal_tag}}">
+          {{post.journal_tag}}
+        </span>
+      {% endif %}
+      <span class="date">{{ post.date | timeago }}</span>
+    </div>
+    <div class="content">
+      {{ post.content }}
+    </div>
+  </div>
+{% endfor %}
+
+{% include pagination.html %}

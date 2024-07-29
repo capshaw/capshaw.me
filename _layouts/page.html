@@ -2,7 +2,12 @@
 layout: base
 ---
 <div class="header">
-    {% include navigation.html %}
+    <div class="container">
+        <div><a href="/">Andrew Capshaw</a></div>
+        {% if page.url != "/" %}
+            <div><a href="/">⬅ Go home</a></div>
+        {% endif %}
+    </div>
 </div>
 <div class="container">
     {{ content }}

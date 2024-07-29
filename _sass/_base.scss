@@ -44,8 +44,6 @@ h3 {
 }
 
 a {
-    border-bottom: 1px solid #000;
-    text-decoration: none;
     color: $link-color;
 
     &:hover {
@@ -104,8 +102,8 @@ sup, sub {
     top: -0.4em;
 }
 
-sub { 
-    top: 0.4em; 
+sub {
+    top: 0.4em;
 }
 
 time {
@@ -137,5 +135,5 @@ th {
 }
 
 ::selection {
-    background:$accent-color-hover;
+    background: lighten($secondary-accent-color, 30%);
 }

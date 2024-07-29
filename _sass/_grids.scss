@@ -10,7 +10,7 @@
     grid-auto-rows: 1fr;
     align-items: center;
 
-    @media only screen and (max-width: $mobile-break-width) {   
+    @media only screen and (max-width: $mobile-break-width) {
         grid-template-columns: auto;
         grid-auto-rows: auto;
 
@@ -56,105 +56,11 @@
     img {
         width: 100%;
         mix-blend-mode: multiply;
-        vertical-align: top;  
+        vertical-align: top;
     }
 
-    @media only screen and (max-width: $photo-break-width) {   
+    @media only screen and (max-width: $photo-break-width) {
         grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.writing-container {
-    display: grid;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    grid-template-columns: 1fr 130px min-content;
-
-    @media only screen and (max-width: $mobile-break-width) {   
-        grid-template-columns: auto;
-        grid-auto-rows: auto;
-
-        // Moderately a hack
-        :nth-child(3n) {
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-    }
-}
-
-// HACK: class names here should be refactored
-.photo-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-
-    @media only screen and (max-width: $photo-break-width) {   
-        grid-template-columns: 1fr;
-    }
-
-    .left-arrow {
-        display: inline-block;
-
-        @media only screen and (max-width: $photo-break-width) {   
-            display: none;
-        }
-    }
-
-    .up-arrow {
-        display: none;
-
-        @media only screen and (max-width: $photo-break-width) {   
-            display: inline-block;
-        }
-    }
-
-    .img-link {
-        border: none;
-
-        &:focus-visible {
-            outline: none;
-
-            .img {
-                box-shadow: $hover-drop-shadow;
-                border: $hover-border;
-            }
-        }
-    }
-
-    .album-title {
-        font-weight: bold;
-        padding-top: 20px;
-        display: block;
-
-        @media only screen and (max-width: $photo-break-width) {   
-            padding-top: 0;
-        }
-    }
-
-    .img {
-        width: 100%;
-        line-height: 1;
-        padding: 30px;
-        background: $background-color-step-up;
-        box-sizing: border-box;
-
-        box-shadow: $standard-drop-shadow;
-        border: 1px solid $background-color-step-up;
-
-        @media only screen and (max-width: $navigation-break-width) {
-            padding: 20px;
-        }
-
-        @media only screen and (max-width: $photo-break-width) {   
-            padding: 10px;
-        }
-
-        &:hover {
-            box-shadow: $hover-drop-shadow;
-            border: $hover-border;
-        }
     }
 }
 

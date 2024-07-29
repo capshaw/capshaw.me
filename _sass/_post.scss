@@ -1,0 +1,35 @@
+// HACK: First iteration of this, needs major refactor
+
+.post {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+
+    .info {
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: max-content max-content auto;
+
+        @media only screen and (max-width: $mobile-break-width) {
+            grid-template-columns: auto;
+            border-bottom: $standard-drop-shadow-border;
+        }
+
+        h2 {
+            margin: 0 20px 0 0;
+        }
+
+        .date {
+            text-align: right;
+
+            @media only screen and (max-width: $mobile-break-width) {
+                text-align: left;
+            }
+        }
+
+        margin-bottom: 20px;
+    }
+
+    border: $standard-drop-shadow-border;
+    box-shadow: $standard-drop-shadow;
+}

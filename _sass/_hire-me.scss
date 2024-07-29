@@ -21,12 +21,13 @@
         padding-left: 0;
         margin-left: 10px;
     }
-  
+
     .hire-button {
         background: #000;
         box-sizing: border-box;
         margin: auto;
         text-align: center;
+        text-decoration: none;
         color: #fff;
         border-radius: 5px;
         font-weight: bold;
@@ -38,7 +39,7 @@
         bottom: 20px;
         left: 20px;
         width: calc(100% - 40px);
-  
+
         &:hover {
             transition: all 0.2s;
             background: $accent-color;
@@ -52,7 +53,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
 
-    @media only screen and (max-width: $mobile-break-width) { 
+    @media only screen and (max-width: $mobile-break-width) {
         grid-template-columns: repeat(1, 1fr);
     }
 }
