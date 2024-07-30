@@ -135,5 +135,6 @@ th {
 }
 
 ::selection {
-    background: lighten($secondary-accent-color, 30%);
+    background: $accent-color;
+    color: $body-background-color;
 }

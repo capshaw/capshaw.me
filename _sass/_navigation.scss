@@ -1,12 +1,9 @@
 .header {
-    // border-bottom: 1px solid darken($body-background-color, 7%);
     background: $accent-color;
 
     .container {
         display: grid;
         grid-template-columns: auto auto;
-        // padding-top: 10px;
-        // padding-bottom: 10px;
 
         > :nth-child(2) {
             text-align: right;
@@ -18,7 +15,8 @@
 
     a {
         line-height: 1;
-        color: lighten($accent-color, 40%);
+        // color: lighten($accent-color, 40%);
+        color: $body-background-color;
         font-weight: bold;
         border: none;
         text-decoration: none;

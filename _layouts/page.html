@@ -1,14 +1,14 @@
 ---
 layout: base
 ---
-<div class="header">
-    <div class="container">
+<header class="header">
+    <navigation class="container">
         <div><a href="/">Andrew Capshaw</a></div>
         {% if page.url != "/" %}
             <div><a href="/">⬅&#xFE0E; Go home</a></div>
         {% endif %}
-    </div>
-</div>
-<div class="container">
+    </navigation>
+</header>
+<main class="container">
     {{ content }}
-</div>
+</main>

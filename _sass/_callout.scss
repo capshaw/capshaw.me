@@ -1,6 +1,7 @@
 .callout {
-    background: lighten($body-background-color, 10%);
+    border: $standard-drop-shadow-border;
     box-shadow: $standard-drop-shadow;
+
     padding: 20px;
     margin-bottom: 20px;
     border-radius: $standard-border-radius;

@@ -14,3 +14,4 @@ Things I might wish to write a journal entry about.
   - docs are dead end
   - writing as key remote skill
 - How this website is set up / deploy script
+- Daily routine
