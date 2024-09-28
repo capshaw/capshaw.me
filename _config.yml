@@ -2,6 +2,7 @@ title: Andrew Capshaw | personal site
 url: https://capsh.net
 author: Andrew Capshaw
 description: A personal blog, rarely updated
+encoding: utf-8
 highlighter: pygments
 permalink: pretty
 post_dirs: false
