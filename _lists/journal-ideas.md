@@ -15,3 +15,7 @@ Things I might wish to write a journal entry about.
   - writing as key remote skill
 - How this website is set up / deploy script
 - Daily routine
+- Fighting organizational complexity with complexity
+- Almost every recurring meeting becomes not worth the cost (Revitalize or delete)
+- Meetings without an agenda ahead of time is rude to others time. Also not effective
+- management via democracy
