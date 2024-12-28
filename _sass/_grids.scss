@@ -5,7 +5,7 @@
 .reading-container {
     display: grid;
     grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-row-gap: 3px;
     grid-template-columns: 1fr 1fr 125px min-content;
     grid-auto-rows: 1fr;
     align-items: center;

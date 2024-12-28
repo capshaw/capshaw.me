@@ -11,6 +11,8 @@ book_tag: history
 book_image: in_the_dragons_shadow.jpg
 ---
 
+> The term 'Southeast Asia' suggests a misleading degree of unity. On nearly every metric, the region presents a picture of bewildering diversity. It is 'Muslim, Buddhist, Catholic, Confucian-Taoist,' writes Benedict Anderson, 'Colonialized by Spaniards in the sixteenth century, by the Dutch in the seventeenth, by the French and British in the Nineteenth, and by the Americans in the twentieth.' Today, its people speak a profusion of mutually incomprehensible languages. It includes gleaming Singapore and improvished Laos, and stretches from the azure waters of the Banda Sea to the dun foothills of the Himalayas. That this collection of lands and people came to be grouped into a single geographic unit is an outcome of both political convenience and historical contingency. Yet as Donald Emmerson argues, assigning a name to the region, however arbitrarily, also 'helped to bring about the reality to which it now refers.'
+
 _This is my book review for In the Dragon's Shadow. For the full notes, see [this post]({% post_url 2024-12-26-in-the-dragons-shadow-full-notes %})._
 
 _In the Dragon's Shadow_ is a packed history book focused on international relations between Southeast Asian countries and China. Each chapter in the book focuses on a single country in the region and goes through the recent happenings of these countries both internally and externally, especially as related to the world super powers.
