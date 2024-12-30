@@ -5,3 +5,4 @@ static/css/.sass-cache/
 static/css/main.css
 *.css.map
 .DS_Store
+.ruby-version
