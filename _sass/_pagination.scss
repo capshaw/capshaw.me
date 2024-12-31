@@ -25,4 +25,34 @@
             border-bottom-right-radius: 5px;
         }
     }
+
+    @media only screen and (max-width: $mobile-break-width) {
+        display: none;
+    }
+}
+
+.page-by-page-container {
+    display: none;
+    margin-bottom: 20px;
+
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    align-items: center;
+
+    .page-by-page-link {
+        display: block;
+        &:nth-of-type(2) {
+            text-align: right;
+        }
+    }
+
+    .page-by-page-reference {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $mobile-break-width) {
+        display: grid;
+    }
 }

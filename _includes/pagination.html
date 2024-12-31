@@ -1,11 +1,33 @@
 <div class="pagination-container">
-    {% for page in (1..paginator.total_pages) %}<!--
-      -->{% if page == paginator.page %}<!--
-        --><a class="pagination-link pagination-link--selected" href="{{ '/journal' | relative_url }}">{{ page }}</a><!--
-      -->{% elsif page == 1 %}<!--
-        --><a class="pagination-link" href="{{ '/journal' | relative_url }}">{{ page }}</a><!--
-      -->{% else %}<!--
-        --><a class="pagination-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a><!--
-    -->{% endif %}<!--
-    -->{% endfor %}
+  {% for page in (1..paginator.total_pages) %}<!--
+    -->{% if page == paginator.page %}<!--
+      --><a class="pagination-link pagination-link--selected" href="{{ '/journal' | relative_url }}">{{ page }}</a><!--
+    -->{% elsif page == 1 %}<!--
+      --><a class="pagination-link" href="{{ '/journal' | relative_url }}">{{ page }}</a><!--
+    -->{% else %}<!--
+      --><a class="pagination-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a><!--
+  -->{% endif %}<!--
+  -->{% endfor %}
+</div>
+<div class="page-by-page-container">
+  {% for page in (1..paginator.total_pages) %}
+    {% assign prevPage = paginator.page | minus: 1 %}
+    {% assign nextPage = paginator.page | plus: 1 %}
+    {% if prevPage == 0 and page == 1 %}
+        <a class="page-by-page-link" href="#"></a>
+    {% endif %}
+    {% if page == prevPage %}
+        {% if page == 1 %}
+            <a class="page-by-page-link" href="{{ '/journal' | relative_url }}">Previous page</a>
+        {% else %}
+            <a class="page-by-page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">Previous page</a>
+        {% endif %}
+    {% elsif page == paginator.page %}
+    <div class="page-by-page-reference">
+      {{page}} of {{paginator.total_pages}}
+    </div>
+    {% elsif page == nextPage %}
+      <a class="page-by-page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">Next page</a>
+  {% endif %}
+  {% endfor %}
 </div>
