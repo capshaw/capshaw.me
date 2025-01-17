@@ -15,7 +15,7 @@
         grid-auto-rows: auto;
 
         // Moderately a hack
-        :nth-child(4n) {
+        > :nth-child(4n) {
             padding-bottom: 10px;
             margin-bottom: 10px;
         }

@@ -22,6 +22,9 @@ Opinionated engineering blog post.
 [Precommitment](https://effectiviology.com/precommitment/)\
 Cool blog post on precommitment.
 
+[Mitxela hardware projects](https://mitxela.com/projects/hardware)\
+Cool physical experiments.
+
 ## Design
 
 [Tolidano](https://www.tolidano.com/)\
@@ -41,3 +44,6 @@ Another blog.
 
 [Ciechanows.ski](https://ciechanow.ski/)\
 Lots of cool informational posts.
+
+[Jameslittle.me](https://jameslittle.me/)\
+Another blog.

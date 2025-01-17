@@ -24,7 +24,7 @@ layout: post
     <!-- <time>{{ page.date | date: "%Y-%m-%d" }}</time> -->
     <div>
       <div class="rating-stars">
-        {% for counter in (1..5) %}{% if page.book_rating >= counter %}★{% endif %}{% endfor %}
+        {% for counter in (1..5) %}{% if page.book_rating >= counter %}<div class="star"></div>{% endif %}{% endfor %}
       </div>
     </div>
   {% endif %}

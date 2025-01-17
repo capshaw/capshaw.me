@@ -1,6 +1,19 @@
+$star-size: 12px;
+$star-margin: 2px;
+
 .rating-stars {
     display: inline-block;
     font-family: Helvetica, Arial, sans-serif;
     padding-top: 2px;
     margin-bottom: -2px;
+    width: 5 * ($star-margin + $star-size);
+
+    .star {
+        width: $star-size;
+        height: $star-size;
+        margin-right: $star-margin;
+        background: no-repeat center center url('../img/star.svg');
+        display: inline-block;
+        background-size: contain;
+    }
 }

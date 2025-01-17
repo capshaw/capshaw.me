@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -45,6 +69,7 @@ h3 {
 
 a {
     color: $link-color;
+    text-decoration: none;
 
     &:hover {
         color: $link-hover-color;

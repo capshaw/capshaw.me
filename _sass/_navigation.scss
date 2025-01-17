@@ -1,5 +1,6 @@
 .header {
     background: $accent-color;
+    box-shadow: 0px 5px 10px 0px rgba(137, 117, 86, 0.05);
 
     .container {
         display: grid;
@@ -15,7 +16,6 @@
 
     a {
         line-height: 1;
-        // color: lighten($accent-color, 40%);
         color: $body-background-color;
         font-weight: bold;
         border: none;
