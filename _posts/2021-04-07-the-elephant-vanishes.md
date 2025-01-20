@@ -20,41 +20,41 @@ Murakami's short stories are like Raymond Carver's, but with more magical realis
 
 Here are my ratings for each short story in the collection.
 
-<div class="elephant-vanishes-grid">
+<div class="story-grid">
     <div><strong>Story</strong></div>
     <div><strong>Rating</strong></div>
     <div>The Wind-up Bird and Tuesday's Women</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>The Second Bakery Attack</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>The Kangaroo Communiqué</div>
-    <div><div class="rating-stars">★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>On Seeing the 100% Perfect Girl One Beautiful April Morning</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>Sleep</div>
-    <div><div class="rating-stars">★★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>The Fall of the Roman Empire, the 1881 Indian Uprising, Hitler's Invasion of Poland, and the Realm of Raging Winds</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>Lederhosen</div>
-    <div><div class="rating-stars">★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>Barn Burning</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>The Little Green Monster</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>Family Affair</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>A Window</div>
-    <div><div class="rating-stars">★★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>TV People</div>
-    <div><div class="rating-stars">★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>A Slow Boat to China</div>
-    <div><div class="rating-stars">★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>The Dancing Dwarf</div>
-    <div><div class="rating-stars">★★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>The Last Lawn of the Afternoon</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>The Silence</div>
-    <div><div class="rating-stars">★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div></div></div>
     <div>The Elephant Vanishes</div>
-    <div><div class="rating-stars">★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
 </div>

@@ -20,23 +20,23 @@ Overall this collection of short stories was a mixed bag—more so than typical 
 
 The concluding story _First Person Singular_ was certainly the standout.
 
-<div class="elephant-vanishes-grid">
+<div class="story-grid">
     <div><strong>Story</strong></div>
     <div><strong>Rating</strong></div>
     <div>Cream</div>
-    <div><div class="rating-stars">★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div></div></div>
     <div>On a Stone Pillow</div>
-    <div><div class="rating-stars">★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>Charlie Parker Plays Bossa Nova</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>With the Beatles</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>Confessions of a Shinagawa Monkey</div>
-    <div><div class="rating-stars">★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
     <div>Carnaval</div>
-    <div><div class="rating-stars">★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div></div></div>
     <div>The Yakult Swallows Poetry Collection</div>
-    <div><div class="rating-stars">★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div></div></div>
     <div>First Person Singular</div>
-    <div><div class="rating-stars">★★★★★</div></div>
+    <div><div class="rating-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></div>
 </div>
