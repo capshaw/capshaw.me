@@ -1,7 +1,7 @@
-title: Andrew Capshaw | personal site
+title: capsh.net
 url: https://capsh.net
 author: Andrew Capshaw
-description: A personal blog, rarely updated
+description: Andrew Capshaw's personal blog. Mostly book reviews, sometimes other things. I always hope to write more and never do.
 permalink: pretty
 post_dirs: false
 markdown: kramdown
@@ -21,3 +21,5 @@ plugins:
   - jekyll-timeago
 jekyll_timeago:
   depth: 1
+feed:
+  posts_limit: 20

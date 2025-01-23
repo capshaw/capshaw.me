@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="3.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:atom="http://www.w3.org/2005/Atom">
+	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
+	<xsl:template match="/">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="referrer" content="unsafe-url" />
+		<title><xsl:value-of select="/atom:feed/atom:title"/></title>
+		<link rel="stylesheet" href="/static/css/feed.css" />
+	</head>
+	<body>
+		<div class="intro">
+			<div class="container">
+				<p>
+					<strong>Welcome!</strong> This is my RSS feed. You can Subscribe by copy-pasting the URL into your RSS feed reader.
+				</p>
+				<p>
+				 	Visit <a href="https://aboutfeeds.com/">About Feeds</a> to get started with newsreaders and subscribing. It's free. 
+				</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1>
+				<xsl:value-of select="/atom:feed/atom:title"/>
+			</h1>
+
+			<p>
+				<xsl:value-of select="/atom:feed/atom:subtitle"/>
+			</p>
+
+			<h2>Recent items</h2>
+			<xsl:for-each select="/atom:feed/atom:entry">
+
+				<h3>
+					<a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="atom:id"/>
+						</xsl:attribute>
+						<xsl:value-of select="atom:title"/>
+					</a>
+				</h3>
+				<p class="updated">
+					Published <xsl:value-of select="atom:updated" />
+				</p>
+			</xsl:for-each>
+		</div>
+	</body>
+</html>
+	</xsl:template>
+</xsl:stylesheet>
