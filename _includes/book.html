@@ -14,5 +14,9 @@
             {{page.book_tag}}
         </div>
         <div class="rating-stars">{% for counter in (1..5) %}{% if page.book_rating >= counter %}<div class="star"></div>{% endif %}{% endfor %}</div>
+
+        {% if page.book_quotes %}
+            <div><a href="{{page.book_quotes}}">All clips from book</a></div>
+        {% endif %}
     </div>
 </div>
