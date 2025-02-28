@@ -47,3 +47,6 @@ Lots of cool informational posts.
 
 [Jameslittle.me](https://jameslittle.me/)\
 Another blog.
+
+[daverupert.com/bookshelf](https://daverupert.com/bookshelf/)\
+Nice bookshelf.
