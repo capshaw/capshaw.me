@@ -50,3 +50,11 @@ Another blog.
 
 [daverupert.com/bookshelf](https://daverupert.com/bookshelf/)\
 Nice bookshelf.
+
+## Other bookmarks
+
+[Why do people default to React and JavaScript for frontend and UIs?](https://lobste.rs/s/tzwdfz/why_do_people_default_react_javascript)
+
+[A Society That Lost Focus](https://lobste.rs/s/otthd0/society_lost_focus)
+
+[Amusing Ourselves to Death](https://samf.substack.com/p/amusing-ourselves-to-death?r=72szy&utm_campaign=post&utm_medium=web&triedRedirect=true)
