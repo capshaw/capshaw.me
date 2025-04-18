@@ -6,6 +6,7 @@
         content: "●";
         position: relative;
         top: -1px;
+        -webkit-text-stroke: 1px black;
     }
 
     &--cosmology::before {

@@ -34,7 +34,10 @@ html, body {
 
 body {
     background: $body-background-color;
+    min-height: calc(100svh - 10px);
     color: #000;
+    border: 10px solid $accent-color;
+    border-top: 0px;
 }
 
 h1, h2, p {
@@ -70,7 +73,7 @@ h3 {
 
 a {
     color: $link-color;
-    text-decoration: none;
+    text-decoration: underline;
 
     &:hover {
         color: $link-hover-color;
@@ -160,6 +163,5 @@ th {
 }
 
 ::selection {
-    background: $accent-color;
-    color: $body-background-color;
+    background: lighten(desaturate($accent-color, 20%), 50%);
 }

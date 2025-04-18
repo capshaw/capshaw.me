@@ -7,11 +7,16 @@ $standard-font-size: 16px;
 $body-background-color: #F1E9DB;
 $background-color-step-up: #f8f4ed;
 
-$accent-color: #27458e;
+// Remember to change the value in the meta tags as well
+//$accent-color: #27458e;
+// $accent-color: #115d37;
+$accent-color: #5d1129;
+// $accent-color: #573484;
+
 $accent-color-hover: lighten($accent-color, 20%);
 
-$link-color: $accent-color;
-$link-hover-color: lighten($link-color, 10%);
+$link-color: #000;
+$link-hover-color: lighten($accent-color, 10%);
 
 $standard-drop-shadow: 0px 5px 10px 0px rgba(137, 117, 86, 0.1);
 $standard-drop-shadow-border: 1px solid rgba(137, 117, 86, 0.2);
