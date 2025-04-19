@@ -12,7 +12,6 @@
 
         @media only screen and (max-width: $mobile-break-width) {
             grid-template-columns: auto;
-            border-bottom: $standard-drop-shadow-border;
         }
 
         h2 {
@@ -28,6 +27,14 @@
         }
 
         margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: $mobile-break-width) {
+        border: none;
+        border-bottom: $standard-drop-shadow-border;
+        box-shadow: none;
+        padding: 0 0 20px 0;
+        border-radius: none;
     }
 
     border: $standard-drop-shadow-border;

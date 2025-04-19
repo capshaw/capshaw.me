@@ -21,6 +21,6 @@ One of the most interesting portions of the book was the chapter centered around
 
 Also interesting is the concept of using trash for energy, something that the United States appears to have mostly resisted. I'd love to learn more about the tradeoffs of this approach.
 
-> “Our behavior in the U.S. in this area is really quite irrational. And it’s irresponsible. We are throwing energy and money away every day, burying it in the ground.”
+> Our behavior in the U.S. in this area is really quite irrational. And it’s irresponsible. We are throwing energy and money away every day, burying it in the ground.
 
 It would be interesting to see what a 2021 version of this book would say. Especially with our current recycling crisis in which many recycled goods can no longer be sent overseas.
