@@ -37,7 +37,7 @@
 
     grid-column-gap: 5px;
     grid-row-gap: 3px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr min-content 1fr;
     grid-auto-rows: 1fr;
     align-items: center;
 
@@ -54,5 +54,7 @@
 
     @media only screen and (max-width: $mobile-break-width) {
         display: grid;
+        border-bottom: $standard-drop-shadow-border;
+        padding-bottom: 20px;
     }
 }

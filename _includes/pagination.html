@@ -24,7 +24,7 @@
         {% endif %}
     {% elsif page == paginator.page %}
     <div class="page-by-page-reference">
-      {{page}} of {{paginator.total_pages}}
+      {{page}}&nbsp;of&nbsp;{{paginator.total_pages}}
     </div>
     {% elsif page == nextPage %}
       <a class="page-by-page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">Next page</a>
