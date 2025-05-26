@@ -7,7 +7,7 @@ date: 2021-02-28
 book_rating: 5
 book_author: Kim Scott
 book_goodreads: https://www.goodreads.com/book/show/44300042-radical-candor
-book_tag: engineering
+book_tag: management
 book_image: radical_candor.jpg
 ---
 

@@ -1,0 +1,181 @@
+Your Kindle Notes For:
+The Unaccountability Machine: Why Big Systems Make Terrible Decisions—and How the World Lost Its Mind
+Dan Davies
+Last accessed on Monday May 26, 2025
+44 Highlight(s) | 0 Note(s)
+Yellow highlight | Location: 103
+This is a book about the industrialisation of decision-making – the methods by which, over the last century, the developed world has arranged its society and economy so that important institutions are run by processes and systems, operating on standardised sets of information, rather than by individual human beings reacting to individual circumstances. This has led to a fundamental change in the relationship between decision makers and those affected by their decisions, the vast population of what might be called ‘the decided-upon’. That relationship used to be what we called ‘accountability’, and this book is about the ways in which accountability has atrophied.
+                
+
+Yellow highlight | Location: 209
+I ended up coining the term ‘self-organising control fraud’. The idea was that the financial system of the developed world, from around the fall of Communism in Europe, had reached a point where the overall system of incentives in the economy was so criminogenic that banks had a natural tendency to organise themselves into fraudulent behaviour. All the top executives had to do was set unrealistic profitability targets and under invest in legal departments and compliance systems. It wasn’t so much that anyone had told their traders what to do; more that nobody ever organised things in such a way that they wouldn’t form a criminal conspiracy.
+                
+
+Yellow highlight | Location: 258
+The unsettling thing about this conversation is that you progressively realise that the human being you are speaking to is only allowed to follow a set of processes and rules that pass on decisions made at a higher level of the corporate hierarchy. It’s often a frustrating experience; you want to get angry, but you can’t really blame the person you’re talking to. Somehow, the airline has constructed a state of affairs where it can speak to you with the anonymous voice of an amorphous corporation, but you have to talk back to it as if it were a person like yourself.
+                
+
+Yellow highlight | Location: 274
+The fundamental law of accountability: the extent to which you are able to change a decision is precisely the extent to which you can be accountable for it, and vice versa.
+                
+
+Yellow highlight | Location: 276
+For an accountability sink to function, it has to break a link; it has to prevent the feedback of the person affected by the decision from affecting the operation of the system. The decision has to be fully determined by the policy, which means that it cannot be altered by any information that wasn’t anticipated.
+                
+
+Yellow highlight | Location: 322
+That’s the purpose of making policies – to reduce the amount of time and effort spent making decisions on individual cases. However, it’s also the root cause of this sort of problem. When you set a general policy, you either need to build in a system for making exceptions (and make sure that it is used), or you need to be confident that all the outcomes of enforcing that policy will be acceptable.
+                
+
+Yellow highlight | Location: 333
+This property of there being ‘nobody to blame’ is the definition of what constitutes an accountability sink.
+                
+
+Yellow highlight | Location: 373
+At this stage you might suggest that ‘indexing billions of web pages’ and ‘assessing the influence and quality of scholarship’ are very different tasks; surely nobody should expect an algorithm designed for one to be any good at the other. Set against that objection is the fact that if you have to decide which academics should be promoted or employed, the ‘weighted citation count’ is a perfect accountability sink.
+                
+
+Yellow highlight | Location: 443
+According to an interview given by Abeille towards the end of his career, he had been asked by the budget director for ‘an easy rule, that sounds as if it comes from an economist, and can be opposed to the ministers that walk into my office asking for money’. At the time, the French deficit was a bit more than 2 per cent of GDP, so it made no sense to suggest anything lower; 3 per cent was ‘a good number, a number that has gone through the ages, it made one think of the Trinity’. The process by which the attractiveness of various small numbers was discussed before 3 per cent was chosen apparently took less than an hour. By 2010, the Stability and Growth Pact had resulted in a lost decade of growth for Italy, and very nearly saw Greece ejected from the Euro. Abeille had not known that he would be setting such an important policy for an entire continent, and he had certainly never been elected to the job. But the target became important to the entire European project precisely because, once enacted, it was an accountability sink, defusing the political conflict that would have been opened up if there had been a public debate in which German politicians discussed what social programmes and benefits needed to be cut in Greece and Portugal.
+                
+
+Yellow highlight | Location: 462
+If you trace back many important decisions of the last few decades, you will regularly come up against the uncomfortable sensation that the unacknowledged legislators are relatively junior civil servants who put placeholder numbers in spreadsheets, which are later adopted as fundamental constraints; to do otherwise would mean someone having to risk being criticised for making a decision.
+                
+
+Yellow highlight | Location: 487
+For nearly all of history, there have been two kinds of authority taking the big decisions affecting people’s lives. There is a fundamental distinction between ‘kings’ and ‘priests’. A king might be more powerful, but his orders can be argued against – it might be inadvisable to do so, but if you can change the king’s mind you can change the decision. The priest, on the other hand, gains his authority from his status as the interpreter of the Word of God, so his decisions are considerably more difficult to reverse. This means that it matters a great deal which kinds of decisions are given to which kinds of authorities, and the question of the boundary between the two spheres has often been one of the central issues of entire eras – it was the subject of the Thirty Years War in Europe. A lot of the discontent in the modern world might come from having taken decision-making structures that were designed with ‘king-like’ leaders in mind, and handing them over to managers who didn’t act in the same way.
+                
+
+Yellow highlight | Location: 748
+very few people are able to take a step back, view their own organisation as if from outside, and realise that they are structurally producing results which are exactly the opposite of what they had intended.
+                
+
+Yellow highlight | Location: 762
+Throughout Beer’s written work on management, this kind of meeting is always emphasised: unstructured, informal connections between staff at different levels and performing different functions. Some of the ephemera – particularly his emphasis on the importance of having adequate supplies of cigars and whisky to facilitate conversation – might seem comically dated, but the idea of ensuring that there are links across the organisation to spread information and build consensus is entirely modern.
+                
+
+Yellow highlight | Location: 766
+He saw a strict command-and-control approach as dangerously inflexible, while excessive delegation would destroy the organisation’s ability to act as a coherent system.
+                
+
+Yellow highlight | Location: 933
+The general flight from accountability wasn’t necessarily being caused by the sneakiness of professional managers, or the psychological and legal considerations that made taking responsibility intolerable. It was more likely that managers didn’t feel accountable for the actions of organisations because it didn’t seem to them as if they were the actual decision makers. Why not? Because things were incomprehensible to them too. Even moderately complex interconnected feedback systems have so many working parts that they have to be understood as a whole or not at all.
+                
+
+Yellow highlight | Location: 952
+Knowing a great deal of detail about a subset of a system has a habit of increasing your confidence in your opinions disproportionately from their reliability.
+                
+
+Yellow highlight | Location: 993
+Systems don’t have inner desires, so they don’t do things intentionally either. There’s just a network of cause and effect. We might think they’re conspiring, but they’re working within structures that made the outcome inevitable.
+                
+
+Yellow highlight | Location: 1,109
+It seems that just like human intelligences, artificial intelligences can have pathologies. They get fixations and obsessions, and they make decisions that cause harm without necessarily understanding why. This is not just true of ‘artificial intelligences’ in the sense of computer programs, it’s a problem that could potentially happen to any sort of decision-making system that’s complicated enough to need to be treated as a black box.
+                
+
+Yellow highlight | Location: 1,366
+Everything is driven by Ashby’s law of requisite variety: a given system has the potential to achieve stability only if every source of variability from the environment is matched by an equal or greater source of variety in the regulatory system.
+                
+
+Yellow highlight | Location: 1,373
+If a manager or management team doesn’t have information-handling capacity at least as great as the complexity of the thing they’re in charge of, control is not possible and eventually, the system will become unregulated.
+                
+
+Yellow highlight | Location: 1,495
+Diagrams present you with the information ‘all at once’ and leave you to work out the flow of cause and effect for yourself, while a verbal explanation usually presents you with the story of cause and effect and leaves you to remember the connections.
+                
+
+Yellow highlight | Location: 1,557
+Everyone who’s worked in a dysfunctional organisation will recognise this as ‘micromanagement’ and will be familiar with the ways in which it breaks down. The environmental variety coming in from the suppliers and customers doesn’t get handled at the right level because System 1 employees aren’t allowed to make decisions. Meanwhile, the coordination, communication, integration and planning functions are neglected because System 3 is spending all its time trying to do someone else’s job. Middle management becomes bloated and overstaffed as it tries to add variety to itself, while the operations are miserable because of constant interference from people who don’t really understand what they do.
+                
+
+Yellow highlight | Location: 1,631
+In fact, understanding that identity, philosophy and purpose are tools of information management is the key to understanding the most famous slogan of management cybernetics, ‘POSIWID’ – or ‘the purpose of a system is what it does’. The identity-creating function is intrinsically linked to the variety-balancing function. In working to balance the immediate needs of the system with its response to a changing environment, System 5 is making the decisions which determine ‘what it does’ and, consequently, its purpose. POSIWID is not just a glib piece of cynicism; it’s a description of how a system retains viability and identity.
+                
+
+Yellow highlight | Location: 1,670
+The overlapping of different systems – and the tendency of individuals to have different roles at different levels of abstraction – is a key part of Beer’s theory, and one of the main reasons why his diagrams got so complicated. He claims that every ‘viable system’ needs to have all five of the functions described so far in order to be capable of long-term survival, but that every such system can also be seen as System 1 within a larger system.
+                
+
+Yellow highlight | Location: 1,882
+It might feel nice to say that not everything can be measured, but if you can’t measure something, how are you going to know whether it’s changed? And if you aren’t interested in whether it’s changed, how can you really claim that you care about it?
+                
+
+Yellow highlight | Location: 2,097
+Together, these things contributed to a sense that the market economy was a kind of computing pond; it organically grew optimal solutions to problems and, like a true artificial intelligence, you got out more than you put in. It’s somewhat ironic that economics, the discipline that’s meant to tell you that ‘there’s no such thing as a free lunch’, ended up believing so strongly in an informational version of the same thing.
+                
+
+Yellow highlight | Location: 2,194
+Deciding on the methodology for data collection is a great way to make decisions without leaving fingerprints. Every decision about what to measure is implicitly a decision about what not to measure, effectively deciding what aspects of environmental variety are going to be ignored or attenuated.
+                
+
+Yellow highlight | Location: 2,318
+Mechanising and computerising the accounting system allowed companies to grow and get more complicated, but on the basis of the same system, one based on financial reporting. This meant that the increase in complexity was masked from the people who were meant to be managing it. Their reports were largely unchanged. And consequently, companies began to hallucinate.
+                
+
+Yellow highlight | Location: 2,342
+almost any cost is variable if you’re prepared to rearrange your business.
+                
+
+Yellow highlight | Location: 2,347
+The problem here is that unless a lot of effort is expended, it’s easy to create an information system that will always give a particular answer, whatever the truth is. And that answer will appear to be an objective fact, even though it’s actually the result of a lot of implicit assumptions. Once more, we see that important actions can end up being the consequence of decisions nobody made – or, even worse, decisions that people made without realising they were doing so. An accounting system is an almost perfect accountability sink – even the people responsible for constructing it don’t necessarily understand what they’re doing.
+                
+
+Yellow highlight | Location: 2,353
+Given all this, it might be considered surprising that large companies don’t end up in a worse state. But, of course, most companies, quite fortunately, don’t make every decision based purely on numbers. They have managers, who provide the necessary variety and context to mitigate the inevitable distortions in the accounting system. Often, a core skill of middle management is the ability to manipulate the financial reports to compensate for a set of numbers that aren’t giving the right answer. Everyone who has put together a business plan knows that if you can’t fudge the key assumptions to justify the decision your boss wants to make, you don’t know enough about the business.
+                
+
+Yellow highlight | Location: 2,377
+If you read the great books of management with this in mind, you’ll notice a strong common theme; the stars of this literature all try to get managers to understand that they must create systems which regulate themselves rather than requiring constant supervision. Most of what’s worth reading in management science is about stopping decision-making systems from becoming overwhelmed.
+                
+
+Yellow highlight | Location: 2,397
+Stereotypically, a consulting assignment goes through stages of signing the contract, talking to the employees and middle managers, finding the person who knows how to solve the problem, then packaging up their solution and selling it to top management. In one sense, the consultant isn’t contributing anything new.
+                
+
+Yellow highlight | Location: 2,471
+management cybernetics demonstrates quite clearly why a centrally planned economy doesn’t respect the law of requisite variety and can’t get the information it needs to function.
+                
+
+Yellow highlight | Location: 2,649
+But the courts have never found that there’s any particular fiduciary duty to run a company in one way rather than another, and there’s certainly not one to maximise the value of one particular class of its financial securities. It would be a legal disaster if they did; what if the way to maximise the share price involved taking a huge risk of bankruptcy and ripping off the creditors?
+                
+
+Yellow highlight | Location: 2,697
+If the market is the brain of the capitalist system, its nerves and muscles are made out of the debt relationship.
+                
+
+Yellow highlight | Location: 2,890
+One consequence of focusing on quarterly numbers and short-term delivery is that costs become more important than revenues.
+                
+
+Yellow highlight | Location: 3,148
+This is why there was a family resemblance between the ‘populist’ movements that sprang up in the 2010s. Narendra Modi in India, Beppe Grillo in Italy, Donald Trump in America, Nigel Farage in Britain or Recep Tayyip Erdoğan in Turkey instinctively realised that they were on the same side; each of them, in their own culturally specific context, was acting as a communication channel for a population which wanted to convey a single bit of information: the message that translates as, ‘HELP! THE CURRENT STATE OF AFFAIRS IS INTOLERABLE TO ME.’
+                
+
+Yellow highlight | Location: 3,157
+The medium itself is the message; what liberal society ought to be responding to is the fact of mass distress, not its content.
+                
+
+Yellow highlight | Location: 3,182
+Marmot ended up concluding that the psychic feeling of being in control of your life is extremely important as a source of well-being, and that conversely, being out of control is physiologically harmful as well as emotionally intolerable.
+                
+
+Yellow highlight | Location: 3,186
+The connection that he found looks like the result of a variety mismatch; people are, increasingly, unable to regulate the input from their immediate environment, and they correctly perceive this as a threat to health and life. That might be the deepest reason why managers create accountability sinks – to be accountable for something you can’t change is to experience exactly the ‘out of control’ feeling that the Whitehall studies seem to suggest will kill you if you let it.
+                
+
+Yellow highlight | Location: 3,322
+Dismantling the leveraged buyout industry would get rid of an overhanging threat across the entire managerial class; it would open up a huge space for different models of corporate governance.
+                
+
+Yellow highlight | Location: 3,353
+Corporations are decision-making systems, not ‘intelligences’. They have homeostatic forces which aim to maintain their equilibrium, and higher-order decision-making systems which mean they are able to reorganise themselves in order to respond to shocks beyond the scope of anything anticipated when they were designed.
+                
+
+Yellow highlight | Location: 3,365
+Viable systems fundamentally seek stability, not maximisation.
+                
+
