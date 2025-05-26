@@ -9,7 +9,7 @@ book_author: Dan Davies
 book_goodreads: https://www.goodreads.com/book/show/197716282-the-unaccountability-machine
 book_tag: management
 book_image: the_unaccountability_machine.jpg
-book_quotes: /documents/2025-02-28-white-holes-clippings.txt
+book_quotes: /documents/2025-05-26-the-unaccountability-machine-clippings.txt
 ---
 
 > This is a book about the industrialisation of decision-making – the methods by which, over the last century, the developed world has arranged its society and economy so that important institutions are run by processes and systems, operating on standardised sets of information, rather than by individual human beings reacting to individual circumstances. This has led to a fundamental change in the relationship between decision makers and those affected by their decisions, the vast population of what might be called ‘the decided-upon’. That relationship used to be what we called ‘accountability’, and this book is about the ways in which accountability has atrophied.
