@@ -36,8 +36,6 @@ body {
     background: $body-background-color;
     min-height: calc(100svh - 10px);
     color: #000;
-    border: 10px solid $accent-color;
-    border-top: 0px;
 }
 
 h1, h2, p {
