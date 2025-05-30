@@ -15,14 +15,22 @@ layout: post
         <div class="rating-stars">
           {% for counter in (1..5) %}{% if post.book_rating >= counter %}<div class="star"></div>{% endif %}{% endfor %}
         </div>
-      {% else %}
+      {% elsif post.journal_tag %}
         <span class="journal-tag journal-tag--{{post.journal_tag}}">
           {{post.journal_tag}}
         </span>
+      {% else %}
+        <span></span>
       {% endif %}
       <span class="date">{{ post.date | timeago }}</span>
     </div>
     <div class="content">
+      {% if post.photo_link_url %}
+        <!-- Put this in subtemplate -->
+        <a href="{{ post.photo_link_url }}">
+          <img src="{{ post.photo_preview_path }}" alt="{{ post.title }}" />
+        </a>
+      {% endif %}
       {{ post.content }}
     </div>
   </div>
