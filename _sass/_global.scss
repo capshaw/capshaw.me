@@ -1,25 +1,25 @@
-$mobile-break-width: 750px;
-$navigation-break-width: 1200px;
+$mobile-break-width: 800px;
+$navigation-break-width: 980px;
 $photo-break-width: 600px;
 
-$standard-font-size: 16px;
+$standard-font-size: 18px;
 
-$body-background-color: #F1E9DB;
-$background-color-step-up: #f8f4ed;
+$body-background-color: #fff;
 
 // Remember to change the value in the meta tags as well
-$accent-color: #27458e;
+// $accent-color: #29263d;
 // $accent-color: #115d37;
 // $accent-color: #5d1129;
-// $accent-color: #573484;
+$accent-color: #0a3faa;
+$accent-color-triad: #aa0a3f;
 
-$accent-color-hover: lighten($accent-color, 20%);
+$accent-color-hover: lighten($accent-color, 10%);
 
-$link-color: #000;
+$link-color: $accent-color;
 $link-hover-color: lighten($accent-color, 10%);
 
-$standard-drop-shadow: 0px 5px 10px 0px rgba(137, 117, 86, 0.1);
-$standard-drop-shadow-border: 1px solid rgba(137, 117, 86, 0.2);
+$standard-drop-shadow: 0px 5px 10px 0px rgba(137, 117, 86, 0.05);
+$standard-drop-shadow-border: 1px solid rgba(137, 117, 86, 0.15);
 
 $hover-drop-shadow: 0px 0px 10px 0px rgba($accent-color-hover, 0.75);
 $hover-border: 1px solid rgba($accent-color, 0.75);

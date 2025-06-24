@@ -58,3 +58,13 @@
         padding-bottom: 20px;
     }
 }
+
+.prev-next {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+
+    .next {
+        text-align: right;
+    }
+}

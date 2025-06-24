@@ -1,48 +1,44 @@
 .header {
-    background: $accent-color;
-    box-shadow: 0px 5px 10px 0px rgba(137, 117, 86, 0.05);
+    line-height: 1;
+    padding: 10px 20px 20px 20px;
 
-    .container {
-        display: grid;
-        grid-template-columns: auto auto;
-
-        > :nth-child(2) {
-            text-align: right;
-            a {
-                font-weight: normal;
-                margin-left: 20px;
-            }
-        }
-
-        @media only screen and (max-width: $mobile-break-width) {
-            grid-template-columns: auto;
-            grid-auto-rows: auto;
-            > :nth-child(2) {
-                text-align: left;
-                border-top: 1px solid rgba($body-background-color, 0.2);
-                padding-top: 10px;
-                margin-top: 10px;
-                a {
-                    margin-left: 0;
-                    margin-right: 15px;
-                }
-            }
-        }
+    @media only screen and (max-width: $navigation-break-width) {
+        box-shadow: $standard-drop-shadow;
+        border: $standard-drop-shadow-border;
+        border-top: none;
+        border-left: none;
+        border-right: none;
     }
 
     a {
         line-height: 1;
-        color: $body-background-color;
-        font-weight: bold;
+        color: #000;
         border: none;
         text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+
+        @media only screen and (max-width: $navigation-break-width) {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 0;
+
+            &:first-of-type {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        &:first-of-type {
+            font-weight: bold;
+        }
 
         &:focus-visible {
             outline: 1px solid $accent-color-hover;
         }
 
         &:hover {
-            color: lighten($accent-color, 50%);
+            color: $accent-color-hover;
         }
     }
 }

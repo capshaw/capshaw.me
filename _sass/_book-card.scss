@@ -1,5 +1,7 @@
 .book-card {
-    background: #fff;
+    border: $standard-drop-shadow-border;
+    box-shadow: $standard-drop-shadow;
+    
     padding: 20px;
     box-shadow: $standard-drop-shadow;
     border-radius: $standard-border-radius;

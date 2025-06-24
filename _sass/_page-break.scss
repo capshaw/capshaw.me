@@ -2,7 +2,7 @@
     text-align: center;
     &::before {
         content: '\3030\FE0E\3030\FE0E';
-        color: #ad8d54;
+        color:  $accent-color-triad;
         margin: 20px 0;
     }
 }

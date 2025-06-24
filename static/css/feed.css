@@ -1,23 +1,23 @@
 @font-face {
-    font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-Regular.ttf');
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegibleNext-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-Bold.ttf');
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegibleNext-Bold.ttf');
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-Italic.ttf');
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegibleNext-RegularItalic.ttf');
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-BoldItalic.ttf');
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('../fonts/AtkinsonHyperlegibleNext-BoldItalic.ttf');
     font-weight: bold;
     font-style: italic;
 }
@@ -25,10 +25,11 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Atkinson Hyperlegible Next', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     line-height: 1.6;
+    font-size: 18px;
 }
 
 .intro {

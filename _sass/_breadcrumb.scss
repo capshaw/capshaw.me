@@ -1,6 +1,7 @@
 .breadcrumb {
     margin: 20px 0;
-    background: #fff;
+    border: $standard-drop-shadow-border;
+    box-shadow: $standard-drop-shadow;
     border-radius: 5px;
     padding: 10px;
     color: #aaa;

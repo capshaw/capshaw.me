@@ -11,3 +11,16 @@ layout: page
 {% endif %}
 
 {{ content }}
+
+<div class="prev-next">
+    <div class="prev">
+    {% if page.previous.url %}
+        <a href="{{page.previous.url}}">&larr; {{page.previous.title}}</a>
+    {% endif %}
+    </div>
+    <div class="next">
+    {% if page.next.url %}
+        <a href="{{page.next.url}}">{{page.next.title}} &rarr;</a>
+    {% endif %}
+    </div>
+</div>
