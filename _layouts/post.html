@@ -12,15 +12,22 @@ layout: page
 
 {{ content }}
 
+{% if page.previous.url or page.next.url %}
 <div class="prev-next">
     <div class="prev">
     {% if page.previous.url %}
         <a href="{{page.previous.url}}">&larr; {{page.previous.title}}</a>
     {% endif %}
     </div>
-    <div class="next">
-    {% if page.next.url %}
-        <a href="{{page.next.url}}">{{page.next.title}} &rarr;</a>
+    {% if page.previous.url and page.next.url %}
+    <div class="prev-next-spacer"></div>
+    {% else %}
+    <div></div>
     {% endif %}
+    {% if page.next.url %}
+    <div class="next">
+        <a href="{{page.next.url}}">{{page.next.title}} &rarr;</a>
     </div>
+    {% endif %}
 </div>
+{% endif %}
