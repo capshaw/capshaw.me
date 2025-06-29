@@ -1,0 +1,19 @@
+---
+title: Reading log
+layout: post
+---
+<!-- TODO: This should be an include -->
+<p class="view-selector">
+  <a href="/reading/">Table view</a>
+  |
+  <a href="/reading/by-cover/">Cover view</a>
+  |
+  <strong><a href="/reading/by-card/">Card view</a></strong>
+</p>
+{% for page in site.posts %}
+  {% if page.layout == 'book' %}
+    {% if page.book_image %}
+      {% include book.html %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
